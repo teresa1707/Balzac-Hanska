@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Pacifico&family=Play:wght@700&display=swap');
+*{
+    margin: 0;
+    padding:0;
+}
+.logo-balzac{
+font-family: 'Kelly Slab',sans-serif;
+width: 300px;
+text-align: center;
+
+// background-image: linear-gradient(to right, #2c3e50, #2b5e66);
+
+
+background: linear-gradient(132deg, rgb(65, 80, 95) 0.00%, rgb(36, 37, 38) 100.00%);
+// background: linear-gradient(to bottom right, #685507, #010101);
+padding: 10px;
+border-radius: 5px;
+text-shadow: 1px 1px 1px rgb(31, 29, 29);
+
+h1{
+width: 200px;
+margin: 0 auto;
+border-top: 3px solid rgb(221, 192, 0); 
+text-transform: uppercase;
+padding-top:5px;
+font-size:50px;
+color: rgb(221, 192, 0);
+}
+
+.separator{
+    margin: 0 auto;
+    width: 200px;
+    display:flex;
+    align-items: center;
+.line{
+    height: 3px;
+    flex: 1;
+    background-color:rgb(221, 192, 0);
+      }
+   h3{
+    color: rgb(221, 192, 0);
+    padding:0 0.5rem;
+   font-size: 22px;
+   text-transform: uppercase;
+   
+}
+  }
+
+h4{
+    color: #fff;
+    font-size: 18px;
+    font-weight: lighter;
+    
+  }
+
+}
+
+ 
+  
