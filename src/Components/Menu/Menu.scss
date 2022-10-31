@@ -1,115 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Play:wght@700&display=swap');
 
 .main_h {
-  font-family: 'Play', sans-serif;
-  background:  rgb(59, 57, 57);
- 
+
+display: flex;
+background-image: linear-gradient(
+  90deg,
+  rgb(71, 73, 74),
+  rgb(156, 142, 142) 10%,
+  rgb(66, 62, 64) 35%,
+  rgba(71, 73, 74, 0.927608543417367) 100%
+);
+  // background:  rgb(59, 57, 57);
   width: 100%;
-  transition: all 0.3s;
   position: sticky;
-  opacity: 1;
   top: 0px;
-  border-bottom: 1px solid gainsboro;
-  margin-top: -80px;
- 
-}
-.sticky{
-  
-
-
-}
-.sticky nav a{
-  color: bisque;
-}
-nav a {
-  font-weight: bold;
-  text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
-  cursor: pointer;
-  font-size: 1rem;
-  text-transform: uppercase;
-  padding: 1em 2em;
-  border: 3px solid transparent;
-  border-bottom: 4px solid transparent;
-  border-radius: 50px; 
-  color: white
- 
-}
-nav li{
-  list-style: none;
- 
-}
-nav a:hover {
-  animation: underline 0.5s linear 0s 1;
-  transition: border-radius 0.5s linear;
-  border-bottom: 4px solid rgba(255, 255, 255, 0.9);
-  border-radius: 0px;
-  color:orangered;
-}
-
-@keyframes underline {
-  0% {
-      border-right: 3px solid rgba(88, 49, 49, 0.5);
-  }
-  33% {
-      border-top: 3px solid rgba(255, 255, 255, 0.4);
-  }
-  66% {
-      border-left: 3px solid rgba(255, 255, 255, 0.6);
-  }
-  100% {
-      border-bottom: 4px solid rgba(255, 255, 255, 0.9);
-  }
-}
-@media (min-width: 650px) {
- 
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-}
+  justify-content: center;
 
 }
 
-
-//hamburger menu
-
-.open-nav {
-  background: whitesmoke;
-  height: 350px;
-}
-.open-nav .mobile-toggle {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-}
-
-.mobile-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 20px;
-  position: absolute;
-  right: 22px;
-  top: 20px;
-  width: 30px;
-  transition: all 200ms ease-in;
-}
-.mobile-toggle span {
-  width: 30px;
-  height: 4px;
-  margin-bottom: 6px;
-  border-radius: 1000px;
-  background: #8f8f8f;
-  display: block;
-}
-@media (max-width: 649px) {
-  
- 
-  .mobile-toggle {
-      display: block;
-  }
-  nav ul {
-      display: none;
-  }
-  nav li a {
-      padding: 0;
-  }
-}

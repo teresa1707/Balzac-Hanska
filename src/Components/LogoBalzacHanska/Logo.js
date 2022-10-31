@@ -5,13 +5,13 @@ export const Logo=()=>{
     return(
         <>
         <div className="logo-balzac">
-        	<h1>balzac</h1>
+        	<div className="h1">balzac</div>
         		<div className="separator">
   						<div className="line"></div>
-  							<h3>hanska</h3>
+  							<div className="h3">hanska</div>
    						<div className="line"></div>
 						</div>
-						<h4>Association Franco Ukrainienne</h4>
+						<div className="h4">Association Franco Ukrainienne</div>
         </div>
         </>
     )
