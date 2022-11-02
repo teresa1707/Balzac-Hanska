@@ -6,11 +6,11 @@ import Balzac from "../../Assets/Balzac-Image.jpg"
 export const HeaderIntro=()=>{
   return (
     <div className="headerContainer">
-      <Logo/>
+        <Logo/>
      <img src={Balzac}/>
     
     
     
-    </div>
+    </div>    
   );
 }

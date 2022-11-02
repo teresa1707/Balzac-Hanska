@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Play:wght@700&display=swap');
-header{
-    background: black;
+ .fond{
+    background-color: rgb(37, 11, 56);
 }
 .main_h {
 z-index: 1111111111111111;
 display: flex;
-background: rgb(24, 13, 24);
-  // background:  rgb(59, 57, 57);
+
+  background:  transparent;
   width: 100%;
   position: sticky;
   top: 0px;
