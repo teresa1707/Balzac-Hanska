@@ -4,27 +4,10 @@
 font-family: 'Kelly Slab',sans-serif;
 width: 300px;
 text-align: center;
-
-// background-image: linear-gradient(to right, #2c3e50, #2b5e66);
-// background: linear-gradient(to bottom right, #685507, #010101);
-background-image: linear-gradient(
-  90deg,
-  rgb(78, 68, 68) 0%,
-  rgb(44, 22, 56) 35%,
-  rgba(55, 38, 50) 100%
-);
-// background-image: linear-gradient(
-//   90deg,  
-//   rgb(71, 71, 64),
-//   rgb(158, 158, 151) 10%,
-//   rgb(74, 57, 57)
-  
-// );
-
 padding: 10px;
 border-radius: 5px;
 text-shadow: 1px 1px 1px rgb(31, 29, 29);
-
+background: transparent;
 .h1{
 width: 200px;
 margin: 0px auto;
@@ -63,5 +46,19 @@ color: rgb(221, 192, 0);
 
 }
 
- 
+ // background-image: linear-gradient(to right, #2c3e50, #2b5e66);
+// background: linear-gradient(to bottom right, #685507, #010101);
+// background-image: linear-gradient(
+//   90deg,
+//   rgb(78, 68, 68) 0%,
+//   rgb(44, 22, 56) 35%,
+//   rgba(55, 38, 50) 100%
+// );
+// background-image: linear-gradient(
+//   90deg,  
+//   rgb(71, 71, 64),
+//   rgb(158, 158, 151) 10%,
+//   rgb(74, 57, 57)
+  
+// );
   

@@ -1,26 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Play:wght@700&display=swap');
  .fond{
-    background-color: rgb(37, 11, 56);
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgb(74, 71, 73) 40%,
+    rgb(22, 18, 18) ,
+    rgb(41, 1, 48),
+    rgba(71, 73, 74, 0.927608543417367) 
+  );
+  
+
 }
 .main_h {
 z-index: 1111111111111111;
 display: flex;
-
-  background:  transparent;
-  width: 100%;
-  position: sticky;
-  top: 0px;
-  justify-content: center;
+justify-content: center;
+background-image: repeating-linear-gradient(
+  90deg,
+  rgb(74, 71, 73) 40%,
+  rgb(22, 18, 18) ,
+  rgb(41, 1, 48),
+  rgba(71, 73, 74, 0.927608543417367) 
+);
+  // background:  rgb(59, 57, 57);
+//  
+box-shadow:  5px 5px 5px  rgb(17, 3, 10);  
+width: 100%;
 
 }
 
 .sticky{
-    background-image: linear-gradient(
-        90deg,
-        rgb(71, 73, 74),
-        rgb(156, 142, 142) 10%,
-        rgb(66, 62, 64) 35%,
-        rgba(71, 73, 74, 0.927608543417367) 100%
-      );
+  position: fixed;
+  top: 0px;
+    // background-image: linear-gradient(
+    //     90deg,
+    //     rgb(71, 73, 74),
+    //     rgb(156, 142, 142) 10%,
+    //     rgb(66, 62, 64) 35%,
+    //     rgba(71, 73, 74, 0.927608543417367) 100%
+    //   );
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgb(74, 71, 73) 40%,
+      rgb(22, 18, 18) ,
+      rgb(41, 1, 48),
+      rgba(71, 73, 74, 0.927608543417367) 
+    );
 }
-p{color:white}
+.headerH3,p{
+  color:rgb(236, 229, 229);margin: 20px 0;
+}
+.headerH3{
+  
+}
+
+.imgBalzac{
+  margin-top: 10px;
+  min-width: 500px !important;
+}

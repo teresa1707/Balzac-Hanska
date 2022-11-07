@@ -1,11 +1,12 @@
 import React from 'react'
-import { Grid } from 'semantic-ui-react'
+
 import './Header.scss'
 import Balzac from "../../Assets/Balzac-Image.jpg"
 import 'semantic-ui-css/semantic.min.css'
-
 import { useState } from 'react'
-import { Logo } from "../../Components/LogoBalzacHanska/Logo"
+import { Menu } from 'Components/Menu/Menu'
+import { SliderMenu } from 'Components/SliderMenu/SliderMenu'
+import { Grid } from '@mui/material'
 
 
 
@@ -16,7 +17,7 @@ export const Header = () => {
     const [sticky, setSticky] = useState(false)
 
     const stickyNav = () => {
-        if (window.scrollY > 250) {
+        if (window.scrollY > 550) {
             setSticky(true)
         }
         else {
@@ -28,21 +29,23 @@ export const Header = () => {
 
     return (
         <>   <div className='fond'>
-            <div className={sticky ? "main_h sticky" : "main_h"}>
+                     <div className={sticky ? "main_h sticky" : "main_h"}>
 
-                <div className="logo"><Logo /></div>
+<div className="logo"><Menu /></div>
 
-            </div>
+</div>
 
-            <Grid container centered columns={2}>
+            <Grid   container
+  direction="row"
+  justifyContent="center"
+  alignItems="center">
+            <Grid item md={5}><img className='imgBalzac' src={Balzac} style={{maxWidth:"600px"}}/> </Grid>
+                <Grid item md={7}>
+                    <h3 className='headerH3'>Bienvenue sur le site de notre association!</h3>
 
-                <Grid.Column width={4}><p>Bienvenue sur le site de notre association!</p>
-
-                    <p>&nbsp;</p>
+                   
 
                     <p>Beaucoup d’événements, de personnes, relient l’Ukraine à la France (et la France à l’Ukraine) et l’amour de Balzac et de Madame Hanska en est un et l’un des plus méconnus.</p>
-
-
 
                     <p>Notre association a été créée dans le but de perpétuer, célébrer et rendre hommage à la mémoire des amours d'Honoré de Balzac et de la Comtesse Ewelyna Hanska.</p>
 
@@ -50,18 +53,17 @@ export const Header = () => {
 
                     <p>Et de nombreux projets se profilent, des expositions, d’autres traductions des œuvres de Balzac en langue ukrainienne, etc.</p>
 
-
                     <p >Mais notre projet le plus important est à terme de pouvoir rénover le Château de Verhivnya qui par manque de moyens, comme malheureusement beaucoup d’endroits historiques en Ukraine, se dégrade régulièrement, et ce serait une énorme perte car un véritable petit musée y a été créé, rattaché au Musée de Jytomyr, qui enferme de vrai merveilles lié à Balzac, à la Comtesse Hanska, et à leur amour.</p>
-
-
 
                     <p>Sur ce site, vous pourrez trouver l’histoire des voyages de Balzac pour rejoindre son aimée &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;, nos &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;, si notre cause vous intéresse vous pourrez également faire une &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;.
                     </p>
                     <p >N’hésitez pas à nous contacter, nous sommes à votre disposition&nbsp;</p>
-                </Grid.Column>
-                <Grid.Column width={8}><img className='imgBalzac' src={Balzac} /></Grid.Column>
+                </Grid>
+               
             </Grid>
+ 
         </div>
+        <SliderMenu/>
         </>
     )
 }
