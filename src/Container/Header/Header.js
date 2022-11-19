@@ -7,6 +7,7 @@ import { useState } from 'react'
 import { Menu } from 'Components/Menu/Menu'
 import { SliderMenu } from 'Components/SliderMenu/SliderMenu'
 import { Grid } from '@mui/material'
+import { Logo } from 'Components/LogoBalzacHanska/Logo'
 
 
 
@@ -17,7 +18,7 @@ export const Header = () => {
     const [sticky, setSticky] = useState(false)
 
     const stickyNav = () => {
-        if (window.scrollY > 550) {
+        if (window.scrollY > 150) {
             setSticky(true)
         }
         else {
@@ -31,11 +32,19 @@ export const Header = () => {
         <>   <div className='fond'>
                      <div className={sticky ? "main_h sticky" : "main_h"}>
 
-<div className="logo"><Menu /></div>
+<div className="logo"><Logo /></div>
 
 </div>
 
-            <Grid   container
+            
+ 
+        </div>
+        
+        </>
+    )
+}
+
+{/* <Grid   container
   direction="row"
   justifyContent="center"
   alignItems="center">
@@ -60,10 +69,4 @@ export const Header = () => {
                     <p >N’hésitez pas à nous contacter, nous sommes à votre disposition&nbsp;</p>
                 </Grid>
                
-            </Grid>
- 
-        </div>
-        <SliderMenu/>
-        </>
-    )
-}
+            </Grid> */}

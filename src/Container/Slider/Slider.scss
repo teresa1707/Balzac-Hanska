@@ -1,0 +1,61 @@
+$eta: 0.5s;
+$effect: linear;
+$gutter: 30px;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+h3 {
+  font-size: $gutter;
+}
+div {
+  box-sizing: border-box;
+}
+.document {
+  padding: 0;
+  transition: all $effect $eta;
+  
+  .js-screen-active & {
+    padding: 30px;
+  }
+}
+.row {
+  position: relative;
+}
+.preview {
+  transform: translateZ(0);
+  transition: padding $effect $eta;
+  color: #fff;
+  cursor: pointer;
+  background: url(https://img00.deviantart.net/1b30/i/2012/316/4/d/dublin_streets_by_pajunen-d5ko4nl.jpg) no-repeat center / 100vw auto;
+  padding: $gutter;
+  .item:nth-child(even) & {
+    background-image: url(http://www.portoalegre.travel/upload/b/50/501052_wallpapers-hd-black-and-white.jpg);
+  }
+  
+  .item.js-active & {
+    padding: $gutter*2 $gutter
+  }
+  
+  // .js-screen-active & {
+  //   background-size: calc(100% + 60px) auto;
+  // }
+}
+
+.full {
+  display: none;
+  background: #fff;
+  opacity: 0;
+  transition: padding $effect $eta;
+  padding: 0 $gutter;
+  .item.js-active & {
+    padding: 0;
+  }
+}
+
+.item {
+  &.js-active {
+    z-index: 999;
+  }
+}

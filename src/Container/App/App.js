@@ -1,3 +1,4 @@
+import { Slider } from "Container/Slider/Slider";
 import React from "react";
 
 import { Footer } from "../Footer/Footer";
@@ -9,6 +10,7 @@ export const App = () => {
     return (
         <> 
             <Header/>
+            <Slider/>
             <Main />
             <Footer />
         </>
