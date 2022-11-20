@@ -1,13 +1,15 @@
 import React from 'react'
 
 import './Header.scss'
-import Balzac from "../../Assets/Balzac-Image.jpg"
-import 'semantic-ui-css/semantic.min.css'
+
+
 import { useState } from 'react'
 import { Menu } from 'Components/Menu/Menu'
 
-import { Grid } from '@mui/material'
+import { Container, Grid } from '@mui/material'
 import { Logo } from 'Components/LogoBalzacHanska/Logo'
+
+
 
 
 
@@ -29,14 +31,18 @@ export const Header = () => {
     window.addEventListener("scroll", stickyNav)
 
     return (
-        <>   <div className='fond'>
-                     <div className={sticky ? "main_h sticky" : "main_h"}>
+        <>   <div className='fond'/*className={sticky ? "main_h sticky" : "main_h"}/*/>
+            <Container>
+            <Grid container >
+                <Grid item sm={12} md={4}></Grid>
+                <Grid item sm={12} md={3}><Logo/></Grid>
+                <Grid item sm={12}md={5} className="menu"><Menu/></Grid>
+                     
+    
 
-<Menu/>
 
-</div>
-
-            
+</Grid>
+</Container>    
  
         </div>
         

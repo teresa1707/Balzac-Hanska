@@ -1,0 +1,49 @@
+
+
+//sliding button
+
+.btn2 {
+    background-image: repeating-linear-gradient(
+    90deg,
+    rgb(74, 71, 73) 40%,
+    rgb(22, 18, 18) ,
+    rgb(41, 1, 48),
+    rgba(71, 73, 74, 0.927608543417367) 
+  );
+    height: 50px;
+    width: 200px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: yellow;
+
+    p {
+        z-index: 10;
+        transition: 0.3s;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        position: absolute;
+        top: 13px;
+        right: 25px;
+        font-size: 20px;
+        opacity: 0;
+        transition: 0.3s ease-out;
+    }
+}
+
+.btn2:hover p {
+    color: rgb(0, 0, 0);
+}
+.btn2-1:hover p {
+    margin-right: 23px;
+    color: rgb(238, 238, 238);
+}
+
+.btn2-1:hover h5 {
+    opacity: 1;
+    color: orangered;
+}

@@ -1,5 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Pacifico&family=Play:wght@700&display=swap');
 
+nav ul {
+
+  display: flex;
+justify-content:space-evenly;
+}
+nav li{
+  list-style: none;
+}
+nav a {font-family: 'Kelly Slab',sans-serif;
+  
+  text-decoration: none;
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgb(74, 71, 73) 40%,
+    rgb(22, 18, 18) ,
+    rgb(41, 1, 48),
+    rgba(71, 73, 74, 0.927608543417367) 
+  );
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform:capitalize;
+  padding: 0.6em 0.6em;
+  
+  border: 3px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-radius: 50px;
+  color: whitesmoke;
+}
+
+nav a:hover {
+  
+          animation: underline 0.5s linear 0s 1;
+ 
+  transition: border-radius 0.5s linear;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.9);
+  border-radius: 0px;
+  color: rgb(221, 192, 0);
+}
+
+
+
+@keyframes underline {
+  0% {
+    border-right: 3px solid rgba(221, 192, 0, 0.5);
+  }
+  33% {
+    border-top: 3px solid rgba(221, 192, 0, 0.4);
+  }
+  66% {
+    border-left: 3px solid rgba(221, 192, 0, 0.6);
+  }
+  100% {
+    border-bottom: 4px solid rgba(221, 192, 0, 0.9);
+  }
+}
 
 
 

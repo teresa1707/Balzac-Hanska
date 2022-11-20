@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Play:wght@700&display=swap");
+.fond {
+  background-image: repeating-linear-gradient(90deg, #4a4749 40%, #161212, #290130, rgba(71, 73, 74, 0.927609));
+}
+
+.menu {
+  margin-top: 20%;
+}
+/*# sourceMappingURL=Header.css.map */

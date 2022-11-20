@@ -7,7 +7,7 @@ body{
     rgba(71, 73, 74, 0.927608543417367) 
   );
 }
-$numOfParts: 4;
+$numOfParts: 6;
 $animTime: 1s;
 $stagger: 0.08s;
 $sliderReadyTrans: all $animTime/2 $animTime;
@@ -29,10 +29,10 @@ $letterStagger: 0.1s;
 
   &__top-heading {
     z-index: $numOfParts*3;
-    position: fixed;
-    left: 45%;
-    top:0px;
-    margin-left: -100px;
+    position: absolute;
+    left: -500px;
+    top:10px;
+    
   
     width: 100%;
     text-align: center;
@@ -101,17 +101,17 @@ $letterStagger: 0.1s;
       }
     }
 
-    &-subheading {
-      margin-bottom: 20px;
-      font-size: 24px;
-      letter-spacing: 2px;
+    &-text {
+      margin: 40px;
+      font-size: 14px;
+      line-height: 20px;
       transform: translateY(20px);
       
       @include subTextsActiveSlide;
     }
 
     &-heading {
-      $fontSize: 60px;
+      $fontSize: 40px;
       
       display: flex;
       margin-bottom: 20px;
@@ -279,31 +279,31 @@ $letterStagger: 0.1s;
     z-index: 100;
     position: absolute;
     left: 50px;
-    top: 70%;
+    top: 80%;
     width: $size;
     height: $size;
     margin-top: $size/-2;
     
-    background: rgba(255,255,255,0.4);
+    background: rgb(41, 1, 48);
     transform: translateX($size*-1);
     opacity: 0;
     transition: $sliderReadyTrans;
     cursor: pointer;
     
-    // &:before {
-    //   content: '';
-    //   position: absolute;
-    //   left: 50%;
-    //   top: 50%;
-    //   width: 20px;
-    //   height: 20px;
-    //   margin-left: -10px;
-    //   margin-top: -10px;
-    //   border: 2px solid #000;
-    //   border-bottom: none;
-    //   border-right: none;
-    //   transform: translateX(5px) rotate(-45deg);
-    // }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 20px;
+      height: 20px;
+      margin-left: -10px;
+      margin-top: -10px;
+      border: 2px solid white;
+      border-bottom: none;
+      border-right: none;
+      transform: translateX(5px) rotate(-45deg);
+    }
     
     &--right {
       left: auto;
@@ -322,23 +322,6 @@ $letterStagger: 0.1s;
   }
 }
 
-.icon-link {
-  z-index: 100;
-  position: absolute;
-  left: 5px;
-  bottom: 5px;
-  width: 32px;
-
-  img {
-    width: 100%;
-    vertical-align: top;
-  }
-
-  &--twitter {
-    left: auto;
-    right: 5px;
-  }
-}
 
 
 

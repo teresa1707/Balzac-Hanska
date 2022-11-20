@@ -2,39 +2,45 @@ import React from "react";
 import classNames from "classnames";
 import "./Slider.scss"
 import { Logo } from "Components/LogoBalzacHanska/Logo";
+import { SlidingButton } from "Components/MyButton/SlidingButton";
 
 
 
 const slides = [
-  { 
-    city: 'Mumbai',
-    country: 'MAHIRA KHAN',
-    img:'/Images/maison.jpg'
+  { id:1,
+    title: 'Title',
+    text: 'text',
+  
+    img:'/Images/maison.jpg',
   },
-  {
-    city: 'Delhi',
-    country: 'MAHIRA KHAN',
-    img: '/Images/IllustrationChlo.jpg',
-  },
-  {
-    city: 'Khandala',
-    country: 'India',
+ 
+  {id:2,
+    title: '',
+    text: "Beaucoup d’événements, de personnes, relient l’Ukraine à la France (et la France à l’Ukraine) et l’amour de Balzac et de Madame Hanska en est un et l’un des plus méconnus.Notre association a été créée dans le but de perpétuer, célébrer et rendre hommage à la mémoire des amours d'Honoré de Balzac et de la Comtesse Ewelyna Hanska.Depuis notre création en 2012, nous avons déjà réalisé quelques projets, notamment la création d’un musée du souvenir à Berditchev dans le Centre Commercial «&nbsp;Galerie Balzac&nbsp;», situé juste en face de l’église ou se sont mariés Honoré de Balzac et Madame Hanska. Nous avons également apporté notre aide à la première traduction en langue ukrainienne d’une des œuvres de Balzac «&nbsp;Scènes de la vie parisienne&nbsp;» &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;.Et de nombreux projets se profilent, des expositions, d’autres traductions des œuvres de Balzac en langue ukrainienne, etc.Mais notre projet le plus important est à terme de pouvoir rénover le Château de Verhivnya qui par manque de moyens, comme malheureusement beaucoup d’endroits historiques en Ukraine, se dégrade régulièrement, et ce serait une énorme perte car un véritable petit musée y a été créé, rattaché au Musée de Jytomyr, qui enferme de vrai merveilles lié à Balzac, à la Comtesse Hanska, et à leur amour.Sur ce site, vous pourrez trouver l’histoire des voyages de Balzac pour rejoindre son aimée &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;, nos &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;, si notre cause vous intéresse vous pourrez également faire une &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;.<p >N’hésitez pas à nous contacter, nous sommes à votre disposition&nbsp;",
+  
     img: '/Images/maison.jpg',
+  }, 
+  {id:3,
+    title: "",
+    text: "",
+ 
+    img: '/Images/IllustrationChlo.jpg',
   },
  
 ];
 
+let textSlidingButton = "FAIRE UN DON OU ADHERER";
 export class Slider extends React.Component {
   
-  constructor(props) {
+  constructor({props}) {
     super(props);
     
-    this.IMAGE_PARTS = 4;
+    this.IMAGE_PARTS = 6;
     
     this.changeTO = null;
-    this.AUTOCHANGE_TIME = 5000;
+    this.AUTOCHANGE_TIME = 15000;
     
-    this.state = { activeSlide: -1, prevSlide: -1, sliderReady: false };
+    this.state = { activeSlide: 1, prevSlide: 1, sliderReady: false };
   }
   
   componentWillUnmount() {
@@ -70,28 +76,34 @@ export class Slider extends React.Component {
     const { activeSlide, prevSlide, sliderReady } = this.state;
     return (
       <div className={classNames('slider', { 's--ready': sliderReady })}>
-        <div className="slider__top-heading"><Logo/></div>
+        <div className="slider__top-heading"><a href="https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska"><SlidingButton textSlidingButton={textSlidingButton}/></a></div>
         <div className="slider__slides">
           {slides.map((slide, index) => (
-            <div key={slide.name}
+            <div key={slide.id}
               className={classNames('slider__slide', { 's--active': activeSlide === index, 's--prev': prevSlide === index  })}
               
-              >
-              <div className="slider__slide-content">
-                <h3 className="slider__slide-subheading">{slide.country || slide.city}</h3>
-                <h2 className="slider__slide-heading">
-                  {slide.city.split('').map(l => <span>{l}</span>)}
-                </h2>
+              >      
+              <div className="slider__slide-content" >
+              
+                <div className="slider__slide-heading">
+                  {slide.title.split('').map(l => <span>{l}</span>)}
+                </div>
+                <div className="slider__slide-text"  >{slide.text}</div>
+               
                 <p className="slider__slide-readmore">read more</p>
+            
               </div>
               <div className="slider__slide-parts">
                 {[...Array(this.IMAGE_PARTS).fill()].map((x, i) => (
                   <div className="slider__slide-part" key={i}>
                     <div className="slider__slide-part-inner" style={{ backgroundImage: `url(${slide.img})` }} />
+                     
+              
                   </div>
                 ))}
-              </div>
+              </div>  
             </div>
+           
           ))}
         </div>
         <div className="slider__control" onClick={() => this.changeSlides(-1)} />
@@ -164,7 +176,7 @@ export class Slider extends React.Component {
 //             Subtitle
 //           </div>
 //           <div className="text" data-swiper-parallax="-100">
-//             <p>
+//             
 //               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
 //               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
 //               laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
@@ -172,7 +184,7 @@ export class Slider extends React.Component {
 //               Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
 //               ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
 //               tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-//             </p>
+//             
 //           </div>
 //         </SwiperSlide>
 //         <SwiperSlide>
@@ -183,7 +195,7 @@ export class Slider extends React.Component {
 //             Subtitle
 //           </div>
 //           <div className="text" data-swiper-parallax="-100">
-//             <p>
+//             
 //               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
 //               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
 //               laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
@@ -191,7 +203,7 @@ export class Slider extends React.Component {
 //               Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
 //               ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
 //               tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-//             </p>
+//             
 //           </div>
 //         </SwiperSlide>
 //         <SwiperSlide>
@@ -202,7 +214,7 @@ export class Slider extends React.Component {
 //             Subtitle
 //           </div>
 //           <div className="text" data-swiper-parallax="-100">
-//             <p>
+//             
 //               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
 //               dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
 //               laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
@@ -210,7 +222,7 @@ export class Slider extends React.Component {
 //               Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
 //               ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
 //               tincidunt ut libero. Aenean feugiat non eros quis feugiat.
-//             </p>
+//             
 //           </div>
 //         </SwiperSlide>
 //       </Swiper>

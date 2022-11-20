@@ -13,13 +13,13 @@ width: 200px;
 margin: 0px auto;
 border-top: 3px solid rgb(221, 192, 0); 
 text-transform: uppercase;
-padding-top:25px;
-font-size:50px;
+padding-top: 10px;
+font-size:40px;
 color: rgb(221, 192, 0);
 }
 
 .separator{
-    margin: 20px auto 10px;
+    margin: 0 auto 10px;
     width: 200px;
     display:flex;
     align-items: center;
@@ -39,8 +39,9 @@ color: rgb(221, 192, 0);
 
 .h4{
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: lighter;
+    text-transform: uppercase;
     
   }
 
