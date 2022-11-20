@@ -1,7 +1,6 @@
 import React from "react";
 import "Components/SliderMenu/SliderMenu.scss"
-import Balzac from "Assets/Balzac-Image.jpg"
-import Guerre from 'Assets/Illustration Chlo+®1024_1.jpg'
+
 
 export const SliderMenu =()=>{
     

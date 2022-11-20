@@ -3,7 +3,7 @@ import React from "react";
 export const Main = () => {
     return (
         <>
-        Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…)1. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet ou le haïku.
+        {/* Un texte est une série orale ou écrite de mots perçus comme constituant un ensemble cohérent, porteur de sens et utilisant les structures propres à une langue (conjugaisons, construction et association des phrases…)1. Un texte n'a pas de longueur déterminée sauf dans le cas de poèmes à forme fixe comme le sonnet ou le haïku.
 
 L'étude formelle des textes s'appuie sur la linguistique, qui est l'approche scientifique du langage.
 
@@ -84,6 +84,6 @@ Métamorphoses 8, 640 [archive]
 Paullus in medio foro jam paene basilicam texuit iisdem antiquis columnis [1] [archive] Ciceron, Ad Atticum, 4,16, 14, Lettre CXLIX - page 306
 « epistolas quotidianis verbis texere solemus » Ciceron, Lettres : Ad Familiares, IX, 21, lettre DCLVIII [2] [archive]
 « quantumque interest, sensus idem quibus verbis efferatur, tantum, verba eadem qua in compositione vel in textu jungantur = (autant la valeur de la pensée varie suivant les mots qui l'expriment, autant celle des mots varie selon leur harmonie et selon leur agencement) - Quintilien De l'Institution oratoire Livre IX, ch. 4 De compositione (De l'arrangement des mots) [3] [archive] page 326, ou page 392 ibidem « Historia non tam finitos numeros, quam orbem quemdam contextumque desiderat : namque omnia ejus membra connexa sunt, quoniam lubrica est, ac fluit » page 392 = « L'histoire n'exige pas tant une prose parfaitement cadencée, qu'une suite de phrases dont le tissu soit bien lié; car tout s'y enchaîne, tout y coule, tout y glisse. »
-Dictionnaire CNRTL [archive]
+Dictionnaire CNRTL [archive] */}
           </>
           )}

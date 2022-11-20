@@ -1,15 +1,17 @@
+
 import { Slider } from "Container/Slider/Slider";
+import { Header } from "Container/Header/Header";
 import React from "react";
 
 import { Footer } from "../Footer/Footer";
-import { Header } from "../Header/Header";
+
 import { Main } from "../Main/Main";
 
 
 export const App = () => {
     return (
         <> 
-            <Header/>
+           <Header/>
             <Slider/>
             <Main />
             <Footer />

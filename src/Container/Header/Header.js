@@ -5,7 +5,7 @@ import Balzac from "../../Assets/Balzac-Image.jpg"
 import 'semantic-ui-css/semantic.min.css'
 import { useState } from 'react'
 import { Menu } from 'Components/Menu/Menu'
-import { SliderMenu } from 'Components/SliderMenu/SliderMenu'
+
 import { Grid } from '@mui/material'
 import { Logo } from 'Components/LogoBalzacHanska/Logo'
 
@@ -18,7 +18,7 @@ export const Header = () => {
     const [sticky, setSticky] = useState(false)
 
     const stickyNav = () => {
-        if (window.scrollY > 150) {
+        if (window.scrollY > 100) {
             setSticky(true)
         }
         else {
@@ -32,7 +32,7 @@ export const Header = () => {
         <>   <div className='fond'>
                      <div className={sticky ? "main_h sticky" : "main_h"}>
 
-<div className="logo"><Logo /></div>
+<Menu/>
 
 </div>
 
