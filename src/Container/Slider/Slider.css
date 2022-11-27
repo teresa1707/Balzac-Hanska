@@ -3,6 +3,7 @@ body {
 }
 
 .slider {
+  margin: -50px;
   overflow: hidden;
   position: relative;
   height: 100vh;

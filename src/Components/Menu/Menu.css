@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Pacifico&family=Play:wght@700&display=swap");
+.menu {
+  background-image: repeating-linear-gradient(90deg, #4a4749 40%, #161212, #290130, rgba(71, 73, 74, 0.927609));
+  height: 30px;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,9 +20,6 @@ nav li {
 nav a {
   font-family: 'Kelly Slab',sans-serif;
   text-decoration: none;
-  background-image: repeating-linear-gradient(90deg, #4a4749 40%, #161212, #290130, rgba(71, 73, 74, 0.927609));
-  -webkit-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
   cursor: pointer;
   font-size: 1rem;
   text-transform: capitalize;
