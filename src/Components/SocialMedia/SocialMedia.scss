@@ -1,0 +1,30 @@
+// background: #f8f8f8;
+
+.social {
+    overflow: hidden !important;
+    display: block;
+    height: 36px !important;
+    width: 36px !important;
+    -webkit-transition: all linear 200ms;
+    -moz-transition: all linear 200ms;
+    -o-transition: all linear 200ms;
+    transition: all linear 200ms;
+    float: left;
+    margin: 0px 0px 10px 0px;
+}
+.social .img {
+    border: none;
+    display: block;
+    margin-left: 5px;
+}
+.social .img:first-child {
+    margin-top: 0;
+    margin-bottom: 15px;
+    -webkit-transition: all linear 200ms;
+    -moz-transition: all linear 200ms;
+    -o-transition: all linear 200ms;
+    transition: all linear 200ms;
+}
+.social:hover .img:first-child {
+    margin-top: -36px;
+}
