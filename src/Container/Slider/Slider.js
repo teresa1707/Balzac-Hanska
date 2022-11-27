@@ -3,6 +3,7 @@ import classNames from "classnames";
 import "./Slider.scss"
 import { Logo } from "Components/LogoBalzacHanska/Logo";
 import { SlidingButton } from "Components/MyButton/SlidingButton";
+import { Header } from "Container/Header/Header";
 
 
 
@@ -76,6 +77,7 @@ export class Slider extends React.Component {
     const { activeSlide, prevSlide, sliderReady } = this.state;
     return (
       <div className={classNames('slider', { 's--ready': sliderReady })}>
+        <Header/>
         <div className="slider__top-heading"><a href="https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska"><SlidingButton textSlidingButton={textSlidingButton}/></a></div>
         <div className="slider__slides">
           {slides.map((slide, index) => (
