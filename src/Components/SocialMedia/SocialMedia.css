@@ -13,6 +13,7 @@
   border: none;
   display: block;
   margin-left: 5px;
+  color: #c5c02e !important;
 }
 
 .social .img:first-child {
@@ -20,6 +21,7 @@
   margin-bottom: 15px;
   -webkit-transition: all linear 200ms;
   transition: all linear 200ms;
+  color: #470847 !important;
 }
 
 .social:hover .img:first-child {

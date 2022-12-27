@@ -1,44 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Play:wght@700&display=swap');
- .fond{
-  background-image: repeating-linear-gradient(
-    90deg,
-    rgb(74, 71, 73) 40%,
-    rgb(22, 18, 18) ,
-    rgb(41, 1, 48),
-    rgba(71, 73, 74, 0.927608543417367) 
-  );
- 
+
+.main_h {
+  background:transparent;
+box-shadow:  5px 5px 5px  rgb(17, 3, 10);  
+width: 100%;
+
 
 }
-.menu{
-  margin-top:20%;
-}
-// .main_h {
-//   position: fixed;
-// z-index: 1111111111111111;
-// background-image: repeating-linear-gradient(
-//   90deg,
-//   rgb(74, 71, 73) 40%,
-//   rgb(22, 18, 18) ,
-//   rgb(41, 1, 48),
-//   rgba(71, 73, 74, 0.927608543417367) 
-// );
-// box-shadow:  5px 5px 5px  rgb(17, 3, 10);  
-// width: 100%;
 
-// }
+.sticky{
 
-// .sticky{
-//   position: fixed;
-//   top: 0px;
-//     background-image: repeating-linear-gradient(
-//       90deg,
-//       rgb(74, 71, 73) 40%,
-//       rgb(22, 18, 18) ,
-//       rgb(41, 1, 48),
-//       rgba(71, 73, 74, 0.927608543417367) 
-//     );
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgb(74, 71, 73) 40%,
+      rgb(22, 18, 18) ,
+      rgb(41, 1, 48),
+      rgba(71, 73, 74, 0.927608543417367) 
+    );
     
-// }
+}
 
 

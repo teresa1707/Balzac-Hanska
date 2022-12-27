@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Pacifico&family=Play:wght@700&display=swap');
-
+.link{
+  text-decoration: none;
+}
 .logo-balzac{
 font-family: 'Kelly Slab',sans-serif;
 width: 300px;
 text-align: center;
 padding: 10px;
 border-radius: 5px;
-text-shadow: 1px 1px 1px rgb(31, 29, 29);
+
 background: transparent;
 .h1{
 width: 200px;
@@ -16,6 +18,7 @@ text-transform: uppercase;
 padding-top: 10px;
 font-size:40px;
 color: rgb(221, 192, 0);
+text-shadow:2px 2px 2px #000;
 }
 
 .separator{
@@ -27,12 +30,14 @@ color: rgb(221, 192, 0);
     height: 3px;
     flex: 1;
     background-color:rgb(221, 192, 0);
+    text-shadow:2px 2px 2px #000;
       }
    .h3{
     color: rgb(221, 192, 0);
     padding:0 0.5rem;
    font-size: 22px;
    text-transform: uppercase;
+   text-shadow:2px 2px 2px #000;
    
 }
   }
@@ -42,6 +47,7 @@ color: rgb(221, 192, 0);
     font-size: 14px;
     font-weight: lighter;
     text-transform: uppercase;
+    text-shadow:2px 2px 2px #000;
     
   }
 

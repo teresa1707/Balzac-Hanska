@@ -8,14 +8,14 @@ import { SocialMedia } from 'Components/SocialMedia/SocialMedia'
 export const Footer = () => {
     return (
         <>
-            <div className="wrapper-beige">
-                <Container className="footer">
-                    <Grid container mb={2} spacing={5}>
+            <div className="footer">
+                <Container className="">
+                    <Grid container mb={2} spacing={1}>
                         <Grid item xs={12} sm={4}>
                             <Card
                                 className="footerCard"
                                 style={{
-                                    borderRadius: 8,
+                                    borderRadius: 5,
                                 }}
                             >
                                 <h1 className="title2">Follow us</h1>
@@ -37,7 +37,7 @@ export const Footer = () => {
                             <Card
                                 className="footerCard"
                                 style={{
-                                    borderRadius: 8,
+                                    borderRadius: 5,
                                 }}
                             >
                                 <h4 className="title2">Where we are</h4>
@@ -61,7 +61,7 @@ export const Footer = () => {
                             <Card
                                 className="footerCard"
                                 style={{
-                                    borderRadius: 8,
+                                    borderRadius: 5,
                                 }}
                             >
                                 <h4 className="title2">Title</h4>

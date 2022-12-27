@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Pacifico&family=Play:wght@700&display=swap");
+.link {
+  text-decoration: none;
+}
+
 .logo-balzac {
   font-family: 'Kelly Slab',sans-serif;
   width: 300px;

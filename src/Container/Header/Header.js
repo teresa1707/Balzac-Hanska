@@ -1,26 +1,36 @@
 import React from 'react'
-
 import './Header.scss'
-
-
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Menu } from 'Components/Menu/Menu'
-
 import { Container, Grid } from '@mui/material'
 import { Logo } from 'Components/LogoBalzacHanska/Logo'
+import { SlidingButton } from 'Components/MyButton/SlidingButton'
+import {gsap} from 'gsap'
 
 
+export const Header = ({buttonText}) => {
+    const titleRef = useRef()
+    const onLoad = () =>{
+        gsap.timeline().fromTo(".logo",{
+         y:-100,
+         opacity:0,
+        },{
+         y:0,
+         opacity:1,
+         stagger:0.33,
+         delay:1, 
+        }
+        )
+      } 
+      
+      useEffect(()=>{
+    onLoad();
+  }, [])
 
-
-
-
-
-
-export const Header = () => {
     const [sticky, setSticky] = useState(false)
 
     const stickyNav = () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 300 ) {
             setSticky(true)
         }
         else {
@@ -30,13 +40,17 @@ export const Header = () => {
 
     window.addEventListener("scroll", stickyNav)
 
+
+  buttonText = "Faire un don ou adherer"
+
+ 
     return (
-        <>   <div className='fond'/*className={sticky ? "main_h sticky" : "main_h"}/*/>
+        <>   <div className={sticky ? "main_h sticky" : "main_h"}>
             <Container>
             <Grid container >
-                <Grid item sm={12} md={4}></Grid>
-                <Grid item sm={12} md={3}><Logo/></Grid>
-                <Grid item sm={12}md={5} className="menu"><Menu/></Grid>
+                <Grid item sm={12} md={4}><SlidingButton buttonText={buttonText}/></Grid>
+                <Grid item sm={12} md={4} className="logo"><Logo /></Grid>
+                <Grid item sm={12}md={4}><Menu/></Grid>
                      
     
 

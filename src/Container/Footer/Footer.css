@@ -7,4 +7,8 @@
   padding: 10px 25px;
   line-height: 1.1rem;
 }
+
+footer {
+  background-image: repeating-linear-gradient(90deg, #4a4749, #161212, #290130, #161212, rgba(71, 73, 74, 0.927609));
+}
 /*# sourceMappingURL=Footer.css.map */

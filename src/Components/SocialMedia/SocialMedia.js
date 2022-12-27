@@ -9,7 +9,7 @@ import { FiFacebook } from 'react-icons/fi'
 export const SocialMedia = () => {
     return (
         <>
-            <a className="social" href="#menu">
+            <a className="social" href="https://www.facebook.com/BalzacHanska"target="_blank" >
                 <FiFacebook
                     className="img"
                     style={{ color: 'brown', fontSize: 25 }}
@@ -19,31 +19,7 @@ export const SocialMedia = () => {
                     style={{ color: 'brown', fontSize: 25 }}
                 />
             </a>
-
-            <a className="social" href="#menu" target="_blank">
-                <FiTwitter
-                    className="img"
-                    style={{ color: 'brown', fontSize: 20 }}
-                />
-                <FiTwitter
-                    className="img"
-                    style={{ color: 'brown', fontSize: 20 }}
-                />
-            </a>
-            <a className="social" href="#menu" target="_blank">
-                <FaYoutube
-                    className="img"
-                    style={{ color: 'brown', fontSize: 25 }}
-                />
-                <FaYoutube
-                    className="img"
-                    style={{
-                        color: 'brown',
-                        fontSize: 23,
-                    }}
-                />
-            </a>
-            <a className="social" href="#menu" target="_blank">
+            <a className="social" href="https://www.linkedin.com/company/association-franco-ukrainienne-balzac-hanska/" target="_blank">
                 <FaLinkedin
                     className="img"
                     style={{
@@ -52,30 +28,6 @@ export const SocialMedia = () => {
                     }}
                 />
                 <FaLinkedin
-                    className="img"
-                    style={{
-                        color: 'brown',
-
-                        fontSize: 23,
-                    }}
-                />
-            </a>
-
-            <a
-                className="social"
-                href="https://www.pinterest.com"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <FaPinterest
-                    className="img"
-                    style={{
-                        color: 'brown',
-
-                        fontSize: 23,
-                    }}
-                />
-                <FaPinterest
                     className="img"
                     style={{
                         color: 'brown',

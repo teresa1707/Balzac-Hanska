@@ -3,34 +3,21 @@ import { Logo } from "Components/LogoBalzacHanska/Logo";
 
 import "./Menu.scss";
 import { Container, Grid } from "@mui/material";
+import { Link } from "react-router-dom";
 
 
 export const Menu=()=>{
 
 
   return (<>
-  
-    
-    
-    
-   
-    <div className="menu">
-       
-        <nav>
+
+        <nav className="menu">
           <ul>
-            <li><a href="">Projets Culturels</a></li>
-            <li><a href="">Projets Humanitaires</a></li>
+            <li><Link to="/culture">Projets Culturels</Link></li>
+            <li><Link to="/humanitary">Projets Humanitaires</Link></li>
            
           </ul>
         </nav>
-      </div>
-    
-  
-
-   
-       
-     
-
     </>
   );
 }

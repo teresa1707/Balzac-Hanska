@@ -11,11 +11,13 @@
     transition: all linear 200ms;
     float: left;
     margin: 0px 0px 10px 0px;
+  
 }
 .social .img {
     border: none;
     display: block;
-    margin-left: 5px;
+    margin-left: 5px;color:rgb(197, 192, 46) !important;
+    
 }
 .social .img:first-child {
     margin-top: 0;
@@ -24,6 +26,7 @@
     -moz-transition: all linear 200ms;
     -o-transition: all linear 200ms;
     transition: all linear 200ms;
+    color:rgb(71, 8, 71) !important;
 }
 .social:hover .img:first-child {
     margin-top: -36px;

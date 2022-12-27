@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Logo.scss"
 
 export const Logo=()=>{
     return(
         <>
-        <div className="logo-balzac">
+        <Link to="/" className="link"><div className="logo-balzac">
         	<div className="h1">balzac</div>
         		<div className="separator">
   						<div className="line"></div>
@@ -13,6 +14,7 @@ export const Logo=()=>{
 						</div>
 						<div className="h4">Association Franco Ukrainienne</div>
         </div>
+				</Link>
         </>
     )
 }

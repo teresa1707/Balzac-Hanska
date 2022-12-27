@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Pacifico&family=Play:wght@700&display=swap');
 .menu{
-  background-image: repeating-linear-gradient(
+  margin-top: 40px;
+  padding-top: 1px;
+  background-image: linear-gradient(
     90deg,
-    rgb(74, 71, 73) 40%,
-    rgb(22, 18, 18) ,
-    rgb(41, 1, 48),
-    rgba(71, 73, 74, 0.927608543417367) 
+    #244029 20%,
+    rgb(4, 91, 38) ,
+    rgb(62, 81, 68),
+    rgba(8, 93, 136, 0.9) 
   );
-  height: 30px;
+  height: 50px;
+  border-radius: 50px;
 }
 nav ul {
 
