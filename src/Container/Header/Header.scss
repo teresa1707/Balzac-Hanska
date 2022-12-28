@@ -1,23 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Play:wght@700&display=swap');
 
 .main_h {
+  position:fixed;
+  top:0px;
   background:transparent;
-box-shadow:  5px 5px 5px  rgb(17, 3, 10);  
 width: 100%;
-
-
+z-index: 99999999;
+height:110px;
+box-shadow: 1px 1px 1px black;
 }
 
 .sticky{
-
-    background-image: repeating-linear-gradient(
+    // background-image: repeating-linear-gradient(
+    //   90deg,
+    //   rgb(74, 71, 73) 40%,
+    //   rgb(22, 18, 18) ,
+    //   rgb(41, 1, 48),
+    //   rgba(71, 73, 74, 0.927608543417367) 
+    // );
+      background-image: repeating-linear-gradient(
       90deg,
-      rgb(74, 71, 73) 40%,
-      rgb(22, 18, 18) ,
-      rgb(41, 1, 48),
-      rgba(71, 73, 74, 0.927608543417367) 
+      rgb(31, 31, 31) 40%,
+      rgb(44, 11, 11) ,
+      rgb(26, 3, 31),
+      rgba(30, 31, 32, 0.928) 
     );
     
 }
 
 
+.slidingButton{
+  margin-top: 140px;
+}
