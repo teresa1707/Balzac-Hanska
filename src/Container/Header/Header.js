@@ -11,7 +11,7 @@ export const Header = ({buttonText}) => {
     const [sticky, setSticky] = useState(false)
 
     const stickyNav = () => {
-        if (window.scrollY > 200 && window.scrollY > 399) {
+        if (window.scrollY > 300 ) {
             setSticky(true)
         }
         else {

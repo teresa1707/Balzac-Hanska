@@ -2,22 +2,23 @@
 .link{
   text-decoration: none;
 }
+
 .logo-balzac{
+  margin-top: -10px;
 font-family: 'Kelly Slab',sans-serif;
 width: 300px;
 text-align: center;
 padding: 10px;
 border-radius: 5px;
-
-background: transparent;
+background: rgba(0, 0, 0, 0.4);
 .h1{
 width: 200px;
 margin: 0px auto;
-border-top: 3px solid rgb(221, 192, 0); 
+border-top: 3px solid orange; 
 text-transform: uppercase;
 padding-top: 5px;
 font-size:30px;
-color: rgb(221, 192, 0);
+color: #DAF7A6;
 text-shadow:2px 2px 2px #000;
 }
 
@@ -29,21 +30,21 @@ text-shadow:2px 2px 2px #000;
 .line{
     height: 3px;
     flex: 1;
-    background-color:rgb(221, 192, 0);
+    background-color:orange;
     text-shadow:2px 2px 2px #000;
       }
    .h3{
-    color: rgb(221, 192, 0);
+    // color: rgb(221, 192, 0);
+    color: #DAF7A6;
     padding:0 0.5rem;
    font-size: 18px;
    text-transform: uppercase;
-   text-shadow:2px 2px 2px #000;
-   
+   text-shadow:2px 2px 2px #000;  
 }
   }
 
 .h4{
-    color: #fff;
+    color: #DAF7A6;
     font-size: 14px;
     font-weight: lighter;
     text-transform: uppercase;

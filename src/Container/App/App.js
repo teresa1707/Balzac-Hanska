@@ -2,13 +2,14 @@
 import { ContactForm } from "Components/ContactForm/ContactForm";
 import { Header } from "Container/Header/Header";
 import { CulturePage } from "Container/pages/Culturel/CulturePage";
-import { HumanitaryPage } from "Container/pages/Humanitaire/HumanitaryPage";
+import { HumanitarianPage } from "Container/pages/Humanitaire/HumanitarianPage";
 import React,{useRef, useEffect} from "react";
 import { Route, Routes } from "react-router-dom";
 import { gsap } from "gsap";
 import { Footer } from "../Footer/Footer";
-
+import "./App.scss"
 import { Main } from "../Main/Main";
+import { ScrollUp } from "Components/ScrollUp/ScrollUp";
 
 
 export const App = () => {
@@ -25,13 +26,8 @@ export const App = () => {
          duration:1,
          delay:0.5, 
          scale:0.9,
-         
         }
-        ).to(".logo",{
-            scale:1,
-            duration:1,
-           }
-           ).fromTo(".menu", {
+        ).fromTo(".menu", {
             x:100,
             opacity:0,
         },{
@@ -47,11 +43,12 @@ export const App = () => {
             opacity:1,
             delay:1,
             duration:1.5,
-           
-        }).to(".menu",{
-            // marginTop:"30px",
-            duration:0.5,}
-            )
+            
+        }).to(".logo",{
+            scale:0.8,
+            duration:1,
+           }
+           )
       } 
       
       useEffect(()=>{
@@ -61,15 +58,16 @@ export const App = () => {
     return (
         <> 
            
-            <Header/>
+            
             <Routes>
-        <Route path="/" element={<Main />}/>
-        <Route path="/humanitary" element={<HumanitaryPage/>}/>
-        <Route path="/culture" element={<CulturePage/>}/>
+        <Route path="/" element={<><Header/><Main /></>}/>
+        <Route path="/humanitarian" element={<><Header/><HumanitarianPage/> <ContactForm /></>}/>
+        <Route path="/culture" element={<><Header/><CulturePage/><ContactForm /></>}/>
+        <Route path="/contact" element={<><Header/><ContactForm /></>}/>
         
 </Routes>
-<ContactForm/>
             <Footer/>
+            <ScrollUp height={400} />
         </>
     );
 };

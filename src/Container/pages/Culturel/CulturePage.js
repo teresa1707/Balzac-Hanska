@@ -10,51 +10,6 @@ gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)
 export const CulturePage = () =>{
 
   const titleRef = useRef()
-
-  const onLoad = () =>{
-    gsap.timeline().fromTo(".letter",{
-     x:-100,
-     opacity:0,
-    },{
-     x:0,
-     opacity:1,
-     stagger:0.33,
-     delay:0.7, 
-    }
-    ).to(".title",{
-      y:45,
-      delay:0.7,
-    }).to(".letter",{
-      margin:"0 5px",
-      delay:0.7,
-      duration:0.5,
-    }).to(".letter",{
-      margin:0,
-      delay:0.7,
-      duration:0.5,
-    }).to(".letter",{
-      x:-titleRef.current.clientWidth,
-      delay:1,
-      duration:2,
-      rotate:360,
-    }).to(window,{
-      duration:2,
-      scrollTo:("#nextSection"),
-    }).to("#nextSection",{
-      backgroundColor:"green",
-      color:"white",
-      duration:0.2,
-    
-    }).to(".title",{
-      y:0,
-    
-    }).to(".letter",{
-      x:0,
-  
-  })
-  }
-
-
   function slideToUp(elem, delay, duration) {
     gsap.fromTo(elem, {
       opacity: 0,
@@ -107,12 +62,7 @@ export const CulturePage = () =>{
         })
       }
 
-      useEffect(()=>{
-        onLoad();
-      }, [])
-      useEffect(()=>{
-        onLoad();
-      }, [])
+   
   useEffect(()=>{
     slideToUp('#box1','1','2');
   }, [])
@@ -127,35 +77,25 @@ export const CulturePage = () =>{
   }, [])
 return(
   <>
-  <div className="App">
-    <h1 className="title" ref={titleRef}>
-      <span className='letter'>N</span>
-      <span className='letter'>O</span>
-      <span className='letter'>S</span>
-      <span className='letter'>  </span>
-      <span className='letter'>A</span>
-      <span className='letter'>C</span>
-      <span className='letter'>T</span>
-      <span className='letter'>U</span> 
-      <span className='letter'>A</span>
-      <span className='letter'>L</span>
-      <span className='letter'>I</span>
-      <span className='letter'>T</span>
-      <span className='letter'>E</span>
-      <span className='letter'>S</span></h1>
+  <div className="AppCulture">
     <div id='nextSection' className='section'>
   
-      <div id='box1' className='box box1'>BOX 1</div>
-      <div id='box2' className='box box2'>BOX 2</div>
-      <div id='box3' className='box box3'>BOX 3</div>
-      <div id='box4' className='box box4'>BOX 4</div>
-    
-</div>
-<div id='lastSection' className='section' onMouseEnter={onEnter} onMouseOut={onLeave}>
-<div id='box5' className='box'>LAST SECTION</div>
-   </div>
+      <div id='box1' className='box box1'>   
+  <div className="cardCulture ">
+  <div className="card__imgCulture"></div>
+  <div className="card__contentCulture">
+    <h1 className="card__titleCulture ">
+      <span >Cette page 
+      </span>
+      <span className="smallCulture">est</span> 
+      <span>en construction</span>
+    </h1>
+    <p className="card__quoteCulture "><span>All men dream, but not equally. Those who dream by night in the dusty recesses of their minds, wake in the day to find that it was vanity; but the dreamers of the day are dangerous men, for they may act on their dreams with open eyes to make it a reality.</span></p>
   </div>
-
+</div> </div>
+ 
+  
+</div></div>
 
   </>
 )

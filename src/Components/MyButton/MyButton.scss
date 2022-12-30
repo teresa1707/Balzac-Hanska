@@ -1,15 +1,12 @@
-
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
 //sliding button
 
 .btn2 {
-    background-image: linear-gradient(
-        90deg,
-        #244029 20%,
-        rgb(4, 91, 38) ,
-        rgb(62, 81, 68),
-        rgba(8, 93, 136, 0.9) 
-      );
+    box-shadow:0 1px 1px 1px #ffa500; 
+    font-family:'Source Sans Pro', sans-serif; 
+    text-shadow: 2px 2px 2px black;
+    background: rgba(0, 0, 0, 0.2);
     height: 50px;
     width: 200px;
     border: 1px solid transparent;
@@ -17,12 +14,14 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    color: rgb(221, 192, 0);
-margin-top: 30px;
+    color:whitesmoke;
+margin-top: 20px;
     p {
+        font-size: 1rem;
+  text-transform:capitalize;
         z-index: 10;
         transition: 0.3s;
-        text-transform: uppercase;
+        
     }
 //flash
     h5 {
@@ -35,15 +34,18 @@ margin-top: 30px;
     }
 }
 
-.btn2:hover p {
-    color: rgb(0, 0, 0);
+.btn2:hover{
+    box-shadow:0 1px 1px 1px #ddc000; 
 }
 .btn2-1:hover p {
+    font-size:medium;
     margin-right: 23px;
-    color: rgb(238, 238, 238);
+    font-size: 0.8rem;
+    color: #ddc000;
 }
 
 .btn2-1:hover h5 {
+    margin-right: -15px;
     opacity: 1;
-    color: greenyellow;
+    color: #ddc000;
 }

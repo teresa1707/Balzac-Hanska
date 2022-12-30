@@ -1,0 +1,27 @@
+.scroll-to-top-btn {
+    bottom: 5%;
+    border: 0px;
+    border-radius: 50%;
+    background-color: orange;
+    cursor: pointer;
+    display: block;
+    padding: 0px;
+    position: fixed;
+
+    right: 5%;
+    width: 40px;
+    height: 40px;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 300px) {
+    .scroll-to-top-btn {
+        right: 40%;
+    }
+}

@@ -13,9 +13,9 @@ export const Menu=()=>{
 
         <nav className="menu">
           <ul>
-            <li><Link to="/culture">Projets Culturels</Link></li>
-            <li><Link to="/humanitary">Projets Humanitaires</Link></li>
-           
+            <li><Link to="/culture">Culture</Link></li>
+            <li><Link to="/humanitarian">Humanitaire</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
     </>
