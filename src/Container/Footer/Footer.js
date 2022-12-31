@@ -18,7 +18,7 @@ export const Footer = () => {
                                 }}
                             >
                     <Grid container mb={2} spacing={3}>
-                        <Grid item xs={12} sm={4}>
+                        <Grid item sm={12} md={4}>
                          
                                 <h2 className="footerTitle">Nous suivre</h2>
                               <div style={{ margin: '10px 30px' }}>
@@ -28,7 +28,7 @@ export const Footer = () => {
                                 
                         </Grid>
 
-                        <Grid item xs={12} sm={4}>
+                        <Grid item sm={12} md={4}>
                           
                                 <h2 className="footerTitle">Nos coordonnées:</h2>
 
@@ -60,7 +60,7 @@ export const Footer = () => {
                                 </p>
                            
                         </Grid>
-                        <Grid item xs={12} sm={4}>
+                        <Grid item sm={12} md={4}>
                            
                                 <h2 className="footerTitle">S'abonner à la Newsletter</h2>
 

@@ -1,0 +1,38 @@
+
+.cardItem {
+  height: 350px;
+  margin: 10px 5px;
+ border-radius: 10%;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+padding: 5rem 10%;
+  border-left: 5px solid  orange;
+  background-color: #3d3c3a;
+}
+
+.title2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  // color: #879aff;
+  color: rgb(147, 151, 158);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px;
+  text-align: justify;
+ 
+}
+.italic {
+  font-style: italic;
+}
+
+
+.text2 {
+  
+  font-size: 13px;
+  
+   p {
+  color: #55555d;
+  
+}
+}
+
+

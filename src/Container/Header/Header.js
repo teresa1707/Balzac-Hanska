@@ -29,9 +29,9 @@ export const Header = ({buttonText}) => {
         <>   <div className={sticky ? "main_h sticky" : "main_h"}>
             <Container>
             <Grid container >
-                <Grid item sm={12} md={4} className="slidingButton" ><SlidingButton buttonText={buttonText}/></Grid>
-                <Grid item sm={12} md={4} className="logo"><Logo /></Grid>
-                <Grid item sm={12}md={4}><Menu/></Grid>
+                <Grid item xs={12} sm={6} md={4} className="slidingButton" ><SlidingButton buttonText={buttonText}/></Grid>
+                <Grid item xs={12} sm={6} md={4} className="logo"><Logo /></Grid>
+                <Grid item xs={12} sm={12}md={4} className="headerMenu"><Menu/></Grid>
                      
     
 

@@ -5,7 +5,9 @@ import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import './HumanitarianPage.scss'
 import { ProjectSlider } from 'Components/ProjectsSlider/ProjectSlider'
 import { TrackList } from 'Components/TrackList/TrackList'
-import { Grid } from '@mui/material'
+
+import { Container } from '@mui/system'
+import { ColumnElement } from 'Components/ColumnElement/ColumnElement'
 
 
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)
@@ -25,24 +27,23 @@ return(
       <span className="small">de</span> 
       <span>nos actions numanitaires</span>
     </h1>
-    <p className="card__quote animated fadeInUp"><span>All men dream, but not equally. Those who dream by night in the dusty recesses of their minds, wake in the day to find that it was vanity; but the dreamers of the day are dangerous men, for they may act on their dreams with open eyes to make it a reality.</span></p>
+    <p className="card__quote animated fadeInUp">Le huitième camion bien rempli à quitté la France le 21 decembre 2022 et est arrivé sans incident en Ukraine le 26 decembre. Grace aux efforts de nous tous reunis nous avons pu envoyer les produits de première necessité , tant attendus par nos amis ukrainiens. </p>
   </div>
 </div>
-
-
-    <div id='nextSection' classNameName='section'>
-  
-      <div id='box1' classNameName='box box1'><ProjectSlider/></div>
-      <div id='box2' classNameName='box box2'><TrackList/></div>
-      <div id='box3' classNameName='box box3'>BOX 3</div>
-      <div id='box4' classNameName='box box4'>BOX 4</div>
+<Container>
     
-</div>
-<div id='lastSection' classNameName='section' >
-<div id='box5' classNameName='box'>LAST SECTION</div>
-   </div>
-  </div>
+      <ColumnElement/>
+     
 
+    <ProjectSlider/>
+      <TrackList/>
+
+   
+ </Container>
+      <div id='box3' className='box box3'>BOX 3</div>
+      <div id='box4' className='box box4'>BOX 4</div>
+      
+</div>
 
   </>
 )

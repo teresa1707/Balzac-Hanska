@@ -27,7 +27,7 @@ export function ScrollUp({ height }) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
-        <button
+        <div
             className={showButton ? 'scroll-to-top-btn' : 'hidden'}
             onClick={scrollToTop}
         >
@@ -41,6 +41,6 @@ export function ScrollUp({ height }) {
                     left: '-10px',
                 }}
             />
-        </button>
+        </div>
     )
 }

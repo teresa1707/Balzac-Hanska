@@ -58,12 +58,12 @@ export const App = () => {
     return (
         <> 
            
-            
+            <Header/>
             <Routes>
-        <Route path="/" element={<><Header/><Main /></>}/>
-        <Route path="/humanitarian" element={<><Header/><HumanitarianPage/> <ContactForm /></>}/>
-        <Route path="/culture" element={<><Header/><CulturePage/><ContactForm /></>}/>
-        <Route path="/contact" element={<><Header/><ContactForm /></>}/>
+        <Route path="/" element={<><Main /></>}/>
+        <Route path="/humanitarian" element={<><HumanitarianPage/> <ContactForm /></>}/>
+        <Route path="/culture" element={<><CulturePage/></>}/>
+        <Route path="/contact" element={<><ContactForm /></>}/>
         
 </Routes>
             <Footer/>

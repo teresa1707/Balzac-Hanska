@@ -48,3 +48,5 @@ export const tracks=[
     link:"Il vous suffit de cliquer sur le lien ci-dessous et de vous laisser guider.https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska/formulaires/1. L’Association Franco Ukrainienne BALZAC HANSKA est une Association loi de 1901 N° W941007660 – ouvrant droit à une réduction d’impôt et délivrance d’un certificat de déductibilité fiscale.",
   },
   ]
+
+  

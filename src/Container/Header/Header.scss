@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Play:wght@700&display=swap');
 
 .main_h {
-  position:fixed;
-  top:0px;
+ z-index: 999999;
   background:transparent;
 width: 100%;
-z-index: 99999999;
+position: absolute;
 height:95px;
 box-shadow: 1px 1px 1px black;
 // background-image: repeating-linear-gradient(
@@ -18,7 +17,8 @@ background-color: transparent;
 }
 
 .sticky{
-  
+  position:fixed;
+  top:0px;
     background-image: repeating-linear-gradient(
         90deg,
         rgb(22, 18, 18), 
@@ -29,6 +29,27 @@ background-color: transparent;
 // background-color: #252526;
 }
     
+@media (max-width:899px) {
+  .main_h {
+    z-index: 999999;
+     background:transparent;
+   width: 100%;
+  height: fit-content;
+   
+   box-shadow: 1px 1px 1px black;
+   background-image: repeating-linear-gradient(
+    90deg,
+    rgb(22, 18, 18), 
+    rgb(74, 71, 73) ,
+    rgb(22, 18, 18)  
+  );
+   }
+   
+  
+}
+
+
+
 
 
 

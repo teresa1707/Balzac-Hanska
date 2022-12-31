@@ -14,19 +14,22 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    color:whitesmoke;
+    
 margin-top: 20px;
-    p {
+    .buttonText {
+        padding-left: 10px;
+    
         font-size: 1rem;
   text-transform:capitalize;
         z-index: 10;
         transition: 0.3s;
-        
+        text-decoration: none;
+        color:whitesmoke;
     }
 //flash
     h5 {
         position: absolute;
-        top: -20px;
+        top: -15px;
         right: 25px;
         font-size: 20px;
         opacity: 0;
@@ -37,11 +40,12 @@ margin-top: 20px;
 .btn2:hover{
     box-shadow:0 1px 1px 1px #ddc000; 
 }
-.btn2-1:hover p {
+.btn2-1:hover .buttonText {
     font-size:medium;
     margin-right: 23px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #ddc000;
+    
 }
 
 .btn2-1:hover h5 {
