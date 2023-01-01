@@ -1,4 +1,4 @@
-import React, {useEffect,useRef} from 'react'
+import React, {useEffect} from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
@@ -9,8 +9,6 @@ import { AnimationTemplate } from 'Components/AnimationTemplate.js/AnimationTemp
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)
 
 export const CulturePage = () =>{
-
-  const titleRef = useRef()
   function slideToUp(elem, delay, duration) {
     gsap.fromTo(elem, {
       opacity: 0,
