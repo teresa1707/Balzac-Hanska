@@ -1,5 +1,5 @@
 
-import { Card, CardActionArea, CardMedia,CardContent, Grid, Pagination, } from "@mui/material"
+import { Card, Grid } from "@mui/material"
 import React from "react"
 import './ProjectSlider.scss'
 import ReactPaginate from 'react-paginate';

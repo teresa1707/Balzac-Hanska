@@ -1,5 +1,5 @@
 
-import { Card, CardActionArea, CardContent, CardMedia, Grid} from "@mui/material"
+import {  CardMedia, Grid} from "@mui/material"
 import React from "react"
 import { tracks } from "utils/tracks"
 import './TrackList.scss'

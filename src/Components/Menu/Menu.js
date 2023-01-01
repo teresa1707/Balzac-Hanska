@@ -88,7 +88,7 @@ export const Menu=()=>{
                                 </Link>
                             </li>
                             <li className="li">
-                                <a className="a active-link" href='https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska' target="_blank">
+                                <a className="a active-link" rel="noreferrer" href='https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska' target="_blank">
                                     FAIRE UN DON OU ADHERER
                                 </a>
                             </li>

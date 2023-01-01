@@ -1,6 +1,6 @@
 import React from "react";
 import './ColumnElement.scss'
-import { Card, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import { SocialMedia } from "Components/SocialMedia/SocialMedia";
 
 export const ColumnElement =({title,text, link})=>{

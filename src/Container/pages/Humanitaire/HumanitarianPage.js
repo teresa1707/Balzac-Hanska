@@ -1,4 +1,4 @@
-import React, {useEffect,useRef, useState} from 'react'
+import React from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {ScrollToPlugin} from 'gsap/ScrollToPlugin'

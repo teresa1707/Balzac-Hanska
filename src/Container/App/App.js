@@ -3,7 +3,7 @@ import { ContactForm } from "Components/ContactForm/ContactForm";
 import { Header } from "Container/Header/Header";
 import { CulturePage } from "Container/pages/Culturel/CulturePage";
 import { HumanitarianPage } from "Container/pages/Humanitaire/HumanitarianPage";
-import React,{useRef, useEffect} from "react";
+import React,{useEffect} from "react";
 import { Route, Routes } from "react-router-dom";
 import { gsap } from "gsap";
 import { Footer } from "../Footer/Footer";
@@ -13,7 +13,7 @@ import { ScrollUp } from "Components/ScrollUp/ScrollUp";
 
 
 export const App = () => {
-    const titleRef = useRef()
+    
     const onLoad = () =>{
         gsap.timeline().fromTo(".logo",{
          opacity:0,
