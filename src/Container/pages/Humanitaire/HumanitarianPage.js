@@ -1,4 +1,4 @@
-import React, {useEffect,useRef} from 'react'
+import React, {useEffect,useRef, useState} from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
@@ -6,19 +6,21 @@ import './HumanitarianPage.scss'
 import { ProjectSlider } from 'Components/ProjectsSlider/ProjectSlider'
 import { TrackList } from 'Components/TrackList/TrackList'
 
-import { Container } from '@mui/system'
 import { ColumnElement } from 'Components/ColumnElement/ColumnElement'
+
 
 
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)
 
 export const HumanitarianPage = () =>{
-
+let text="Il vous suffit de cliquer sur le lien et de vous laisser guider.L’Association Franco Ukrainienne BALZAC HANSKA est une Association loi de 1901 N° W941007660 –ouvrant droit à une réduction d’impôt et délivrance d’un certificat de déductibilité fiscale."
+let title="OU..."
+let link = "https://www.chateaudelarocheguyon.fr/le-potager-fruitier/"
   
 return(
   <>
   <div className="App">
-  
+  <div className='humaPadding'></div>
   <div className="card animated fadeInDownBig">
   <div className="card__img animated fadeInLeft"></div>
   <div className="card__content">
@@ -30,20 +32,23 @@ return(
     <p className="card__quote animated fadeInUp">Le huitième camion bien rempli à quitté la France le 21 decembre 2022 et est arrivé sans incident en Ukraine le 26 decembre. Grace aux efforts de nous tous reunis nous avons pu envoyer les produits de première necessité , tant attendus par nos amis ukrainiens. </p>
   </div>
 </div>
-<Container>
-    
-      <ColumnElement/>
+
+<div className='humaPadding'><ColumnElement text={text} title={title} link={link}/></div>
+
+
      
 
     <ProjectSlider/>
+    <div className='humaPadding'></div>
       <TrackList/>
 
    
- </Container>
-      <div id='box3' className='box box3'>BOX 3</div>
-      <div id='box4' className='box box4'>BOX 4</div>
+ 
+     
       
 </div>
+ 
+
 
   </>
 )

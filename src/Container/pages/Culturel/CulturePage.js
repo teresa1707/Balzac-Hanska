@@ -3,6 +3,7 @@ import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import './CulturePage.scss'
+import { AnimationTemplate } from 'Components/AnimationTemplate.js/AnimationTemplate'
 
 
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)
@@ -49,13 +50,23 @@ export const CulturePage = () =>{
       }
 
  
-
-   
-
-   
-  useEffect(()=>{
+ useEffect(()=>{
     slideToUp('#box1','1','2');
   }, [])
+   
+      useEffect(()=>{
+        slideToLeft('.footerCard','0','2');
+      }, [])
+
+      useEffect(()=>{
+        slideToUp('.ft1','1','2');
+      }, [])
+      useEffect(()=>{
+        slideToLeft('.ft2','2','2');
+      }, [])
+      useEffect(()=>{
+        slideToUp('.ft3','3','2');
+      }, [])
 
 return(
   <>
@@ -78,7 +89,7 @@ return(
  
   
 </div></div>
-
+<AnimationTemplate/>
   </>
 )
 }

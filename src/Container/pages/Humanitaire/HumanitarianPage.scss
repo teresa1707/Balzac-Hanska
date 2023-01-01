@@ -1,7 +1,16 @@
 .App{
-  background:#f2fcdf;
-  color: black;
-padding: 100px 0;
+ 
+  .humaPadding{
+    background-image: repeating-linear-gradient(
+      90deg,
+      rgb(22, 18, 18), 
+      rgb(74, 71, 73) ,
+      rgb(22, 18, 18)  
+    );
+    padding: 70px 0;
+  }
+ 
+
 font-family:'Source Sans Pro', sans-serif; 
 }
 .card {

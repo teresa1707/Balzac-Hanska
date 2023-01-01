@@ -23,9 +23,9 @@ li:hover, .selected{
 //card
 
   .art-item {
-        overflow: hidden;
+        
       &:hover {
-          .art-img-wrap,
+    
               .art-img {
                   transform: scale(1.05);
               }    
@@ -33,27 +33,32 @@ li:hover, .selected{
   }
     
   .art-img-wrap {
-      border-radius: 10px;
+      border-radius: 5px;
       position: relative;
-      left: 10%;
-      top:40px;
+      left: 5%;
+      top:55px;
       padding-top: 20px;
-
+      z-index: 1;
+      border: 2px solid grey;
+      overflow: hidden;
+      max-width: 300px;
+      height: 180px;
       .art-img {  
-        max-width: 350px;
-          border-radius: 6px;
-          border: 2px solid grey;
-          transition: all 2s ease;
+        max-width: 300px;
+          position: absolute;
+          top: 0;
+          transition: all 1s ease;
       }
   }
   .art-category {
     height: 350px;
     margin: 10px 5px;
-   border-radius: 10%;
-    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+   border-radius:  0px 40px 0%  40px  ;
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
    padding: 5rem 10%;
-    border-left: 5px solid  orange;
+    border-right: 5px solid  orange;
     background-color: #3d3c3a;
+    max-width: 340px;
   }
 
   .art-meta {

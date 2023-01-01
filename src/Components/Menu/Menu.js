@@ -25,7 +25,7 @@ export const Menu=()=>{
             <li><Link to="/contact">Contact</Link></li>
           
         </nav>
-        <div className="navBar">
+        <div className="navBar" >
                     <button onClick={handleToggle}>
                         {navbarOpen ? (
                             <MdClose

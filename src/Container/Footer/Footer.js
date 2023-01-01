@@ -4,7 +4,7 @@ import { Container } from '@mui/material'
 
 import 'Container/Footer/Footer.scss'
 import { SocialMedia } from 'Components/SocialMedia/SocialMedia'
-import { Logo } from 'Components/LogoBalzacHanska/Logo'
+
 
 export const Footer = () => {
     return (
@@ -18,7 +18,7 @@ export const Footer = () => {
                                 }}
                             >
                     <Grid container mb={2} spacing={3}>
-                        <Grid item sm={12} md={4}>
+                        <Grid item sm={12} md={4} className="ft1">
                          
                                 <h2 className="footerTitle">Nous suivre</h2>
                               <div style={{ margin: '10px 30px' }}>
@@ -28,7 +28,7 @@ export const Footer = () => {
                                 
                         </Grid>
 
-                        <Grid item sm={12} md={4}>
+                        <Grid item sm={12} md={4} className="ft2">
                           
                                 <h2 className="footerTitle">Nos coordonnées:</h2>
 
@@ -60,7 +60,7 @@ export const Footer = () => {
                                 </p>
                            
                         </Grid>
-                        <Grid item sm={12} md={4}>
+                        <Grid item sm={12} md={4} className="ft3">
                            
                                 <h2 className="footerTitle">S'abonner à la Newsletter</h2>
 

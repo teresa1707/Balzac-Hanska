@@ -29,12 +29,12 @@ export const ProjectSlider = () => {
                         <div className="art-img-wrap">
                             <img alt={project.title} className="art-img" src={project.image} />
                         </div>
+                     
+                        <Card className="art-category">
+                           
                         <div className="art-meta">
                             {project.date}
                         </div>
-                        <Card className="art-category">
-                           
-                                
                                        
                                 <div className="name-cat">
                                             {project.title}  

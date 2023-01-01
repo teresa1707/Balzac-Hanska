@@ -50,9 +50,56 @@ export const App = () => {
            }
            )
       } 
-      
+      function slideFade(elem, delay, duration) {
+        gsap.fromTo(elem, {
+          opacity: 0,
+          scale:0
+        //   y: -200
+        },
+          {   opacity: 1,
+            scale:1,
+            stagger:{
+                each:1,
+              },
+            delay: delay || 0.6,
+            duration: duration || 0.6,
+            scrollTrigger: {
+              trigger: elem,
+            }
+          }
+        )
+      }
+      const slideToLeft = (elem, delay, duration)=>{
+        gsap.fromTo(elem, {
+          opacity:0,
+          y:-200,
+        },
+        {
+        //     stagger:{
+        //     each:2,
+        // },
+          opacity:1,
+          y:0,
+          delay: delay || 0.6,
+          duration: duration || 0.6,
+          scrollTrigger:{
+            trigger:elem,
+            start:"top center",
+            end:"bottom center"
+          }
+        }
+        )
+          }
       useEffect(()=>{
     onLoad();
+  }, [])
+  useEffect(()=>{
+    slideFade('#parallax-container img','1','2');
+  }, [])
+  useEffect(()=>{
+    slideToLeft('#parallax-container #block1','1','2');
+    slideToLeft('#parallax-container #block2','1','2');
+    slideToLeft('#parallax-container #block3','1','2');
   }, [])
 
     return (

@@ -64,10 +64,12 @@ padding: 20px 30px 10px 30px;
 .ny {color: #3d3c3a;}
 .atw {color: #c48660;}
 
+// IMAGE
+
 #parallax-container img{
-width: 450px;
-border: 1px solid orange;
-border-radius: 3px;
+width: 300px;
+
+border: 8px ridge rgba(196, 134, 96, 0.5);
 box-shadow:2px 2px 2px #000;
 
 }

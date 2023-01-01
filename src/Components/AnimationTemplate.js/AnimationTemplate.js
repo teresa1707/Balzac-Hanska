@@ -2,12 +2,12 @@ import React, {useEffect,useRef} from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
-import './HumanitaryPage.scss'
+import './AnimationTemplate.scss'
 
 
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)
 
-export const HumanitaryPage = () =>{
+export const AnimationTemplate = () =>{
 
   const titleRef = useRef()
 
@@ -40,12 +40,14 @@ export const HumanitaryPage = () =>{
     }).to(window,{
       duration:2,
       scrollTo:("#nextSection"),
-    }).to("#nextSection",{
-      backgroundColor:"green",
-      color:"white",
-      duration:0.2,
+    })
+   //.to("#nextSection",{
+    //   backgroundColor:"green",
+    //   color:"white",
+    //   duration:0.2,
     
-    }).to(".title",{
+    // })
+    .to(".title",{
       y:0,
     
     }).to(".letter",{
