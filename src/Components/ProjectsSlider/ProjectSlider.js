@@ -24,7 +24,7 @@ export const ProjectSlider = () => {
     <>
     <Grid container className="art-grid " spacing={2}>
       {currentItems.map((project) => (
-                <Grid item xs={12} sm ={6} md={4} className="art-item">
+                <Grid item xs={12} sm ={6} md={4} className="art-item" key={project.id}>
                     
                         <div className="art-img-wrap">
                             <img alt={project.title} className="art-img" src={project.image} />

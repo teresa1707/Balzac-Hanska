@@ -4,7 +4,7 @@ import { MdClose } from 'react-icons/md'
 import { FiMenu } from 'react-icons/fi'
 import "./Menu.scss";
 
-import { Link } from "react-router-dom";
+import { NavLink} from "react-router-dom";
 
 
 export const Menu=()=>{
@@ -20,9 +20,12 @@ export const Menu=()=>{
 
         <nav className="menu">
           
-            <li><Link to="/culture">Culture</Link></li>
-            <li><Link to="/humanitarian">Humanitaire</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><NavLink to="/culture" style={({ isActive }) => ({ 
+                            color: isActive ? 'greenyellow' : 'whitesmoke' })}>Culture</NavLink></li>
+            <li><NavLink to="/humanitarian" style={({ isActive }) => ({ 
+                            color: isActive ? 'greenyellow' : 'whitesmoke' })}>Humanitaire</NavLink></li>
+            <li><NavLink to="/contact" style={({ isActive }) => ({ 
+                            color: isActive ? 'greenyellow' : 'whitesmoke' })}>Contact</NavLink></li>
           
         </nav>
         <div className="navBar" >
@@ -52,40 +55,49 @@ export const Menu=()=>{
                             }`}
                         >
                             <li className="li">
-                                <Link
+                                <NavLink
+                                style={({ isActive }) => ({ 
+                                  color: isActive ? '#bebebe' : 'whitesmoke' })}
                                     to="/"
-                                    className="active-link a"
+                                    className="a"
                                     onClick={() => closeMenu()}
                                 >
                                     Balzac-Hanska Accueil
-                                </Link>
+                                </NavLink>
+                               
                             </li>
                             <li className="li ">
-                                <Link
+                                <NavLink
+                                style={({ isActive }) => ({ 
+                                  color: isActive ? '#bebebe' : 'whitesmoke' })}
                                     to="/culture"
-                                    className="active-link a"
+                                    className="a"
                                     onClick={() => closeMenu()}
                                 >
                                     Culture
-                                </Link>
+                                </NavLink>
+                                
                             </li>
                             <li className="li">
-                                <Link
+                                <NavLink style={({ isActive }) => ({ 
+                            color: isActive ? '#bebebe' : 'whitesmoke' })}
                                     to="/humanitarian"
-                                    className="active-link a"
+                                    className="a"
                                     onClick={() => closeMenu()}
                                 >
                                     humanitaire
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="li">
-                                <Link
+                                <NavLink
+                                style={({ isActive }) => ({ 
+                                  color: isActive ? '#bebebe' : 'whitesmoke' })}
                                     to="/contact"
                                     className="a active-link"
                                     onClick={() => closeMenu()}
                                 >
                                     contact
-                                </Link>
+                                </NavLink>
                             </li>
                             <li className="li">
                                 <a className="a active-link" rel="noreferrer" href='https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska' target="_blank">

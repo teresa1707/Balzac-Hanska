@@ -21,8 +21,8 @@ export const TrackList = ()=>{
     <>
    
    <Grid container spacing={1} className="trackList">
-    {currentItems.map((track)=>(<Grid item xs={12} sm={6} md={4}>
-        <div className="projectCard cardItem">
+    {currentItems.map((track)=>(<Grid item xs={12} sm={6} md={4} key={track.id}>
+        <div className="projectCard cardItem" >
       
         <CardMedia className="projectPhoto"
           component="img"

@@ -7,6 +7,7 @@ import { ProjectSlider } from 'Components/ProjectsSlider/ProjectSlider'
 import { TrackList } from 'Components/TrackList/TrackList'
 
 import { ColumnElement } from 'Components/ColumnElement/ColumnElement'
+import { ArticleItem } from '../ArticleItem/ArticleItem'
 
 
 
@@ -48,7 +49,7 @@ return(
       
 </div>
  
-
+<ArticleItem/>
 
   </>
 )
