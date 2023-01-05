@@ -13,11 +13,14 @@ nav {
   display: flex;
 
 }
+.isActive{
+  color:orange;
+}
 nav li{
   list-style: none;
   padding-top: 15px;
 }
-nav a { 
+nav .a { 
   font-family:'Source Sans Pro', sans-serif; 
   text-decoration: none;
   cursor: pointer;
@@ -26,15 +29,15 @@ nav a {
   padding: 0.6em 1em 0.6em 0em; 
   border: 3px solid transparent;
   border-bottom: 4px solid transparent;
-  text-shadow: 2px 2px 2px black;
-  color: whitesmoke;
+  text-shadow: 1px 1px 1px black;
+  color:#bebebe;
 }
 
 nav a:hover {
   color: orange;
 }
 .menu:hover{
-  box-shadow:0 0.1px 0.1px 0.1px orange; 
+  box-shadow:0 0.5px 0.5px 0.5px orange; 
 }
 
 
@@ -77,11 +80,8 @@ nav a:hover {
     
       .menuNav {
           list-style: none;
-          
           top: 0px;
           left: 0px;
-       
-        
           width: 0;
           overflow: hidden;
           max-width: 100%;
@@ -102,7 +102,7 @@ nav a:hover {
         margin: 10px;
           padding: 20px;
           text-decoration: none;
-          color: #dfd7c6;
+          
           text-transform: uppercase;
           font-weight: bold;
           line-height: 30px;

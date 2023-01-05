@@ -5,7 +5,7 @@
 .btn2 {
     box-shadow:0 0.2px 0.2px 0.2px rgba(#aaa, 0.6); 
     font-family:'Source Sans Pro', sans-serif; 
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 1px black;
     background: rgba(0, 0, 0, 0.2);
     height: 50px;
     width: 200px;
@@ -14,11 +14,9 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    
 margin-top: 20px;
     .buttonText {
         padding-left: 10px;
-    
         font-size: 1rem;
   text-transform:capitalize;
         z-index: 10;
@@ -38,10 +36,10 @@ margin-top: 20px;
 }
 
 .btn2:hover{
-    box-shadow:0 1px 1px 1px #ddc000; 
+    box-shadow:0 0.5px 0.5px 0.5px orange; 
 }
 .btn2-1:hover .buttonText {
-    font-size:medium;
+    
     margin-right: 23px;
     font-size: 0.9rem;
     color: #ddc000;

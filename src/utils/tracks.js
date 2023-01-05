@@ -5,7 +5,7 @@ export const tracks=[
   date:"1 avril 2022",
   shortText:'Un lien de solidarité et d’Amour de la France à l’Ukraine au travers de notre association « Franco-Ukrainienne Balzac et Hanska ». Notre 1er camion de 30 palettes est parti ce jour (sous la neige en clin d’œil à nos amis d’Ukraine 😊) pour rejoindre la Galerie Balzac de Berditchev via PRZEMYSL (Pologne). Ce lieu de distribution est situé à mi chemin entre Jitomir et Vinista. Merci à tous ceux qui nous ont aidé et soutenu pour cette action. Merci à nos généreux donateurs pour vos contributions en nature et/ou financières.Merci @LionsClubPassionSeyssel , Lions Club Kiev Ecology, La mairie du 9ème Paris pour l’organisation des collectes. Merci à l’Institut de la Tour et à son Directeur @Jeandechalendar pourl’importante contribution de produits de premières nécessités. Merci @ensembleukraine pour toute l’aide à la logistique. Et merci à tous nos bénévoles dont certains sont des réfugiés ukrainiens.',
   budget:"Budget chaudière : 40 000€",
-  link:"Il vous suffit de cliquer sur le lien ci-dessous et de vous laisser guider.https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska/formulaires/1. L’Association Franco Ukrainienne BALZAC HANSKA est une Association loi de 1901 N° W941007660 – ouvrant droit à une réduction d’impôt et délivrance d’un certificat de déductibilité fiscale.",
+
   },
   {id:2,
     title:"EAU VYCHKOVO",

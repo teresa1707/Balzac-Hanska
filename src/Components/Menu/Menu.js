@@ -20,12 +20,12 @@ export const Menu=()=>{
 
         <nav className="menu">
           
-            <li><NavLink to="/culture" style={({ isActive }) => ({ 
-                            color: isActive ? 'greenyellow' : 'whitesmoke' })}>Culture</NavLink></li>
-            <li><NavLink to="/humanitarian" style={({ isActive }) => ({ 
-                            color: isActive ? 'greenyellow' : 'whitesmoke' })}>Humanitaire</NavLink></li>
-            <li><NavLink to="/contact" style={({ isActive }) => ({ 
-                            color: isActive ? 'greenyellow' : 'whitesmoke' })}>Contact</NavLink></li>
+            <li><NavLink to="/culture" className="a" style={({ isActive }) => ({ 
+                            color: isActive ? '.isActive' : '.a' })} >Culture</NavLink></li>
+            <li><NavLink to="/humanitarian" className="a" style={({ isActive }) => ({ 
+                            color: isActive ? '.isActive' : '.a' })}>Humanitaire</NavLink></li>
+            <li><NavLink to="/contact" className="a" style={({ isActive }) => ({ 
+                            color: isActive ? '.isActive' : '.a' })}>Contact</NavLink></li>
           
         </nav>
         <div className="navBar" >
@@ -56,31 +56,25 @@ export const Menu=()=>{
                         >
                             <li className="li">
                                 <NavLink
-                                style={({ isActive }) => ({ 
-                                  color: isActive ? '#bebebe' : 'whitesmoke' })}
+                                
                                     to="/"
                                     className="a"
                                     onClick={() => closeMenu()}
                                 >
                                     Balzac-Hanska Accueil
                                 </NavLink>
-                               
                             </li>
                             <li className="li ">
                                 <NavLink
-                                style={({ isActive }) => ({ 
-                                  color: isActive ? '#bebebe' : 'whitesmoke' })}
                                     to="/culture"
                                     className="a"
                                     onClick={() => closeMenu()}
                                 >
                                     Culture
                                 </NavLink>
-                                
                             </li>
                             <li className="li">
-                                <NavLink style={({ isActive }) => ({ 
-                            color: isActive ? '#bebebe' : 'whitesmoke' })}
+                                <NavLink
                                     to="/humanitarian"
                                     className="a"
                                     onClick={() => closeMenu()}
@@ -90,8 +84,6 @@ export const Menu=()=>{
                             </li>
                             <li className="li">
                                 <NavLink
-                                style={({ isActive }) => ({ 
-                                  color: isActive ? '#bebebe' : 'whitesmoke' })}
                                     to="/contact"
                                     className="a active-link"
                                     onClick={() => closeMenu()}

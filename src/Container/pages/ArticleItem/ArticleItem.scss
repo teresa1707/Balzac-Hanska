@@ -58,7 +58,7 @@ color: rgb(205, 214, 189);
   width: 100%;
   display: grid;
   grid-template-columns: 5% 20% 20% 20% 20%;
-  grid-template-rows: repeat(30, auto); 
+  grid-template-rows: repeat(auto); 
   column-gap: 5px;
   row-gap: 5px;
   background-color: #bebebe;

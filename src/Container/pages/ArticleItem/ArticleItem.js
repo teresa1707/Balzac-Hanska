@@ -8,17 +8,13 @@ export const ArticleItem=()=>{
   return(
     <>
     <h1>CHAUDIERE Ust-Chorna</h1>
-    <Grid container className="articleItem "><Grid item sm={12} md={6}><img src="../../../public/Images/khust.jpg"  alt="photo"/></Grid><Grid item sm={12} md={6}><p>Cette terrible guerre en Ukraine n’a malheureusement pas cessé...
-L’hiver arrive et nos amis ukrainiens ont besoin de nous.
-L’état ukrainien a demandé aux régions de réouvrir des anciens hôpitaux ou autres centres d’accueil fermés afin de pouvoir accueillir la population déplacée dans l’ouest de l’Ukraine qui se compte par millions de personnes.</p>    
-<p>Cependant les infrastructures sont souvent vétustes.
-La plupart du temps ces réouvertures se sont faites dans l’urgence afin de procurer à ces déplacés le minimum en matière de logement pour survivre avec des conditions sanitaires à la limite de l’acceptabilité. 
-La capacité de ces établissements varie entre 150 et 300 déplacés
-Nous souhaitons leur venir en aide !
-Ci-après un exemple urgent identifié lors de nos dernières missions en Ukraine.
-</p></Grid>
+     
+    <Grid container className="articleItem "><Grid item sm={12} md={6}><img src="../../../public/Images/khust.jpg"  alt="photo"/></Grid><Grid item sm={12} md={6}><p>Le 24 février 2022, la Russie a déclaré la guerre à l’Ukraine. Cette invasion a jeté sur les routes plus de 10 millions de personnes (en majorité des femmes, des enfants et des personnes âgées). Trois millions ont d’ores et déjà quitté le pays et se sont réfugiés, pour la plupart en Europe de l’Ouest. Cette présence fait peser sur les pays hôtes une charge économique et sociale non négligeable. Mais ce sont plus de sept millions de personnes qui ont été déplacées et sont actuellement en Ukraine complétement déracinées. Certaines personnes issues de villes détruites à plus de 90 % (Kharkiv, Marioupol, Tchernihiv, Borodianka, Severodonetsk…) s’installent dans des zones où elles pensent être en sécurité comme l’Ouest et le Sud-Ouest du pays.</p>    
+<p>La région de Transcarpatie a, comme l’ensemble des régions de l’Ouest de l’Ukraine reçue de nombreux déplacés. Début juillet, les autorités régionales dénombraient plus de 450 000 personnes qui sont arrivées et tentent de se loger et de survivre avec l’aide des autorités régionales et locales ainsi que des associations locales d’aide appuyées par des associations caritatives internationales. Il est à noter que la population de Transcarpatie s’élève à 1 000 000 de personnes soit une augmentation de la population de plus de 45 %.  La planification et la gestion de ces afflux de déplacés dépendent des autorités régionales qui sont débordées faute de moyens humains (les hommes sont mobilisés) et de moyens financiers (l’effort de guerre coûte cher au pays). 
+</p>
+<p>Par courrier en date du 10 juin 2022, M.Viktor MYKALA, Gouverneur militaire de la région de Transcarpatie a annoncé aux districts du Sud de la région l’arrivée de plus de 50 000 déplacés. Charge aux collectivités territoriales d’assurer l’accueil, l’hébergement et tous les services que sont en droit d’attendre les déplacés afin d’être reçus dans la dignité (cf. courrier en annexe). La région devrait passer de 450 000 déplacés à 500 000 dans le courant de l’été. </p></Grid>
 <Grid item sm={12} md={6}>L’hôpital d’une superficie de 1800m².<p></p><p>Budget chaudière : 40 000€</p></Grid>
-<Grid item sm={12} md={6}><p>Il s’agit de mettre en place une nouvelle chaudière avant les mois d’hiver afin de permettre à tous les déplacés (actuels et futurs) d’être accueillis dans ces locaux et d’avoir accès à un chauffage et eau chaude. Le chauffage bois permettra à la communauté de réaliser des économies, le bois étant disponible sur place ....
+<Grid item sm={12} md={6}><p><span className='fsShTTitle'>Objectif du projet:</span></p><p>Il s’agit de mettre en place une nouvelle chaudière avant les mois d’hiver afin de permettre à tous les déplacés (actuels et futurs) d’être accueillis dans ces locaux et d’avoir accès à un chauffage et eau chaude. Le chauffage bois permettra à la communauté de réaliser des économies, le bois étant disponible sur place ....
 </p></Grid>
 <Grid item xs={12} sm ={4}>
                   
@@ -28,174 +24,87 @@ Ci-après un exemple urgent identifié lors de nos dernières missions en Ukrain
                                 <p>Il vous suffit de cliquer sur <a href="https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska/formulaires/1." target="_blank" title="HELLOASSO" rel="noreferrer">le lien </a>et de vous laisser guider.L’Association Franco Ukrainienne BALZAC HANSKA est une Association loi de 1901 N° W941007660 – <span>ouvrant droit à une réduction d’impôt et délivrance d’un certificat de déductibilité fiscale.</span>
                             </p>
                             </div>
-                          
+            
+
                         </Card>
+                        <img src="../../../public/Images.FP2scehma.png" alt="schema"/>
                        
                 </Grid> 
                 <Grid item xs={12} sm ={8}>
+                  <hr></hr>
                             
-                Equipements nécessaires pour l’organisation du chauffage 
-dans le bâtiment de l’ancien hôpital d’Ust-Tchorna
+               
+<div>                <p>pr2-Le choix de ce procédé est également dicté par plusieurs critères importants en période de crise :</p>
+                          
+                          <ul>
+                            <li>Facilité d’installation et de démarrage</li>
+                            <li>Maintenance minimum</li>
+                            <li>Peu de réactif nécessaire</li>
+                            <li>Faible consommation électrique. </li>
+                          </ul></div>
+                          <div>
+                          Coût d’une installation de potabilisation
+
+<p>Le coût est fonction du débit que l’on souhaite et de la qualité de l’eau produite.
+Pour un débit de 8 M3 / Heure
+40 000 €uros.</p>
+
+                          </div>
+                          <hr></hr>
+                          <div>pr-1Equipements nécessaires pour l’organisation du chauffage 
+dans le bâtiment de l’ancien hôpital d’Ust-Tchorna</div>
                   <div className="containerGrid">
-                
-                    <div className="one num">N°</div>
+                 
+                   <div className="one num">N°</div>
                     <div className="one gridTitle">Titre</div>
                     <div className="one gridQuantity">Quantité</div>
                     <div className="one gridDimension">Dimension</div>
-                    <div className="one gridPrice">Prix/UA</div>
+                    <div className="one gridPrice">PRIX</div>
 
                     <div className="one">1</div>
-                    <div className="one gridTitle">Chaudière ALTER TRIO UNI</div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension">300 kW</div>
-                    <div className="one gridPrice">275 000</div>
+                    <div className="one gridTitle">Senci Diesel 6000W </div>
+                    <div className="one gridQuantity">en Stock</div>
+                    <div className="one gridDimension">86000W</div>
+                    <div className="one gridPrice">1999€ TTC</div>
 
                     <div className="one">2</div>
-                    <div className="one gridTitle">Pompe Grundfos</div>
-                    <div className="one gridQuantity">2 unités</div>
-                    <div className="one gridDimension">32/70</div>
-                    <div className="one gridPrice">12 400</div>
+                    <div className="one gridTitle">A-ipower</div>
+                    <div className="one gridQuantity">dispo décembre</div>
+                    <div className="one gridDimension">9KVA</div>
+                    <div className="one gridPrice">2699€ TTC</div>
 
                     <div className="one">3</div>
-                    <div className="one gridTitle">Pompe Grundfos</div>
-                    <div className="one gridQuantity">2 unités</div>
-                    <div className="one gridDimension">32/80</div>
-                    <div className="one gridPrice">28 000</div>
+                    <div className="one gridTitle">A-ipower </div>
+                    <div className="one gridQuantity">en stock</div>
+                    <div className="one gridDimension"> 13kVA </div>
+                    <div className="one gridPrice">5499€ TTC</div>
 
                     <div className="one">4</div>
-                    <div className="one gridTitle">Pompe Grundfos</div>
-                    <div className="one gridQuantity">2 unités</div>
-                    <div className="one gridDimension">32/100</div>
-                    <div className="one gridPrice">33 000</div>
+                    <div className="one gridTitle">Senci Diesel </div>
+                    <div className="one gridQuantity">en stock</div>
+                    <div className="one gridDimension"> 19KVA </div>
+                    <div className="one gridPrice">8999€ TTC</div>
 
                     <div className="one">5</div>
-                    <div className="one gridTitle">Pompe Grundfos</div>
-                    <div className="one gridQuantity">1 unité</div>
-                    <div className="one gridDimension">40/150</div>
-                    <div className="one gridPrice">54 000</div>
+                    <div className="one gridTitle">ITC Power</div>
+                    <div className="one gridQuantity">dispo février-mars</div>
+                    <div className="one gridDimension">72KVA</div>
+                    <div className="one gridPrice">16999€ TTC</div>
 
                     <div className="one">6</div>
-                    <div className="one gridTitle">Réservoir</div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension">3 tonnes</div>
-                    <div className="one gridPrice">30 000</div>
+                    <div className="one gridTitle">ITC Power </div>
+                    <div className="one gridQuantity">dispo décembre-janvier</div>
+                    <div className="one gridDimension">110KVA</div>
+                    <div className="one gridPrice">19959€ TTC</div>
 
                     <div className="one">7</div>
-                    <div className="one gridTitle">Réservoir tampon</div>
-                    <div className="one gridQuantity">2 unités</div>
-                    <div className="one gridDimension">100 liltres </div>
-                    <div className="one gridPrice">7 000</div>
+                    <div className="one gridTitle">SENCI </div>
+                    <div className="one gridQuantity">dispo février</div>
+                    <div className="one gridDimension">190KVA </div>
+                    <div className="one gridPrice">24999€ TTC</div>
 
-                    <div className="one">8</div>
-                    <div className="one gridTitle">Mélangeur ESBE </div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension">2 pouces 50°</div>
-                    <div className="one gridPrice">4 500</div>
-
-                    <div className="one">9</div>
-                    <div className="one gridTitle">Tube carré</div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension">200*200,  2 m</div>
-                    <div className="one gridPrice">1 800</div>
-
-                    <div className="one">10</div>
-                    <div className="one gridTitle">Tube rond </div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension">Diamètre 80, 6 m</div>
-                    <div className="one gridPrice">3 500</div>
-
-                    <div className="one">11</div>
-                    <div className="one gridTitle">Radiateurs </div>
-                    <div className="one gridQuantity">80 unités</div>
-                    <div className="one gridDimension">1,5 m chacun</div>
-                    <div className="one gridPrice">328 000</div>
-
-                    <div className="one">12</div>
-                    <div className="one gridTitle">Kit des accessoires de gestion du radiateur (deux vannes en amont et en aval du radiateur et une vanne thermostatique)</div>
-                    <div className="one gridQuantity">80 unités</div>
-                    <div className="one gridDimension"></div>
-                    <div className="one gridPrice">56 000</div>
-
-                    <div className="one">13</div>
-                    <div className="one gridTitle">Tube polypropylène</div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension">Diamètre 32, 800 m</div>
-                    <div className="one gridPrice">80 000</div>
-
-                    <div className="one">14</div>
-                    <div className="one gridTitle">Tube polypropylène</div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension">Diamètre 20, 80 m</div>
-                    <div className="one gridPrice">4 000</div>
-
-                    <div className="one">15</div>
-                    <div className="one gridTitle">Colliers de fixation du tube</div>
-                    <div className="one gridQuantity">600 unités</div>
-                    <div className="one gridDimension"></div>
-                    <div className="one gridPrice">5 750</div>
-
-                    <div className="one">16</div>
-                    <div className="one gridTitle">Colliers de fixation du radiateur</div>
-                    <div className="one gridQuantity">80 unités</div>
-                    <div className="one gridDimension"></div>
-                    <div className="one gridPrice">7 200</div>
-
-                    <div className="one">17</div>
-                    <div className="one gridTitle">Té bicône </div>
-                    <div className="one gridQuantity">160 unités</div>
-                    <div className="one gridDimension">32/20</div>
-                    <div className="one gridPrice">4 900</div>
-
-                    <div className="one">18</div>
-                    <div className="one gridTitle">Coude</div>
-                    <div className="one gridQuantity">160 unités</div>
-                    <div className="one gridDimension"></div>
-                    <div className="one gridPrice">4 500</div>
-
-                    <div className="one">19</div>
-                    <div className="one gridTitle">Vanne automatique</div>
-                    <div className="one gridQuantity">3 unités  </div>
-                    <div className="one gridDimension">0,5 pouce</div>
-                    <div className="one gridPrice">1000</div>
-
-                    <div className="one">20</div>
-                    <div className="one gridTitle">Cheminé (sandwich) en kit</div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension"></div>
-                    <div className="one gridPrice">58 000</div>
-
-                    <div className="one">21</div>
-                    <div className="one gridTitle">Montage du cheminé, 
-montage et raccordement de la chaudière, 
-soudage des réservoirs-tampons, montage et raccordement du réservoir,
-électrodes, peinture, filasse, ronds, etc. 
-</div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension"></div>
-                    <div className="one gridPrice">55 000</div>
-
-                    <div className="one">22</div>
-                    <div className="one gridTitle">Montage des radiateurs </div>
-                    <div className="one gridQuantity">80 unités</div>
-                    <div className="one gridDimension"></div>
-                    <div className="one gridPrice">98 400</div>
-                    <div className="one"></div>
-                    <div className="one gridTitle">TOTAL</div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension"></div>
-                    <div className="one gridPrice">1 151 950 UAH</div>
-                    <div className="one "></div>
-                    <div className="one gridTitle">EQUIVALENT EUR</div>
-                    <div className="one gridQuantity"></div>
-                    <div className="one gridDimension"></div>
-                    <div className="one gridPrice">30 500 euros</div>
-                    <div className="one "></div>
-                   
-                    <div className="one gridTitle">Frais de logistique </div>
-                    <div className="one gridQuantity">/ administratif </div>
-                    <div className="one gridDimension">/ installation environ </div>
-                    <div className="one gridPrice">10 000 euros</div> 
                     
+                   
                   </div>      
                   <div>BUDGET PROJET 40 000 EUROS</div>
                   </Grid>
