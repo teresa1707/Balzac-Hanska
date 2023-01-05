@@ -20,12 +20,9 @@ export const Menu=()=>{
 
         <nav className="menu">
           
-            <li><NavLink to="/culture" className="a" style={({ isActive }) => ({ 
-                            color: isActive ? '.isActive' : '.a' })} >Culture</NavLink></li>
-            <li><NavLink to="/humanitarian" className="a" style={({ isActive }) => ({ 
-                            color: isActive ? '.isActive' : '.a' })}>Humanitaire</NavLink></li>
-            <li><NavLink to="/contact" className="a" style={({ isActive }) => ({ 
-                            color: isActive ? '.isActive' : '.a' })}>Contact</NavLink></li>
+            <li><NavLink to="/culture" className={({ isActive }) => isActive ? "isActiveButton" : "a" } >Culture</NavLink></li>
+            <li><NavLink to="/humanitarian" className={({ isActive }) => isActive ? "isActiveButton" : "a" }>Humanitaire</NavLink></li>
+            <li><NavLink to="/contact" className={({ isActive }) => isActive ? "isActiveButton" : "a" }>Contact</NavLink></li>
           
         </nav>
         <div className="navBar" >

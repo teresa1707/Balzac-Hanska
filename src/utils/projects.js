@@ -2,7 +2,7 @@ export const projects=[
 {id:1,
 title: "CHAUDIERE Ust-Chorna",
 infoPlus: 'L’hôpital d’une superficie de 1800m².',
-image:"/Images/gravureLacLeman.webp",
+image:["/Images/gravureLacLeman.webp","/Images/gravureLacLeman.webp"],
 image2:'',
 date:"novembre 2022",
 shortText1:'Cette terrible guerre en Ukraine n’a malheureusement pas cessé... L’hiver arrive et nos amis ukrainiens ont besoin de nous.L’état ukrainien a demandé aux régions de réouvrir des anciens hôpitaux ou autres centres d’accueil fermés afin de pouvoir accueillir la population déplacée dans l’ouest de l’Ukraine qui se compte par millions de personnes.',

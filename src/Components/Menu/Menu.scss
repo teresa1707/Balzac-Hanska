@@ -13,13 +13,23 @@ nav {
   display: flex;
 
 }
-.isActive{
-  color:orange;
-}
 nav li{
   list-style: none;
   padding-top: 15px;
 }
+.isActiveButton{
+  font-family:'Source Sans Pro', sans-serif; 
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1rem;
+  text-transform:capitalize;
+  padding: 0.6em 1em 0.6em 0em; 
+  border: 3px solid transparent;
+  border-bottom: 4px solid transparent;
+  text-shadow: 1px 1px 1px black;
+  color:orange;
+}
+
 nav .a { 
   font-family:'Source Sans Pro', sans-serif; 
   text-decoration: none;

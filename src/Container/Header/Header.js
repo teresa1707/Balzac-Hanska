@@ -22,14 +22,11 @@ export const Header = ({buttonText}) => {
     window.addEventListener("scroll", stickyNav)
 
 
-  buttonText = "Faire un don ou adherer"
-
- 
     return (
         <>   <div className={sticky ? "main_h sticky" : "main_h"}>
             <Container>
             <Grid container >
-                <Grid item xs={12} sm={6} md={4} className="slidingButton" ><SlidingButton buttonText={buttonText}/></Grid>
+                <Grid item xs={12} sm={6} md={4} className="slidingButton" ><SlidingButton buttonText="Faire un don ou adherer"/></Grid>
                 <Grid item xs={12} sm={6} md={4} className="logo"><Logo /></Grid>
                 <Grid item xs={12} sm={12}md={4} className="headerMenu"><Menu/></Grid>
                      
