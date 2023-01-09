@@ -1,5 +1,5 @@
 
-import { Container, Grid, Container} from "@mui/material"
+import { Container, Grid} from "@mui/material"
 import React from "react"
 import { balzac } from "utils/balzac"
 import './BalzacList.scss'
