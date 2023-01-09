@@ -1,13 +1,22 @@
 import { Card, Grid } from "@mui/material";
 import React from "react";
+import DOMPurify from "dompurify";
+import { useParams } from "react-router-dom";
+import { getObject, projects } from "utils/projects";
 import './ArticleItem.scss'
 
 
 
-export const ArticleItem=()=>{
+export const ArticleItem=({ 
+  projectObject = getObject(projects)
+  
+})=>{
+  let { id } = useParams()
+
+  
   return(
     <>
-    <h1>CHAUDIERE Ust-Chorna</h1>
+    <h1>{projectObject[id].title}</h1>
      
     <Grid container className="articleItem "><Grid item sm={12} md={6}><img src="../../../public/Images/khust.jpg"  alt="photo"/></Grid><Grid item sm={12} md={6}><p>Le 24 février 2022, la Russie a déclaré la guerre à l’Ukraine. Cette invasion a jeté sur les routes plus de 10 millions de personnes (en majorité des femmes, des enfants et des personnes âgées). Trois millions ont d’ores et déjà quitté le pays et se sont réfugiés, pour la plupart en Europe de l’Ouest. Cette présence fait peser sur les pays hôtes une charge économique et sociale non négligeable. Mais ce sont plus de sept millions de personnes qui ont été déplacées et sont actuellement en Ukraine complétement déracinées. Certaines personnes issues de villes détruites à plus de 90 % (Kharkiv, Marioupol, Tchernihiv, Borodianka, Severodonetsk…) s’installent dans des zones où elles pensent être en sécurité comme l’Ouest et le Sud-Ouest du pays.</p>    
 <p>La région de Transcarpatie a, comme l’ensemble des régions de l’Ouest de l’Ukraine reçue de nombreux déplacés. Début juillet, les autorités régionales dénombraient plus de 450 000 personnes qui sont arrivées et tentent de se loger et de survivre avec l’aide des autorités régionales et locales ainsi que des associations locales d’aide appuyées par des associations caritatives internationales. Il est à noter que la population de Transcarpatie s’élève à 1 000 000 de personnes soit une augmentation de la population de plus de 45 %.  La planification et la gestion de ces afflux de déplacés dépendent des autorités régionales qui sont débordées faute de moyens humains (les hommes sont mobilisés) et de moyens financiers (l’effort de guerre coûte cher au pays). 
@@ -107,6 +116,7 @@ dans le bâtiment de l’ancien hôpital d’Ust-Tchorna</div>
                    
                   </div>      
                   <div>BUDGET PROJET 40 000 EUROS</div>
+                <div dangerouslySetInnerHTML={{__html:DOMPurify.sanitize(projectObject[id].table)}}></div>
                   </Grid>
 </Grid>
 

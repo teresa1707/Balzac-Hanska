@@ -7,7 +7,7 @@ export const ColumnElement =({title,text, link})=>{
   return(
     <>
    <Grid container spacing={4}>
-    <Grid item sm={12} md={4}><div className="cardItem">
+    <Grid item sm={12} md={4}><div className="cardItemHuma">
                         <div className="title2">Ce n’est que le début !</div>
                         <div className="text2 italic">
                             <p>
@@ -17,7 +17,7 @@ export const ColumnElement =({title,text, link})=>{
                         </div></div>
                 
                     </Grid>
-    <Grid item sm={12} md={4}><div className="cardItem">
+    <Grid item sm={12} md={4}><div className="cardItemHuma">
                         <div className="title2">Ou...</div>
                         <div className="text2">
                             
@@ -27,7 +27,7 @@ export const ColumnElement =({title,text, link})=>{
                     </div>
                     </Grid>
     <Grid item sm={12} md={4}>
-    <div className="cardItem">
+    <div className="cardItemHuma">
                         <div className="title2">Donner...</div>
                         <div className="text2">
                             <p>

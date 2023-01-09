@@ -49,6 +49,8 @@ color: rgb(205, 214, 189);
 }
 }
 }
+
+
 .containerGrid {
   justify-content:center ;
   text-align: center ;
@@ -63,9 +65,9 @@ color: rgb(205, 214, 189);
   row-gap: 5px;
   background-color: #bebebe;
   border: 2px solid  orange;
-  .one{
-background-color: #fff;
-border-radius: 5px;
-  }
+.one{
+  background-color: #fff;
+  border-radius: 5px;
+    }
 }
 

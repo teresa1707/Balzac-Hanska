@@ -1,22 +1,27 @@
-.App{
- 
-  .humaPadding{
-    background-image: repeating-linear-gradient(
-      90deg,
-      rgb(22, 18, 18), 
-      rgb(74, 71, 73) ,
-      rgb(22, 18, 18)  
-    );
-    padding: 70px 0;
-  }
- 
+.humaPadding{
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgb(22, 18, 18), 
+    rgb(74, 71, 73) ,
+    rgb(22, 18, 18)  
+  );
+  padding: 70px;
+}
 
+.App{
+.title2{
+  margin: 0 auto;
+}
+
+ .newsStyle{
+  margin:40px 0;
+ }
 font-family:'Source Sans Pro', sans-serif; 
 }
 .card {
 display: flex;
 margin: 0 auto;
-width: 90vw;
+width: 100%;
 box-shadow: -2px 2px 21px 0px rgba(0,0,0,0.23);
 overflow:hidden;
 
@@ -27,7 +32,7 @@ overflow:hidden;
 }
 
 .card__img {
-  margin: 50px 0;
+  margin: 0px 0;
   padding-top: 200px; 
   padding-bottom: 200px; 
   overflow: hidden; 

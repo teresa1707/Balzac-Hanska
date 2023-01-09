@@ -1,36 +1,19 @@
 .AppCulture{
   background:#f2fcdf;
-  
-padding: 100px 0;
-.block { 
-  
-  color:#f2fcdf;
- width: 100%;
-  margin:0; 
-  text-align:justify;
-  background-image: linear-gradient(
-  90deg,
-  rgb(22, 18, 18), 
-  rgb(74, 71, 73) ,
-);
-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-padding: 5rem 10%;
- 
-}
 }
 
 .cardCulture {
 display: flex;
 margin: 0 ;
-width: 90vw;
+width: 100%;
 background: #DAF7A6;
 box-shadow: -2px 2px 21px 0px rgba(0,0,0,0.23);
 
 
-//   @media (max-width: 900px) {
-//   width: 88%;
-//   flex-wrap:wrap;
-// }
+  @media (max-width: 900px) {
+  width: 88%;
+  flex-wrap:wrap;
+}
 }
 
 .card__imgCulture {
@@ -77,9 +60,9 @@ width: 100%;
 margin-bottom: 30px;
 padding-left: 15px;
 padding-top: 0px;
-
+font-family: 'Kelly Slab',sans-serif;
 color: #52616a;
-font-family: 'brown';
+
 font-size: 40px;
 text-transform: uppercase;
 
@@ -118,7 +101,6 @@ width: 72%;
 padding-left: 15px;
 margin-left: 40px;
 
-font-family: 'open sans';
 font-size: 14px;
 font-weight: 300;
 line-height: 1.6;

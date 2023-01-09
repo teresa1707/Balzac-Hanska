@@ -4,7 +4,8 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import './CulturePage.scss'
 import { AnimationTemplate } from 'Components/AnimationTemplate.js/AnimationTemplate'
-import { TrackList } from 'Components/TrackList/TrackList'
+import { BalzacList} from 'Components/BalzacList/BalzacList'
+import { Link } from 'react-router-dom'
 
 
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)
@@ -17,7 +18,7 @@ export const CulturePage = () =>{
     },
       {
         opacity: 1,
-        y: 0,
+        y: -100,
         delay: delay || 0.6,
         duration: duration || 0.6,
         scrollTrigger: {
@@ -68,8 +69,9 @@ export const CulturePage = () =>{
       }, [])
 
 return(
-  <>
+  <><div className='humaPadding'></div>
   <div className="AppCulture">
+  
     <div id='nextSection' className='section'>
   
       <div id='box1' className='box box1'>   
@@ -88,17 +90,13 @@ Nous voulons faire connaitre le lien de Balzac avec l’Ukraine au travers de so
 </div>
  </div>
  
-  
 </div>
-<div className="block">
-<h1>LES VOYAGES D'HONORE DE BALZAC</h1>
 
-<p className="margin-top-10"><span className="first-character sc">S</span>ans être un grand voyageur dans l’âme, Balzac n’en a pas moins sillonné la France et l’Europe tout au long de sa vie, quelques fois pour affaires, le plus souvent pour rejoindre des femmes aimées : les amies telle Zulma Carraud qu’il retrouve à Angoulême ou Issoudun, les autres amantes ou les prétendues au titre (respectivement Mme de Berny en Touraine puis en bateau sur la Loire jusque Nantes, Mme de Castries en Suisse) et surtout Mme Hanska pour laquelle il traversera plusieurs fois l’Europe dans toute son étendue, dans des conditions de voyage éprouvantes liées aux moyens de transport rudimentaires de la première moitié du 19ème siècle.</p>
-      <p className="line-break margin-top-10"></p>
-    </div></div>
 
-    <TrackList/>
-<AnimationTemplate/>
+    </div>
+    
+                            <BalzacList/>
+
   </>
 )
 }

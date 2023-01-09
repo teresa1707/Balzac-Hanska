@@ -4,10 +4,9 @@ import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import './HumanitarianPage.scss'
 import { ProjectSlider } from 'Components/ProjectsSlider/ProjectSlider'
-import { TrackList } from 'Components/TrackList/TrackList'
-
 import { ColumnElement } from 'Components/ColumnElement/ColumnElement'
-import { ArticleItem } from '../ArticleItem/ArticleItem'
+import { NewsSlider, Slider } from 'Components/Slider/Slider'
+
 
 
 
@@ -19,29 +18,30 @@ let title="OU..."
 let link = "https://www.chateaudelarocheguyon.fr/le-potager-fruitier/"
   
 return(
-  <>
+  <><div className='humaPadding'></div>
   <div className="App">
-  <div className='humaPadding'></div>
-  <div className="card animated fadeInDownBig">
-  <div className="card__img animated fadeInLeft"></div>
+  
+  <div className="card animated">
+  <div className="card__img animated"></div>
   <div className="card__content">
     <h1 className="card__title animated fadeInDown">
-      <span >A la une</span>
-      <span className="small">de</span> 
-      <span>nos actions numanitaires</span>
+    <span className="small">Nos</span> 
+      <span >actions</span>
+      
+      <span>humanitaires</span>
     </h1>
-    <p className="card__quote animated fadeInUp">Le huitième camion bien rempli à quitté la France le 21 decembre 2022 et est arrivé sans incident en Ukraine le 26 decembre. Grace aux efforts de nous tous reunis nous avons pu envoyer les produits de première necessité , tant attendus par nos amis ukrainiens. </p>
+    <p className="card__quote animated fadeInUp">Nos projets à caractère Humanitaires sont portés par notre Association Franco Ukrainienne BALZAC HANSKA qui possède une structure en France et en Ukraine, depuis plus de 10 ans
+{/* 
+      Le huitième camion bien rempli à quitté la France le 21 decembre 2022 et est arrivé sans incident en Ukraine le 26 decembre. Grace aux efforts de nous tous reunis nous avons pu envoyer les produits de première necessité , tant attendus par nos amis ukrainiens. */}
+       </p>
   </div>
 </div>
-
+<div className='humaPadding'/>
+  <div className='newsStyle'><NewsSlider/></div>
 <div className='humaPadding'><ColumnElement text={text} title={title} link={link}/></div>
-
-
-     
-
     <ProjectSlider/>
-    <div className='humaPadding'></div>
-      <TrackList/>
+    <div className='humaPadding'/>
+    
 
    
  
@@ -49,7 +49,7 @@ return(
       
 </div>
  
-<ArticleItem/>
+
 
   </>
 )

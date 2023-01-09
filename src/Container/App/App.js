@@ -6,10 +6,14 @@ import { HumanitarianPage } from "Container/pages/Humanitaire/HumanitarianPage";
 import React,{useEffect} from "react";
 import { Route, Routes } from "react-router-dom";
 import { gsap } from "gsap";
-import { Footer } from "../Footer/Footer";
+
 import "./App.scss"
 import { Main } from "../Main/Main";
 import { ScrollUp } from "Components/ScrollUp/ScrollUp";
+import { BalzacItem } from "Container/pages/Culturel/BalzacItem/BalzacItem";
+import { BalzacList } from "Components/BalzacList/BalzacList";
+import { Footer } from "Container/Footer/Footer";
+import { ArticleItem } from "Container/pages/Humanitaire/ArticleItem/ArticleItem";
 
 
 export const App = () => {
@@ -69,7 +73,7 @@ export const App = () => {
           }
         )
       }
-      const slideToLeft = (elem, delay, duration)=>{
+      const slideDown = (elem, delay, duration)=>{
         gsap.fromTo(elem, {
           opacity:0,
           y:-200,
@@ -97,9 +101,9 @@ export const App = () => {
     slideFade('#parallax-container img','1','2');
   }, [])
   useEffect(()=>{
-    slideToLeft('#parallax-container #block1','1','2');
-    slideToLeft('#parallax-container #block2','1','2');
-    slideToLeft('#parallax-container #block3','1','2');
+    slideDown('#parallax-container #block1','1','1');
+    slideDown('#parallax-container #block2','1','1');
+    slideDown('#parallax-container #block3','1','1');
   }, [])
 
     return (
@@ -110,7 +114,11 @@ export const App = () => {
         <Route path="/" element={<><Main /></>}/>
         <Route path="/humanitarian" element={<><HumanitarianPage/> <ContactForm /></>}/>
         <Route path="/culture" element={<><CulturePage/></>}/>
-        <Route path="/contact" element={<><ContactForm /></>}/>
+        <Route path="/contact" element={<><ContactForm /></>}/> 
+        <Route path="/culture/balzacList" element={<><BalzacList/></>}/>
+        <Route path="/culture/:id" element={<><BalzacItem/></>}/>
+       
+        <Route path="/humanitaire/:id" element={<><ArticleItem/></>}/>
         
 </Routes>
             <Footer/>

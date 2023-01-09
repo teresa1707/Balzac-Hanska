@@ -4,6 +4,7 @@
  z-index: 999999;
   background:transparent;
 width: 100%;
+top:0;
 position: absolute;
 // height:95px;
 box-shadow: 1px 1px 1px black;
@@ -19,6 +20,7 @@ background-color: transparent;
         rgb(74, 71, 73) ,
         rgb(22, 18, 18)  
       );
+      height: 100px;
 
 
       .annonceImpot{

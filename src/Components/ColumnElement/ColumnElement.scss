@@ -1,6 +1,6 @@
 
-.cardItem {
-  height: 390px;
+.cardItemHuma {
+  
   margin: 10px 5px;
   // border-radius:0px 40px 0% 40px;
   clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
@@ -28,9 +28,9 @@ border: 10px outset #bebebe;
 .text2 {
   
   font-size: 16px;
-  
+  color: rgb(103, 103, 104);
    p {
-  color: rgb(147, 151, 158);
+  
   span{
     color:white;
   }

@@ -37,10 +37,11 @@ export const AnimationTemplate = () =>{
       delay:1,
       duration:2,
       rotate:360,
-    }).to(window,{
-      duration:2,
-      scrollTo:("#nextSection"),
     })
+    // .to(window,{
+    //   duration:2,
+    //   scrollTo:("#nextSection"),
+    // })
    //.to("#nextSection",{
     //   backgroundColor:"green",
     //   color:"white",
