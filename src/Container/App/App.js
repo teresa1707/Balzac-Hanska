@@ -101,9 +101,9 @@ export const App = () => {
     slideFade('#parallax-container img','1','2');
   }, [])
   useEffect(()=>{
-    slideDown('#parallax-container #block1','1','1');
-    slideDown('#parallax-container #block2','1','1');
-    slideDown('#parallax-container #block3','1','1');
+    slideDown('#parallax-container #block1','0.6','0.6');
+    slideDown('#parallax-container #block2','0.6','0.6');
+    slideDown('#parallax-container #block3','0.6','0.6');
   }, [])
 
     return (

@@ -17,7 +17,7 @@ export const CulturePage = () =>{
     },
       {
         opacity: 1,
-        y: -100,
+        y: 0,
         delay: delay || 0.6,
         duration: duration || 0.6,
         scrollTrigger: {
@@ -50,7 +50,7 @@ export const CulturePage = () =>{
 
  
  useEffect(()=>{
-    slideToUp('#box1','1','2');
+    slideToLeft('#box1','0.6','1');
   }, [])
    
       useEffect(()=>{
