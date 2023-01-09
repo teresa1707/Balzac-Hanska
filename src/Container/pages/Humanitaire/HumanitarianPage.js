@@ -5,7 +5,7 @@ import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import './HumanitarianPage.scss'
 import { ProjectSlider } from 'Components/ProjectsSlider/ProjectSlider'
 import { ColumnElement } from 'Components/ColumnElement/ColumnElement'
-import { NewsSlider, Slider } from 'Components/Slider/Slider'
+import { NewsSlider} from 'Components/Slider/Slider'
 
 
 

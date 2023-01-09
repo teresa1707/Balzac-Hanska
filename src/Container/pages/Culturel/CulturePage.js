@@ -3,9 +3,8 @@ import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/ScrollTrigger'
 import {ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import './CulturePage.scss'
-import { AnimationTemplate } from 'Components/AnimationTemplate.js/AnimationTemplate'
 import { BalzacList} from 'Components/BalzacList/BalzacList'
-import { Link } from 'react-router-dom'
+
 
 
 gsap.registerPlugin(ScrollTrigger,ScrollToPlugin)

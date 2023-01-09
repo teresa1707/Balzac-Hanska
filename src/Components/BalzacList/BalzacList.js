@@ -1,5 +1,5 @@
 
-import { sContainer, Grid, Container} from "@mui/material"
+import { Container, Grid, Container} from "@mui/material"
 import React from "react"
 import { balzac } from "utils/balzac"
 import './BalzacList.scss'
@@ -42,7 +42,7 @@ export const BalzacList = ()=>{
 
         <div className="cardItem" >
       
-        <div className="projectPhoto"><img src={article.mainImage}  alt="main photo" /></div>
+        <div className="projectPhoto"><img src={article.mainImage}  alt="mainPhoto" /></div>
         
         <div className="cardContent">
           <div className="title2">
