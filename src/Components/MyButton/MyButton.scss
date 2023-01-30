@@ -3,10 +3,15 @@
 //sliding button
 
 .btn2 {
-    box-shadow:0 0.2px 0.2px 0.2px rgba(#aaa, 0.6); 
-    font-family:'Source Sans Pro', sans-serif; 
+    box-shadow: 0 0.2px 0.2px 0.2px rgba(#aaa, 0.6);
+    font-family: 'Kelly slab', sans-serif;
     text-shadow: 1px 1px 1px black;
-    background: rgba(0, 0, 0, 0.2);
+    background-image: repeating-linear-gradient(
+        90deg,
+        rgb(22, 18, 18),
+        rgb(74, 71, 73),
+        rgb(22, 18, 18)
+    );
     height: 50px;
     width: 200px;
     border: 1px solid transparent;
@@ -14,17 +19,17 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
-margin-top: 20px;
+    margin-top: 20px;
     .buttonText {
         padding-left: 10px;
         font-size: 1rem;
-  text-transform:capitalize;
+        text-transform: capitalize;
         z-index: 10;
         transition: 0.3s;
         text-decoration: none;
-        color:whitesmoke;
+        color: #bebebe;
     }
-//flash
+    //flash
     h5 {
         position: absolute;
         top: -15px;
@@ -35,19 +40,17 @@ margin-top: 20px;
     }
 }
 
-.btn2:hover{
-    box-shadow:0 0.5px 0.5px 0.5px orange; 
+.btn2:hover {
+    box-shadow: 0 0.5px 0.5px 0.5px #c48660;
 }
 .btn2-1:hover .buttonText {
-    
     margin-right: 23px;
     font-size: 0.9rem;
-    color: #ddc000;
-    
+    color: #c48660;
 }
 
 .btn2-1:hover h5 {
     margin-right: -15px;
     opacity: 1;
-    color: #ddc000;
+    color: #c48660;
 }

@@ -1,82 +1,70 @@
-
-
 .main_h {
- z-index: 999999;
-  background:transparent;
-width: 100%;
-top:0;
-position: absolute;
-// height:95px;
-box-shadow: 1px 1px 1px black;
-background-color: transparent;
+    z-index: 999999;
+    background: transparent;
+    width: 100%;
+    top: 0;
+    position: absolute;
+    // height:95px;
 }
 
-.sticky{
-  position:fixed;
-  top:0px;
+.sticky {
+    position: fixed;
+    top: 0px;
     background-image: repeating-linear-gradient(
         90deg,
-        rgb(22, 18, 18), 
-        rgb(74, 71, 73) ,
-        rgb(22, 18, 18)  
-      );
-      height: 100px;
-
-
-      .annonceImpot{
-       display: none;
-      }
+        rgb(22, 18, 18),
+        rgb(74, 71, 73),
+        rgb(22, 18, 18)
+    );
+    height: 80px;
+    box-shadow: 2px 2px 2px #c48660;
+    .annonceImpot {
+        display: none;
+    }
 }
-    
+
 /***
 Easing
 ***/
 
 #easing {
-	overflow: hidden;
-	width: 200px;
-	
-		
-		animation: easing 10s ease-out ;
-		@keyframes easing {
-			0% {
-				transform: translateX(-220px);
-			}
-		
-			100% {
-      
-				transform: translateX(0px);
-			}
-		}
-	
+    overflow: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 200px;
+    border-bottom: 2px solid #c48660;
+    text-align: center;
+    animation: easing 10s ease-out;
+
+    @keyframes easing {
+        0% {
+            transform: translateX(-220px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
 }
 
-.annonceImpot{
-  color:#ccc;
-  font-family: 'Oswald', sans-serif;
-  font-size:0.9rem;
+.annonceImpot {
+    color: #c48660;
+    text-shadow: 2px 2px 2px black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.9rem;
 }
-@media (max-width:899px) {
-  .main_h {
-    z-index: 999999;
-     background:transparent;
-   width: 100%;
-  height: fit-content;
-   
-   box-shadow: 1px 1px 1px black;
-   background-image: repeating-linear-gradient(
-    90deg,
-    rgb(22, 18, 18), 
-    rgb(74, 71, 73) ,
-    rgb(22, 18, 18)  
-  );
-   }
-   
-  
+@media (max-width: 899px) {
+    .main_h {
+        z-index: 999999;
+        background: transparent;
+        width: 100%;
+        height: fit-content;
+
+        box-shadow: 1px 1px 1px black;
+        background-image: repeating-linear-gradient(
+            90deg,
+            rgb(22, 18, 18),
+            rgb(74, 71, 73),
+            rgb(22, 18, 18)
+        );
+    }
 }
-
-
-
-
-
-

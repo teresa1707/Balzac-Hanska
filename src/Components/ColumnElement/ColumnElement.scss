@@ -1,44 +1,37 @@
-
 .cardItemHuma {
-  
-  margin: 10px 5px;
-  // border-radius:0px 40px 0% 40px;
-  clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
-padding: 5rem 10%;
-border: 10px outset #bebebe;
-  box-shadow: 1px 1px 1px #55555d;
+    margin: 10px 5px;
+    // border-radius:0px 40px 0% 40px;
+    clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
+    padding: 5rem 10%;
+    border: 10px outset #bebebe;
+    box-shadow: 1px 1px 1px #55555d;
 }
 
 .title2 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  // color: #879aff;
-  color: rgb(147, 151, 158);
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 5px;
-  text-align: justify;
- 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    // color: #879aff;
+    color: rgb(147, 151, 158);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px;
+    text-align: justify;
 }
 .italic {
-  font-style: italic;
+    font-style: italic;
 }
-
 
 .text2 {
-  
-  font-size: 16px;
-  color: rgb(103, 103, 104);
-   p {
-  
-  span{
-    color:white;
-  }
+    font-size: 16px;
+    color: rgb(103, 103, 104);
+    p {
+        span {
+            color: white;
+        }
+    }
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+    }
 }
-a{font-size: 20px;
-  text-decoration:none ;
-  color: white;
-}
-}
-
-

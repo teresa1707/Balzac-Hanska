@@ -1,195 +1,142 @@
-
-
-
-#parallax-container{
-
-//   background-image: linear-gradient(
-//   90deg,
-//   rgb(22, 18, 18), 
-//   rgb(74, 71, 73) ,
-
-// );
-background:rgb(205, 214, 189);
-// background: #f2fcdf;
+#parallax-container {
+    background-image: linear-gradient(90deg, #161212, #4a4749);
+    padding-bottom: 1px;
+    font-family: 'Kelly Slab', sans-serif;
+    box-shadow: 2px 2px 2px #c48660;
 }
-
-
-
 
 #parallax-container h2 {
-  font-family:'Oswald', sans-serif; 
-  font-size:70px; 
-  letter-spacing:10px; 
-  text-align:center; 
-  color:#252526;
-  font-weight:400; 
-  text-transform:uppercase; 
-  z-index:10; 
-  opacity:.9;
-  text-shadow:2px 2px 2px orange; 
+    font-size: 60px;
+    text-align: center;
+    color: #c48660;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px #252526;
+    font-style: normal;
 }
-#parallax-container a{
-text-decoration: none;
+#parallax-container h2:hover {
+    color: #c48660;
+    text-shadow: 5px 5px 5px black;
+}
+#parallax-container a {
+    text-decoration: none;
 }
 
 #parallax-container p {
-  font-weight: light;
-  font-family:'Source Sans Pro', sans-serif; 
-padding: 20px 30px 10px 30px;
-  font-size:14px; 
-  line-height:24px;
+    font-weight: light;
+    letter-spacing: 1px;
+    padding: 10px 30px 10px 30px;
+    font-size: 14px;
+    line-height: 15px;
+    color: #cdd6bd;
 }
 .first-character {
-  font-weight:400; 
-  float: left; 
-  font-size: 84px; 
-  line-height: 64px; 
-  padding-top: 4px; 
-  padding-right: 8px; 
-  padding-left: 3px; 
-  font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    float: left;
+    font-size: 80px;
+    line-height: 64px;
+    padding: 8px;
 }
 
-.sc {color: #3b8595;}
-.ny {color: #3d3c3a;}
-.atw {color: #c48660;}
+.b {
+    color: #c48660;
+}
 
 // IMAGE
 
-#parallax-container img{
-width: 400px;
+#parallax-container img {
+    width: 200px;
+    position: relative;
 
-border: 8px ridge rgba(196, 134, 96, 0.5);
-box-shadow:2px 2px 2px #000;
-
+    border-radius: 2px;
 }
 /* Section - Block */
 /**************************/
-#parallax-container .block { 
-  
-  color:#f2fcdf;
- width: 100%;
-  margin:0 auto; 
-  text-align:justify;
-  background-image: linear-gradient(
-  90deg,
-  rgb(22, 18, 18), 
-  rgb(74, 71, 73) ,
-);
-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
-padding: 5rem 10%;
- 
+#parallax-container .block {
+    margin: 50px auto;
+    text-align: justify;
+    padding: 2rem 2%;
+    width: 80vw;
+    display: flex;
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    border: 10px outset #c48660;
 }
-
-#parallax-container .block Grid, .block3 Grid{
-  width:80vw; 
-}
-#parallax-container .block3 { 
-  color:rgb(22, 18, 18);
-  width:100%; 
-  margin:3px auto; 
-  text-align:justify;
-  background:#f2fcdf;
- box-shadow: 2px 2px 2px #3d3c3a ;
- clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
- padding: 5rem 5%;
- 
-}
-
 
 /* Section - Parallax */
 /**************************/
 #parallax-container .parallax-one {
-display: flex;
-justify-content:space-around;
-  padding-top: 150px; 
-  padding-bottom: 50px; 
-  overflow: hidden; 
-  position: relative; 
-  width: 100%; 
-  background-image: url(../../../public/Images/maison.jpg); 
-  background-attachment: fixed; 
-  background-size: cover; 
-  -moz-background-size: cover; 
-  -webkit-background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: top center;
-
+    padding-top: 300px;
+    padding-bottom: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../../../public/Images/maison.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 2px 2px 2px #c48660;
 }
 
 #parallax-container .parallax-two {
-  padding-top: 200px; 
-  padding-bottom: 200px; 
-  overflow: hidden; 
-  position: relative; 
-  width: 100%; 
-  background-image: url(../../../public/Images/maison.jpg); 
-  background-attachment: fixed; 
-  background-size: cover; 
-  -moz-background-size: cover; 
-  -webkit-background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center center;
-
+    display: flex;
+    justify-content: space-around;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../../../public/Images/maison.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 1px 1px 1px #c48660;
 }
 #parallax-container .parallax-three {
-  padding-top: 200px; 
-  padding-bottom: 200px; 
-  overflow: hidden; 
-  position: relative; 
-  width: 100%; 
-  background-image: url(../../../public/Images/IllustrationChlo.jpg); 
-  background-attachment: fixed; 
-  background-size: cover; 
-  -moz-background-size: cover; 
-  -webkit-background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center center;
-
+    padding-top: 400px;
+    padding-bottom: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background-image: url(../../../public/Images/IllustrationChlo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 2px 2px 2px #c48660;
 }
-
-/* Extras */
-/**************************/
-#parallax-container .line-break {
-  border-bottom:1px solid rgb(195, 48, 48); 
-  width: 150px; 
-  margin:0 auto;
-}
-
 
 @media (max-width: 959px) and (min-width: 768px) {
-  #parallax-container .block {
-    padding: 40px; width:620px;
-  }
+    #parallax-container .block {
+        padding: 40px;
+        width: 620px;
+    }
 }
 @media (max-width: 767px) {
-  #parallax-container .block {
-    padding: 30px; width:420px;
-  }
-  #parallax-container h2 {
-    font-size:30px;
-  }
-  #parallax-container .block,.block3 {
-    padding: 30px;
-    clip-path:none;
-  }
- 
+    #parallax-container .block {
+        padding: 30px;
+        width: 420px;
+    }
+    #parallax-container h2 {
+        font-size: 30px;
+    }
+    #parallax-container .block,
+    .block3 {
+        padding: 30px;
+        clip-path: none;
+    }
 }
 @media screen and (max-width: 479px) {
-  #parallax-container .block,.block3 {
-    padding: 30px 15px; 
-    width:290px;
-   
-  }
-
+    #parallax-container .block,
+    .block3 {
+        padding: 30px 15px;
+        width: 290px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
