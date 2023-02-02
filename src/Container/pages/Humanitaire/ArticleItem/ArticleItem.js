@@ -67,7 +67,7 @@ export const ArticleItem = ({ projectObject = getObject(projects) }) => {
                     </p>
                 </Grid>
                 <Grid item sm={12} md={6}>
-                    L’hôpital d’une superficie de 1800m².<p></p>
+                    <p>L’hôpital d’une superficie de 1800m².</p>
                     <p>Budget chaudière : 40 000€</p>
                 </Grid>
                 <Grid item sm={12} md={6}>

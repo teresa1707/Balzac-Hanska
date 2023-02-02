@@ -9,49 +9,7 @@ import hanska from '../../../Assets/hanska-mini.webp'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
-export const CulturePage = () => {
-    function slideToUp(elem, delay, duration) {
-        gsap.fromTo(
-            elem,
-            {
-                opacity: 0,
-                y: -200,
-            },
-            {
-                opacity: 1,
-                y: 0,
-                delay: delay || 0.6,
-                duration: duration || 0.6,
-                scrollTrigger: {
-                    trigger: elem,
-                    start: 'top center',
-                    end: 'bottom center',
-                },
-            }
-        )
-    }
-
-    const slideToLeft = (elem, delay, duration) => {
-        gsap.fromTo(
-            elem,
-            {
-                opacity: 0,
-                x: -200,
-            },
-            {
-                opacity: 1,
-                x: 0,
-                delay: delay || 0.6,
-                duration: duration || 0.6,
-                scrollTrigger: {
-                    trigger: elem,
-                    start: 'top center',
-                    end: 'bottom center',
-                },
-            }
-        )
-    }
-
+export const CulturePage = ({ slideToUp, slideToLeft }) => {
     useEffect(() => {
         slideToLeft('#box1', '0.6', '1')
     }, [])
@@ -72,7 +30,6 @@ export const CulturePage = () => {
 
     return (
         <>
-            <div className="humaPadding"></div>
             <div className="AppCulture">
                 <div id="nextSection" className="section">
                     <div id="box1" className="box box1">
@@ -109,8 +66,28 @@ export const CulturePage = () => {
                     </div>
                 </div>
             </div>
+            <div className="blockCulture">
+                <h1>LES VOYAGES D'HONORE DE BALZAC</h1>
 
-            <BalzacList />
+                <p>
+                    <span className="first-character b">S</span>ans être un
+                    grand voyageur dans l’âme, Balzac n’en a pas moins sillonné
+                    la France et l’Europe tout au long de sa vie, quelques fois
+                    pour affaires, le plus souvent pour rejoindre des femmes
+                    aimées : les amies telle Zulma Carraud qu’il retrouve à
+                    Angoulême ou Issoudun, les autres amantes ou les prétendues
+                    au titre (respectivement Mme de Berny en Touraine puis en
+                    bateau sur la Loire jusque Nantes, Mme de Castries en
+                    Suisse) et surtout Mme Hanska pour laquelle il traversera
+                    plusieurs fois l’Europe dans toute son étendue, dans des
+                    conditions de voyage éprouvantes liées aux moyens de
+                    transport rudimentaires de la première moitié du 19ème
+                    siècle.
+                </p>
+            </div>
+            <div id="balzacList">
+                <BalzacList />
+            </div>
         </>
     )
 }

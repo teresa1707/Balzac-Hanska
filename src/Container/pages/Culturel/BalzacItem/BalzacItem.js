@@ -16,9 +16,7 @@ export const BalzacItem = ({ balzacObject = getObject(balzac) }) => {
 
             <Container>
                 <h1>{balzacObject[id].title}</h1>
-                <Link to="/culture/balzacList" style={{ color: 'black' }}>
-                    RETOUR
-                </Link>
+                <Link to="/culture ">RETOUR</Link>
                 <Grid
                     container
                     className="balzacItem"

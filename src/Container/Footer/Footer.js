@@ -5,7 +5,7 @@ import { Container } from '@mui/material'
 import 'Container/Footer/Footer.scss'
 import { SocialMedia } from 'Components/SocialMedia/SocialMedia'
 
-export const Footer = () => {
+export const Footer = ({ buttonText }) => {
     return (
         <>
             <div className="footer">
@@ -18,43 +18,73 @@ export const Footer = () => {
                     >
                         <Grid container mb={2} spacing={3}>
                             <Grid item sm={12} md={4} className="ft1">
-                                <h2 className="footerTitle">Nous suivre</h2>
-                                <div style={{ margin: '10px 30px' }}>
+                                <div style={{ margin: '0px 30px' }}>
+                                    <h2 className="footerTitle">
+                                        Nous suivre:
+                                    </h2>
+
                                     <SocialMedia />
+                                </div>
+                                <div style={{ margin: '0px 30px' }}>
+                                    <h2 className="footerTitle">
+                                        Nos coordonnées:
+                                    </h2>
+
+                                    <p
+                                        style={{
+                                            color: 'grey',
+                                        }}
+                                    >
+                                        79, avenue la Bruyere
+                                        <br />
+                                        94400 Vitry-Sur-Seine, FRANCE
+                                        <br />
+                                        mail:associationbalzachanska@gmail.com
+                                        <br />
+                                        tel: +33(0)123456789
+                                    </p>
+                                    <p
+                                        style={{
+                                            color: 'grey',
+                                        }}
+                                    >
+                                        79, avenue la Bruyere
+                                        <br />
+                                        94400 Vitry-Sur-Seine, FRANCE
+                                        <br />
+                                        mail:associationbalzachanska@gmail.com
+                                        <br />
+                                        tel: +33(0)123456789
+                                    </p>
                                 </div>
                             </Grid>
 
                             <Grid item sm={12} md={4} className="ft2">
-                                <h2 className="footerTitle">
-                                    Nos coordonnées:
-                                </h2>
-
+                                <h2 className="footerTitle">Faire un don:</h2>
                                 <p
                                     style={{
-                                        color: 'grey',
+                                        color: 'white',
+                                        textAlign: 'justify',
                                     }}
                                 >
-                                    79, avenue la Bruyere
-                                    <br />
-                                    94400 Vitry-Sur-Seine, FRANCE
-                                    <br />
-                                    mail:associationbalzachanska@gmail.com
-                                    <br />
-                                    tel: +33(0)123456789
+                                    L’Association Franco Ukrainienne BALZAC
+                                    HANSKA est une Association loi de 1901 N°
+                                    W941007660 – ouvrant droit à une réduction
+                                    d’impôt et délivrance d’un certificat de
+                                    déductibilité fiscale.
                                 </p>
-                                <p
-                                    style={{
-                                        color: 'grey',
-                                    }}
-                                >
-                                    79, avenue la Bruyere
-                                    <br />
-                                    94400 Vitry-Sur-Seine, FRANCE
-                                    <br />
-                                    mail:associationbalzachanska@gmail.com
-                                    <br />
-                                    tel: +33(0)123456789
-                                </p>
+                                <div>
+                                    <h2>
+                                        <a
+                                            className="footerTitle"
+                                            href="https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            HELLOASSO
+                                        </a>
+                                    </h2>
+                                </div>
                             </Grid>
                             <Grid item sm={12} md={4} className="ft3">
                                 <h2 className="footerTitle">

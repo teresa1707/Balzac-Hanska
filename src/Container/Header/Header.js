@@ -20,42 +20,27 @@ export const Header = ({ buttonText }) => {
     window.addEventListener('scroll', stickyNav)
 
     return (
-        <>
-            {' '}
-            <div className={sticky ? 'main_h sticky' : 'main_h'}>
-                <Container>
-                    <Grid container>
-                        <Grid
-                            item
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            className="slidingButton"
-                        >
-                            <SlidingButton buttonText="Faire un don ou adherer" />
-                        </Grid>
-                        <Grid item xs={12} sm={6} md={4} className="logo">
-                            <Logo />
-                        </Grid>
-                        <Grid
-                            item
-                            xs={12}
-                            sm={12}
-                            md={4}
-                            className="headerMenu"
-                        >
-                            <Menu />
-                        </Grid>
-
-                        <Grid item xs={12} className="annonceImpot" id="easing">
-                            L’Association Franco Ukrainienne BALZAC HANSKA est
-                            une Association loi de 1901 N° W941007660 – ouvrant
-                            droit à une réduction d’impôt et délivrance d’un
-                            certificat de déductibilité fiscale.{' '}
-                        </Grid>
+        <header className={sticky ? 'main_h sticky' : 'main_h'}>
+            <Container>
+                <Grid container>
+                    <Grid item xs={12} sm={6} md={4} className="slidingButton">
+                        <SlidingButton buttonText="Faire un don ou adherer" />
                     </Grid>
-                </Container>
-            </div>
-        </>
+                    <Grid item xs={12} sm={6} md={4} className="logo">
+                        <Logo />
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={4} className="headerMenu">
+                        <Menu />
+                    </Grid>
+
+                    <Grid item xs={12} className="annonceImpot" id="easing">
+                        L’Association Franco Ukrainienne BALZAC HANSKA est une
+                        Association loi de 1901 N° W941007660 – ouvrant droit à
+                        une réduction d’impôt et délivrance d’un certificat de
+                        déductibilité fiscale.{' '}
+                    </Grid>
+                </Grid>
+            </Container>
+        </header>
     )
 }

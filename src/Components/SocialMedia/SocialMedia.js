@@ -5,7 +5,7 @@ import { FiFacebook } from 'react-icons/fi'
 
 export const SocialMedia = () => {
     return (
-        <>
+        <div className="clearfix">
             <a
                 className="social"
                 href="https://www.facebook.com/BalzacHanska"
@@ -43,6 +43,6 @@ export const SocialMedia = () => {
                     }}
                 />
             </a>
-        </>
+        </div>
     )
 }

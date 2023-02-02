@@ -19,7 +19,7 @@ export const ProjectSlider = () => {
 
     return (
         <>
-            <Grid container className="art-grid " spacing={2}>
+            <Grid container className="art-grid ">
                 {currentItems.map((project) => (
                     <Grid
                         item

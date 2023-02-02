@@ -1,21 +1,21 @@
 .main_h {
-    z-index: 999999;
-    background: transparent;
-    width: 100%;
-    top: 0;
-    position: absolute;
-    // height:95px;
-}
-
-.sticky {
     position: fixed;
-    top: 0px;
+    z-index: 999999;
     background-image: repeating-linear-gradient(
         90deg,
         rgb(22, 18, 18),
         rgb(74, 71, 73),
         rgb(22, 18, 18)
     );
+    width: 100%;
+    top: 0;
+
+    height: 80px;
+}
+
+.sticky {
+    top: 0px;
+
     height: 80px;
     box-shadow: 2px 2px 2px #c48660;
     .annonceImpot {

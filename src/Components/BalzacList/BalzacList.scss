@@ -1,32 +1,38 @@
 .blockCulture {
     h1 {
+        color: #c48660;
         font-family: 'Kelly Slab', sans-serif;
     }
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
-    color: #f2fcdf;
+    font-size: 14px;
+    color: #bebebe;
     width: 100%;
     margin: 0;
     text-align: justify;
-    background-image: linear-gradient(90deg, #161212, rgb(74, 71, 73));
     clip-path: polygon(0 0%, 100% 0, 100% 80%, 0 100%);
     padding: 2rem 10% 10rem;
+    border-top: 1px solid #c48660;
+    border-bottom: 1px solid #c48660;
 }
 
 .balzacList {
+    background-image: linear-gradient(90deg, #161212, rgb(74, 71, 73));
+    padding: 70px 0;
+    border-top: 10px solid #bebebe;
+    border-bottom: 10px solid #bebebe;
     .cardItem {
-        width: 80vw;
+        width: 70vw;
         display: flex;
+        justify-self: center;
         margin: 10px 5px;
-        // border-radius:0px 40px 0% 40px;
         clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
         padding: 4rem 10%;
         border: 10px outset #c48660;
+        padding: 70px;
     }
     .projectPhoto {
         height: fit-content;
         background-color: #ddc;
-        border: solid 5vmin #eee;
+        border: solid 1.4rem #eee;
         border-bottom-color: #fff;
         border-left-color: #eee;
         border-radius: 2px;
@@ -37,26 +43,6 @@
         position: relative;
         margin-top: 60px;
         text-align: center;
-        // &:before {
-        //   border-radius:2px;
-        //   bottom:-2vmin;
-        //   box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
-        //   content:"";
-        //   left:-2vmin;
-        //   position:absolute;
-        //   right:-2vmin;
-        //   top:-2vmin;
-        // }
-        // &:after {
-        //   border-radius:2px;
-        //   bottom:-2.5vmin;
-        //   box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
-        //   content:"";
-        //   left:-2.5vmin;
-        //   position:absolute;
-        //   right:-2.5vmin;
-        //   top:-2.5vmin;
-        // }
     }
     div {
         padding: 10px;
@@ -67,9 +53,8 @@
     }
     .title2 {
         font-family: 'Kelly Slab', sans-serif;
-        // color: #879aff;
-        color: #93979e;
-        font-size: 20px;
+        color: #c48660;
+        font-size: 1.4rem;
         font-weight: bold;
         text-transform: uppercase;
         padding: 10px;
@@ -77,21 +62,11 @@
     }
 
     .text2 {
+        color: #bebebe;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
         overflow: hidden;
         max-height: 190px;
-        p {
-            color: #93979e;
-            span {
-                color: #cdd6bd;
-            }
-        }
-        a {
-            font-size: 20px;
-            text-decoration: none;
-            color: #cdd6bd;
-        }
     }
     //pagination
     ul {
@@ -102,7 +77,7 @@
     }
     li {
         color: #3d3c3a;
-        font-size: 16px;
+        font-size: 1.2rem;
         font-weight: 600;
         list-style: none;
         margin: 10px;

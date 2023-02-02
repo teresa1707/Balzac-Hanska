@@ -6,12 +6,7 @@
     box-shadow: 0 0.2px 0.2px 0.2px rgba(#aaa, 0.6);
     font-family: 'Kelly slab', sans-serif;
     text-shadow: 1px 1px 1px black;
-    background-image: repeating-linear-gradient(
-        90deg,
-        rgb(22, 18, 18),
-        rgb(74, 71, 73),
-        rgb(22, 18, 18)
-    );
+    background-color: #3d3c3a;
     height: 50px;
     width: 200px;
     border: 1px solid transparent;
@@ -19,11 +14,12 @@
     overflow: hidden;
     cursor: pointer;
     position: relative;
-    margin-top: 20px;
+
     .buttonText {
-        padding-left: 10px;
-        font-size: 1rem;
-        text-transform: capitalize;
+        margin-left: 20px;
+        text-align: center;
+        font-size: 0.8rem;
+        text-transform: uppercase;
         z-index: 10;
         transition: 0.3s;
         text-decoration: none;
@@ -32,7 +28,7 @@
     //flash
     h5 {
         position: absolute;
-        top: -15px;
+        top: -18px;
         right: 25px;
         font-size: 20px;
         opacity: 0;
@@ -44,13 +40,12 @@
     box-shadow: 0 0.5px 0.5px 0.5px #c48660;
 }
 .btn2-1:hover .buttonText {
-    margin-right: 23px;
-    font-size: 0.9rem;
-    color: #c48660;
+    color: #bebebe;
+    font-size: 0.65rem;
 }
 
 .btn2-1:hover h5 {
-    margin-right: -15px;
+    margin-right: -10px;
     opacity: 1;
-    color: #c48660;
+    color: #bebebe;
 }

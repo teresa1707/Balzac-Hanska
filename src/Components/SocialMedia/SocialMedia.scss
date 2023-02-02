@@ -5,12 +5,14 @@
     display: block;
     height: 36px !important;
     width: 36px !important;
-    -webkit-transition: all linear 200ms;
-    -moz-transition: all linear 200ms;
-    -o-transition: all linear 200ms;
     transition: all linear 200ms;
     float: left;
     margin: 0px 0px 10px 0px;
+}
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: table;
 }
 .social .img {
     border: none;
@@ -21,9 +23,6 @@
 .social .img:first-child {
     margin-top: 0;
     margin-bottom: 15px;
-    -webkit-transition: all linear 200ms;
-    -moz-transition: all linear 200ms;
-    -o-transition: all linear 200ms;
     transition: all linear 200ms;
     color: rgb(223, 213, 223) !important;
 }

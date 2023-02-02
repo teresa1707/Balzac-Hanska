@@ -28,7 +28,12 @@
     padding: 10px 30px 10px 30px;
     font-size: 14px;
     line-height: 15px;
-    color: #cdd6bd;
+    color: #bebebe;
+    clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
+    border: 10px outset #c48660;
+    padding: 2rem 2%;
+    margin: 20px;
+    min-height: 250px;
 }
 .first-character {
     font-weight: 400;
@@ -46,8 +51,6 @@
 
 #parallax-container img {
     width: 200px;
-    position: relative;
-
     border-radius: 2px;
 }
 /* Section - Block */
@@ -55,16 +58,16 @@
 #parallax-container .block {
     margin: 50px auto;
     text-align: justify;
-    padding: 2rem 2%;
+
     width: 80vw;
     display: flex;
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-    border: 10px outset #c48660;
 }
 
 /* Section - Parallax */
 /**************************/
 #parallax-container .parallax-one {
+    display: flex;
+    gap: 50rem;
     padding-top: 300px;
     padding-bottom: 400px;
     overflow: hidden;
@@ -77,12 +80,10 @@
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    box-shadow: 2px 2px 2px #c48660;
+    box-shadow: 1px 1px 1px #c48660;
 }
 
 #parallax-container .parallax-two {
-    display: flex;
-    justify-content: space-around;
     padding-top: 300px;
     padding-bottom: 300px;
     overflow: hidden;
@@ -110,7 +111,7 @@
     -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    box-shadow: 2px 2px 2px #c48660;
+    box-shadow: 1px 1px 1px #c48660;
 }
 
 @media (max-width: 959px) and (min-width: 768px) {

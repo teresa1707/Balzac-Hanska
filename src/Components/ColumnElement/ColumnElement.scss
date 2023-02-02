@@ -1,6 +1,5 @@
 .cardItemHuma {
-    margin: 10px 5px;
-    // border-radius:0px 40px 0% 40px;
+    margin: 0px 5px;
     clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
     padding: 5rem 10%;
     border: 10px outset #bebebe;
@@ -8,8 +7,6 @@
 }
 
 .title2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    // color: #879aff;
     color: rgb(147, 151, 158);
     font-size: 15px;
     font-weight: 600;

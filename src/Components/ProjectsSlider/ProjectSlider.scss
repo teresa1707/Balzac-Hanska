@@ -22,6 +22,8 @@
     //card
 
     .art-item {
+        padding: 0px 20px;
+
         &:hover {
             .art-img {
                 transform: scale(1.2);
@@ -40,8 +42,6 @@
         border-top-color: #ddd;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
             0 5px 10px 5px rgba(0, 0, 0, 0.25);
-
-        position: relative;
         left: 10%;
         top: 300px;
         padding-top: 20px;
@@ -49,6 +49,7 @@
         overflow: hidden;
         max-width: 80%;
         height: 250px;
+
         .art-img {
             height: 280px;
             width: 100%;
@@ -57,11 +58,19 @@
             transition: all 1s ease;
         }
     }
+
     .art-category {
+        border: 10px outset #bebebe;
+        box-shadow: 1px 1px 1px #55555d;
         height: 550px;
-        margin: 0px 5px;
-        padding: 20rem 10% 2rem 10%;
-        background: transparent;
+        margin: 0px;
+        padding: 20rem 10% 20rem 10%;
+        background-image: repeating-linear-gradient(
+            90deg,
+            #161212,
+            rgb(74, 71, 73),
+            rgb(22, 18, 18)
+        );
     }
 
     .art-meta {

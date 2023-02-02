@@ -38,17 +38,15 @@ export const HumanitarianPage = () => {
                         </p>
                     </div>
                 </div>
-                <div className="humaPadding" />
+
                 <div className="newsStyle">
                     <NewsSlider />
                 </div>
                 <div className="humaPadding">
                     <ColumnElement text={text} title={title} link={link} />
                 </div>
-                <div className="backGround">
-                    <ProjectSlider />
-                </div>
-                <div className="humaPadding" />
+
+                <ProjectSlider />
             </div>
         </>
     )

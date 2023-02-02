@@ -1,15 +1,29 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './HeroSlider.scss'
 import balzac from '../../Assets/Balzac-Image.jpg'
 import hanska from '../../Assets/hanska-mini.webp'
 import { Link } from 'react-router-dom'
 import { Grid } from '@mui/material'
+import { ScrollDown } from 'Components/ScrollDown/ScrollDown'
 
-export const HeroSlider = () => {
+export const HeroSlider = ({ slideFade, slideUp }) => {
+    useEffect(() => {
+        slideFade('#parallax-container .frame', '1', '2')
+    }, [])
+    useEffect(() => {
+        slideUp('#block1 p', '0.6', '1')
+        slideUp('#block2 p', '0.6', '1')
+        slideUp('#block3 p', '0.6', '1')
+    }, [])
+
     return (
         <>
             <div id="parallax-container">
-                <div className="parallax-one"></div>
+                <div className="parallax-one">
+                    <img className="photoBalzac frame" src={balzac} alt="" />
+                    <img className="photoHanska frame" src={hanska} alt="" />
+                    <ScrollDown />
+                </div>
 
                 <Grid container className="block" id="block1">
                     <Grid item xs={12} md={6}>
@@ -54,11 +68,9 @@ export const HeroSlider = () => {
                     </Grid>
                 </Grid>
                 <div className="parallax-two">
-                    <img className="photoBalzac frame" src={balzac} alt="" />
                     <Link to="/culture">
                         <h2 className="frame">Projets Culturels</h2>
                     </Link>
-                    <img className="photoHanska frame" src={hanska} alt="" />
                 </div>
 
                 <Grid container className="block" id="block2">

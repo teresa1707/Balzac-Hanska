@@ -1,12 +1,12 @@
 .articleItem {
+    background-color: #3d3c3a;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 30px 0;
     border-radius: 0px 40px 0% 40px;
     clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
     padding: 5rem 10%;
-    border-bottom: 5px solid orange;
-    border-top: 5px solid orange;
-    background-color: #3d3c3a;
+    border-bottom: 5px solid #bebebe;
+    border-top: 5px solid #bebebe;
     p {
         color: rgb(205, 214, 189);
     }
@@ -34,7 +34,7 @@
         border-radius: 0px 40px 0% 40px;
         clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
         padding: 5rem 10%;
-        border-right: 5px solid orange;
+        border-right: 5px solid #bebebe;
         background-color: #3d3c3a;
         max-width: 340px;
     }
@@ -61,7 +61,7 @@
     column-gap: 5px;
     row-gap: 5px;
     background-color: #bebebe;
-    border: 2px solid orange;
+    border: 2px solid #c48660;
     .one {
         background-color: #fff;
         border-radius: 5px;

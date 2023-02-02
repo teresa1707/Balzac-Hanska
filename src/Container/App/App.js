@@ -13,6 +13,7 @@ import { BalzacItem } from 'Container/pages/Culturel/BalzacItem/BalzacItem'
 import { BalzacList } from 'Components/BalzacList/BalzacList'
 import { Footer } from 'Container/Footer/Footer'
 import { ArticleItem } from 'Container/pages/Humanitaire/ArticleItem/ArticleItem'
+import { NotFound } from 'Container/pages/NotFound/NotFound'
 
 export const App = () => {
     const onLoad = () => {
@@ -87,7 +88,30 @@ export const App = () => {
             }
         )
     }
-    const slideDown = (elem, delay, duration) => {
+    const slideUp = (elem, delay, duration) => {
+        gsap.fromTo(
+            elem,
+            {
+                opacity: 0,
+                y: 100,
+            },
+            {
+                opacity: 1,
+                y: 0,
+                delay: delay || 0.6,
+                duration: duration || 0.6,
+                stagger: {
+                    each: 0.2,
+                },
+                scrollTrigger: {
+                    trigger: elem,
+                    // start: 'top center',
+                    // end: 'bottom center',
+                },
+            }
+        )
+    }
+    function slideToUp(elem, delay, duration) {
         gsap.fromTo(
             elem,
             {
@@ -107,14 +131,30 @@ export const App = () => {
             }
         )
     }
+
+    const slideToLeft = (elem, delay, duration) => {
+        gsap.fromTo(
+            elem,
+            {
+                opacity: 0,
+                x: -200,
+            },
+            {
+                opacity: 1,
+                x: 0,
+                delay: delay || 0.6,
+                duration: duration || 0.6,
+                scrollTrigger: {
+                    trigger: elem,
+                    start: 'top center',
+                    end: 'bottom center',
+                },
+            }
+        )
+    }
+
     useEffect(() => {
         onLoad()
-    }, [])
-    useEffect(() => {
-        slideFade('#parallax-container .frame', '1', '2')
-        slideFade('#block1 p', '0.6', '1')
-        slideFade('#block2 p', '0.6', '1')
-        slideFade('#block3 p', '0.6', '1')
     }, [])
 
     return (
@@ -125,7 +165,7 @@ export const App = () => {
                     path="/"
                     element={
                         <>
-                            <Main />
+                            <Main slideFade={slideFade} slideUp={slideUp} />
                         </>
                     }
                 />
@@ -141,7 +181,10 @@ export const App = () => {
                     path="/culture"
                     element={
                         <>
-                            <CulturePage />
+                            <CulturePage
+                                slideToUp={slideToUp}
+                                slideToLeft={slideToLeft}
+                            />
                         </>
                     }
                 />
@@ -175,6 +218,14 @@ export const App = () => {
                     element={
                         <>
                             <ArticleItem />
+                        </>
+                    }
+                />
+                <Route
+                    path="*"
+                    element={
+                        <>
+                            <NotFound />
                         </>
                     }
                 />
