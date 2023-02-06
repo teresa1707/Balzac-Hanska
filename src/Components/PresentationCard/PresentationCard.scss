@@ -1,0 +1,106 @@
+.card {
+    display: flex;
+    margin: 80px auto;
+    width: 100%;
+    border-top: 2px solid #c48660;
+    border-bottom: 2px solid #c48660;
+    box-shadow: -2px 2px 10px 0px #c48660;
+    background: #f2fcdf;
+    @media (max-width: 900px) {
+        width: 88%;
+        flex-wrap: wrap;
+    }
+}
+
+.card__img {
+    margin: 0;
+    position: relative;
+    width: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    // border-right: 4px solid #52616a;
+    @media (max-width: 900px) {
+        width: 100%;
+        height: 375px;
+        background-position: center center;
+    }
+
+    @media (max-width: 525px) {
+        height: 250px;
+    }
+}
+
+.card__content {
+    width: 50%;
+    @media (max-width: 900px) {
+        width: 100%;
+    }
+}
+
+.card__title {
+    position: relative;
+    top: -40px;
+    left: -90px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    padding-top: 0px;
+
+    color: #52616a;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+
+    @media (max-width: 525px) {
+        transition: all 0.2s ease-in;
+        font-size: 26px;
+    }
+    @media (max-width: 900px) {
+        left: 0;
+        margin-bottom: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    span {
+        display: block;
+        position: relative;
+        top: 6px;
+
+        line-height: 0.85;
+        opacity: 0.85;
+    }
+    span.small {
+        position: relative;
+        opacity: 1;
+        font-size: 18px;
+        color: #52616a;
+    }
+}
+
+.card__quote {
+    width: 72%;
+    padding-left: 15px;
+    margin-left: 0px;
+
+    font-family: 'open sans';
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #52616a;
+    transition: all 0.2s ease;
+    @media (max-width: 900px) {
+        left: 0;
+        margin-left: 0;
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+    @media (max-width: 525px) {
+        width: 88%;
+    }
+    span {
+        position: relative;
+        top: -4px;
+    }
+}

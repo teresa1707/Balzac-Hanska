@@ -8,5 +8,39 @@
 
 body {
     margin: 0;
-    background: #f2fcdf;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='3000' preserveAspectRatio='none' viewBox='0 0 1440 3000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1503%26quot%3b)' fill='none'%3e%3crect width='1440' height='3000' x='0' y='0' fill='url(%23SvgjsLinearGradient1504)'%3e%3c/rect%3e%3cpath d='M1440 0L1083.19 0L1440 1473.64z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1083.19 0L1440 1473.64L1440 2054.12L534.47 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M534.47 0L1440 2054.12L1440 2267.89L431.49 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M431.49 0L1440 2267.89L1440 2537.87L127.53000000000003 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 3000L94.39 3000L0 1819.85z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 1819.85L94.39 3000L423.03999999999996 3000L0 947.29z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 947.29L423.03999999999996 3000L964.93 3000L0 639.78z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 639.7799999999997L964.93 3000L1221.86 3000L0 480.70999999999975z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1503'%3e%3crect width='1440' height='3000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='-27.08%25' y1='13%25' x2='127.08%25' y2='87%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1504'%3e%3cstop stop-color='rgba(22%2c 18%2c 18%2c 1)' offset='0.51'%3e%3c/stop%3e%3cstop stop-color='rgba(74%2c 71%2c 73%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
 }
+.humaPadding {
+    padding-top: 100px;
+}
+.humaPaddingSlider {
+    border-bottom: 4px ridge #bebebe;
+}
+.bgClear {
+    background-image: url(../../Assets/trianglify-lowres.png);
+}
+.item {
+    background-color: #3d3c3a;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 30px 0;
+    border-radius: 5px;
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
+    padding: 5rem 10%;
+    border: 5px ridge #bebebe;
+}
+
+.pDarkTheme {
+    color: #bebebe;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.85rem;
+}
+.titleSlider {
+    color: #c48660;
+    font-size: 1.5rem;
+}
+// background-image: repeating-linear-gradient(
+//     90deg,
+//     #161212,
+//     rgb(74, 71, 73),
+//     rgb(22, 18, 18)
+// );

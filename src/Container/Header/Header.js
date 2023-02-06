@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Header.scss'
 import { useState } from 'react'
 import { Menu } from 'Components/Menu/Menu'
@@ -6,7 +6,7 @@ import { Container, Grid } from '@mui/material'
 import { Logo } from 'Components/LogoBalzacHanska/Logo'
 import { SlidingButton } from 'Components/MyButton/SlidingButton'
 
-export const Header = ({ buttonText }) => {
+export const Header = ({ onLoad }) => {
     const [sticky, setSticky] = useState(false)
 
     const stickyNav = () => {
@@ -18,7 +18,9 @@ export const Header = ({ buttonText }) => {
     }
 
     window.addEventListener('scroll', stickyNav)
-
+    useEffect(() => {
+        onLoad()
+    }, [])
     return (
         <header className={sticky ? 'main_h sticky' : 'main_h'}>
             <Container>
@@ -33,12 +35,12 @@ export const Header = ({ buttonText }) => {
                         <Menu />
                     </Grid>
 
-                    <Grid item xs={12} className="annonceImpot" id="easing">
+                    {/* <Grid item xs={12} className="annonceImpot" id="easing">
                         L’Association Franco Ukrainienne BALZAC HANSKA est une
                         Association loi de 1901 N° W941007660 – ouvrant droit à
                         une réduction d’impôt et délivrance d’un certificat de
                         déductibilité fiscale.{' '}
-                    </Grid>
+                    </Grid> */}
                 </Grid>
             </Container>
         </header>

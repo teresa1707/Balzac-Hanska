@@ -1,9 +1,4 @@
 .balzacItem {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 30px 0;
-    padding: 4rem 10%;
-    border: 5px solid #bebebe;
-    background-color: #3d3c3a;
     p {
         color: #cdd6bd;
         padding: 20px;
@@ -25,27 +20,6 @@
         border-top-color: #ddd;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
             0 5px 10px 5px rgba(0, 0, 0, 0.25);
-
-        //  &:before {
-        //    border-radius:2px;
-        //    bottom:-2vmin;
-        //    box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
-        //    content:"";
-        //    left:-2vmin;
-        //    position:absolute;
-        //    right:-2vmin;
-        //    top:-2vmin;
-        //  }
-        //  &:after {
-        //    border-radius:2px;
-        //    bottom:-2.5vmin;
-        //    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
-        //    content:"";
-        //    left:-2.5vmin;
-        //    position:absolute;
-        //    right:-2.5vmin;
-        //    top:-2.5vmin;
-        //  }
     }
     #caption .text {
         position: absolute;
@@ -66,6 +40,9 @@
         opacity: 1;
     }
     #caption:hover img {
-        -webkit-filter: sepia(90%);
+        filter: sepia(90%);
     }
+}
+.bgClair {
+    background: #f2fcdf;
 }

@@ -1,12 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 .contactForm {
-    background-image: repeating-linear-gradient(
-        90deg,
-        rgb(22, 18, 18),
-        rgb(74, 71, 73),
-        rgb(22, 18, 18)
-    );
-    padding: 150px 0 30px 0;
+    padding: 100px 0 30px 0;
+    border-top: 4px ridge #bebebe;
 }
 h1,
 form {

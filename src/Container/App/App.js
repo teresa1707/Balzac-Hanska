@@ -20,20 +20,19 @@ export const App = () => {
         gsap.timeline()
             .fromTo(
                 '.logo',
-                { y: 500, opacity: 0, scale: 1.6 },
+                { opacity: 0, scale: 1 },
                 {
-                    y: 300,
+                    y: -10,
                     x: 0,
                     opacity: 1,
                     stagger: 0.33,
-                    duration: 3,
+                    duration: 1,
                     delay: 0.5,
-                    scale: 0.9,
+                    scale: 0.6,
                 }
             )
-
             .fromTo(
-                '.menu',
+                '.navLinks',
                 {
                     x: 100,
                     opacity: 0,
@@ -54,15 +53,20 @@ export const App = () => {
                 {
                     x: 0,
                     opacity: 1,
-                    delay: 1,
-                    duration: 1.5,
+                    delay: 0.5,
+                    duration: 1,
                 }
             )
-            .to('.logo', {
-                y: -10,
-                scale: 0.6,
-                duration: 1,
-            })
+            .fromTo(
+                '.logo',
+                {
+                    scale: 0.6,
+                },
+                {
+                    scale: 0.7,
+                }
+            )
+            .to('.logo', { scale: 0.6 })
     }
     function slideFade(elem, delay, duration) {
         gsap.fromTo(
@@ -153,13 +157,9 @@ export const App = () => {
         )
     }
 
-    useEffect(() => {
-        onLoad()
-    }, [])
-
     return (
         <>
-            <Header />
+            <Header onLoad={onLoad} />
             <Routes>
                 <Route
                     path="/"
@@ -173,7 +173,11 @@ export const App = () => {
                     path="/humanitarian"
                     element={
                         <>
-                            <HumanitarianPage /> <ContactForm />
+                            <HumanitarianPage
+                                slideToLeft={slideToLeft}
+                                slideToUp={slideToUp}
+                            />{' '}
+                            <ContactForm />
                         </>
                     }
                 />

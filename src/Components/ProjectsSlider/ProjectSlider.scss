@@ -1,26 +1,29 @@
+//pagination
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+li {
+    color: #bebebe;
+    font-size: 16px;
+    font-weight: 600;
+    list-style: none;
+    margin: 10px 10px 100px;
+}
+li:hover,
+.selected {
+    scale: 1.1;
+    color: #c48660;
+}
+
 .art-grid {
-    //pagination
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        cursor: pointer;
-    }
-    li {
-        color: #3d3c3a;
-        font-size: 16px;
-        font-weight: 600;
-        list-style: none;
-        margin: 10px;
-    }
-    li:hover,
-    .selected {
-        scale: 1.1;
-        color: red;
-    }
+    margin: 0 100px 0 100px;
+    padding: 100px 0 0;
+    max-width: 1200px;
 
     //card
-
     .art-item {
         padding: 0px 20px;
 
@@ -31,68 +34,42 @@
         }
     }
 
-    .art-img-wrap {
+    img {
+        width: 100%;
+        height: 250px;
+    }
+    #caption {
+        max-width: 300px;
+        height: 400px;
         position: relative;
         background-color: #ddc;
-        border: solid 20px #eee;
+        border: solid 15px #bebebe;
         border-bottom-color: #fff;
         border-left-color: #eee;
-        border-radius: 2px;
-        border-right-color: #eee;
+        border-radius: 5px;
+        border-right-color: #bebebe;
         border-top-color: #ddd;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
             0 5px 10px 5px rgba(0, 0, 0, 0.25);
-        left: 10%;
-        top: 300px;
-        padding-top: 20px;
-        z-index: 1;
-        overflow: hidden;
-        max-width: 80%;
-        height: 250px;
-
-        .art-img {
-            height: 280px;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            transition: all 1s ease;
-        }
     }
-
-    .art-category {
-        border: 10px outset #bebebe;
-        box-shadow: 1px 1px 1px #55555d;
-        height: 550px;
-        margin: 0px;
-        padding: 20rem 10% 20rem 10%;
-        background-image: repeating-linear-gradient(
-            90deg,
-            #161212,
-            rgb(74, 71, 73),
-            rgb(22, 18, 18)
-        );
+    #caption .text {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;
+        background-color: #fff;
+        color: #3d3c3a;
+        font-size: 12px;
+        padding: 10px;
     }
-
-    .art-meta {
-        display: flex;
-        align-items: center;
-        font-size: 11px;
-        font-weight: bold;
-        line-height: 1;
-        text-transform: uppercase;
-        color: orangered;
-        transition: color 0.3s ease;
-        text-decoration: none;
-        &:hover {
-            color: white;
-        }
+    #caption:hover .text {
+        opacity: 1;
     }
-
-    .art-text {
-        font-size: 14px;
-
-        p {
-            color: rgb(205, 214, 189);
-        }
+    #caption:hover img {
+        filter: sepia(90%);
     }
 }

@@ -5,7 +5,7 @@ import { Grid } from '@mui/material'
 export const ContactForm = () => {
     return (
         <>
-            <Grid className="contactForm">
+            <Grid className="contactForm humaPaddingSlider">
                 <h1>Nous contacter</h1>
                 <form>
                     <div>

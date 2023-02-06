@@ -11,15 +11,13 @@ export const BalzacItem = ({ balzacObject = getObject(balzac) }) => {
     let { id } = useParams()
 
     return (
-        <>
-            <div className="humaPadding"></div>
-
-            <Container>
+        <div className="bgClear">
+            <Container className="humaPadding ">
                 <h1>{balzacObject[id].title}</h1>
                 <Link to="/culture ">RETOUR</Link>
                 <Grid
                     container
-                    className="balzacItem"
+                    className="balzacItem item"
                     justifyContent="center"
                     alignItems="center"
                 >
@@ -246,6 +244,6 @@ export const BalzacItem = ({ balzacObject = getObject(balzac) }) => {
                     </Link>
                 </Grid>
             </Container>
-        </>
+        </div>
     )
 }

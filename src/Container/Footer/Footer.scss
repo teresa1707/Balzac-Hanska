@@ -1,15 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 
 .footerCard {
-    background-image: repeating-linear-gradient(
-        90deg,
-        rgb(22, 18, 18),
-        rgb(74, 71, 73),
-        rgb(22, 18, 18)
-    );
+    background: #161212;
     margin: 10px 0;
     height: 100%;
     padding: 10px 40px;
+
     p {
         line-height: 1.1rem;
     }

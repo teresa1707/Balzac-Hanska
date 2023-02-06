@@ -27,7 +27,7 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
 
                 <Grid container className="block" id="block1">
                     <Grid item xs={12} md={6}>
-                        <p>
+                        <p className="pDarkTheme">
                             <span className="first-character b">B</span>eaucoup
                             d’événements, de personnes, relient l’Ukraine à la
                             France (et la France à l’Ukraine) et l’amour de
@@ -47,7 +47,7 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                         </p>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <p>
+                        <p className="pDarkTheme">
                             Et de nombreux projets se profilent, des
                             expositions, d’autres traductions des œuvres de
                             Balzac en langue ukrainienne, etc.Mais notre projet
@@ -75,7 +75,7 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
 
                 <Grid container className="block" id="block2">
                     <Grid item xs={12} md={6}>
-                        <p>
+                        <p className="pDarkTheme">
                             <span className="first-character b">L</span>e 24
                             février 2022, la Russie a déclaré la guerre à
                             l’Ukraine. Cette invasion a jeté sur les routes plus
@@ -91,7 +91,7 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                         </p>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <p>
+                        <p className="pDarkTheme">
                             C’est pourquoi, l’Association franco-ukrainienne
                             « Balzac-Hanska », representé par son président Jean
                             ROCHE et ses nombreux partenaires, se sont engagés à
@@ -109,7 +109,7 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
 
                 <Grid container className="block" id="block3">
                     <Grid item xs={12} md={6}>
-                        <p>
+                        <p className="pDarkTheme">
                             <span className="first-character b">N</span>ous ne
                             sommes pas seuls dans cette mission . Avec nos
                             partenaires, volontaires basés en France et
@@ -119,7 +119,7 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                         </p>
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <p>
+                        <p className="pDarkTheme">
                             Nos partenaires:
                             <br />
                             SETEC INGENIERIE, ASSOCIATION BALZAC HANSKA,

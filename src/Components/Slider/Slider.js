@@ -23,7 +23,7 @@ export const NewsSlider = () => {
                             <button className="button">TEXT</button>
                         </div>
                         <section>
-                            <img src={news.image} alt={news.user} />
+                            <img src={news.image} alt={news.user} type />
                             <span>
                                 Posted by <strong>TEXT</strong>
                             </span>

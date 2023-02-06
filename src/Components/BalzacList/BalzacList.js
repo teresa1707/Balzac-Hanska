@@ -1,4 +1,4 @@
-import { Container, Grid } from '@mui/material'
+import { Grid } from '@mui/material'
 import React from 'react'
 import { balzac } from 'utils/balzac'
 import './BalzacList.scss'
@@ -19,12 +19,12 @@ export const BalzacList = () => {
     }
     return (
         <>
-            <div className="balzacList">
+            <div className="balzacList bgClear">
                 <Grid container spacing={1} justifyContent="center">
-                    {currentItems.map((article) => (
+                    {currentItems.map(({ id, mainImage, title, text }) => (
                         <Link
-                            key={article.id}
-                            to={`/culture/${article.id}`}
+                            key={id}
+                            to={`/culture/${id}`}
                             style={{
                                 textDecoration: 'none',
                             }}
@@ -32,20 +32,13 @@ export const BalzacList = () => {
                             <Grid item xs={12}>
                                 <div className="cardItem">
                                     <div className="projectPhoto">
-                                        <img
-                                            src={article.mainImage}
-                                            alt="mainPhoto"
-                                        />
+                                        <img src={mainImage} alt="mainPhoto" />
                                     </div>
 
                                     <div className="cardContent">
-                                        <div className="title2">
-                                            {article.title}
-                                        </div>
-                                        <div className="text2">
-                                            {article.text[0]}
-                                        </div>
-                                        <h5>{article.budget}</h5>
+                                        <div className="title2">{title}</div>
+                                        <div className="text2">{text[0]}</div>
+                                        <h5>Lire la suite</h5>
                                         <h5></h5>
                                     </div>
                                 </div>
