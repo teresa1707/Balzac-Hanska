@@ -2,11 +2,23 @@ import React from "react"
 import './ScrollDown.scss'
 
 export const ScrollDown = () =>{
+
+
+    const scrollDown = () => {
+        window.scroll({
+          top: 500,
+          left: 0,
+          behavior:'smooth',
+          duration: 3,
+      })
+    }
+
+
   return(
     <>
- <a href="#block1">
+
 <div id="mouse-scroll">
-  <div className="mouse">
+  <div className="mouse" onClick={scrollDown}>
     <div className="mouse-in"></div>
   </div>
   <div>
@@ -15,7 +27,7 @@ export const ScrollDown = () =>{
       <span className="down-arrow-3"></span>
    </div>
 </div>
-</a>
+
     
     
 </>

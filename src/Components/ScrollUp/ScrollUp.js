@@ -9,6 +9,7 @@ export function ScrollUp({ height }) {
             top: 0,
             left: 0,
             behavior: 'smooth',
+            duration: 3,
         })
     }
 

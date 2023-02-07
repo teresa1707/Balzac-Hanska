@@ -1,20 +1,35 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+@import '../../../src/Container/App/App.scss';
 
-.footerCard {
-    background: #161212;
-    margin: 10px 0;
-    height: 100%;
-    padding: 10px 40px;
-
-    p {
-        line-height: 1.1rem;
-    }
-    .footerTitle {
-        color: #a8a8a8;
-        text-shadow: 1px 1px 1px black;
+.footer {
+    padding: 20px 30px 0;
+    .pDarkTheme {
+        font-size: 12px;
     }
 }
-.footer {
-    padding: 50px;
-    font-family: 'Source Sans Pro', sans-serif;
+footer a {
+    text-decoration: none;
+}
+.footerCard {
+    background-image: var(--backGroundDark);
+    margin: 0;
+    padding: 10px 5%;
+}
+.footerTitle {
+    text-decoration: none;
+    color: #bebebe;
+    margin-left: 5px;
+}
+
+.footerTitle:hover {
+    color: var(--colOrange);
+}
+.footer-end {
+    padding: 20px 5% 0;
+    color: coral;
+    font-size: 0.6rem;
+}
+.ft1,
+.ft2,
+.ft3 {
+    padding: 0px 25px;
 }

@@ -14,6 +14,8 @@ import { BalzacList } from 'Components/BalzacList/BalzacList'
 import { Footer } from 'Container/Footer/Footer'
 import { ArticleItem } from 'Container/pages/Humanitaire/ArticleItem/ArticleItem'
 import { NotFound } from 'Container/pages/NotFound/NotFound'
+import { NewsSlider } from 'Components/Slider/Slider'
+import { NewsItem } from 'Components/Slider/NewsItem'
 
 export const App = () => {
     const onLoad = () => {
@@ -136,7 +138,7 @@ export const App = () => {
         )
     }
 
-    const slideToLeft = (elem, delay, duration) => {
+    const slideToLeft = (elem, delay, duration, stagger) => {
         gsap.fromTo(
             elem,
             {
@@ -148,6 +150,9 @@ export const App = () => {
                 x: 0,
                 delay: delay || 0.6,
                 duration: duration || 0.6,
+                stagger: {
+                    each: stagger,
+                },
                 scrollTrigger: {
                     trigger: elem,
                     start: 'top center',
@@ -218,10 +223,18 @@ export const App = () => {
                 />
 
                 <Route
-                    path="/humanitaire/:id"
+                    path="/humanitaire/projets/:id"
                     element={
                         <>
                             <ArticleItem />
+                        </>
+                    }
+                />
+                <Route
+                    path="/humanitaire/news/:id"
+                    element={
+                        <>
+                            <NewsItem />
                         </>
                     }
                 />

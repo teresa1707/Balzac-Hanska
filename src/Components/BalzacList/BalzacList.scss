@@ -1,8 +1,4 @@
 .blockCulture {
-    h1 {
-        color: #c48660;
-        font-family: 'Kelly Slab', sans-serif;
-    }
     font-size: 14px;
     color: #bebebe;
     width: 100%;
@@ -25,10 +21,11 @@
         margin: 10px 5px;
         clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
         padding: 4rem 10%;
-        border: 10px outset #bebebe;
+        border: 10px ridge #bebebe;
         padding: 70px;
     }
     .projectPhoto {
+        width: 100%;
         height: fit-content;
         background-color: #ddc;
         border: solid 1.4rem #eee;
@@ -43,11 +40,19 @@
         margin-top: 60px;
         text-align: center;
     }
+    @media screen and (max-width: 900px) {
+        .cardItem {
+            flex-direction: column;
+        }
+    }
+    .projectPhoto img {
+    }
     div {
         padding: 10px;
     }
 
     .cardContent {
+        width: 100%;
         padding: 0px 0 10px 55px;
     }
     .title2 {
@@ -66,24 +71,6 @@
         font-size: 14px;
         overflow: hidden;
         max-height: 190px;
-    }
-    //pagination
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        cursor: pointer;
-    }
-    li {
-        color: #3d3c3a;
-        font-size: 1.2rem;
-        font-weight: 600;
-        list-style: none;
-        margin: 10px;
-    }
-    li:hover,
-    .selected {
-        scale: 1.1;
-        color: red;
+        padding-right: 5%;
     }
 }

@@ -184,66 +184,6 @@ export const ArticleItem = ({ projectObject = getObject(projects) }) => {
                         </Card>
                     </Grid>
                     <Grid item xs={12} sm={7}>
-                        <div>
-                            {/* <div className="one num">N°</div>
-                            <div className="one gridTitle">Titre</div>
-                            <div className="one gridQuantity">Quantité</div>
-                            <div className="one gridDimension">Dimension</div>
-                            <div className="one gridPrice">PRIX</div>
-
-                            <div className="one">1</div>
-                            <div className="one gridTitle">
-                                Senci Diesel 6000W{' '}
-                            </div>
-                            <div className="one gridQuantity">en Stock</div>
-                            <div className="one gridDimension">86000W</div>
-                            <div className="one gridPrice">1999€ TTC</div>
-
-                            <div className="one">2</div>
-                            <div className="one gridTitle">A-ipower</div>
-                            <div className="one gridQuantity">
-                                dispo décembre
-                            </div>
-                            <div className="one gridDimension">9KVA</div>
-                            <div className="one gridPrice">2699€ TTC</div>
-
-                            <div className="one">3</div>
-                            <div className="one gridTitle">A-ipower </div>
-                            <div className="one gridQuantity">en stock</div>
-                            <div className="one gridDimension"> 13kVA </div>
-                            <div className="one gridPrice">5499€ TTC</div>
-
-                            <div className="one">4</div>
-                            <div className="one gridTitle">Senci Diesel </div>
-                            <div className="one gridQuantity">en stock</div>
-                            <div className="one gridDimension"> 19KVA </div>
-                            <div className="one gridPrice">8999€ TTC</div>
-
-                            <div className="one">5</div>
-                            <div className="one gridTitle">ITC Power</div>
-                            <div className="one gridQuantity">
-                                dispo février-mars
-                            </div>
-                            <div className="one gridDimension">72KVA</div>
-                            <div className="one gridPrice">16999€ TTC</div>
-
-                            <div className="one">6</div>
-                            <div className="one gridTitle">ITC Power </div>
-                            <div className="one gridQuantity">
-                                dispo décembre-janvier
-                            </div>
-                            <div className="one gridDimension">110KVA</div>
-                            <div className="one gridPrice">19959€ TTC</div>
-
-                            <div className="one">7</div>
-                            <div className="one gridTitle">SENCI </div>
-                            <div className="one gridQuantity">
-                                dispo février
-                            </div>
-                            <div className="one gridDimension">190KVA </div>
-                            <div className="one gridPrice">24999€ TTC</div> */}
-                        </div>
-
                         <div
                             dangerouslySetInnerHTML={{
                                 __html: DOMPurify.sanitize(

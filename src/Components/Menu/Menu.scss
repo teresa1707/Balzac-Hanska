@@ -1,7 +1,8 @@
-nav {
+nav li {
     justify-content: space-evenly;
     display: flex;
     position: relative;
+    margin: 9px 10px 0px;
 }
 .navLinks {
     display: flex;
@@ -15,7 +16,7 @@ nav {
 .isActiveButton {
     font-family: 'Kelly slab', sans-serif;
     text-decoration: none;
-    padding: 0.6em 1em 0.6em 0em;
+    padding: 0 1em 0 0em;
     border: 3px solid transparent;
     border-bottom: 4px solid transparent;
     text-shadow: 1px 1px 1px black;
@@ -56,6 +57,9 @@ nav {
         height: 50px;
     }
 
+    nav li {
+        margin: 0px 10px 0px;
+    }
     .navBtn {
         display: inline-block;
         position: fixed;
@@ -73,7 +77,7 @@ nav {
         height: fit-content;
         flex-direction: column;
         position: absolute;
-        top: -35px;
+        top: 15px;
         right: 0;
         width: 100%;
         background-color: transparent;
@@ -109,7 +113,6 @@ nav {
         }
     }
     .navLinks li a {
-        padding: 20px;
         text-decoration: none;
         display: flex;
         justify-content: center;

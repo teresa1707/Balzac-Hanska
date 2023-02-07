@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import './HeroSlider.scss'
-import balzac from '../../Assets/Balzac-Image.jpg'
-import hanska from '../../Assets/hanska-mini.webp'
+
 import { Link } from 'react-router-dom'
 import { Grid } from '@mui/material'
 import { ScrollDown } from 'Components/ScrollDown/ScrollDown'
@@ -20,8 +19,6 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
         <>
             <div id="parallax-container">
                 <div className="parallax-one">
-                    <img className="photoBalzac frame" src={balzac} alt="" />
-                    <img className="photoHanska frame" src={hanska} alt="" />
                     <ScrollDown />
                 </div>
 
@@ -96,38 +93,37 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                             « Balzac-Hanska », representé par son président Jean
                             ROCHE et ses nombreux partenaires, se sont engagés à
                             apporter de l’aide aux populations déplacées vers
-                            les zones dans lesquelles nous sommes présents.
-                        </p>
-                    </Grid>
-                </Grid>
-
-                <div className="parallax-three">
-                    <Link to="/humanitarian">
-                        <h2>Projets Humanitaires</h2>
-                    </Link>
-                </div>
-
-                <Grid container className="block" id="block3">
-                    <Grid item xs={12} md={6}>
-                        <p className="pDarkTheme">
-                            <span className="first-character b">N</span>ous ne
-                            sommes pas seuls dans cette mission . Avec nos
+                            les zones dans lesquelles nous sommes présents.Nous
+                            ne sommes pas seuls dans cette mission . Avec nos
                             partenaires, volontaires basés en France et
                             volontaires ukrainiens basés à Berdytchiv nous
                             mettont tout en oeuvre afin de faciliter le peuple
                             ukrainien à traverser cette periode dramatique.
                         </p>
                     </Grid>
+                </Grid>
+
+                <div className="parallax-three">
+                    <Link to="/humanitarian">
+                        <h2 className="frame">Projets Humanitaires</h2>
+                    </Link>
+                </div>
+
+                <Grid container className="block" id="block3">
                     <Grid item xs={12} md={6}>
                         <p className="pDarkTheme">
-                            Nos partenaires:
-                            <br />
-                            SETEC INGENIERIE, ASSOCIATION BALZAC HANSKA,
-                            ENSEMBLE UKRAINE, LIONS CLUB KIEV Ecology, LES
-                            FEMMES UKRAINIENNES EN FRANCE, PHARMACIENS SANS
-                            FRONTIERES, BETEN Ingéniérie, BALZAC INVESTISSEMENT,
-                            NEO-TERRA, MAIRIE DE NEUF, LIONS CLUB INTERNATIONAL
-                            PARIS SEYSSEL, MAIRIE DE BERDYTCHIV, URA (UKRAINIAN
+                            <span className="first-character b">N</span>os
+                            partenaires: SETEC INGENIERIE, ASSOCIATION BALZAC
+                            HANSKA, ENSEMBLE UKRAINE, LIONS CLUB KIEV Ecology,
+                            LES FEMMES UKRAINIENNES EN FRANCE, PHARMACIENS SANS
+                            FRONTIERES, ECOLE LATOUR, CLUB SPORTIF ATHEON
+                        </p>
+                    </Grid>
+                    <Grid item xs={12} md={6}>
+                        <p className="pDarkTheme">
+                            BETEN Ingéniérie, BALZAC INVESTISSEMENT, NEO-TERRA,
+                            MAIRIE DE NEUF, LIONS CLUB INTERNATIONAL PARIS
+                            SEYSSEL, MAIRIE DE BERDYTCHIV, URA (UKRAINIAN
                             REFUGEES ASSISTANCE), RIVAGE DE FRANCE , AVENIR
                             UKRAINE , ROTARY 60 .
                         </p>

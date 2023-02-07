@@ -1,34 +1,37 @@
 .cardItemHuma {
-    margin: 0px 5px;
     clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
-    padding: 5rem 10%;
-    border: 10px outset #bebebe;
-    box-shadow: 1px 1px 1px #55555d;
-}
-
-.title2 {
-    color: rgb(147, 151, 158);
-    font-size: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 5px;
-    text-align: justify;
-}
-.italic {
-    font-style: italic;
-}
-
-.text2 {
-    font-size: 16px;
-    color: rgb(103, 103, 104);
-    p {
-        span {
-            color: white;
-        }
+    padding: 5rem 5%;
+    margin: 15% 5%;
+    border: 10px ridge var(--colWhite);
+    .title2 {
+        color: rgb(147, 151, 158);
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+        padding: 5px;
+        text-align: justify;
     }
-    a {
-        font-size: 20px;
-        text-decoration: none;
-        color: white;
+    .italic {
+        font-style: italic;
+    }
+
+    .pDarkTheme {
+        text-align: justify;
+
+        color: #676768;
+        p {
+            span {
+                color: var(--colWhite);
+                font-size: 16px;
+            }
+        }
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: var(--colWhite);
+        }
+        a:hover {
+            color: crimson;
+        }
     }
 }

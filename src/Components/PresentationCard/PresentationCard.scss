@@ -1,25 +1,26 @@
 .card {
     display: flex;
-    margin: 80px auto;
+    margin: 0 auto;
     width: 100%;
-    border-top: 2px solid #c48660;
-    border-bottom: 2px solid #c48660;
+    height: 500px;
     box-shadow: -2px 2px 10px 0px #c48660;
-    background: #f2fcdf;
     @media (max-width: 900px) {
+        height: 100%;
         width: 88%;
         flex-wrap: wrap;
     }
 }
 
 .card__img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: 0;
     position: relative;
     width: 80%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    // border-right: 4px solid #52616a;
     @media (max-width: 900px) {
         width: 100%;
         height: 375px;
@@ -28,6 +29,11 @@
 
     @media (max-width: 525px) {
         height: 250px;
+    }
+    img {
+        width: 200px;
+        border-radius: 2px;
+        margin: 10px;
     }
 }
 
@@ -40,7 +46,7 @@
 
 .card__title {
     position: relative;
-    top: -40px;
+    top: -20px;
     left: -90px;
     width: 100%;
     margin-bottom: 30px;

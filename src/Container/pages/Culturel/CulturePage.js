@@ -3,16 +3,16 @@ import './CulturePage.scss'
 import { BalzacList } from 'Components/BalzacList/BalzacList'
 import balzac from '../../../Assets/Balzac-Image.jpg'
 import hanska from '../../../Assets/hanska-mini.webp'
-import bgIm from '../../../Assets/maison.jpg'
+import bgIm from 'Assets/maison.jpg'
 import { PresentationCard } from 'Components/PresentationCard/PresentationCard'
 
 export const CulturePage = ({ slideToUp, slideToLeft }) => {
     useEffect(() => {
-        slideToLeft('#box1', '0.6', '1')
+        slideToUp('#box1', '0.6', '1')
     }, [])
 
     useEffect(() => {
-        slideToLeft('.footerCard', '0', '2')
+        slideToLeft('.frame', '0.2', '2', '0.7')
     }, [])
 
     useEffect(() => {
@@ -31,19 +31,13 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
                 <div id="nextSection" className="section">
                     <div id="box1" className="box box1">
                         <PresentationCard
+                            photo1={balzac}
+                            photo2={hanska}
                             bgImage={bgIm}
-                            text='<h1 className="card__titleCulture ">
-                                    <span>Balzac</span>
-                                    <span className="small">et</span>
-                                    <span>Hanska</span>
-                                </h1>
-                                <p className="card__quoteCulture">
-                                    <span>
-                                        Nous voulons faire connaitre le lien de
-                                        Balzac avec l’Ukraine au travers de son
-                                        histoire d’amour avec la princesse
-                                        Hanska
-                                    </span>'
+                            span1="Balzac"
+                            span2="et"
+                            span3="Hanska"
+                            text="Nous voulons faire connaitre le lien de Balzac avec l’Ukraine au travers de son histoire d’amour avec la princesse Hanska."
                         />
                     </div>
                 </div>

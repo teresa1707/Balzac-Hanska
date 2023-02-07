@@ -3,25 +3,25 @@
 //sliding button
 
 .btn2 {
-    box-shadow: 0 0.2px 0.2px 0.2px rgba(#aaa, 0.6);
+    // box-shadow: 0 0.2px 0.2px 0.2px rgba(#aaa, 0.6);
     font-family: 'Kelly slab', sans-serif;
     text-shadow: 1px 1px 1px black;
-    background-color: #3d3c3a;
-    height: 50px;
-    width: 200px;
+    background-color: transparent;
+    height: 45px;
+    max-width: 200px;
     border: 1px solid transparent;
     border-radius: 50px;
     overflow: hidden;
     cursor: pointer;
     position: relative;
-
+    top: 15px;
     .buttonText {
         margin-left: 20px;
-        text-align: center;
+
         font-size: 0.8rem;
         text-transform: uppercase;
         z-index: 10;
-        transition: 0.3s;
+        transition: 0.5s;
         text-decoration: none;
         color: #bebebe;
     }

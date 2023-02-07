@@ -1,5 +1,3 @@
-// background: #f8f8f8;
-
 .social {
     overflow: hidden !important;
     display: block;
@@ -7,7 +5,7 @@
     width: 36px !important;
     transition: all linear 200ms;
     float: left;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
 }
 .clearfix::after {
     content: '';
@@ -18,13 +16,13 @@
     border: none;
     display: block;
     margin-left: 5px;
-    color: #c48660 !important;
+    color: var(--colOrange) !important;
 }
 .social .img:first-child {
-    margin-top: 0;
+    margin-top: 5px;
     margin-bottom: 15px;
     transition: all linear 200ms;
-    color: rgb(223, 213, 223) !important;
+    color: gray !important;
 }
 .social:hover .img:first-child {
     margin-top: -36px;
