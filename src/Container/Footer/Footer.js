@@ -53,7 +53,7 @@ export const Footer = () => {
                             style={{
                                 textAlign: 'justify',
                                 paddingRight: 10,
-                                paddingBottom: 30,
+                                paddingBottom: 10,
                             }}
                         >
                             L’Association Franco Ukrainienne BALZAC HANSKA est

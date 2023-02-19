@@ -93,17 +93,18 @@
         font-weight: 900;
         margin: 0 auto;
         max-width: 840px;
-        color: #ffffff;
+        color: var(--colWhite);
         font-size: 64px;
         line-height: 1;
     }
 
     .slider-content .inner p {
-        color: #ffffff;
+        color: var(--colWhite);
         font-size: 14px;
         line-height: 1.5;
         margin: 20px auto 30px;
         max-width: 640px;
+        text-shadow: 2px 2px 2px black;
     }
 
     @media (max-height: 500px) {

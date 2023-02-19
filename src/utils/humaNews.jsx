@@ -2,7 +2,7 @@ export const humaNews = [
     {
         id: 1,
         title: 'A la une de nos actions humanitaires',
-        image: '/Images/IllustrationChlo.jpg',
+        image: '/Images/9camion/20230130_150130.jpg',
         imageArray: [
             {
                 image: '/Images/9camion/20230123_165728.jpg',

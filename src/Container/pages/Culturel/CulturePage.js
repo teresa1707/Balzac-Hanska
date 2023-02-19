@@ -39,7 +39,7 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
                             span1="Balzac"
                             span2="et"
                             span3="Hanska"
-                            text="Nous voulons faire connaitre le lien de Balzac avec l’Ukraine au travers de son histoire d’amour avec la princesse Hanska."
+                            text="Nous voulons faire connaitre le lien de Balzac avec l’Ukraine au travers de son histoire d’amour avec la princesse Hanska. "
                         />
                     </div>
                 </div>

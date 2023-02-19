@@ -1,12 +1,13 @@
 @import '../App/App.scss';
 
 .footerCard {
+    background: rgb(6, 1, 1);
     margin: 0;
     padding: 0px 5%;
-    border-bottom: 1px ridge var(--colOrange1);
+    border-top: 1px ridge var(--colBeige);
+    border-bottom: 1px ridge var(--colBeige);
 }
 .footer {
-    background: #212121;
     padding: 0px 30px 0;
     .pDarkTheme {
         font-size: 12px;
