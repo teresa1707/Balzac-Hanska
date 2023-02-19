@@ -1,7 +1,13 @@
-@import '../../../src/Container/App/App.scss';
+@import '../App/App.scss';
 
+.footerCard {
+    margin: 0;
+    padding: 0px 5%;
+    border-bottom: 1px ridge var(--colOrange1);
+}
 .footer {
-    padding: 20px 30px 0;
+    background: #212121;
+    padding: 0px 30px 0;
     .pDarkTheme {
         font-size: 12px;
     }
@@ -9,11 +15,7 @@
 footer a {
     text-decoration: none;
 }
-.footerCard {
-    background-image: var(--backGroundDark);
-    margin: 0;
-    padding: 10px 5%;
-}
+
 .footerTitle {
     text-decoration: none;
     color: #bebebe;
@@ -25,11 +27,19 @@ footer a {
 }
 .footer-end {
     padding: 20px 5% 0;
-    color: coral;
+    color: var(--colGreen);
     font-size: 0.6rem;
 }
 .ft1,
 .ft2,
 .ft3 {
     padding: 0px 25px;
+}
+@media screen and (max-width: 250px) {
+    .footer {
+        padding: 20px 30px 0;
+        .pDarkTheme {
+            font-size: 5px;
+        }
+    }
 }

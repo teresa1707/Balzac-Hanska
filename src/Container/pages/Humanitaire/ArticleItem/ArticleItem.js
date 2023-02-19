@@ -1,7 +1,7 @@
 import { Card, Container, Grid } from '@mui/material'
 import React from 'react'
 import DOMPurify from 'dompurify'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { getObject, projects } from 'utils/projects'
 import './ArticleItem.scss'
 
@@ -12,70 +12,20 @@ export const ArticleItem = ({ projectObject = getObject(projects) }) => {
         <div className="bgClear">
             <Container className="humaPadding">
                 <h1>{projectObject[id].title}</h1>
-
+                <Link to="/humanitarian ">
+                    <button className="formButton btnProject">
+                        RETOUR AUX PROJETS
+                    </button>
+                </Link>
                 <Grid container className="articleItem item">
                     <Grid item sm={12} md={6}>
                         <figure>
                             <img
                                 src="/Images/FcarteUkraine.jpg"
                                 alt="photo Ukraine"
-                            />
+                            />{' '}
                             <figcaption>Ukraine</figcaption>
                         </figure>
-                        <figure>
-                            <img
-                                src="/Images/FcarteZakarpattia.jpg"
-                                alt="photo Ukraine"
-                            />
-                            <figcaption>Transcarpatie</figcaption>
-                        </figure>
-                        <figure>
-                            <img
-                                src={projectObject[id].image[0]}
-                                alt={projectObject[id].infoPlus[0]}
-                            />
-                            <figcaption>
-                                {projectObject[id].infoPlus[0]}
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img
-                                src={projectObject[id].image[1]}
-                                alt={projectObject[id].infoPlus[1]}
-                            />
-                            <figcaption>
-                                {projectObject[id].infoPlus[1]}
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img
-                                src={projectObject[id].image[2]}
-                                alt={projectObject[id].infoPlus[2]}
-                            />
-                            <figcaption>
-                                {projectObject[id].infoPlus[2]}
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img
-                                src={projectObject[id].image[3]}
-                                alt={projectObject[id].infoPlus[3]}
-                            />
-                            <figcaption>
-                                {projectObject[id].infoPlus[3]}
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img
-                                src={projectObject[id].image[4]}
-                                alt={projectObject[id].infoPlus[4]}
-                            />
-                            <figcaption>
-                                {projectObject[id].infoPlus[4]}
-                            </figcaption>
-                        </figure>
-                    </Grid>
-                    <Grid item sm={12} md={6}>
                         <p>
                             Le 24 février 2022, la Russie a déclaré la guerre à
                             l’Ukraine. Cette invasion a jeté sur les routes plus
@@ -93,6 +43,28 @@ export const ArticleItem = ({ projectObject = getObject(projects) }) => {
                             s’installent dans des zones où elles pensent être en
                             sécurité comme l’Ouest et le Sud-Ouest du pays.
                         </p>
+
+                        <figure>
+                            <img
+                                src={projectObject[id].image[0]}
+                                alt={projectObject[id].infoPlus[0]}
+                            />
+                            <figcaption>
+                                {projectObject[id].infoPlus[0]}
+                            </figcaption>
+                        </figure>
+
+                        <figure>
+                            <img
+                                src={projectObject[id].image[2]}
+                                alt={projectObject[id].infoPlus[2]}
+                            />
+                            <figcaption>
+                                {projectObject[id].infoPlus[2]}
+                            </figcaption>
+                        </figure>
+                    </Grid>
+                    <Grid item sm={12} md={6}>
                         <p>
                             La région de Transcarpatie a, comme l’ensemble des
                             régions de l’Ouest de l’Ukraine reçue de nombreux
@@ -111,6 +83,13 @@ export const ArticleItem = ({ projectObject = getObject(projects) }) => {
                             moyens financiers (l’effort de guerre coûte cher au
                             pays).
                         </p>
+                        <figure>
+                            <img
+                                src="/Images/FcarteZakarpattia.jpg"
+                                alt="photo Ukraine"
+                            />
+                            <figcaption>Transcarpatie</figcaption>
+                        </figure>
                         <p>
                             Par courrier en date du 10 juin 2022, M.Viktor
                             MYKALA, Gouverneur militaire de la région de
@@ -123,13 +102,18 @@ export const ArticleItem = ({ projectObject = getObject(projects) }) => {
                             passer de 450 000 déplacés à 500 000 dans le courant
                             de l’été.{' '}
                         </p>
+                        <figure>
+                            <img
+                                src={projectObject[id].image[1]}
+                                alt={projectObject[id].infoPlus[1]}
+                            />
+                            <figcaption>
+                                {projectObject[id].infoPlus[1]}
+                            </figcaption>
+                        </figure>
                     </Grid>
                     <Grid item sm={12} md={6}>
-                        <p>
-                            <span className="fsShTTitle">
-                                Objectif du projet:
-                            </span>
-                        </p>
+                        <p className="itemDiv">Objectif du projet:</p>
                         <p
                             dangerouslySetInnerHTML={{
                                 __html: DOMPurify.sanitize(
@@ -148,16 +132,16 @@ export const ArticleItem = ({ projectObject = getObject(projects) }) => {
                     <Grid item sm={12} md={6}>
                         <hr></hr>
 
-                        <p
+                        <div
                             dangerouslySetInnerHTML={{
                                 __html: DOMPurify.sanitize(
                                     projectObject[id].shortText3
                                 ),
                             }}
-                        ></p>
+                        ></div>
                         <hr></hr>
                     </Grid>
-                    <Grid item xs={12} sm={4}>
+                    <Grid item xs={12} sm={6}>
                         <Card className="art-category">
                             Comment aider ?
                             <div className="art-text">
@@ -181,9 +165,27 @@ export const ArticleItem = ({ projectObject = getObject(projects) }) => {
                                     </span>
                                 </p>
                             </div>
+                            <figure>
+                                <img
+                                    src={projectObject[id].image[3]}
+                                    alt={projectObject[id].infoPlus[3]}
+                                />
+                                <figcaption>
+                                    {projectObject[id].infoPlus[3]}
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img
+                                    src={projectObject[id].image[4]}
+                                    alt={projectObject[id].infoPlus[4]}
+                                />
+                                <figcaption>
+                                    {projectObject[id].infoPlus[4]}
+                                </figcaption>
+                            </figure>
                         </Card>
                     </Grid>
-                    <Grid item xs={12} sm={7}>
+                    <Grid item xs={12} sm={6}>
                         <div
                             dangerouslySetInnerHTML={{
                                 __html: DOMPurify.sanitize(
@@ -205,36 +207,49 @@ export const ArticleItem = ({ projectObject = getObject(projects) }) => {
                                 ),
                             }}
                         ></p>
-                        <div>{projectObject[id].budget}</div>
+                        <div className="pDarkTheme itemDiv">
+                            {projectObject[id].budget}
+                        </div>
                     </Grid>
-                    <figure>
-                        <img
-                            src={projectObject[id].image[5]}
-                            alt={projectObject[id].infoPlus[5]}
-                        />
-                        <figcaption>{projectObject[id].infoPlus[5]}</figcaption>
-                    </figure>
-                    <p
-                        dangerouslySetInnerHTML={{
-                            __html: DOMPurify.sanitize(
-                                projectObject[id].shortText6
-                            ),
-                        }}
-                    ></p>
-                    <p
-                        dangerouslySetInnerHTML={{
-                            __html: DOMPurify.sanitize(
-                                projectObject[id].shortText7
-                            ),
-                        }}
-                    ></p>
-                    <p
-                        dangerouslySetInnerHTML={{
-                            __html: DOMPurify.sanitize(
-                                projectObject[id].shortText8
-                            ),
-                        }}
-                    ></p>
+                    <Grid item xs={12} sm={6}>
+                        <figure>
+                            <img
+                                src={projectObject[id].image[5]}
+                                alt={projectObject[id].infoPlus[5]}
+                            />
+                            <figcaption>
+                                {projectObject[id].infoPlus[5]}
+                            </figcaption>
+                        </figure>
+                        <p
+                            dangerouslySetInnerHTML={{
+                                __html: DOMPurify.sanitize(
+                                    projectObject[id].shortText6
+                                ),
+                            }}
+                        ></p>
+                        <p
+                            dangerouslySetInnerHTML={{
+                                __html: DOMPurify.sanitize(
+                                    projectObject[id].shortText7
+                                ),
+                            }}
+                        ></p>
+                        <p
+                            dangerouslySetInnerHTML={{
+                                __html: DOMPurify.sanitize(
+                                    projectObject[id].shortText8
+                                ),
+                            }}
+                        ></p>{' '}
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Link to="/humanitarian ">
+                            <button className="formButton btnProject">
+                                RETOUR AUX PROJETS
+                            </button>
+                        </Link>
+                    </Grid>
                 </Grid>
             </Container>
         </div>

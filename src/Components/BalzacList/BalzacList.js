@@ -20,39 +20,35 @@ export const BalzacList = () => {
     return (
         <>
             <div className="balzacList bgClear">
-                <Grid container spacing={1} justifyContent="center">
+                <Grid container spacing={6} justifyContent="center">
                     {currentItems.map(({ id, mainImage, title, text }) => (
-                        <Link
-                            key={id}
-                            to={`/culture/${id}`}
-                            style={{
-                                textDecoration: 'none',
-                            }}
-                        >
-                            <Grid item xs={12}>
-                                <div className="cardItem">
-                                    <div className="projectPhoto">
-                                        <img src={mainImage} alt="mainPhoto" />
-                                    </div>
-
+                        <Grid item xs={12} sm={6} md={4} key={id}>
+                            <Link
+                                to={`/culture/${id}`}
+                                style={{
+                                    textDecoration: 'none',
+                                }}
+                            >
+                                <div className="projectPhoto">
+                                    <div className="title2">{title}</div>
+                                    <img src={mainImage} alt="mainPhoto" />
                                     <div className="cardContent">
-                                        <div className="title2">{title}</div>
                                         <div className="text2">{text[0]}</div>
                                         <h5>Lire la suite</h5>
                                         <h5></h5>
                                     </div>
-                                </div>
-                            </Grid>
-                        </Link>
+                                </div>{' '}
+                            </Link>
+                        </Grid>
                     ))}
                 </Grid>
                 <ReactPaginate
                     breakLabel="..."
-                    nextLabel="next >"
+                    nextLabel=">>"
                     onPageChange={handlePageClick}
                     pageRangeDisplayed={5}
                     pageCount={pageCount}
-                    previousLabel="< previous"
+                    previousLabel="<<"
                     renderOnZeroPageCount={null}
                 />
             </div>

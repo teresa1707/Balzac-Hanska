@@ -8,13 +8,19 @@
         #4a4749,
         #161212
     );
-    --colOrange: #bd4f0a;
-    --colDarkGrey: #252526;
-    --colBlack: rgb(22, 18, 18);
+    --colOrange1: #bd4f0a;
+    --colBrown: #362616;
+    --colOrange: ORANGERED;
+    --colDarkGray: #252626;
+    --colDark: #161212;
+    --colBlack: #212121;
     --colBeige: #c48660;
     --colGray: #4a4749;
-    --colGray1: #55555d;
+    --colGray1: #333;
     --colWhite: #d4dcc8;
+    --colGreen: #09ed8e;
+
+    --paddingTitle: 0px 10%;
 }
 
 * {
@@ -24,15 +30,15 @@
 body,
 .item {
     margin: 0;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='3500' preserveAspectRatio='none' viewBox='0 0 1440 3500'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1180%26quot%3b)' fill='none'%3e%3crect width='1440' height='3500' x='0' y='0' fill='url(%23SvgjsLinearGradient1181)'%3e%3c/rect%3e%3cpath d='M1440 0L845.02 0L1440 996.42z' fill='rgba(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M845.02 0L1440 996.42L1440 1281.92L552.91 0z' fill='rgba(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M552.91 0L1440 1281.92L1440 2446.8500000000004L434.91999999999996 0z' fill='rgba(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M434.91999999999996 0L1440 2446.8500000000004L1440 2720.8700000000003L333.76 0z' fill='rgba(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 3500L508.14 3500L0 2656.7z' fill='rgba(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 2656.7L508.14 3500L733.38 3500L0 1607.34z' fill='rgba(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 1607.3400000000001L733.38 3500L758.41 3500L0 745.3800000000001z' fill='rgba(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 745.3800000000001L758.41 3500L1078.72 3500L0 729.1300000000001z' fill='rgba(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1180'%3e%3crect width='1440' height='3500' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='-35.76%25' y1='14.71%25' x2='135.76%25' y2='85.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1181'%3e%3cstop stop-color='rgba(22%2c 18%2c 18%2c 1)' offset='0.11'%3e%3c/stop%3e%3cstop stop-color='rgba(74%2c 71%2c 73%2c 0.98)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
-    font-family: 'Monserrat', sans-serif;
+    background-image: url(../../Assets/layered-peaks-haikei.svg);
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .container {
     max-width: 1400px;
     margin: auto;
 }
 .humaPadding {
-    padding-top: 100px;
+    padding-top: 85px;
 }
 .humaPaddingSlider {
     border-bottom: 2px ridge #bebebe;
@@ -55,19 +61,43 @@ body,
     font-size: 0.85rem;
 }
 .titleSlider {
+    text-shadow: 1px 1px 1px black;
+    text-decoration: underline;
     font-size: 1.2rem;
-    font-family: 'Monserrat', sans-serif;
+    padding: 3% 1% 6%;
+    color: var(--colGray);
 }
-// background-image: repeating-linear-gradient(
-//     90deg,
-//     #161212,
-//     rgb(74, 71, 73),
-//     rgb(22, 18, 18)
-// );
-// background: #f8f8f8;
+
+h1 {
+    font-family: 'Kelly Slab', sans-serif;
+    font-size: 1.8rem;
+    margin: 40px auto;
+    text-align: center;
+    color: var(--colOrange1);
+    text-shadow: 1px 1px 1px black;
+}
+
 @media screen and (max-width: 290px) {
     .ft1 p {
         font-size: 0.5rem;
+    }
+}
+
+.itemList {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    cursor: default;
+    li {
+        color: var(--colWhite);
+        font-size: 14px;
+        font-weight: 600;
+        list-style: circle;
+        margin: 0px 10px 10px;
+    }
+    li:hover {
+        color: currentColor;
+        scale: 1;
     }
 }
 //pagination
@@ -77,26 +107,53 @@ ul {
     flex-direction: row;
     justify-content: center;
     cursor: pointer;
+
+    li {
+        color: #bebebe;
+        font-size: 16px;
+        font-weight: 600;
+        list-style: none;
+        margin: 5px 10px 100px;
+        text-decoration: none;
+    }
+    li:hover,
+    .selected {
+        scale: 1.1;
+        color: var(--colOrange);
+    }
 }
 
-li {
-    color: #bebebe;
-    font-size: 16px;
-    font-weight: 600;
-    list-style: none;
-    margin: 0px 10px 100px;
-    text-decoration: none;
-}
-li:hover,
-.selected {
-    scale: 1.1;
-    color: crimson;
-}
 @media screen and (max-width: 599px) {
     li {
         color: #bebebe;
         font-size: 10px;
         font-weight: 600;
         list-style: none;
+    }
+}
+.formButton {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    justify-content: center;
+    padding: 1em;
+    margin-top: 20px;
+    background: #333;
+    color: var(--colGreen);
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: transparent;
+    &:hover {
+        box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
+        background: var(--colOrange);
+        color: var(--colBlack);
+    }
+}
+.btnProject {
+    color: #bebebe;
+    background: #cdd6bd;
+
+    &:hover {
+        color: #bebebe;
+        background: #cdd6bd;
     }
 }

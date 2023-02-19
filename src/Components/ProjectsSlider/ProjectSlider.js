@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 export const ProjectSlider = () => {
     const [itemOffset, setItemOffset] = useState(0)
-    const numCard = 4
+    const numCard = 3
     const endOffset = itemOffset + numCard
     const currentItems = projects.slice(itemOffset, endOffset)
     const pageCount = Math.ceil(projects.length / numCard)
@@ -21,35 +21,12 @@ export const ProjectSlider = () => {
     return (
         <>
             <Grid container className="art-grid container">
-                <Grid item sm={12} className="titleSlider">
-                    L’UKRAINE A BESOIN DE NOUS, AIDONS-LA ET SOYONS ENGAGES !!
-                    <p className="pDarkTheme">
-                        Cette terrible guerre en Ukraine n’a malheureusement pas
-                        cessé... L’hiver arrive et nos amis ukrainiens ont
-                        besoin de nous.L’état ukrainien a demandé aux régions de
-                        réouvrir des anciens hôpitaux ou autres centres
-                        d’accueil fermés afin de pouvoir accueillir la
-                        population déplacée dans l’ouest de l’Ukraine qui se
-                        compte par millions de personnes.
-                    </p>
-                    <p className="pDarkTheme">
-                        Cependant les infrastructures sont souvent vétustes.La
-                        plupart du temps ces réouvertures se sont faites dans
-                        l’urgence afin de procurer à ces déplacés le minimum en
-                        matière de logement pour survivre avec des conditions
-                        sanitaires à la limite de l’acceptabilité. La capacité
-                        de ces établissements varie entre 150 et 300 déplacés.
-                        Nous souhaitons leur venir en aide! Ci-après un exemple
-                        urgent identifié lors de nos dernières missions en
-                        Ukraine.
-                    </p>
-                </Grid>
                 <div className="humaPaddingSlider"></div>
                 {currentItems.map((project) => (
                     <Grid
                         item
                         sm={6}
-                        md={3}
+                        md={4}
                         className="art-item"
                         key={project.id}
                     >
@@ -82,11 +59,11 @@ export const ProjectSlider = () => {
             <ReactPaginate
                 className="pagination"
                 breakLabel="..."
-                nextLabel="next >"
+                nextLabel=">>"
                 onPageChange={handlePageClick}
                 pageRangeDisplayed={5}
                 pageCount={pageCount}
-                previousLabel="< previous"
+                previousLabel="<<"
                 renderOnZeroPageCount={null}
             />
         </>

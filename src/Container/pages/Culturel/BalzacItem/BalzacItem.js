@@ -11,10 +11,12 @@ export const BalzacItem = ({ balzacObject = getObject(balzac) }) => {
     let { id } = useParams()
 
     return (
-        <div className="bgClear">
+        <div className="bgClear ">
             <Container className="humaPadding ">
                 <h1>{balzacObject[id].title}</h1>
-                <Link to="/culture ">RETOUR</Link>
+                <Link to="/culture ">
+                    <button className="formButton btnProject">Culture</button>
+                </Link>
                 <Grid
                     container
                     className="balzacItem item"
@@ -239,8 +241,10 @@ export const BalzacItem = ({ balzacObject = getObject(balzac) }) => {
                             }}
                         ></p>
                     </Grid>
-                    <Link to="/culture/balzacList" style={{ color: 'black' }}>
-                        RETOUR
+                    <Link to="/culture ">
+                        <button className="formButton btnProject">
+                            Culture
+                        </button>
                     </Link>
                 </Grid>
             </Container>

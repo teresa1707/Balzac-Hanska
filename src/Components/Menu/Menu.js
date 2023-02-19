@@ -78,19 +78,6 @@ export const Menu = () => {
                     />
                 )}
             </button>
-
-            {/* <ul className={`menuNav ${navbarOpen ? 'showMenu' : ''}`}>
-                        <li className="li">
-                            <NavLink
-                                to="/"
-                                className="a"
-                                onClick={() => closeMenu()}
-                            >
-                                Balzac-Hanska Accueil
-                            </NavLink>
-                        </li>
-                        
-                    </ul> */}
         </>
     )
 }

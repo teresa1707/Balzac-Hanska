@@ -7,14 +7,11 @@
         color: #3d3c3a;
     }
 
-    .titleSlider {
-        padding: 6% 3% 6%;
-        color: var(--colOrange);
-    }
     //card
     .art-item {
+        margin: 3% auto 0%;
         padding: 0% 1%;
-        margin-top: 1%;
+
         &:hover {
             .art-img {
                 transform: scale(1.5);
@@ -28,7 +25,7 @@
         filter: sepia(90%);
     }
     #caption {
-        width: 90%;
+        width: 80%;
         height: 350px;
         position: relative;
         border: solid 10px #bebebe;

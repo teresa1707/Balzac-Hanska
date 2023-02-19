@@ -22,26 +22,12 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                     justifyContent="center"
                     alignItems="center"
                 > <div id="caption">
-                            <span className="text">
-                                {newsObject[id].title}
-                            </span>
                             <img
                                 src={newsObject[id].image}
                                 alt={newsObject[id].image}
                             />
                         </div>
                         <Grid item sm={12} md={6}>
-                        <div id="caption">
-                            <span className="text">
-                                {newsObject[id].image[0].description}
-                            </span>
-                            <img
-                                src={newsObject[id].image[0].image1}
-                                alt={newsObject[id].image[0].description}
-                            />
-                        </div>
-                    </Grid>
-                    <Grid item sm={12} md={6}>
                         <p
                             dangerouslySetInnerHTML={{
                                 __html: DOMPurify.sanitize(
@@ -50,26 +36,38 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                             }}
                         ></p>
                     </Grid>
-                    <Grid item sm={12} md={6}>
+                        <Grid item sm={12} md={6}>
                         <div id="caption">
                             <span className="text">
-                                {newsObject[id].image[0].description}
+                                {newsObject[id].imageArray[0].description}
                             </span>
                             <img
-                                src={newsObject[id].image[0].image1}
-                                alt={newsObject[id].image[0].description}
+                                src={newsObject[id].imageArray[0].image}
+                                alt={newsObject[id].imageArray[0].description}
                             />
                         </div>
                     </Grid>
-
+             
                     <Grid item sm={12} md={6}>
                         <div id="caption">
                             <span className="text">
-                                {newsObject[id].image[1].description}
+                                {newsObject[id].imageArray[1].description}
                             </span>
                             <img
-                                src={newsObject[id].image[1].image2}
-                                alt={newsObject[id].image[1].description}
+                                src={newsObject[id].imageArray[1].image}
+                                alt={newsObject[id].imageArray[1].description}
+                            />
+                        </div>
+                    </Grid>
+                   
+                    <Grid item sm={12} md={6}>
+                        <div id="caption">
+                            <span className="text">
+                                {newsObject[id].imageArray[2].description}
+                            </span>
+                            <img
+                                src={newsObject[id].imageArray[2].image}
+                                alt={newsObject[id].imageArray[2].description}
                             />
                         </div>
                     </Grid>
@@ -95,11 +93,11 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                     <Grid item sm={12} md={6}>
                         <div id="caption">
                             <span className="text">
-                                {newsObject[id].image[2].description}
+                                {newsObject[id].imageArray[3].description}
                             </span>
                             <img
-                                src={newsObject[id].image[2].image3}
-                                alt={newsObject[id].image[2].description}
+                                src={newsObject[id].imageArray[3].image}
+                                alt={newsObject[id].imageArray[3].description}
                             />
                         </div>
                     </Grid>
@@ -107,11 +105,11 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                     <Grid item sm={12} md={6}>
                         <div id="caption">
                             <span className="text">
-                                {newsObject[id].image[3].description}
+                                {newsObject[id].imageArray[4].description}
                             </span>
                             <img
-                                src={newsObject[id].image[3].image4}
-                                alt={newsObject[id].image[3].description}
+                                src={newsObject[id].imageArray[4].image}
+                                alt={newsObject[id].imageArray[4].description}
                             />
                         </div>
                     </Grid>
@@ -140,7 +138,7 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                                 {newsObject[id].image[4].description}
                             </span>
                             <img
-                                src={newsObject[id].image[4].image5}
+                                src={newsObject[id].image[4].image}
                                 alt={newsObject[id].image[4].description}
                             />
                         </div>
@@ -162,7 +160,7 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                                 {newsObject[id].image[5].description}
                             </span>
                             <img
-                                src={newsObject[id].image[5].image6}
+                                src={newsObject[id].image[5].image}
                                 alt={newsObject[id].image[5].description}
                             />
                         </div>
@@ -202,7 +200,7 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                                 {newsObject[id].image[6].description}
                             </span>
                             <img
-                                src={newsObject[id].image[6].image7}
+                                src={newsObject[id].image[6].image}
                                 alt={newsObject[id].image[6].description}
                             />
                         </div>
@@ -214,7 +212,7 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                                 {newsObject[id].image[7].description}
                             </span>
                             <img
-                                src={newsObject[id].image[7].image8}
+                                src={newsObject[id].image[7].image}
                                 alt={newsObject[id].image[7].description}
                             />
                         </div>
@@ -244,7 +242,7 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                                 {newsObject[id].image[8].description}
                             </span>
                             <img
-                                src={newsObject[id].image[8].image9}
+                                src={newsObject[id].image[8].image}
                                 alt={newsObject[id].image[8].description}
                             />
                         </div>
@@ -259,7 +257,7 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                             }}
                         ></p>
                     </Grid>
-                    <VideoPlayer video={newsObject[id].video}/>
+                   
                     <Link to="/humanitaire" style={{ color: 'black' }}>
                         RETOUR
                     </Link>

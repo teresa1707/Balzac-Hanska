@@ -12,8 +12,8 @@
     height: 10px;
     transform: rotate(45deg);
     transform: rotate(45deg);
-    border-right: 2px solid coral;
-    border-bottom: 2px solid coral;
+    border-right: 2px solid var(--colOrange);
+    border-bottom: 2px solid var(--colOrange);
     margin: 0 0 3px 10px;
 }
 #mouse-scroll .mouse {
@@ -49,7 +49,7 @@
     width: 5px;
     display: block;
     margin: 5px auto;
-    background: coral;
+    background: var(--colOrange);
     position: relative;
     animation: animated-mouse 2s infinite;
 }

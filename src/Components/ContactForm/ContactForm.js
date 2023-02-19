@@ -34,7 +34,12 @@ export const ContactForm = () => {
                             placeholder="Message"
                         ></textarea>
                     </div>
-                    <input type="submit" value="Submit" id="input-submit" />
+                    <input
+                        className="formButton"
+                        type="submit"
+                        value="Submit"
+                        id="input-submit"
+                    />
                 </form>
             </Grid>
         </>

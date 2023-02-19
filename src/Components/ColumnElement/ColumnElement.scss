@@ -1,8 +1,12 @@
 .cardItemHuma {
+    line-height: 1.1rem;
     clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
+    border: 8px ridge var(--colBeige);
     padding: 5rem 5%;
-    margin: 15% 5%;
-    border: 10px ridge var(--colWhite);
+    margin: 10% auto;
+    min-height: 350px;
+    width: 80%;
+
     .title2 {
         color: rgb(147, 151, 158);
         font-size: 15px;
@@ -17,21 +21,20 @@
 
     .pDarkTheme {
         text-align: justify;
-
         color: #676768;
-        p {
-            span {
-                color: var(--colWhite);
-                font-size: 16px;
-            }
+
+        .boldWhite {
+            color: var(--colWhite);
+            font-size: 14px;
         }
+
         a {
             font-size: 20px;
             text-decoration: none;
             color: var(--colWhite);
         }
         a:hover {
-            color: crimson;
+            color: var(--colGreen);
         }
     }
 }

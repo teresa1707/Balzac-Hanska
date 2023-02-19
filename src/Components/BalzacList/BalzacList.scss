@@ -1,76 +1,66 @@
-.blockCulture {
-    font-size: 14px;
-    color: #bebebe;
-    width: 100%;
-    margin: 0;
-    text-align: justify;
-    clip-path: polygon(0 0%, 100% 0, 100% 80%, 0 100%);
-    padding: 2rem 10% 10rem;
-    border-top: 1px solid #c48660;
-    border-bottom: 1px solid #c48660;
-}
-
 .balzacList {
     padding: 70px 0;
-    border-top: 10px solid #bebebe;
-    border-bottom: 10px solid #bebebe;
-    .cardItem {
-        width: 70vw;
-        display: flex;
-        justify-self: center;
-        margin: 10px 5px;
-        clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
-        padding: 4rem 10%;
-        border: 10px ridge #bebebe;
-        padding: 70px;
-    }
+    border-top: var(--borderOrange10);
+    border-bottom: var(--borderOrange5);
+
     .projectPhoto {
-        width: 100%;
-        height: fit-content;
+        color: var(--colGray);
+        height: 530px;
         background-color: #ddc;
         border: solid 1.4rem #eee;
         border-bottom-color: #fff;
         border-left-color: #eee;
         border-radius: 2px;
-        border-right-color: #eee;
+        border-right-color: var(--colWhite);
         border-top-color: #ddd;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
             0 5px 10px 5px rgba(0, 0, 0, 0.25);
         position: relative;
         margin-top: 60px;
         text-align: center;
+        img {
+            max-width: 100%;
+        }
     }
     @media screen and (max-width: 900px) {
         .cardItem {
             flex-direction: column;
         }
     }
-    .projectPhoto img {
-    }
+
     div {
         padding: 10px;
     }
 
     .cardContent {
         width: 100%;
-        padding: 0px 0 10px 55px;
+        padding: 0px 0 10px 0px;
     }
     .title2 {
         font-family: 'Kelly Slab', sans-serif;
-        color: #bebebe;
         font-size: 1.4rem;
         font-weight: bold;
         text-transform: uppercase;
         padding: 10px;
-        text-align: justify;
     }
 
     .text2 {
-        color: #bebebe;
         font-family: 'Source Sans Pro', sans-serif;
         font-size: 14px;
         overflow: hidden;
-        max-height: 190px;
-        padding-right: 5%;
+        max-height: 100px;
+        text-align: justify;
+    }
+    @media screen and (max-width: 599px) {
+        .cardContent {
+            padding: 0px 0 10px 5px;
+            .text2 {
+                font-size: 0.8rem;
+                max-height: 120px;
+            }
+        }
+        .title2 {
+            font-size: 0.6rem;
+        }
     }
 }

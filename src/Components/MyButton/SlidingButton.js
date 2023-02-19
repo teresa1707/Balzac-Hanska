@@ -5,7 +5,7 @@ import './MyButton.scss'
 export const SlidingButton = ({ buttonText, bR }) => {
     return (
         <>
-            <div className="btn2 btn2-1">
+            <div className="btn2">
                 <p>
                     <a
                         href="https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska"

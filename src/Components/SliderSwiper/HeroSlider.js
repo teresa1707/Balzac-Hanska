@@ -4,6 +4,7 @@ import './HeroSlider.scss'
 import { Link } from 'react-router-dom'
 import { Grid } from '@mui/material'
 import { ScrollDown } from 'Components/ScrollDown/ScrollDown'
+import { ColumnElement } from 'Components/ColumnElement/ColumnElement'
 
 export const HeroSlider = ({ slideFade, slideUp }) => {
     useEffect(() => {
@@ -24,28 +25,24 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
 
                 <Grid container className="block" id="block1">
                     <Grid item xs={12} md={6}>
-                        <p className="pDarkTheme">
-                            <span className="first-character b">B</span>eaucoup
-                            d’événements, de personnes, relient l’Ukraine à la
+                        <ColumnElement
+                            text="<p class='pDarkTheme'><span class='first-character b'>B</span>eaucoup d’événements, de personnes, relient l’Ukraine à la
                             France (et la France à l’Ukraine) et l’amour de
                             Balzac et de Madame Hanska en est un et l’un des
                             plus méconnus.Notre association a été créée dans le
                             but de perpétuer, célébrer et rendre hommage à la
-                            mémoire des amours d'Honoré de Balzac et de la
-                            Comtesse Ewelyna Hanska.Depuis notre création en
-                            2012, nous avons déjà réalisé quelques projets,
-                            notamment la création d’un musée du souvenir à
+                            mémoire des amours d'Honoré de Balzac et de la Comtesse Ewelyna Hanska.Depuis notre création en 2012, nous avons déjà réalisé quelques projets notamment la création d’un musée du souvenir à
                             Berditchev dans le Centre Commercial «&nbsp;Galerie
                             Balzac&nbsp;», situé juste en face de l’église ou se
                             sont mariés Honoré de Balzac et Madame Hanska. Nous
                             avons également apporté notre aide à la première
                             traduction en langue ukrainienne d’une des œuvres de
-                            Balzac «&nbsp;Scènes de la vie parisienne&nbsp;» .{' '}
-                        </p>
+                            Balzac «&nbsp;Scènes de la vie parisienne&nbsp;» .</p>"
+                        />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <p className="pDarkTheme">
-                            Et de nombreux projets se profilent, des
+                        <ColumnElement
+                            text='<p class="pDarkTheme"><span class="first-character b">E</span>t de nombreux projets se profilent, des
                             expositions, d’autres traductions des œuvres de
                             Balzac en langue ukrainienne, etc.Mais notre projet
                             le plus important est à terme de pouvoir rénover le
@@ -61,7 +58,8 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                             vous pourrez également faire une
                             &nbsp;.&nbsp;N’hésitez pas à nous contacter, nous
                             sommes à votre disposition.
-                        </p>
+                        </p>'
+                        />
                     </Grid>
                 </Grid>
                 <div className="parallax-two">
@@ -72,8 +70,9 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
 
                 <Grid container className="block" id="block2">
                     <Grid item xs={12} md={6}>
-                        <p className="pDarkTheme">
-                            <span className="first-character b">L</span>e 24
+                        <ColumnElement
+                            text=' <p class="pDarkTheme">
+                            <span class="first-character b">L</span>e 24
                             février 2022, la Russie a déclaré la guerre à
                             l’Ukraine. Cette invasion a jeté sur les routes plus
                             de 10 millions de personnes (en majorité des femmes,
@@ -84,12 +83,13 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                             plus de 90 % (Kharkiv, Marioupol, Tchernihiv,
                             Borodianka, Severodonetsk…) s’installent dans des
                             zones où elles pensent être en sécurité comme
-                            l’Ouest et le Sud-Ouest du pays.{' '}
-                        </p>
+                            l’Ouest et le Sud-Ouest du pays.
+                        </p>'
+                        />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <p className="pDarkTheme">
-                            C’est pourquoi, l’Association franco-ukrainienne
+                        <ColumnElement
+                            text='<p class="pDarkTheme"><span class="first-character b">C</span>’est pourquoi, l’Association franco-ukrainienne
                             « Balzac-Hanska », representé par son président Jean
                             ROCHE et ses nombreux partenaires, se sont engagés à
                             apporter de l’aide aux populations déplacées vers
@@ -99,7 +99,8 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                             volontaires ukrainiens basés à Berdytchiv nous
                             mettont tout en oeuvre afin de faciliter le peuple
                             ukrainien à traverser cette periode dramatique.
-                        </p>
+                        </p>'
+                        />
                     </Grid>
                 </Grid>
 
@@ -111,22 +112,26 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
 
                 <Grid container className="block" id="block3">
                     <Grid item xs={12} md={6}>
-                        <p className="pDarkTheme">
-                            <span className="first-character b">N</span>os
+                        <ColumnElement
+                            text=' <p class="pDarkTheme">
+                            <span class="first-character b">N</span>os
                             partenaires: SETEC INGENIERIE, ASSOCIATION BALZAC
-                            HANSKA, ENSEMBLE UKRAINE, LIONS CLUB KIEV Ecology,
+                            HANSKA UKRAINE, ENSEMBLE UKRAINE, LIONS CLUB KIEV Ecology,
                             LES FEMMES UKRAINIENNES EN FRANCE, PHARMACIENS SANS
                             FRONTIERES, ECOLE LATOUR, CLUB SPORTIF ATHEON
-                        </p>
+                        </p>'
+                        />
                     </Grid>
                     <Grid item xs={12} md={6}>
-                        <p className="pDarkTheme">
+                        <ColumnElement
+                            text=' <p class="pDarkTheme">
                             BETEN Ingéniérie, BALZAC INVESTISSEMENT, NEO-TERRA,
                             MAIRIE DE NEUF, LIONS CLUB INTERNATIONAL PARIS
                             SEYSSEL, MAIRIE DE BERDYTCHIV, URA (UKRAINIAN
                             REFUGEES ASSISTANCE), RIVAGE DE FRANCE , AVENIR
                             UKRAINE , ROTARY 60 .
-                        </p>
+                        </p>'
+                        />
                     </Grid>
                 </Grid>
             </div>

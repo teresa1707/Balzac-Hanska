@@ -6,7 +6,7 @@ export const ScrollDown = () =>{
 
     const scrollDown = () => {
         window.scroll({
-          top: 500,
+          top:500,
           left: 0,
           behavior:'smooth',
           duration: 3,

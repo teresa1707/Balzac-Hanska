@@ -3,32 +3,33 @@
 //sliding button
 
 .btn2 {
-    // box-shadow: 0 0.2px 0.2px 0.2px rgba(#aaa, 0.6);
-    font-family: 'Kelly slab', sans-serif;
-    text-shadow: 1px 1px 1px black;
-    background-color: transparent;
-    height: 45px;
-    max-width: 200px;
-    border: 1px solid transparent;
+    background-color: var(--colDarkGrey);
+    height: 50px;
     border-radius: 50px;
+    box-shadow: 0 0.2px 0.2px 0.2px rgba(#aaa, 0.6);
+
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 1px 1px 1px black;
+
+    max-width: 250px;
     overflow: hidden;
     cursor: pointer;
     position: relative;
     top: 15px;
     .buttonText {
-        margin-left: 20px;
-
-        font-size: 0.8rem;
+        margin-left: 40px;
+        font-size: 0.9rem;
+        font-weight: bold;
         text-transform: uppercase;
         z-index: 10;
         transition: 0.5s;
         text-decoration: none;
-        color: #bebebe;
+        color: var(--colOrange);
     }
     //flash
     h5 {
         position: absolute;
-        top: -18px;
+        top: -15px;
         right: 25px;
         font-size: 20px;
         opacity: 0;
@@ -36,16 +37,14 @@
     }
 }
 
-.btn2:hover {
-    box-shadow: 0 0.5px 0.5px 0.5px #c48660;
-}
-.btn2-1:hover .buttonText {
-    color: #bebebe;
-    font-size: 0.65rem;
+.btn2:hover .buttonText {
+    color: var(--colOrange);
+    font-weight: bold;
+    font-size: 0.7rem;
 }
 
-.btn2-1:hover h5 {
+.btn2:hover h5 {
     margin-right: -10px;
     opacity: 1;
-    color: #bebebe;
+    color: var(--colOrange);
 }

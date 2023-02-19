@@ -1,10 +1,10 @@
 .slider-wrapper {
     padding: 0 10px;
     position: relative;
-    height: 50vh;
-    overflow: hidden;
-    border-top: 3px ridge #bebebe;
-    border-bottom: 3px ridge #bebebe;
+    height: 60.5vh;
+
+    border-top: 1px ridge var(--colBeige);
+    border-bottom: 1px ridge var(--colBeige);
 
     button {
         margin: 0 auto;
@@ -43,7 +43,7 @@
     }
 
     .slide {
-        height: 50vh;
+        height: 60vh;
         background-size: cover !important;
     }
 
@@ -104,40 +104,6 @@
         line-height: 1.5;
         margin: 20px auto 30px;
         max-width: 640px;
-    }
-
-    .slider-content section {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-    }
-
-    .slider-content section span {
-        color: #ffffff;
-    }
-
-    .slider-content section span {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 12px;
-        display: inline-block;
-        text-align: left;
-        line-height: 1.4;
-        vertical-align: middle;
-        margin-left: 10px;
-    }
-
-    .slider-content section img {
-        width: 40px;
-        height: 40px;
-        border: solid 2px rgba(255, 255, 255, 0.5);
-        border-radius: 100%;
-        vertical-align: middle;
-    }
-
-    .slider-content section span strong {
-        color: #ffffff;
-        font-size: 14px;
-        display: block;
     }
 
     @media (max-height: 500px) {

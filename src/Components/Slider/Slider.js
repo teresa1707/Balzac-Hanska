@@ -25,12 +25,6 @@ export const NewsSlider = () => {
                                 <button className="button">Lire plus</button>
                             </Link>
                         </div>
-                        <section>
-                            <img src={news.image} alt={news.user} />
-                            <span>
-                                Posted by <strong>TEXT</strong>
-                            </span>
-                        </section>
                     </div>
                 ))}
             </Slider>

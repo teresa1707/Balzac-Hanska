@@ -14,7 +14,6 @@ import { BalzacList } from 'Components/BalzacList/BalzacList'
 import { Footer } from 'Container/Footer/Footer'
 import { ArticleItem } from 'Container/pages/Humanitaire/ArticleItem/ArticleItem'
 import { NotFound } from 'Container/pages/NotFound/NotFound'
-import { NewsSlider } from 'Components/Slider/Slider'
 import { NewsItem } from 'Components/Slider/NewsItem'
 
 export const App = () => {
@@ -24,7 +23,7 @@ export const App = () => {
                 '.logo',
                 { opacity: 0, scale: 1 },
                 {
-                    y: -10,
+                    y: -15,
                     x: 0,
                     opacity: 1,
                     stagger: 0.33,

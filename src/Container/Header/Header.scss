@@ -1,7 +1,7 @@
 .main_h {
     position: fixed;
     z-index: 999999;
-    background: rgb(22, 18, 18);
+    background: var(--colDark);
     width: 100%;
     top: 0;
     box-shadow: 2px 2px 2px #c48660;
@@ -52,13 +52,11 @@ Easing
         z-index: 999999;
         background: transparent;
         width: 100%;
-        height: fit-content;
-
         box-shadow: 1px 1px 1px black;
         background-image: repeating-linear-gradient(
             90deg,
             rgb(22, 18, 18),
-            rgb(74, 71, 73),
+            #4a4749,
             rgb(22, 18, 18)
         );
     }
