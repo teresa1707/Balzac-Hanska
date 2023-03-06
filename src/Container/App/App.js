@@ -58,16 +58,6 @@ export const App = () => {
                     duration: 1,
                 }
             )
-            .fromTo(
-                '.logo',
-                {
-                    scale: 0.6,
-                },
-                {
-                    scale: 0.7,
-                }
-            )
-            .to('.logo', { scale: 0.6 })
     }
     function slideFade(elem, delay, duration) {
         gsap.fromTo(
@@ -180,8 +170,7 @@ export const App = () => {
                             <HumanitarianPage
                                 slideToLeft={slideToLeft}
                                 slideToUp={slideToUp}
-                            />{' '}
-                            <ContactForm />
+                            />
                         </>
                     }
                 />

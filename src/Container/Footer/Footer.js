@@ -2,13 +2,14 @@ import React from 'react'
 import { Grid } from '@mui/material'
 import 'Container/Footer/Footer.scss'
 import { SocialMedia } from 'Components/SocialMedia/SocialMedia'
+import { NavLink } from 'react-router-dom'
 
-export const Footer = () => {
+export const Footer = ({ closeMenu }) => {
     return (
         <>
             <div className="footerCard">
                 <Grid container mb={2} spacing={3} className="footer">
-                    <Grid item sm={12} md={4} className="ft1">
+                    <Grid item sm={12} md={3} className="ft1">
                         <h2 className="titleSlider">Nos coordonnées:</h2>
 
                         <p className="pDarkTheme">
@@ -31,7 +32,7 @@ export const Footer = () => {
                         </p>
                     </Grid>
 
-                    <Grid item sm={12} md={4} className="ft2">
+                    <Grid item sm={12} md={3} className="ft2">
                         <h2 className="titleSlider">Nous suivre:</h2>
 
                         <SocialMedia />
@@ -62,7 +63,53 @@ export const Footer = () => {
                             certificat de déductibilité fiscale.
                         </p>
                     </Grid>
-                    <Grid item sm={12} md={4} className="ft3">
+                    <Grid item sm={12} md={3} className="ft3">
+                        <li>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) =>
+                                    isActive ? 'isActiveButton' : 'a'
+                                }
+                                onClick={() => closeMenu()}
+                            >
+                                Accueil
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/culture"
+                                className={({ isActive }) =>
+                                    isActive ? 'isActiveButton' : 'a'
+                                }
+                                onClick={() => closeMenu()}
+                            >
+                                Culture
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/humanitarian"
+                                className={({ isActive }) =>
+                                    isActive ? 'isActiveButton' : 'a'
+                                }
+                                onClick={() => closeMenu()}
+                            >
+                                Humanitaire
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/contact"
+                                className={({ isActive }) =>
+                                    isActive ? 'isActiveButton' : 'a'
+                                }
+                                onClick={() => closeMenu()}
+                            >
+                                Contact
+                            </NavLink>
+                        </li>
+                    </Grid>
+                    <Grid item sm={12} md={3} className="ft4">
                         <h2 className="titleSlider">
                             S'abonner à la Newsletter
                         </h2>

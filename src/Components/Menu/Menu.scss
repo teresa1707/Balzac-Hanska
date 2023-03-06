@@ -2,43 +2,33 @@ nav li {
     justify-content: space-evenly;
     display: flex;
     position: relative;
-    margin: 9px 10px 0px;
 }
 .navLinks {
     display: flex;
-    padding-top: 5px;
-    box-shadow: 0 0.2px 0.2px 0.2px rgba(#aaa, 0.6);
-    background-color: var(--colDarkGrey);
+    line-height: 3rem;
     height: 50px;
-    border-radius: 50px;
 }
 
 .isActiveButton {
     text-decoration: none;
     padding: 0 1em 0 0em;
-    border: 3px solid transparent;
-    border-bottom: 4px solid transparent;
     text-shadow: 1px 1px 1px black;
-    color: #aaa;
+    text-transform: uppercase;
+    color: var(--colOrange);
 }
 
 .navLinks .a {
     text-decoration: none;
     cursor: pointer;
     font-size: 1rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     padding: 0 1em 0 0em;
-    border: 3px solid transparent;
-    border-bottom: 4px solid transparent;
     text-shadow: 1px 1px 1px black;
-    color: #c48660;
+    color: var(--colBeige);
 }
 
 .navLinks a:hover {
-    color: #aaa;
-}
-.menu:hover {
-    box-shadow: 0 0.5px 0.5px 0.5px #c48660;
+    color: var(--colOrange);
 }
 
 //responsive
@@ -48,13 +38,11 @@ nav li {
 
 @media (max-width: 899px) {
     .logo-balzac {
-        scale: 0.5;
+        scale: 0.7;
         margin-top: -20px;
-        transform: translateX(50%);
+        text-align: center;
     }
-    .btn2 {
-        display: none;
-    }
+
     .main_h {
         position: fixed;
         height: 50px;
@@ -70,12 +58,9 @@ nav li {
         right: 0rem;
         z-index: 10;
         cursor: pointer;
-        background: transparent;
-        border: none;
     }
 
     .navLinks {
-        border-radius: 0;
         list-style: none;
         height: fit-content;
         flex-direction: column;
@@ -109,6 +94,9 @@ nav li {
     .navLinks li:nth-child(3) {
         animation-delay: 400ms;
     }
+    .navLinks li:nth-child(4) {
+        animation-delay: 600ms;
+    }
     @keyframes navAnimation {
         to {
             transform: rotateX(0);
@@ -128,4 +116,36 @@ nav li {
     .navLinks.hideMenu {
         display: none;
     }
+    .subMenu {
+        top: 0;
+    }
+}
+//subMenu
+
+.subMenu {
+    position: absolute;
+    top: 50px;
+    display: none;
+    li {
+        margin: auto;
+        background-color: var(--colBeige);
+    }
+    li a {
+        padding: 0 15px;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--colGray1);
+        text-decoration: none;
+        transition: all 0.4s linear;
+        font-size: small;
+        width: max-content;
+        &:hover {
+            color: var(--colBlue1);
+            background-color: var(--colYellow);
+            scale: none;
+        }
+    }
+}
+.navLinks li:hover .subMenu {
+    display: flex;
 }

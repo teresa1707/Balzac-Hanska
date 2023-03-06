@@ -3,14 +3,9 @@
 //sliding button
 
 .btn2 {
-    background-color: var(--colDarkGrey);
     height: 50px;
-    border-radius: 50px;
-    box-shadow: 0 0.2px 0.2px 0.2px rgba(#aaa, 0.6);
-
     font-family: 'Source Sans Pro', sans-serif;
     text-shadow: 1px 1px 1px black;
-
     max-width: 250px;
     overflow: hidden;
     cursor: pointer;
@@ -24,7 +19,7 @@
         z-index: 10;
         transition: 0.5s;
         text-decoration: none;
-        color: var(--colOrange);
+        color: var(--colYellow);
     }
     //flash
     h5 {
@@ -38,7 +33,7 @@
 }
 
 .btn2:hover .buttonText {
-    color: var(--colOrange);
+    color: var(--colBeige);
     font-weight: bold;
     font-size: 0.7rem;
 }
@@ -46,5 +41,16 @@
 .btn2:hover h5 {
     margin-right: -10px;
     opacity: 1;
-    color: var(--colOrange);
+    color: var(--colYellow);
+}
+
+//button retour-avant
+.btnProject {
+    color: #bebebe;
+    background: #cdd6bd;
+
+    &:hover {
+        color: var(--colYellow);
+        background: #cdd6bd;
+    }
 }

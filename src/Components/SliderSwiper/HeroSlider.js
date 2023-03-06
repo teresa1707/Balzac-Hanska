@@ -11,9 +11,9 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
         slideFade('#parallax-container .frame', '1', '2')
     }, [])
     useEffect(() => {
-        slideUp('#block1 p', '0.6', '1')
-        slideUp('#block2 p', '0.6', '1')
-        slideUp('#block3 p', '0.6', '1')
+        slideUp('#block1 .cardItemHuma', '0.6', '1')
+        slideUp('#block2 .cardItemHuma', '0.6', '1')
+        slideUp('#block3 .cardItemHuma', '0.6', '1')
     }, [])
 
     return (
@@ -24,7 +24,7 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                 </div>
 
                 <Grid container className="block" id="block1">
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={4}>
                         <ColumnElement
                             text="<p class='pDarkTheme'><span class='first-character b'>B</span>eaucoup d’événements, de personnes, relient l’Ukraine à la
                             France (et la France à l’Ukraine) et l’amour de
@@ -34,17 +34,24 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                             mémoire des amours d'Honoré de Balzac et de la Comtesse Ewelyna Hanska.<br/><br/>Depuis notre création en 2012, nous avons déjà réalisé quelques projets notamment la création d’un musée du souvenir à
                             Berditchev dans le Centre Commercial «&nbsp;Galerie
                             Balzac&nbsp;», situé juste en face de l’église ou se
-                            sont mariés Honoré de Balzac et Madame Hanska. <br/><br/>Nous
-                            avons également apporté notre aide à la première
-                            traduction en langue ukrainienne d’une des œuvres de
-                            Balzac «&nbsp;Scènes de la vie parisienne&nbsp;» .</p>"
+                            sont mariés Honoré de Balzac et Madame Hanska. </p>"
                         />
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={4}>
                         <ColumnElement
-                            text='<p class="pDarkTheme"><span class="first-character b">E</span>t de nombreux projets se profilent, des
+                            text='<p class="pDarkTheme"><span class="first-character b">N</span>ous
+                            avons également apporté notre aide à la première
+                            traduction en langue ukrainienne d’une des œuvres de
+                            Balzac «&nbsp;<br/><br/>Scènes de la vie parisienne&nbsp;» .Et de nombreux projets se profilent, des
                             expositions, d’autres traductions des œuvres de
-                            Balzac en langue ukrainienne, etc. <br/><br/>Mais notre projet
+                            Balzac en langue ukrainienne, etc. <br/><br/>
+                        </p>'
+                        />
+                    </Grid>{' '}
+                    <Grid item xs={12} md={4}>
+                        <ColumnElement
+                            text=' <p class="pDarkTheme">
+                            <span class="first-character b">M</span>ais notre projet
                             le plus important est à terme de pouvoir rénover le
                             Château de Verhivnya qui par manque de moyens, comme
                             malheureusement beaucoup d’endroits historiques en

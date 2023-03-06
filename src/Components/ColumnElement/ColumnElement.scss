@@ -1,14 +1,15 @@
 .cardItemHuma {
+    box-shadow: 2px 2px 2px var(--colBlack);
     line-height: 1.1rem;
-    clip-path: polygon(0 15%, 100% 0, 100% 80%, 0 100%);
-    border: 8px ridge var(--colBeige);
-    padding: 5rem 5%;
-    margin: 10% auto;
+    border: 3px ridge var(--colWhite);
+    padding: 1rem 4%;
+    margin: 20% auto;
     min-height: 350px;
     width: 80%;
+    background: #fff;
 
     .title2 {
-        color: rgb(147, 151, 158);
+        color: var(--colBrown);
         font-size: 15px;
         font-weight: 600;
         text-transform: uppercase;
@@ -21,8 +22,8 @@
 
     .pDarkTheme {
         text-align: justify;
-        color: var(--colWhite);
-
+        font-size: 16px;
+        color: var(--colBlue);
         .boldWhite {
             color: var(--colWhite);
             font-size: 14px;
@@ -36,5 +37,19 @@
         a:hover {
             color: var(--colGreen);
         }
+    }
+}
+.cardItemHuma:hover {
+    background: #20232a;
+
+    transform: translate(-18px);
+    transition: 0.3s ease;
+    cursor: pointer;
+    .pDarkTheme,
+    .boldWhite {
+        color: var(--colWhite);
+    }
+    .b {
+        color: var(--colYellow);
     }
 }

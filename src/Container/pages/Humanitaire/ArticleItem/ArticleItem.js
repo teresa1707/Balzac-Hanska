@@ -4,19 +4,19 @@ import DOMPurify from 'dompurify'
 import { Link, useParams } from 'react-router-dom'
 import { getObject, projects } from 'utils/projects'
 import './ArticleItem.scss'
+import { Button } from 'Components/MyButton/Button'
 
-export const ArticleItem = ({ projectObject = getObject(projects) }) => {
+export const ArticleItem = ({
+    projectObject = getObject(projects),
+    goBack,
+}) => {
     let { id } = useParams()
 
     return (
         <div className="bgClear">
             <Container className="humaPadding">
                 <h1>{projectObject[id].title}</h1>
-                <Link to="/humanitarian ">
-                    <button className="formButton btnProject">
-                        RETOUR AUX PROJETS
-                    </button>
-                </Link>
+                <Button BtnText="Retour" goBack={goBack} />
                 <Grid container className="articleItem item">
                     <Grid item sm={12} md={6}>
                         <figure>
@@ -242,13 +242,9 @@ export const ArticleItem = ({ projectObject = getObject(projects) }) => {
                                 ),
                             }}
                         ></p>{' '}
-                    </Grid>
+                    </Grid>{' '}
                     <Grid item xs={12}>
-                        <Link to="/humanitarian ">
-                            <button className="formButton btnProject">
-                                RETOUR AUX PROJETS
-                            </button>
-                        </Link>
+                        <Button BtnText="Retour" goBack={goBack} />
                     </Grid>
                 </Grid>
             </Container>

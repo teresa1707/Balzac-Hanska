@@ -19,10 +19,21 @@ export const Menu = () => {
         <>
             <nav>
                 <ul
-                    className={`navLinks menuNav ${
+                    className={`navLinks ${
                         navbarOpen ? 'showMenu' : 'hideMenu'
                     }`}
                 >
+                    <li>
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) =>
+                                isActive ? 'isActiveButton' : 'a'
+                            }
+                            onClick={() => closeMenu()}
+                        >
+                            Accueil
+                        </NavLink>
+                    </li>
                     <li>
                         <NavLink
                             to="/culture"
@@ -33,6 +44,17 @@ export const Menu = () => {
                         >
                             Culture
                         </NavLink>
+                        <ul className="subMenu">
+                            <li>
+                                <a href="#donner">patrimoine ukrainien</a>
+                            </li>
+                            <li>
+                                <a href="#projets">la route de balzac</a>
+                            </li>
+                            <li>
+                                <a href="#actualites">balzac fest</a>
+                            </li>
+                        </ul>{' '}
                     </li>
                     <li>
                         <NavLink
@@ -42,8 +64,22 @@ export const Menu = () => {
                             }
                             onClick={() => closeMenu()}
                         >
-                            Humanitaire
-                        </NavLink>
+                            Humanitaire{' '}
+                        </NavLink>{' '}
+                        <ul className="subMenu">
+                            <li>
+                                <a href="#donner">faire un don</a>
+                            </li>
+                            <li>
+                                <a href="#projets">nos projets</a>
+                            </li>
+                            <li>
+                                <a href="#actualites">actualités</a>
+                            </li>
+                            <li>
+                                <a href="#presse">presse</a>
+                            </li>
+                        </ul>{' '}
                     </li>
                     <li>
                         <NavLink

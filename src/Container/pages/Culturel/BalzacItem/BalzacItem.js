@@ -1,22 +1,23 @@
 import { Grid } from '@mui/material'
 import React from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import './BalzacItem.scss'
 import { balzac } from 'utils/balzac'
 import { getObject } from 'utils/projects'
 import { Container } from '@mui/material'
 import DOMPurify from 'dompurify'
+import { Button } from 'Components/MyButton/Button'
 
-export const BalzacItem = ({ balzacObject = getObject(balzac) }) => {
+export const BalzacItem = ({ balzacObject = getObject(balzac), goBack }) => {
     let { id } = useParams()
 
     return (
         <div className="bgClear ">
             <Container className="humaPadding ">
                 <h1>{balzacObject[id].title}</h1>
-                <Link to="/culture ">
-                    <button className="formButton btnProject">Culture</button>
-                </Link>
+
+                <Button BtnText="CULTURE" goBack={goBack} />
+
                 <Grid
                     container
                     className="balzacItem item"
@@ -241,11 +242,8 @@ export const BalzacItem = ({ balzacObject = getObject(balzac) }) => {
                             }}
                         ></p>
                     </Grid>
-                    <Link to="/culture ">
-                        <button className="formButton btnProject">
-                            Culture
-                        </button>
-                    </Link>
+
+                    <Button BtnText="CULTURE" goBack={goBack} />
                 </Grid>
             </Container>
         </div>

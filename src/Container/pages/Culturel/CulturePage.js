@@ -5,7 +5,7 @@ import balzac from '../../../Assets/balzacFrameWhite.jpg'
 import hanska from '../../../Assets/hanskaFrameWhite.jpg'
 import bgIm from 'Assets/maison.jpg'
 import { PresentationCard } from 'Components/PresentationCard/PresentationCard'
-import { ContactForm } from 'Components/ContactForm/ContactForm'
+import { cultureMenu } from 'utils/menu'
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 
 export const CulturePage = ({ slideToUp, slideToLeft }) => {
@@ -26,9 +26,9 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
     useEffect(() => {
         slideToUp('.ft3', '3', '2')
     }, [])
-
+    const item = cultureMenu.map((item) => <li>{item}</li>)
     return (
-        <>
+        <div className="humaApp">
             <div className="humaPadding">
                 <div id="nextSection" className="section">
                     <div id="box1" className="box box1">
@@ -66,6 +66,6 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
                     <BalzacList />
                 </div>
             </div>
-        </>
+        </div>
     )
 }
