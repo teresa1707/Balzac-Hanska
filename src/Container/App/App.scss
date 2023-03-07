@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
 @import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&family=Pacifico&family=Play:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 
 :root {
     --colYellow: #dabb65;
@@ -8,6 +8,8 @@
     --colWhite: #ddc;
     --colBeige: #b2a680;
     --colGray1: #4a4749;
+    --borderYellow: 5px ridge var(--colYellow);
+    --borderWhite: 5px ridge var(--colWhite);
 
     --colOrange1: #bd4f0a;
     --colBrown: #362616;
@@ -34,9 +36,9 @@
 
 body,
 .item {
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     background-image: url(../../Assets/low-poly-grid-haike1.svg);
-    font-family: 'Source Sans Pro', sans-serif;
 }
 .humaApp {
     background-image: url(../../Assets/low-poly-grid-haikei.svg);
@@ -55,7 +57,6 @@ body,
     background-image: url(../../Assets/trianglify-lowres-1.png);
 }
 .item {
-    font-family: 'Source Sans Pro', sans-serif;
     margin: 30px 0;
     border-radius: 5px;
     clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
@@ -64,8 +65,8 @@ body,
 }
 
 .pDarkTheme {
-    color: var(--colWhite);
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Tilt Neon', cursive;
+    color: var(--colBlue);
     font-size: 1rem;
     font-weight: 300;
 }

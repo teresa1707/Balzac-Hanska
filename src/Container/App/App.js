@@ -23,7 +23,7 @@ export const App = () => {
                 '.logo',
                 { opacity: 0, scale: 1 },
                 {
-                    y: -15,
+                    y: -35,
                     x: 0,
                     opacity: 1,
                     stagger: 0.33,

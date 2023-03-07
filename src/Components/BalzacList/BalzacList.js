@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 
 export const BalzacList = () => {
     const [itemOffset, setItemOffset] = useState(0)
-    const itemsPerPage = 9
+    const itemsPerPage = 3
     const endOffset = itemOffset + itemsPerPage
     const currentItems = balzac.slice(itemOffset, endOffset)
     const pageCount = Math.ceil(balzac.length / itemsPerPage)

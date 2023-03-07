@@ -64,7 +64,7 @@ export const Footer = ({ closeMenu }) => {
                         </p>
                     </Grid>
                     <Grid item sm={12} md={3} className="ft3">
-                        <li>
+                        <div className="footerMenu">
                             <NavLink
                                 to="/"
                                 className={({ isActive }) =>
@@ -74,8 +74,7 @@ export const Footer = ({ closeMenu }) => {
                             >
                                 Accueil
                             </NavLink>
-                        </li>
-                        <li>
+
                             <NavLink
                                 to="/culture"
                                 className={({ isActive }) =>
@@ -85,8 +84,7 @@ export const Footer = ({ closeMenu }) => {
                             >
                                 Culture
                             </NavLink>
-                        </li>
-                        <li>
+
                             <NavLink
                                 to="/humanitarian"
                                 className={({ isActive }) =>
@@ -96,8 +94,7 @@ export const Footer = ({ closeMenu }) => {
                             >
                                 Humanitaire
                             </NavLink>
-                        </li>
-                        <li>
+
                             <NavLink
                                 to="/contact"
                                 className={({ isActive }) =>
@@ -107,7 +104,7 @@ export const Footer = ({ closeMenu }) => {
                             >
                                 Contact
                             </NavLink>
-                        </li>
+                        </div>
                     </Grid>
                     <Grid item sm={12} md={3} className="ft4">
                         <h2 className="titleSlider">

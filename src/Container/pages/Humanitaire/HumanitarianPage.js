@@ -7,10 +7,10 @@ import '../../../Components/Menu/Menu.scss'
 import bgIm from 'Assets/IllustrationChlo.jpg'
 import { ProjectSlider } from 'Components/ProjectsSlider/ProjectSlider'
 import { ColumnElement } from 'Components/ColumnElement/ColumnElement'
-import { NewsSlider } from 'Components/Slider/Slider'
 import { PresentationCard } from 'Components/PresentationCard/PresentationCard'
 import { Grid } from '@mui/material'
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
+import { CardSlider } from 'Components/Slider/CardSlider'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -87,7 +87,10 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                 </Grid>
             </Grid>
             <div id="actualites">
-                <NewsSlider />
+                <CardSlider sliderPerView={3} />
+            </div>
+            <div id="presse">
+                <CardSlider />
             </div>
             <div id="projets">
                 <TitleBlock

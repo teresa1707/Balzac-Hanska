@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import { Grid } from '@mui/material'
 import { ScrollDown } from 'Components/ScrollDown/ScrollDown'
 import { ColumnElement } from 'Components/ColumnElement/ColumnElement'
+import { OurPartners } from 'Components/OurPartners/OurPartners'
+import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 
 export const HeroSlider = ({ slideFade, slideUp }) => {
     useEffect(() => {
@@ -22,16 +24,16 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                 <div className="parallax-one">
                     <ScrollDown />
                 </div>
-
+                <Grid item xs={12}>
+                    <ColumnElement text="<p class='pDarkTheme'><span class='first-character b'>J</span>Jean ROCHE, Ingénieur et chef d’entreprise travaillant en Ukraine depuis 1987 décide à la fin des années 1990 de chercher un terrain au cœur de la ville de BERDYTCHIV (Ukraine) pour y faire construire de nouveaux bureaux. C’est à ce moment là que nait la passion de Jean ROCHE pour BALZAC.<br/><br/>En effet le romancier H.de.BALZAC a séjourné à la fin de sa vie dans ce pays où vivait son grand amour, la contesse Ewelina HANSKA.<br/><br/>Qui sait, hormis les érudits et les quelques centaines d’habitants du village de Verkhivnia, que Balzac a passé près de deux ans et demi ici, au milieu du XIXe siècle ? Même les biographes et spécialistes du romancier n’ont pas tous fait le voyage jusqu’à ce coin reculé. Il faut dire que les dernières années de sa vie, de 1847 à 1850, furent les moins productives. <br/><br/>C’est pourtant bien là, dans cette « espèce de Louvre, de temple grec », qu’il écrivit la seconde partie de L’Envers de l’histoire contemporaine, le dernier roman de sa Comédie humaine. (Extrait du monde- Ariane Chemin) Jean ROCHE décide donc de faire connaitre cette partie oublié de l’histoire de BALZAC</p>" />
+                </Grid>{' '}
                 <Grid container className="block" id="block1">
                     <Grid item xs={12} md={4}>
                         <ColumnElement
                             text="<p class='pDarkTheme'><span class='first-character b'>B</span>eaucoup d’événements, de personnes, relient l’Ukraine à la
                             France (et la France à l’Ukraine) et l’amour de
                             Balzac et de Madame Hanska en est un et l’un des
-                            plus méconnus.<br/><br/>Notre association a été créée dans le
-                            but de perpétuer, célébrer et rendre hommage à la
-                            mémoire des amours d'Honoré de Balzac et de la Comtesse Ewelyna Hanska.<br/><br/>Depuis notre création en 2012, nous avons déjà réalisé quelques projets notamment la création d’un musée du souvenir à
+                            plus méconnus.<br/><br/>Depuis notre création en 2012, nous avons déjà réalisé quelques projets notamment la création d’un musée du souvenir à
                             Berditchev dans le Centre Commercial «&nbsp;Galerie
                             Balzac&nbsp;», situé juste en face de l’église ou se
                             sont mariés Honoré de Balzac et Madame Hanska. </p>"
@@ -59,22 +61,16 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                             énorme perte car un véritable petit musée y a été
                             créé, rattaché au Musée de Jytomyr, qui enferme de
                             vrai merveilles lié à Balzac, à la Comtesse Hanska,
-                            et à leur amour. <br/><br/>Sur ce site, vous pourrez trouver
-                            l’histoire des voyages de Balzac pour rejoindre son
-                            aimée &nbsp;, &nbsp;si notre cause vous intéresse
-                            vous pourrez également faire une
-                            &nbsp;.&nbsp;N’hésitez pas à nous contacter, nous
-                            sommes à votre disposition.
+                            et à leur amour.
                         </p>'
                         />
                     </Grid>
                 </Grid>
-                <div className="parallax-two">
-                    <Link to="/culture">
-                        <h2 className="frame">Projets Culturels</h2>
+                <div className="parallax-three">
+                    <Link to="/humanitarian">
+                        <h2 className="frame">Projets Humanitaires</h2>
                     </Link>
                 </div>
-
                 <Grid container className="block" id="block2">
                     <Grid item xs={12} md={6}>
                         <ColumnElement
@@ -110,37 +106,8 @@ export const HeroSlider = ({ slideFade, slideUp }) => {
                         />
                     </Grid>
                 </Grid>
-
-                <div className="parallax-three">
-                    <Link to="/humanitarian">
-                        <h2 className="frame">Projets Humanitaires</h2>
-                    </Link>
-                </div>
-
-                <Grid container className="block" id="block3">
-                    <Grid item xs={12} md={6}>
-                        <ColumnElement
-                            text=' <p class="pDarkTheme">
-                            <span class="first-character b">N</span>os
-                            partenaires: SETEC INGENIERIE, ASSOCIATION BALZAC
-                            HANSKA UKRAINE, ENSEMBLE UKRAINE, LIONS CLUB KIEV Ecology,
-                            LES FEMMES UKRAINIENNES EN FRANCE, PHARMACIENS SANS
-                            FRONTIERES, ECOLE LATOUR, CLUB SPORTIF ATHEON
-                        </p>'
-                        />
-                    </Grid>
-                    <Grid item xs={12} md={6}>
-                        <ColumnElement
-                            text=' <p class="pDarkTheme">
-                            BETEN Ingéniérie, BALZAC INVESTISSEMENT, NEO-TERRA,
-                            MAIRIE DE NEUF, LIONS CLUB INTERNATIONAL PARIS
-                            SEYSSEL, MAIRIE DE BERDYTCHIV, URA (UKRAINIAN
-                            REFUGEES ASSISTANCE), RIVAGE DE FRANCE , AVENIR
-                            UKRAINE , ROTARY 60 .
-                        </p>'
-                        />
-                    </Grid>
-                </Grid>
+                <TitleBlock title="Nos partenaires" />
+                <OurPartners />
             </div>
         </>
     )

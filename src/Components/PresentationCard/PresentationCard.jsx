@@ -1,5 +1,5 @@
 import './PresentationCard.scss' 
-
+import DOMPurify from 'dompurify'
 
 export const PresentationCard=({bgImage, text, span1, span2, span3, photo1, photo2})=>{
   return(
@@ -13,8 +13,10 @@ export const PresentationCard=({bgImage, text, span1, span2, span3, photo1, phot
             <span className="small">{span2}</span>
             <span>{span3}</span>
         </h1>
-        <p className="card__quote animated fadeInUp">
-          {text}
+        <p className="card__quote animated fadeInUp"  dangerouslySetInnerHTML={{
+                __html: DOMPurify.sanitize(text),
+            }}>
+         
         </p>
     </div>
 </div>

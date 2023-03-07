@@ -3,8 +3,8 @@
     margin: 0 auto;
     width: 100%;
     height: 85vh;
-    border-top: var(--borderYellow);
-    border-bottom: var(--borderYellow);
+    border-top: var(--borderWhite);
+    border-bottom: var(--borderWhite);
     @media (max-width: 900px) {
         height: 100%;
         width: 88%;
@@ -96,7 +96,7 @@
     padding-left: 15px;
     padding-top: 5%;
     margin: auto;
-    color: var(--colGray);
+    color: var(--colBlue);
     font-size: 14px;
     font-weight: 600;
     line-height: 1.6;

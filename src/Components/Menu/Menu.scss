@@ -74,7 +74,7 @@ nav li {
     }
 
     .navLinks li {
-        background-image: repeating-linear-gradient(
+        background-image: linear-gradient(
             90deg,
             rgb(22, 18, 18),
             rgb(74, 71, 73),
@@ -116,12 +116,19 @@ nav li {
     .navLinks.hideMenu {
         display: none;
     }
-    .subMenu {
-        top: 0;
+
+    .navLinks:active .subMenu {
+        display: flex;
+        top: 30px;
+        scale: 0.6;
+        left: 150px;
+    }
+    .isActiveButton.subMenu li {
+        background: var(--colBeige);
+        height: 40px;
     }
 }
 //subMenu
-
 .subMenu {
     position: absolute;
     top: 50px;
@@ -146,6 +153,6 @@ nav li {
         }
     }
 }
-.navLinks li:hover .subMenu {
-    display: flex;
-}
+// .navLinks li:hover .subMenu {
+//     display: flex;
+// }

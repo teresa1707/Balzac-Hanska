@@ -1,21 +1,22 @@
 import { Grid } from '@mui/material'
 import React from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import './NewsItem.scss'
 import { humaNews } from 'utils/humaNews'
 import { getObject } from 'utils/projects'
 import { Container } from '@mui/material'
 import DOMPurify from 'dompurify'
-import { VideoPlayer } from 'Components/VideoPlayer/VideoPlayer'
+import { Button } from 'Components/MyButton/Button'
 
-export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
+
+export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
     let { id } = useParams()
 
     return (
         <div className="bgClear">
             <Container className="humaPadding newsItem">
                 <h1>{newsObject[id].title}</h1>
-                <Link to="/humanitarian">RETOUR</Link>
+                <Button BtnText="Actualités"/>
                 <Grid
                     container
                     className="balzacItem item"
@@ -258,9 +259,7 @@ export const NewsItem = ({ newsObject = getObject(humaNews ) }) => {
                         ></p>
                     </Grid>
                    
-                    <Link to="/humanitaire" style={{ color: 'black' }}>
-                        RETOUR
-                    </Link>
+                    <Button BtnText="Actualités"/>
                 </Grid>
             </Container>
         </div>
