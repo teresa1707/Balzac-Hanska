@@ -12,8 +12,9 @@ export const BalzacItem = ({ balzacObject = getObject(balzac), goBack }) => {
     let { id } = useParams()
 
     return (
-        <div className="bgClear ">
-            <Container className="humaPadding ">
+        <>
+            <div className="humaPadding"></div>
+            <Container className="bgClear">
                 <h1>{balzacObject[id].title}</h1>
 
                 <Button BtnText="CULTURE" goBack={goBack} />
@@ -246,6 +247,6 @@ export const BalzacItem = ({ balzacObject = getObject(balzac), goBack }) => {
                     <Button BtnText="CULTURE" goBack={goBack} />
                 </Grid>
             </Container>
-        </div>
+        </>
     )
 }

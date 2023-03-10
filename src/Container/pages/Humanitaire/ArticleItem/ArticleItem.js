@@ -13,7 +13,8 @@ export const ArticleItem = ({
     let { id } = useParams()
 
     return (
-        <div className="humaPadding">
+        <>
+            <div className="humaPadding"></div>
             <Container>
                 <h1>{projectObject[id].title}</h1>
                 <Button BtnText="Retour" goBack={goBack} />
@@ -248,6 +249,6 @@ export const ArticleItem = ({
                     </Grid>
                 </Grid>
             </Container>
-        </div>
+        </>
     )
 }

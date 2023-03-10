@@ -8,36 +8,37 @@ import { Container } from '@mui/material'
 import DOMPurify from 'dompurify'
 import { Button } from 'Components/MyButton/Button'
 
-
 export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
     let { id } = useParams()
 
     return (
-        <div className="bgClear">
-            <Container className="humaPadding newsItem">
+        <div className="humaPadding">
+            <Container className="newsItem">
                 <h1>{newsObject[id].title}</h1>
-                <Button BtnText="Actualités"/>
+                <Button BtnText="<<< Actualités" />
                 <Grid
                     container
                     className="balzacItem item"
                     justifyContent="center"
                     alignItems="center"
-                > <div id="caption">
-                            <img
-                                src={newsObject[id].image}
-                                alt={newsObject[id].image}
-                            />
-                        </div>
-                        <Grid item sm={12} md={6}>
+                >
+                    {' '}
+                    <div id="caption">
+                        <img
+                            src={newsObject[id].image}
+                            alt={newsObject[id].image}
+                        />
+                    </div>
+                    <Grid item sm={12} md={6}>
                         <p
                             dangerouslySetInnerHTML={{
                                 __html: DOMPurify.sanitize(
-                                  newsObject[id].text[0]
+                                    newsObject[id].text[0]
                                 ),
                             }}
                         ></p>
                     </Grid>
-                        <Grid item sm={12} md={6}>
+                    <Grid item sm={12} md={6}>
                         <div id="caption">
                             <span className="text">
                                 {newsObject[id].imageArray[0].description}
@@ -48,7 +49,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             />
                         </div>
                     </Grid>
-             
                     <Grid item sm={12} md={6}>
                         <div id="caption">
                             <span className="text">
@@ -60,7 +60,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             />
                         </div>
                     </Grid>
-                   
                     <Grid item sm={12} md={6}>
                         <div id="caption">
                             <span className="text">
@@ -81,7 +80,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             }}
                         ></p>
                     </Grid>
-
                     <Grid item sm={12} md={6}>
                         <p
                             dangerouslySetInnerHTML={{
@@ -102,7 +100,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             />
                         </div>
                     </Grid>
-
                     <Grid item sm={12} md={6}>
                         <div id="caption">
                             <span className="text">
@@ -123,7 +120,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             }}
                         ></p>
                     </Grid>
-
                     <Grid item sm={12} md={6}>
                         <p
                             dangerouslySetInnerHTML={{
@@ -144,7 +140,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             />
                         </div>
                     </Grid>
-
                     <Grid item sm={12}>
                         <p
                             dangerouslySetInnerHTML={{
@@ -154,7 +149,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             }}
                         ></p>
                     </Grid>
-
                     <Grid item sm={12} md={6}>
                         <div id="caption">
                             <span className="text">
@@ -175,7 +169,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             }}
                         ></p>
                     </Grid>
-
                     <Grid item sm={12}>
                         <p
                             dangerouslySetInnerHTML={{
@@ -185,7 +178,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             }}
                         ></p>
                     </Grid>
-
                     <Grid item sm={12} md={6}>
                         <p
                             dangerouslySetInnerHTML={{
@@ -206,7 +198,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             />
                         </div>
                     </Grid>
-
                     <Grid item sm={12} md={6}>
                         <div id="caption">
                             <span className="text">
@@ -227,7 +218,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             }}
                         ></p>
                     </Grid>
-
                     <Grid item sm={12} md={6}>
                         <p
                             dangerouslySetInnerHTML={{
@@ -248,7 +238,6 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             />
                         </div>
                     </Grid>
-
                     <Grid item sm={12}>
                         <p
                             dangerouslySetInnerHTML={{
@@ -258,8 +247,7 @@ export const NewsItem = ({ newsObject = getObject(humaNews) }) => {
                             }}
                         ></p>
                     </Grid>
-                   
-                    <Button BtnText="Actualités"/>
+                    <Button BtnText="Actualités" />
                 </Grid>
             </Container>
         </div>

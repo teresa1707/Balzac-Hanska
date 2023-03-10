@@ -5,8 +5,9 @@ import balzac from '../../../Assets/balzacFrameWhite.jpg'
 import hanska from '../../../Assets/hanskaFrameWhite.jpg'
 import bgIm from 'Assets/maison.jpg'
 import { PresentationCard } from 'Components/PresentationCard/PresentationCard'
-import { cultureMenu } from 'utils/menu'
+
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
+import PdfReader from 'Components/PdfReader/PdfReader'
 
 export const CulturePage = ({ slideToUp, slideToLeft }) => {
     useEffect(() => {
@@ -26,7 +27,7 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
     useEffect(() => {
         slideToUp('.ft3', '3', '2')
     }, [])
-    const item = cultureMenu.map((item) => <li>{item}</li>)
+
     return (
         <>
             <div className="humaPadding"></div>
@@ -73,7 +74,9 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
                 <BalzacList />
             </section>
             <section id="patrimoineUkrainien"></section>
-            <section id="BalzacFest"></section>
+            <section id="BalzacFest">
+                <PdfReader />
+            </section>
         </>
     )
 }

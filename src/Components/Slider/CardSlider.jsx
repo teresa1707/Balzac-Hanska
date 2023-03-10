@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-
+import { humaNews } from 'utils/humaNews'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import './CardSlider.scss'
 import 'swiper/css'
@@ -10,11 +10,11 @@ import { Virtual } from 'swiper'
 import 'swiper/css/navigation'
 // import required modules
 import { Navigation, Pagination, Keyboard, Autoplay } from 'swiper'
-import { humaNews } from 'utils/humaNews'
+
 import { Link } from 'react-router-dom'
 import { ButtonYellow } from 'Components/MyButton/ButtonYellow'
 
-export const CardSlider = () => {
+export function CardSlider({ array = humaNews }) {
     return (
         <>
             <Swiper
@@ -32,18 +32,18 @@ export const CardSlider = () => {
                 modules={[Pagination, Virtual, Navigation, Keyboard, Autoplay]}
                 className="mySwiper"
             >
-                {humaNews.map((news) => (
+                {array.map((news) => (
                     <SwiperSlide key={news.id}>
-                        <div class="card">
-                            <div class="card__top">
+                        <div className="card">
+                            <div className="card__top">
                                 {' '}
                                 <img src={news.image} />
                             </div>
-                            <div class="card__bottom">
+                            <div className="card__bottom">
                                 <h1>{news.title}</h1>
                                 <p>{news.shortText}</p>
                             </div>
-                            <div class="card__overlay">
+                            <div className="card__overlay">
                                 <Link to={`/humanitaire/news/${news.id}`}>
                                     <ButtonYellow text="lire plus" />
                                 </Link>

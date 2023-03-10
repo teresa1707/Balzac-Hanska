@@ -1,15 +1,19 @@
+// .main_h {
+//     position: fixed;
+//     z-index: 999999;
+//     width: 100vw;
+//     top: 0;
+//     background: rgba(0, 9, 9, 0.3);
+//     height: 80px;
+//     transition: height 0.3s ease-in-out;
+//     transition: scale 0.2s ease-in-out;
+// }
+
 .main_h {
     position: fixed;
     z-index: 999999;
     width: 100vw;
     top: 0;
-    background: rgba(0, 9, 9, 0.3);
-    height: 80px;
-    transition: height 0.3s ease-in-out;
-    transition: scale 0.2s ease-in-out;
-}
-
-.sticky {
     background: var(--colBlue);
     border-bottom: var(--borderYellow);
     .logo-balzac,

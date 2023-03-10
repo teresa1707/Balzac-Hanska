@@ -11,6 +11,7 @@ import { PresentationCard } from 'Components/PresentationCard/PresentationCard'
 import { Grid } from '@mui/material'
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 import { CardSlider } from 'Components/Slider/CardSlider'
+import { humaNews } from 'utils/humaNews'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -45,9 +46,9 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                     text="Nos projets à caractère Humanitaires sont portés par
                                 notre Association Franco Ukrainienne BALZAC HANSKA
                                 qui possède une structure en France et en Ukraine,
-                                depuis plus de 10 ans
+                                depuis plus de 10 ans - un lien de solidarité et d’Amour de la France à l’Ukraine au travers de notre association « Franco-Ukrainienne Balzac et Hanska ».
                                
-                    Le huitième camion bien rempli à quitté la France le 21 decembre 2022 et est arrivé sans incident en Ukraine le 26 decembre. Grace aux efforts de nous tous reunis nous avons pu envoyer les produits de première necessité , tant attendus par nos amis ukrainiens. "
+                                <br/><br/> Notre 9me camion de , entre autre, 95 groupes electrogenes est parti ce jour pour rejoindre la Galerie Balzac de Berditchev via Lviv. Ce lieu de distribution est situé à mi chemin entre Jitomir et Vinnytsia. "
                 />
             </div>{' '}
             <Grid container className="container paddingTopHash" id="donner">
@@ -87,7 +88,7 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                 </Grid>
             </Grid>
             <section id="actualites" className="paddingTopHash">
-                <CardSlider sliderPerView={3} />
+                <CardSlider />
             </section>
             <section id="projets" className="paddingTopHash">
                 <TitleBlock

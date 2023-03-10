@@ -137,6 +137,7 @@ nav li {
     right: -15px;
     display: none;
     li {
+        z-index: 1111111111111111;
         margin: auto;
         background-color: var(--colBeige);
     }
@@ -147,7 +148,7 @@ nav li {
         text-decoration: none;
         transition: all 0.4s linear;
         font-size: small;
-        width: 135px;
+        width: 140px;
         &:hover {
             color: var(--colBlue1);
             background-color: var(--colYellow);
