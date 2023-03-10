@@ -5,6 +5,7 @@ import { FiMenu } from 'react-icons/fi'
 import './Menu.scss'
 
 import { NavLink } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 
 export const Menu = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
@@ -42,19 +43,29 @@ export const Menu = () => {
                             }
                             onClick={() => closeMenu()}
                         >
-                            Culture
+                            Culture{' '}
                         </NavLink>
                         <ul className="subMenu">
                             <li>
-                                <a href="#donner">patrimoine ukrainien</a>
+                                <HashLink smooth to="/culture#RouteBalzac">
+                                    la route de balzac
+                                </HashLink>
                             </li>
                             <li>
-                                <a href="#projets">la route de balzac</a>
+                                <HashLink
+                                    smooth
+                                    to="/culture#patrimoineUkrainien"
+                                >
+                                    patrimoine ukrainien
+                                </HashLink>
                             </li>
                             <li>
-                                <a href="#actualites">balzac fest</a>
+                                {' '}
+                                <HashLink smooth to="/culture#BalzacFest">
+                                    balzac fest
+                                </HashLink>
                             </li>
-                        </ul>{' '}
+                        </ul>
                     </li>
                     <li>
                         <NavLink
@@ -68,18 +79,27 @@ export const Menu = () => {
                         </NavLink>{' '}
                         <ul className="subMenu">
                             <li>
-                                <a href="#donner">faire un don</a>
+                                <HashLink smooth to="/humanitarian#donner">
+                                    faire un don
+                                </HashLink>
                             </li>
                             <li>
-                                <a href="#projets">nos projets</a>
+                                <HashLink smooth to="/humanitarian#actualites">
+                                    actualités
+                                </HashLink>
+                            </li>{' '}
+                            <li>
+                                {' '}
+                                <HashLink smooth to="/humanitarian#projets">
+                                    nos projets
+                                </HashLink>
                             </li>
                             <li>
-                                <a href="#actualites">actualités</a>
+                                <HashLink smooth to="/humanitarian#presse">
+                                    presse
+                                </HashLink>
                             </li>
-                            <li>
-                                <a href="#presse">presse</a>
-                            </li>
-                        </ul>{' '}
+                        </ul>
                     </li>
                     <li>
                         <NavLink

@@ -1,9 +1,9 @@
 .articleItem {
+    background-color: var(--colGray);
     p {
         padding: 20px;
         font-size: 14px;
         text-align: justify;
-        color: #cdd6bd;
     }
 
     figure {
@@ -18,7 +18,6 @@
         }
         figcaption {
             font-size: 10px;
-            color: white;
         }
     }
     .art-category {

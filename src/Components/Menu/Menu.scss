@@ -24,7 +24,7 @@ nav li {
     text-transform: uppercase;
     padding: 0 1em 0 0em;
     text-shadow: 1px 1px 1px black;
-    color: var(--colBeige);
+    color: var(--colYellow);
 }
 
 .navLinks a:hover {
@@ -42,7 +42,9 @@ nav li {
         margin-top: -20px;
         text-align: center;
     }
-
+    .btn2 {
+        margin-top: -20px;
+    }
     .main_h {
         position: fixed;
         height: 50px;
@@ -132,20 +134,20 @@ nav li {
 .subMenu {
     position: absolute;
     top: 50px;
+    right: -15px;
     display: none;
     li {
         margin: auto;
         background-color: var(--colBeige);
     }
     li a {
-        padding: 0 15px;
         text-transform: uppercase;
         text-align: center;
         color: var(--colGray1);
         text-decoration: none;
         transition: all 0.4s linear;
         font-size: small;
-        width: max-content;
+        width: 135px;
         &:hover {
             color: var(--colBlue1);
             background-color: var(--colYellow);
@@ -153,6 +155,6 @@ nav li {
         }
     }
 }
-// .navLinks li:hover .subMenu {
-//     display: flex;
-// }
+.navLinks li:hover .subMenu {
+    display: block;
+}

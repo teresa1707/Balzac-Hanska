@@ -28,18 +28,18 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
     }, [])
     const item = cultureMenu.map((item) => <li>{item}</li>)
     return (
-        <div className="humaApp">
-            <div className="humaPadding">
-                <div id="nextSection" className="section">
-                    <div id="box1" className="box box1">
-                        <PresentationCard
-                            photo1={balzac}
-                            photo2={hanska}
-                            bgImage={bgIm}
-                            span1="Balzac"
-                            span2="et"
-                            span3="Hanska"
-                            text="<p>Notre association a été créée dans le
+        <>
+            <div className="humaPadding"></div>
+            <div id="nextSection" className="section">
+                <div id="box1" className="box box1">
+                    <PresentationCard
+                        photo1={balzac}
+                        photo2={hanska}
+                        bgImage={bgIm}
+                        span1="Balzac"
+                        span2="et"
+                        span3="Hanska"
+                        text="<p>Notre association a été créée dans le
                             but de perpétuer, célébrer et rendre hommage à la
                             mémoire des amours d'Honoré de Balzac et de la Comtesse Ewelyna Hanska.<br/><br/>Nous voulons faire connaitre le lien de Balzac avec l’Ukraine au travers de cette belle histoire.<br/><br/>Sur ce site, vous pourrez trouver
                             l’histoire des voyages de Balzac pour rejoindre son
@@ -47,9 +47,10 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
                             vous pourrez également faire une
                             &nbsp;.&nbsp;N’hésitez pas à nous contacter, nous
                             sommes à votre disposition. </p>"
-                        />
-                    </div>
+                    />
                 </div>
+            </div>
+            <section id="RouteBalzac" className="paddingTopHash">
                 <TitleBlock
                     title="LES VOYAGES D'HONORE DE BALZAC"
                     text="
@@ -69,10 +70,10 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
                 "
                 />
 
-                <div id="balzacList">
-                    <BalzacList />
-                </div>
-            </div>
-        </div>
+                <BalzacList />
+            </section>
+            <section id="patrimoineUkrainien"></section>
+            <section id="BalzacFest"></section>
+        </>
     )
 }

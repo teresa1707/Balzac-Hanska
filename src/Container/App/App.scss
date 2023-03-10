@@ -4,11 +4,14 @@
 
 :root {
     --colYellow: #dabb65;
-    --colOrange: orange;
+    --colOrange: #e4c216;
     --colWhite: #ddc;
     --colBeige: #b2a680;
     --colGray1: #4a4749;
-    --borderYellow: 5px ridge var(--colYellow);
+    --colGreen: #92b5a7;
+    --colBlue: #072634;
+    --colGray: #8e9496;
+    --borderYellow: 3px ridge var(--colYellow);
     --borderWhite: 5px ridge var(--colWhite);
 
     --colOrange1: #bd4f0a;
@@ -18,15 +21,13 @@
     --colBlack: #212121;
 
     --colBeige1: #c48660;
-    --colGray: #aaaaaa;
 
     --colGray2: #333;
     --colYellow1: #daf7a6;
-    --colGreen: #09ed8e;
-    --colBlue: #072634;
+
     --colBlue1: #93979e;
     --paddingTitle: 0px 10%;
-    --borderYellow: 5px ridge var(--colYellow);
+    --borderYellow: 3px ridge var(--colYellow);
     --borderGray: 5px ridge var(--colGray1);
 }
 
@@ -36,25 +37,27 @@
 
 body,
 .item {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Tilt Neon', cursive;
     margin: 0;
-    background-image: url(../../Assets/low-poly-grid-haike1.svg);
+    background-image: url(../../Assets/stacked-peaks-haikei.svg);
 }
-.humaApp {
-    background-image: url(../../Assets/low-poly-grid-haikei.svg);
+.background-white {
+    background: #fff;
 }
 .container {
     max-width: 1400px;
     margin: auto;
 }
 .humaPadding {
-    padding-top: 130px;
+    padding-top: 80px;
+    background-color: var(--colBlue);
 }
-.humaPaddingSlider {
-    border-bottom: 2px ridge #bebebe;
+
+.paddingTopHash {
+    padding-top: 50px;
 }
 .bgClear {
-    background-image: url(../../Assets/trianglify-lowres-1.png);
+    background-image: url(../../Assets/stacked-peaks-haikei.svg);
 }
 .item {
     margin: 30px 0;
@@ -65,7 +68,6 @@ body,
 }
 
 .pDarkTheme {
-    font-family: 'Tilt Neon', cursive;
     color: var(--colBlue);
     font-size: 1rem;
     font-weight: 300;
@@ -81,9 +83,8 @@ body,
 h1 {
     font-family: 'Kelly Slab', sans-serif;
     font-size: 1.8rem;
-    margin: 40px auto;
     text-align: center;
-    color: var(--colOrange1);
+    color: var(--colBeige);
     text-shadow: 1px 1px 1px black;
 }
 

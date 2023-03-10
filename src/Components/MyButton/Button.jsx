@@ -11,7 +11,7 @@ export const Button = ({BtnText}) => {
     return (
         <>
             
-            <button className="formButton btnProject" onClick={goBack}>
+            <button className="btnProject" onClick={goBack}>
                     {BtnText}
                 </button>
         </>

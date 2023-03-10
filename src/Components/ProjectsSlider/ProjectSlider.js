@@ -23,15 +23,12 @@ export const ProjectSlider = () => {
             <Grid container className="art-grid container">
                 <div className="humaPaddingSlider"></div>
                 {currentItems.map((project) => (
-                    <Grid
-                        item
-                        sm={6}
-                        md={4}
-                        className="art-item"
-                        key={project.id}
-                    >
-                        <Link to={`/humanitaire/projets/${project.id}`}>
-                            <Card className="art-category bgClear" id="caption">
+                    <Grid item sm={6} md={4} key={project.id}>
+                        <Link
+                            to={`/humanitaire/projets/${project.id}`}
+                            className="art-item"
+                        >
+                            <Card id="caption">
                                 <div className="art-img-wrap">
                                     <img
                                         alt={project.title}

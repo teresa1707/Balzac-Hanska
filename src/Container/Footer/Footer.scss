@@ -12,11 +12,11 @@
     margin: 30px auto;
 }
 .footerCard {
-    background: #20232a;
+    background-color: var(--colBlue);
     margin: 0;
     padding: 0px 5%;
-    border-top: 1px ridge var(--colBeige);
-    border-bottom: 1px ridge var(--colBeige);
+    border-top: var(--borderYellow);
+    border-bottom: var(--borderYellow);
 }
 .footer {
     padding: 0px 30px 0;

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import "./OurPartners.scss"
 import "swiper/css";
 import "swiper/css/virtual";
 import "swiper/css/pagination";
@@ -20,16 +20,13 @@ export const OurPartners =()=> {
           delay: 2500,
           disableOnInteraction: false,
         }}
-     
-       
         slidesPerView={6}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
-        
         modules={[Pagination,Virtual,Autoplay ]}
-        style={{backgroundColor:"white"}}
+        style={{backgroundColor:"white", paddingTop:50, paddingBottom:20}}
         
       >
     {ourPartners.map((logo, index) => (

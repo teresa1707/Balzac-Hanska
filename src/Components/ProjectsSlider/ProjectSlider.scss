@@ -9,9 +9,10 @@
 
     //card
     .art-item {
-        margin: 3% auto 0%;
+        margin-inline: auto;
         padding: 0% 1%;
-
+        justify-content: center;
+        display: flex;
         &:hover {
             .art-img {
                 transform: scale(1.5);
@@ -25,13 +26,13 @@
         filter: sepia(90%);
     }
     #caption {
-        width: 80%;
+        width: 70%;
         height: 350px;
         position: relative;
         border: solid 10px #bebebe;
         border-bottom-color: #fff;
         border-left-color: #eee;
-        border-radius: 5px;
+        border-radius: 3px;
         border-right-color: #bebebe;
         border-top-color: #ddd;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,

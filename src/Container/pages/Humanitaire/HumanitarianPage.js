@@ -34,7 +34,7 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
     }, [])
 
     return (
-        <div className="humaApp">
+        <>
             <div className="humaPadding"></div>
             <div id="box1" className="box box1">
                 <PresentationCard
@@ -50,8 +50,8 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                     Le huitième camion bien rempli à quitté la France le 21 decembre 2022 et est arrivé sans incident en Ukraine le 26 decembre. Grace aux efforts de nous tous reunis nous avons pu envoyer les produits de première necessité , tant attendus par nos amis ukrainiens. "
                 />
             </div>{' '}
-            <Grid container className="container">
-                <Grid item sm={12} md={4} id="donner">
+            <Grid container className="container paddingTopHash" id="donner">
+                <Grid item sm={12} md={4}>
                     <ColumnElement
                         className="humaContent"
                         text='<div class="title2">Ce n’est que le début !</div><p class="italic pDarkTheme">Vous pouvez nous rejoindre dans cette belle aventure humaine et nous aider dans nos différentes actions à venir et/ou par vos contributions financière sur le compte de notre association 
@@ -86,13 +86,10 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                     />
                 </Grid>
             </Grid>
-            <div id="actualites">
+            <section id="actualites" className="paddingTopHash">
                 <CardSlider sliderPerView={3} />
-            </div>
-            <div id="presse">
-                <CardSlider />
-            </div>
-            <div id="projets">
+            </section>
+            <section id="projets" className="paddingTopHash">
                 <TitleBlock
                     title="<h2 class='titleH2'>L’UKRAINE A BESOIN DE NOUS, AIDONS-LA ET SOYONS ENGAGES !!</h2>"
                     text="<p class='pDarkTheme'>
@@ -115,7 +112,10 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                 />
 
                 <ProjectSlider />
-            </div>
-        </div>
+            </section>
+            <section id="presse" className="paddingTopHash">
+                <CardSlider />
+            </section>
+        </>
     )
 }

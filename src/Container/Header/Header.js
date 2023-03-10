@@ -24,13 +24,13 @@ export const Header = ({ onLoad }) => {
     return (
         <header className={sticky ? 'main_h sticky' : 'main_h'}>
             <Grid container>
-                <Grid item xs={12} sm={6} md={4} className="logo">
+                <Grid item xs={12} sm={3} md={3} className="logo">
                     <Logo />
                 </Grid>
-                <Grid item xs={12} sm={12} md={4} className="headerMenu">
+                <Grid item xs={12} sm={12} md={6} className="headerMenu">
                     <Menu />
                 </Grid>
-                <Grid item xs={12} sm={6} md={4} className="slidingButton">
+                <Grid item xs={12} sm={3} md={3} className="slidingButton">
                     <SlidingButton buttonText="Faire un don ou adherer" />
                 </Grid>
 

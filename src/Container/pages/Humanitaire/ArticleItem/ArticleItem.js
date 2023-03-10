@@ -13,11 +13,11 @@ export const ArticleItem = ({
     let { id } = useParams()
 
     return (
-        <div className="bgClear">
-            <Container className="humaPadding">
+        <div className="humaPadding">
+            <Container>
                 <h1>{projectObject[id].title}</h1>
                 <Button BtnText="Retour" goBack={goBack} />
-                <Grid container className="articleItem item">
+                <Grid container className="articleItem">
                     <Grid item sm={12} md={6}>
                         <figure>
                             <img

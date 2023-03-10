@@ -2,7 +2,7 @@ import React from 'react'
 import { Grid } from '@mui/material'
 import 'Container/Footer/Footer.scss'
 import { SocialMedia } from 'Components/SocialMedia/SocialMedia'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 export const Footer = ({ closeMenu }) => {
     return (
@@ -65,45 +65,13 @@ export const Footer = ({ closeMenu }) => {
                     </Grid>
                     <Grid item sm={12} md={3} className="ft3">
                         <div className="footerMenu">
-                            <NavLink
-                                to="/"
-                                className={({ isActive }) =>
-                                    isActive ? 'isActiveButton' : 'a'
-                                }
-                                onClick={() => closeMenu()}
-                            >
-                                Accueil
-                            </NavLink>
+                            <Link to="/">Accueil</Link>
 
-                            <NavLink
-                                to="/culture"
-                                className={({ isActive }) =>
-                                    isActive ? 'isActiveButton' : 'a'
-                                }
-                                onClick={() => closeMenu()}
-                            >
-                                Culture
-                            </NavLink>
+                            <Link to="/culture">Culture</Link>
 
-                            <NavLink
-                                to="/humanitarian"
-                                className={({ isActive }) =>
-                                    isActive ? 'isActiveButton' : 'a'
-                                }
-                                onClick={() => closeMenu()}
-                            >
-                                Humanitaire
-                            </NavLink>
+                            <Link to="/humanitarian">Humanitaire</Link>
 
-                            <NavLink
-                                to="/contact"
-                                className={({ isActive }) =>
-                                    isActive ? 'isActiveButton' : 'a'
-                                }
-                                onClick={() => closeMenu()}
-                            >
-                                Contact
-                            </NavLink>
+                            <Link to="/contact">Contact</Link>
                         </div>
                     </Grid>
                     <Grid item sm={12} md={3} className="ft4">
