@@ -63,6 +63,7 @@
     border-bottom: 3px ridge var(--colBeige);
 }
 #parallax-container .parallax-one {
+    height: 100vh;
     padding-top: 320px;
     padding-bottom: 300px;
     background-image: url(../../../public/Images/maison.jpg);

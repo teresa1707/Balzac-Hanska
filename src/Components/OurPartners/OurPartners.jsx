@@ -30,9 +30,8 @@ export const OurPartners = () => {
                 }}
             >
                 {ourPartners.map((logo, index) => (
-                    <SwiperSlide>
+                    <SwiperSlide key={index}>
                         <div
-                            key={index}
                             className="sliderContent"
                             style={{ width: '500px' }}
                         >
