@@ -11,27 +11,18 @@ import { PresentationCard } from 'Components/PresentationCard/PresentationCard'
 import { Grid } from '@mui/material'
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 import { CardSlider } from 'Components/Slider/CardSlider'
-import { humaNews } from 'utils/humaNews'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
     useEffect(() => {
         slideToLeft('#box1', '0.6', '1')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     useEffect(() => {
         slideToLeft('.footerCard', '0', '2')
-    }, [])
-
-    useEffect(() => {
-        slideToUp('.ft1', '1', '2')
-    }, [])
-    useEffect(() => {
-        slideToLeft('.ft2', '2', '2')
-    }, [])
-    useEffect(() => {
-        slideToUp('.ft3', '3', '2')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

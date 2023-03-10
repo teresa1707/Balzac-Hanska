@@ -1,4 +1,3 @@
-import React, { useRef, useState } from 'react'
 import { humaNews } from 'utils/humaNews'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import './CardSlider.scss'
@@ -37,7 +36,7 @@ export function CardSlider({ array = humaNews }) {
                         <div className="card">
                             <div className="card__top">
                                 {' '}
-                                <img src={news.image} />
+                                <img src={news.image} alt="news_image" />
                             </div>
                             <div className="card__bottom">
                                 <h1>{news.title}</h1>

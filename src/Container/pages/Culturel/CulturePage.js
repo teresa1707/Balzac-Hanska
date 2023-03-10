@@ -12,20 +12,25 @@ import PdfReader from 'Components/PdfReader/PdfReader'
 export const CulturePage = ({ slideToUp, slideToLeft }) => {
     useEffect(() => {
         slideToUp('#box1', '0.6', '1')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     useEffect(() => {
         slideToLeft('.frame', '0.2', '2', '0.7')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     useEffect(() => {
-        slideToUp('.ft1', '1', '2')
+        slideToUp('.ft1', '0.5', '1')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     useEffect(() => {
-        slideToLeft('.ft2', '2', '2')
+        slideToLeft('.ft2', '1', '1')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     useEffect(() => {
-        slideToUp('.ft3', '3', '2')
+        slideToUp('.ft3', '1.5', '1')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

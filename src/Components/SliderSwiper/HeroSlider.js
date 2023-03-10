@@ -11,11 +11,13 @@ import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 export const HeroSlider = ({ slideFade, slideUp }) => {
     useEffect(() => {
         slideFade('#parallax-container .frame', '1', '2')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     useEffect(() => {
         slideUp('#block1 .cardItemHuma', '0.6', '1')
         slideUp('#block2 .cardItemHuma', '0.6', '1')
         slideUp('#block3 .cardItemHuma', '0.6', '1')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     return (

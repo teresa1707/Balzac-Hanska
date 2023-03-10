@@ -35,7 +35,6 @@ export const BalzacList = () => {
                                     <div className="cardContent">
                                         <div className="text2">{text[0]}</div>
                                         <h5>Lire la suite</h5>
-                                        <h5></h5>
                                     </div>
                                 </div>{' '}
                             </Link>

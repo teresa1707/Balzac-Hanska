@@ -2,7 +2,7 @@ import { ContactForm } from 'Components/ContactForm/ContactForm'
 import { Header } from 'Container/Header/Header'
 import { CulturePage } from 'Container/pages/Culturel/CulturePage'
 import { HumanitarianPage } from 'Container/pages/Humanitaire/HumanitarianPage'
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { gsap } from 'gsap'
 

@@ -20,6 +20,7 @@ export const Header = ({ onLoad }) => {
     window.addEventListener('scroll', stickyNav)
     useEffect(() => {
         onLoad()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <header className={sticky ? 'main_h sticky' : 'main_h'}>

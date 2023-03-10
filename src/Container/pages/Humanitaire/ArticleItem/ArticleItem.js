@@ -1,7 +1,7 @@
 import { Card, Container, Grid } from '@mui/material'
 import React from 'react'
 import DOMPurify from 'dompurify'
-import { Link, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { getObject, projects } from 'utils/projects'
 import './ArticleItem.scss'
 import { Button } from 'Components/MyButton/Button'
@@ -23,7 +23,7 @@ export const ArticleItem = ({
                         <figure>
                             <img
                                 src="/Images/FcarteUkraine.jpg"
-                                alt="photo Ukraine"
+                                alt="Ukraine"
                             />{' '}
                             <figcaption>Ukraine</figcaption>
                         </figure>
@@ -87,7 +87,7 @@ export const ArticleItem = ({
                         <figure>
                             <img
                                 src="/Images/FcarteZakarpattia.jpg"
-                                alt="photo Ukraine"
+                                alt="Ukraine"
                             />
                             <figcaption>Transcarpatie</figcaption>
                         </figure>
