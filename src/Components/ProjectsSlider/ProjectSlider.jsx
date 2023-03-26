@@ -21,8 +21,8 @@ export const ProjectSlider = () => {
     }
 
     return (
-        <>
-            <Grid container spacing={3} className="container">
+        <div className="container">
+            <Grid container spacing={3}>
                 {currentItems.map((project) => (
                     <Grid item sm={12} md={6} key={project.id}>
                         <Link to={`/humanitaire/projets/${project.id}`}>
@@ -68,6 +68,6 @@ export const ProjectSlider = () => {
                 previousLabel="<<"
                 renderOnZeroPageCount={null}
             />
-        </>
+        </div>
     )
 }

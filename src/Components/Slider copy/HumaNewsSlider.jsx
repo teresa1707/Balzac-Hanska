@@ -41,12 +41,12 @@ export function HumaNewsSlider({ array = humaNews }) {
                                         backgroundImage: `url(${news.image})`,
                                     }}
                                 >
-                                    {' '}
                                     <Link
                                         to={`/humanitaire/news/${news.id}`}
                                         className="btn_position"
                                     >
                                         <ButtonYellow text="lire plus" />
+                                        <div>{news.date}</div>
                                     </Link>
                                 </div>
                                 <div className="record-desc">

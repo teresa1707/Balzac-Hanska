@@ -179,6 +179,7 @@ export const App = () => {
                     element={
                         <>
                             <CulturePage
+                                slideUp={slideUp}
                                 slideToUp={slideToUp}
                                 slideToLeft={slideToLeft}
                             />

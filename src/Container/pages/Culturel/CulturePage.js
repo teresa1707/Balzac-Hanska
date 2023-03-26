@@ -9,9 +9,13 @@ import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 import PdfReader from 'Components/PdfReader/PdfReader'
 import { CultureSlider } from 'Components/CultureSlider/CultureSlider'
 
-export const CulturePage = ({ slideToUp, slideToLeft }) => {
+export const CulturePage = ({ slideUp, slideToUp, slideToLeft }) => {
     useEffect(() => {
-        slideToUp('#box1', '0.6', '1')
+        slideUp('.box1', '0.6', '1')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+    useEffect(() => {
+        slideToUp('.box', '0.5', '1')
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
@@ -19,7 +23,6 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
         slideToLeft('.frame', '0.2', '2', '0.7')
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
-
     useEffect(() => {
         slideToUp('.ft1', '0.5', '1')
         // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -37,7 +40,7 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
         <>
             <div className="humaPadding"></div>
             <div id="nextSection" className="section">
-                <div id="box1" className="box box1">
+                <div className="box">
                     <PresentationCard
                         photo1={balzac}
                         photo2={hanska}
@@ -56,7 +59,7 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
                     />
                 </div>
             </div>
-            <section id="RouteBalzac" className="paddingTopHash">
+            <section id="RouteBalzac" className="paddingTopHash box1">
                 <TitleBlock
                     title="LES VOYAGES D'HONORE DE BALZAC"
                     text="
@@ -75,8 +78,9 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
                     siècle.
                 "
                 />
-
-                <BalzacList />
+                <div className="box1">
+                    <BalzacList />
+                </div>
             </section>
             <section id="patrimoineUkrainien">
                 <CultureSlider />

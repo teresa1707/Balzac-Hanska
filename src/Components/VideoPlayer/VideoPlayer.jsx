@@ -1,19 +1,16 @@
-import React from "react"
-import { video } from "utils/video"
+import React from 'react'
 
 export const VideoPlayer = () => {
-  return (
-    <>
- 
-  {video.map(({id, sourceMp4, sourceWebm, typeMp4, typeWebm})=>(
-    <video controls width="100%" key={id}>
-     <source src={sourceWebm} type={typeMp4} />
-    <source src={sourceMp4} type={typeWebm}
-    /> 
-    Sorry, your browser doesn't support videos.
-    </video>)
-    )}
-</>
-  );
-};
-
+    return (
+        <>
+            <video controls width="100%" id="videoTF1">
+                <source src="/Video/VID-20221224-WA0014.mp4" type="video/mp4" />
+                <source
+                    src="/Video/VID-20221224-WA0014.mp4"
+                    type="video/webm"
+                />
+                Sorry, your browser doesn't support videos.
+            </video>
+        </>
+    )
+}
