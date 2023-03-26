@@ -5,7 +5,6 @@ import ReactPaginate from 'react-paginate'
 import { projects } from 'utils/projects'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { SlidingButton } from 'Components/MyButton/SlidingButton'
 import { ButtonYellow } from 'Components/MyButton/ButtonYellow'
 
 export const ProjectSlider = () => {

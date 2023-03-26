@@ -44,7 +44,11 @@ export function CardSlider({ array = presse }) {
                                 <p>{news.shortText}</p>
                             </div>
                             <div className="card__overlay">
-                                <a href={news.link} target="_blank">
+                                <a
+                                    href={news.link}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
                                     <ButtonYellow text="lire plus" />
                                 </a>
                             </div>
