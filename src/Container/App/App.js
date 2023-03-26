@@ -9,12 +9,13 @@ import { gsap } from 'gsap'
 import './App.scss'
 import { Main } from '../Main/Main'
 import { ScrollUp } from 'Components/ScrollUp/ScrollUp'
-import { BalzacItem } from 'Container/pages/Culturel/BalzacItem/BalzacItem'
+
 import { BalzacList } from 'Components/BalzacList/BalzacList'
 import { Footer } from 'Container/Footer/Footer'
-import { ArticleItem } from 'Container/pages/Humanitaire/ArticleItem/ArticleItem'
+import { ProjectItem } from 'Components/ProjectsSlider/ProjectItem/ProjectItem'
 import { NotFound } from 'Container/pages/NotFound/NotFound'
 import { NewsItem } from 'Components/Slider/NewsItem'
+import { BalzacItem } from 'Components/BalzacList/BalzacItem/BalzacItem'
 
 export const App = () => {
     const onLoad = () => {
@@ -59,6 +60,7 @@ export const App = () => {
                 }
             )
     }
+
     function slideFade(elem, delay, duration) {
         gsap.fromTo(
             elem,
@@ -87,17 +89,15 @@ export const App = () => {
         gsap.fromTo(
             elem,
             {
-                opacity: 0,
-                y: 100,
+                opacity: 1,
+                y: 200,
             },
             {
                 opacity: 1,
                 y: 0,
                 delay: delay || 0.6,
                 duration: duration || 0.6,
-                stagger: {
-                    each: 0.2,
-                },
+
                 scrollTrigger: {
                     trigger: elem,
                     // start: 'top center',
@@ -214,7 +214,7 @@ export const App = () => {
                     path="/humanitaire/projets/:id"
                     element={
                         <>
-                            <ArticleItem />
+                            <ProjectItem />
                         </>
                     }
                 />

@@ -1,7 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
-
 //sliding button
-
 .btn2 {
     font-family: 'Source Sans Pro', sans-serif;
     text-shadow: 1px 1px 1px black;
@@ -11,7 +9,6 @@
     position: relative;
     top: 15px;
     .buttonText {
-        margin-left: 40px;
         font-size: 0.9rem;
         font-weight: bold;
         text-transform: uppercase;
@@ -24,7 +21,7 @@
     h5 {
         position: absolute;
         top: -15px;
-        right: 25px;
+        right: 70px;
         font-size: 20px;
         opacity: 0;
         transition: 0.3s ease-out;
@@ -34,7 +31,7 @@
 .btn2:hover .buttonText {
     color: var(--colBeige);
     font-weight: bold;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 .btn2:hover h5 {
@@ -47,7 +44,7 @@
 .btnProject {
     color: var(--colBeige);
     background: #cdd6bd;
-    border: 2px ridge #cdd6bd;
+    border: 1px ridge #cdd6bd;
     font-size: 14px;
     padding: 10px;
     &:hover {
@@ -59,20 +56,30 @@
 
 .button {
     margin: 0 auto;
-    max-width: 150px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     transition: all 1s ease-in-out;
-    border: none;
-    background: var(--colOrange);
+    border: 1px ridge var(--colGray);
+    background: var(--colBlue);
     text-transform: uppercase;
     padding: 15px 30px;
     font-weight: 900;
     font-size: 13px;
-    color: var(--colBlue);
+    color: var(--colYellow);
     cursor: cursor;
+    &:hover {
+        color: var(--colBlue);
+        background: var(--colYellow);
+        box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    }
 }
-button:hover {
-    color: #ffffff;
-    background: #222222;
-    box-shadow: 0 1px rgba(0, 0, 0, 0.2);
+
+.formButton {
+    justify-content: center;
+    padding: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
+    }
 }

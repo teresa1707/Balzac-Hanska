@@ -5,9 +5,9 @@ import balzac from '../../../Assets/balzacFrameWhite.jpg'
 import hanska from '../../../Assets/hanskaFrameWhite.jpg'
 import bgIm from 'Assets/maison.jpg'
 import { PresentationCard } from 'Components/PresentationCard/PresentationCard'
-
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 import PdfReader from 'Components/PdfReader/PdfReader'
+import { CultureSlider } from 'Components/CultureSlider/CultureSlider'
 
 export const CulturePage = ({ slideToUp, slideToLeft }) => {
     useEffect(() => {
@@ -78,7 +78,9 @@ export const CulturePage = ({ slideToUp, slideToLeft }) => {
 
                 <BalzacList />
             </section>
-            <section id="patrimoineUkrainien"></section>
+            <section id="patrimoineUkrainien">
+                <CultureSlider />
+            </section>
             <section id="BalzacFest">
                 <PdfReader />
             </section>

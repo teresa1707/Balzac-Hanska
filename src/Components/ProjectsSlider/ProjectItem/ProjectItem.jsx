@@ -3,10 +3,10 @@ import React from 'react'
 import DOMPurify from 'dompurify'
 import { useParams } from 'react-router-dom'
 import { getObject, projects } from 'utils/projects'
-import './ArticleItem.scss'
+import './ProjectItem.scss'
 import { Button } from 'Components/MyButton/Button'
 
-export const ArticleItem = ({
+export const ProjectItem = ({
     projectObject = getObject(projects),
     goBack,
 }) => {

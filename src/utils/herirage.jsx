@@ -1,4 +1,4 @@
-export const projects = [
+export const heritage = [
     {
         id: 1,
         title: 'CHAUDIERE Ust-Chorna',

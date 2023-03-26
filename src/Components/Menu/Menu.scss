@@ -1,44 +1,45 @@
-nav li {
-    justify-content: space-evenly;
-    display: flex;
-    position: relative;
-}
 .navLinks {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
     line-height: 3rem;
     height: 50px;
-}
 
-.isActiveButton {
-    text-decoration: none;
-    padding: 0 1em 0 0em;
-    text-shadow: 1px 1px 1px black;
-    text-transform: uppercase;
-    color: var(--colOrange);
-}
+    .menuLi {
+        display: flex;
+        position: relative;
+    }
+    .isActiveButton,
+    .a {
+        padding: 0 2rem;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px black;
+    }
 
-.navLinks .a {
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 1rem;
-    text-transform: uppercase;
-    padding: 0 1em 0 0em;
-    text-shadow: 1px 1px 1px black;
-    color: var(--colBeige);
-}
+    .isActiveButton {
+        color: var(--colYellow);
+        text-decoration: underline;
+    }
 
-.navLinks a:hover {
-    color: var(--colOrange);
-}
+    .a {
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 1rem;
+        color: var(--colBeige);
+    }
 
-//responsive
+    a:hover {
+        color: var(--colYellow);
+    }
+} //responsive
 .navBtn {
     display: none;
 }
 
 @media (max-width: 899px) {
     .logo-balzac {
-        scale: 0.6;
+        scale: 0.5;
         margin-top: -20px;
         text-align: center;
     }
@@ -50,7 +51,7 @@ nav li {
         height: 50px;
     }
 
-    nav li {
+    nav .menuLi {
         margin: 0px 10px 0px;
     }
     .navBtn {
@@ -77,7 +78,7 @@ nav li {
         perspective: 400px;
     }
 
-    .navLinks li {
+    .navLinks .menuLi {
         background: var(--colBlue);
         height: 4rem;
         width: 100%;
@@ -102,7 +103,7 @@ nav li {
             opacity: 1;
         }
     }
-    .navLinks li a {
+    .navLinks .menuLi a {
         text-decoration: none;
         display: flex;
         justify-content: center;
@@ -115,43 +116,34 @@ nav li {
     .navLinks.hideMenu {
         display: none;
     }
-
-    .navLinks:active .subMenu {
-        display: flex;
-        top: 30px;
-        scale: 0.6;
-        left: 150px;
-    }
-    .isActiveButton.subMenu li {
-        background: var(--colBeige);
-        height: 40px;
-    }
 }
 //subMenu
 .subMenu {
     position: absolute;
     top: 50px;
-    right: -25px;
+    right: 0px;
     display: none;
     li {
         margin: auto;
-        background-color: var(--colBeige);
     }
     li a {
+        background-color: var(--colYellow);
+        border: 1px solid var(--colGray);
         text-transform: uppercase;
         text-align: center;
-        color: var(--colGray1);
+        color: var(--colBlue1);
         text-decoration: none;
         transition: all 0.4s linear;
-        font-size: small;
-        width: 150px;
+        font-size: 0.7rem;
+        width: 140px;
         &:hover {
-            color: var(--colBlue1);
-            background-color: var(--colYellow);
+            color: var(--colYellow);
+            background-color: var(--colBlue);
             scale: none;
         }
     }
 }
 .navLinks li:hover .subMenu {
-    display: none;
+    display: flex;
+    flex-direction: column;
 }

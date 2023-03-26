@@ -1,0 +1,14 @@
+.newsItem {
+    margin: 40px auto;
+    background: none;
+    p {
+        color: var(--colBlue);
+    }
+    #caption {
+        margin: 10px;
+    }
+    img {
+        max-height: 300px;
+        max-width: 300px;
+    }
+}

@@ -24,7 +24,7 @@ export const Menu = () => {
                         navbarOpen ? 'showMenu' : 'hideMenu'
                     }`}
                 >
-                    <li>
+                    <li className="menuLi">
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
@@ -35,7 +35,7 @@ export const Menu = () => {
                             Accueil
                         </NavLink>
                     </li>
-                    <li>
+                    <li className="menuLi">
                         <NavLink
                             to="/culture"
                             className={({ isActive }) =>
@@ -46,12 +46,12 @@ export const Menu = () => {
                             Culture{' '}
                         </NavLink>
                         <ul className="subMenu">
-                            <li>
+                            <li className="menuLi">
                                 <HashLink smooth to="/culture#RouteBalzac">
                                     la route de balzac
                                 </HashLink>
                             </li>
-                            <li>
+                            <li className="menuLi">
                                 <HashLink
                                     smooth
                                     to="/culture#patrimoineUkrainien"
@@ -59,7 +59,7 @@ export const Menu = () => {
                                     patrimoine ukrainien
                                 </HashLink>
                             </li>
-                            <li>
+                            <li className="menuLi">
                                 {' '}
                                 <HashLink smooth to="/culture#BalzacFest">
                                     balzac fest
@@ -67,7 +67,7 @@ export const Menu = () => {
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="menuLi">
                         <NavLink
                             to="/humanitarian"
                             className={({ isActive }) =>
@@ -78,30 +78,30 @@ export const Menu = () => {
                             Humanitaire{' '}
                         </NavLink>{' '}
                         <ul className="subMenu">
-                            <li>
+                            <li className="menuLi">
                                 <HashLink smooth to="/humanitarian#donner">
                                     faire un don
                                 </HashLink>
                             </li>
-                            <li>
+                            <li className="menuLi">
                                 <HashLink smooth to="/humanitarian#actualites">
                                     actualités
                                 </HashLink>
                             </li>{' '}
-                            <li>
+                            <li className="menuLi">
                                 {' '}
                                 <HashLink smooth to="/humanitarian#projets">
                                     nos projets
                                 </HashLink>
                             </li>
-                            <li>
+                            <li className="menuLi">
                                 <HashLink smooth to="/humanitarian#presse">
                                     presse
                                 </HashLink>
                             </li>
                         </ul>
                     </li>
-                    <li>
+                    <li className="menuLi">
                         <NavLink
                             to="/contact"
                             className={({ isActive }) =>

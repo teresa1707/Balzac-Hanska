@@ -35,7 +35,7 @@ export const ContactForm = () => {
                         ></textarea>
                     </div>
                     <input
-                        className="formButton"
+                        className="button formButton"
                         type="submit"
                         value="Submit"
                         id="input-submit"

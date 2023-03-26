@@ -1,8 +1,8 @@
 import React from 'react'
-import './ColumnElement.scss'
+import './MainCard.scss'
 import DOMPurify from 'dompurify'
 
-export const ColumnElement = ({ text }) => {
+export const MainCard = ({ text }) => {
     return (
         <div
             className="cardItemHuma"

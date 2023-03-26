@@ -1,7 +1,6 @@
 .cardItemHuma {
     box-shadow: 5px 5px 5px var(--colGray);
     line-height: 1.1rem;
-
     padding: 1rem 4%;
     margin: 5% auto;
     min-height: 250px;
@@ -44,7 +43,6 @@
 .cardItemHuma:hover {
     box-shadow: 5px 5px 5px var(--colYellow), 5px 5px 5px var(--colYellow),
         5px 5px 5px var(--colYellow), -1px -1px 5px var(--colYellow);
-
     background: #fff;
     transform: translate(-18px);
     transition: 0.3s ease;

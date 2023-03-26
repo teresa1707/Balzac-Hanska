@@ -1,68 +1,148 @@
-.art-grid {
-    padding: 10px 5px;
+/*********************************************************************************/
 
-    a {
-        font-weight: 600;
-        text-decoration: none;
-        color: #3d3c3a;
-    }
+.right {
+    margin: 0;
+    max-width: 500px;
+    height: 450px;
+    background-color: var(--colBlue1);
+    box-shadow: 2px 3px 10px var(--colBlue), 2px 3px 15px var(--colBlue);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
 
-    //card
-    .art-item {
-        margin-inline: auto;
-        padding: 0% 1%;
-        justify-content: center;
-        display: flex;
-        &:hover {
-            .art-img {
-                transform: scale(1.5);
-            }
+    .textRight {
+        padding-bottom: 10px;
+        color: var(--colWhite);
+        font-size: 14px;
+        text-align: justify;
+        margin-top: -320px;
+        width: 70%;
+        padding: 20px;
+        .projectImg {
+            margin: auto;
+            overflow: hidden;
+            width: fit-content;
+            height: 50%;
+            text-align: center;
+            border: 1px ridge var(--colYellow);
+            box-shadow: 2px 3px 10px var(--colBlue), 2px 3px 15px var(--colBlue);
+        }
+        .projectImg img {
+            height: 100%;
+        }
+        p {
+            overflow: hidden;
+            max-height: 110px;
         }
     }
-
-    img {
-        width: 100%;
-        height: 250px;
-        filter: sepia(90%);
-    }
-    #caption {
-        width: 70%;
+    .left {
+        padding: 0px 30px 30px 30px;
+        max-width: 280px;
         height: 350px;
+        top: 80px;
+        left: 350px;
+        background-color: var(--colBlue);
+        box-shadow: 2px 3px 10px gray, 2px 3px 15px gray;
         position: relative;
-        border: solid 10px #bebebe;
-        border-bottom-color: #fff;
-        border-left-color: #eee;
+        z-index: 1;
         border-radius: 3px;
-        border-right-color: #bebebe;
-        border-top-color: #ddd;
-        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
-            0 5px 10px 5px rgba(0, 0, 0, 0.25);
     }
-    #caption .text {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        opacity: 0;
-        transition: all 0.8s ease;
-        color: #3d3c3a;
-        font-size: 12px;
-        padding: 10px;
+
+    .text1 {
+        padding-top: 40px;
+        color: #cce5ed;
+        font-size: 30px;
     }
-    #caption:hover .text {
-        opacity: 1;
+
+    .projectSpan {
+        text-transform: capitalize;
+        margin: 10% 0;
+        color: #6690ba;
+        font-size: 15px;
+        word-break: keep-all;
     }
-    #caption:hover img {
-        filter: none;
-    }
-    .name-cat {
-        text-align: center;
+    &:hover .projectImg img {
+        scale: 1.1;
     }
 }
-@media screen and (max-width: 599px) {
-    .art-grid #caption {
-        width: 80vw;
+
+/*****************************************************************************/
+
+@media screen and (max-width: 1076px) {
+    .right {
+        margin-top: -350px;
+    }
+
+    .card {
+        margin-left: 13vw !important;
+    }
+    .right {
+        width: 500px !important;
+        margin-right: 150px !important;
+    }
+
+    .textRight {
+        margin-right: 40px !important;
     }
 }
+
+@media screen and (max-width: 699px) {
+    .card {
+        margin-left: 70px !important;
+    }
+
+    .right {
+        width: 350px !important;
+        height: 470px !important;
+        margin-right: 310px !important;
+    }
+
+    .textRight {
+        margin-right: 10px !important;
+    }
+    .left {
+        top: 80px !important;
+        width: 220px !important;
+    }
+
+    .textRight1 {
+        font-size: 20px !important;
+    }
+
+    input {
+        width: 200px !important;
+    }
+
+    textarea {
+        width: 200px !important;
+    }
+
+    .text1 {
+        font-size: 20px !important;
+        margin-left: 13px !important;
+    }
+
+    span {
+        font-size: 10px !important;
+    }
+}
+//pagination
+
+// ul {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     cursor: pointer;
+
+//     li {
+//         color: #bebebe;
+//         font-weight: 600;
+//         list-style: none;
+//         margin: 0 10px 0px;
+//         text-decoration: none;
+//     }
+//     li:hover,
+//     .selected {
+//         color: var(--colOrange) !important;
+//     }
+// }

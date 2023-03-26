@@ -5,31 +5,32 @@
 
 .logo-balzac {
     font-family: 'Kelly Slab', sans-serif;
-    width: 300px;
+    width: 400px;
     text-align: center;
     padding: 10px;
     border-radius: 5px;
     background-image: repeating-linear-gradient(
         90deg,
-        var(--colBlack),
-        #333,
-        var(--colBlack)
+        #6c7fa0,
+        var(--colBlue),
+        #6c7fa0
     );
     box-shadow: 2px 2px 2px 2px var(--colYellow);
     .h1 {
-        width: 200px;
+        width: 300px;
         margin: 0px auto;
         border-top: 3px solid var(--colYellow);
         text-transform: uppercase;
-        padding-top: 5px;
+        letter-spacing: 5px;
         font-size: 30px;
-        color: var(--colYellow1);
+        font-weight: 600;
+        color: var(--colYellow);
         text-shadow: 1px 1px 1px #000;
     }
 
     .separator {
         margin: 0 auto 10px;
-        width: 200px;
+        width: 250px;
         display: flex;
         align-items: center;
         .line {
@@ -40,18 +41,19 @@
         }
         .h3 {
             // color: rgb(221, 192, 0);
-            color: var(--colYellow1);
+            color: var(--colYellow);
             padding: 0 0.5rem;
-            font-size: 18px;
+            letter-spacing: 5px;
+            font-size: 25px;
+            font-weight: 600;
             text-transform: uppercase;
             text-shadow: 1px 1px 1px #000;
         }
     }
 
     .h4 {
-        color: #ddc;
-        font-size: 14px;
-        font-weight: lighter;
+        color: var(--colYellow);
+        font-size: 18px;
         text-transform: uppercase;
         text-shadow: 2px 2px 2px #000;
     }

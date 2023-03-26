@@ -1,14 +1,15 @@
 import { Card, Grid } from '@mui/material'
 import React from 'react'
-import './ProjectSlider.scss'
+import './CultureSlider.scss'
 import ReactPaginate from 'react-paginate'
 import { projects } from 'utils/projects'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { balzac } from 'utils/balzac'
 
-export const ProjectSlider = () => {
+export const CultureSlider = () => {
     const [itemOffset, setItemOffset] = useState(0)
-    const numCard = 3
+    const numCard = 4
     const endOffset = itemOffset + numCard
     const currentItems = projects.slice(itemOffset, endOffset)
     const pageCount = Math.ceil(projects.length / numCard)
@@ -21,14 +22,13 @@ export const ProjectSlider = () => {
     return (
         <>
             <Grid container className="art-grid container">
-                <div className="humaPaddingSlider"></div>
                 {currentItems.map((project) => (
-                    <Grid item sm={6} md={4} key={project.id}>
+                    <Grid item sm={6} md={3} key={project.id}>
                         <Link
-                            to={`/humanitaire/projets/${project.id}`}
+                            to={`/culture/balzac/${balzac.id}`}
                             className="art-item"
                         >
-                            <Card id="caption">
+                            <Card id="card">
                                 <div className="art-img-wrap">
                                     <img
                                         alt={project.title}
@@ -43,10 +43,10 @@ export const ProjectSlider = () => {
                                         {project.date}
                                     </div>
                                 </div>
-                                <div className="text bgClear">
-                                    <div className="art-text">
-                                        <p>{project.shortText1}</p>
-                                    </div>
+                                <div>
+                                    <p className="text bgClear">
+                                        {project.shortText1}
+                                    </p>
                                 </div>
                             </Card>
                         </Link>

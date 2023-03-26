@@ -18,9 +18,9 @@ export const BalzacList = () => {
         setItemOffset(newOffset)
     }
     return (
-        <>
-            <div className="balzacList bgClear">
-                <Grid container spacing={6} justifyContent="center">
+        <div className="balzacList">
+            <div className="container">
+                <Grid container spacing={6} className="" justifySelf="center">
                     {currentItems.map(({ id, mainImage, title, text }) => (
                         <Grid item xs={12} sm={6} md={4} key={id}>
                             <Link
@@ -41,16 +41,17 @@ export const BalzacList = () => {
                         </Grid>
                     ))}
                 </Grid>
-                <ReactPaginate
-                    breakLabel="..."
-                    nextLabel=">>"
-                    onPageChange={handlePageClick}
-                    pageRangeDisplayed={5}
-                    pageCount={pageCount}
-                    previousLabel="<<"
-                    renderOnZeroPageCount={null}
-                />
-            </div>
-        </>
+            </div>{' '}
+            <ReactPaginate
+                className="pagination"
+                breakLabel="..."
+                nextLabel=">>"
+                onPageChange={handlePageClick}
+                pageRangeDisplayed={5}
+                pageCount={pageCount}
+                previousLabel="<<"
+                renderOnZeroPageCount={null}
+            />
+        </div>
     )
 }

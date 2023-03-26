@@ -17,7 +17,7 @@ export const BalzacItem = ({ balzacObject = getObject(balzac), goBack }) => {
             <Container className="bgClear">
                 <h1>{balzacObject[id].title}</h1>
 
-                <Button BtnText="CULTURE" goBack={goBack} />
+                <Button BtnText="RETOUR >>>" goBack={goBack} />
 
                 <Grid
                     container
@@ -244,7 +244,7 @@ export const BalzacItem = ({ balzacObject = getObject(balzac), goBack }) => {
                         ></p>
                     </Grid>
 
-                    <Button BtnText="CULTURE" goBack={goBack} />
+                    <Button BtnText="RETOUR >>>" goBack={goBack} />
                 </Grid>
             </Container>
         </>

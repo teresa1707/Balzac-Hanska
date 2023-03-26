@@ -6,11 +6,12 @@ import './HumanitarianPage.scss'
 import '../../../Components/Menu/Menu.scss'
 import bgIm from 'Assets/IllustrationChlo.jpg'
 import { ProjectSlider } from 'Components/ProjectsSlider/ProjectSlider'
-import { ColumnElement } from 'Components/ColumnElement/ColumnElement'
 import { PresentationCard } from 'Components/PresentationCard/PresentationCard'
 import { Grid } from '@mui/material'
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 import { CardSlider } from 'Components/Slider/CardSlider'
+import { MainCard } from 'Components/MainCard/MainCard'
+import { HumaNewsSlider } from 'Components/Slider copy/HumaNewsSlider'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -44,14 +45,14 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
             </div>{' '}
             <Grid container className="container paddingTopHash" id="donner">
                 <Grid item sm={12} md={4}>
-                    <ColumnElement
+                    <MainCard
                         className="humaContent"
                         text='<div class="title2">Ce n’est que le début !</div><p class="italic pDarkTheme">Vous pouvez nous rejoindre dans cette belle aventure humaine et nous aider dans nos différentes actions à venir et/ou par vos contributions financière sur le compte de notre association 
     <span class="boldWhite">- IBAN FR76 3007 6020 8918 4734 0020 022.</span></p>'
                     />
                 </Grid>
                 <Grid item sm={12} md={4}>
-                    <ColumnElement
+                    <MainCard
                         text='<div class="title2">Ou...</div><p class="pDarkTheme">
                                 Il vous suffit de cliquer sur<a
                                     href="https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska/formulaires/1."
@@ -67,7 +68,7 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                 </Grid>
 
                 <Grid item sm={12} md={4}>
-                    <ColumnElement
+                    <MainCard
                         text='<div class="title2">Devenir benevole</div>
                                 <p class="pDarkTheme">
                                     Si vous avez des idées ou des projets à partager et
@@ -79,7 +80,7 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                 </Grid>
             </Grid>
             <section id="actualites" className="paddingTopHash">
-                <CardSlider />
+                <HumaNewsSlider />
             </section>
             <section id="projets" className="paddingTopHash">
                 <TitleBlock

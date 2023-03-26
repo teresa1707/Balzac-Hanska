@@ -3,7 +3,7 @@
 //     z-index: 999999;
 //     width: 100vw;
 //     top: 0;
-//     background: rgba(0, 9, 9, 0.3);
+//     background: rgba(#072634, 0.5);
 //     height: 80px;
 //     transition: height 0.3s ease-in-out;
 //     transition: scale 0.2s ease-in-out;
@@ -16,14 +16,16 @@
     top: 0;
     background: var(--colBlue);
     border-bottom: var(--borderYellow);
-    .logo-balzac,
-    .headerMenu,
     .slidingButton {
+        padding-left: 40px;
+        margin-top: -13px;
+    }
+    .headerMenu {
         margin-top: -10px;
         transition: margin 0.3s ease-in-out;
     }
     .logo-balzac {
-        margin-top: -13px;
+        margin-top: -16px;
         scale: 0.75;
     }
     top: 0px;

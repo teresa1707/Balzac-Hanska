@@ -1,0 +1,67 @@
+.art-grid {
+    margin: 100px 0;
+    //card
+    .art-item {
+        margin-inline: auto;
+        padding: 0% 1%;
+        justify-content: center;
+        display: flex;
+        &:hover {
+            .art-img {
+                transform: scale(1.5);
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 200px;
+        filter: sepia(90%);
+    }
+    #card {
+        width: 90%;
+        height: 350px;
+        position: relative;
+        border: solid 5px #bebebe;
+        border-bottom-color: #fff;
+        border-left-color: #eee;
+
+        border-right-color: #bebebe;
+        border-top-color: #ddd;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+            0 5px 10px 5px rgba(0, 0, 0, 0.25);
+        transition: all 0.8s ease;
+    }
+    #card:hover {
+        scale: 1.2;
+    }
+    #card .text {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;
+        background: var(--colWhite);
+        color: var(--colBrown);
+        font-size: 14px;
+        padding: 20px;
+    }
+    #card:hover .text {
+        opacity: 0.8;
+    }
+    #card:hover img {
+        filter: none;
+    }
+    .name-cat {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 599px) {
+    .art-grid #caption {
+        width: 80vw;
+    }
+}

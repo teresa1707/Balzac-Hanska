@@ -1,0 +1,45 @@
+.balzacItem {
+    p {
+        color: var(--colBlue);
+        padding: 20px;
+        font-size: 14px;
+    }
+    //image effect
+    img {
+        width: 100%;
+    }
+    #caption {
+        margin: 20px 0;
+        position: relative;
+        background-color: #ddc;
+        border: solid 5vmin #eee;
+        border-bottom-color: #fff;
+        border-left-color: #eee;
+        border-radius: 2px;
+        border-right-color: #eee;
+        border-top-color: #ddd;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25) inset,
+            0 5px 10px 5px rgba(0, 0, 0, 0.25);
+    }
+    #caption .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;
+        background-color: #fff;
+        margin: 0;
+        color: #3d3c3a;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px;
+    }
+    #caption:hover .text {
+        opacity: 1;
+    }
+    #caption:hover img {
+        filter: sepia(90%);
+    }
+}
