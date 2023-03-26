@@ -3,7 +3,7 @@ export const presse = [
         id: 5,
         title: 'BALZAC FEST À KYIV ET À VERHIVNIA',
         image: '/Images/maison.jpg',
-        shortText: 'Le Monde - reportage',
+        shortText: "L'institut francais - Ukraine",
         link: 'https://institutfrancais-ukraine.com/fr/calendar/298&page=2',
     },
     {
