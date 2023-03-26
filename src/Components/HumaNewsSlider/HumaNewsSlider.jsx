@@ -42,7 +42,7 @@ export function HumaNewsSlider({ array = humaNews }) {
                                     }}
                                 >
                                     <Link
-                                        to={`/humanitaire/news/${news.id}`}
+                                        to="/humanitarian" //to={`/humanitaire/news/${news.id}`}
                                         className="btn_position"
                                     >
                                         <ButtonYellow text="lire plus" />

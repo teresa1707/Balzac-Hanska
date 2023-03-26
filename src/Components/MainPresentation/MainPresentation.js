@@ -90,7 +90,7 @@ export const MainPresentation = ({ slideFade, slideUp }) => {
                         </p>'
                         />
                     </Grid>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6} id="block3">
                         <MainCard
                             text='<p class="pDarkTheme"><span class="first-character b">C</span>’est pourquoi, l’Association franco-ukrainienne
                             « Balzac-Hanska », representé par son président Jean

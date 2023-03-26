@@ -11,7 +11,7 @@ import { Grid } from '@mui/material'
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 import { CardSlider } from 'Components/Slider/CardSlider'
 import { MainCard } from 'Components/MainCard/MainCard'
-import { HumaNewsSlider } from 'Components/Slider copy/HumaNewsSlider'
+import { HumaNewsSlider } from 'Components/HumaNewsSlider/HumaNewsSlider'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
