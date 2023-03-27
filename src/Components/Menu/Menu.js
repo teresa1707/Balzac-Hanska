@@ -18,7 +18,7 @@ export const Menu = () => {
 
     return (
         <>
-            <nav>
+            <nav className="navHeader">
                 <ul
                     className={`navLinks ${
                         navbarOpen ? 'showMenu' : 'hideMenu'

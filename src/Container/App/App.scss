@@ -87,12 +87,6 @@ h1 {
     text-shadow: 1px 1px 1px black;
 }
 
-@media screen and (max-width: 290px) {
-    .ft1 p {
-        font-size: 0.5rem;
-    }
-}
-
 .itemList {
     display: flex;
     flex-direction: column;
@@ -136,11 +130,136 @@ h1 {
     }
 }
 
+/* responsive */
+
+@media screen and (max-width: 1200px) {
+    //footer
+    .ft1 p {
+        font-size: 0.4rem;
+    }
+}
+@media screen and (max-width: 999px) {
+    //header-menu
+    .main_h {
+        height: 60px;
+    }
+    .btn2 {
+        transform: translateX(-50%);
+        h5 {
+            display: none;
+        }
+    }
+
+    .subMenu {
+        position: relative;
+        top: 5px;
+        right: 0px;
+
+        li {
+            margin: 0px;
+        }
+        li a {
+            background-color: transparent;
+            border: none;
+            text-transform: uppercase;
+            text-align: center;
+            color: var(--colBlue1);
+            text-decoration: none;
+            transition: all 0.4s linear;
+            font-size: 0.7rem;
+            width: 140px;
+        }
+    }
+}
+
+@media (max-width: 899px) {
+    //header-menu
+    .main_h {
+        z-index: 999999;
+        width: 100%;
+        box-shadow: 1px 1px 1px black;
+        .slidingButton {
+            position: absolute;
+            right: 20%;
+        }
+        .btn2 {
+            width: max-content;
+            left: 100px;
+        }
+        .logo {
+            scale: 0.6;
+            position: absolute;
+            left: 0px;
+        }
+    }
+    .sticky {
+        .logo {
+            margin-top: 0px;
+        }
+    }
+    .subMenu li a {
+        max-width: 100px;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    //header responsive
+    .subMenu li a {
+        padding: 0;
+        font-size: 0.7rem;
+    }
+    .subMenu li {
+        padding: 0;
+    }
+
+    //footer
+    #input-submit {
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    // li {
+    //     color: #bebebe;
+    //     font-size: 10px;
+    //     font-weight: 600;
+    //     list-style: none;
+    // }
+}
 @media screen and (max-width: 599px) {
-    li {
-        color: #bebebe;
-        font-size: 10px;
-        font-weight: 600;
-        list-style: none;
+    //header responsive
+
+    .isActiveButton {
+        background: transparent;
+    }
+    .subMenu .menuLi {
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        top: 25px;
+        right: 180px;
+    }
+    .subMenu li a {
+        padding: 0 5px;
+        font-size: 0.6rem;
+        width: max-content;
+    }
+    .logo-balzac {
+        transform: scale(0.7);
+        position: absolute;
+        top: 55px;
+        left: -90px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .navBtn {
+        transform: scale(0.6);
+    }
+    .btn2 {
+        top: 30px;
+    }
+    .btn2 .buttonText {
+        font-size: 0.6rem;
     }
 }

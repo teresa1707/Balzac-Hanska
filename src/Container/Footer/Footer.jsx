@@ -8,8 +8,8 @@ export const Footer = ({ closeMenu }) => {
     return (
         <>
             <div className="footerCard">
-                <Grid container mb={2} spacing={3} className="footer">
-                    <Grid item sm={12} md={3} className="ft1">
+                <Grid container spacing={3} className="footer">
+                    <Grid item sm={12} md={6} lg={3} className="ft1">
                         <h2 className="titleSlider">Nos coordonnées:</h2>
 
                         <p className="pDarkTheme">
@@ -32,7 +32,7 @@ export const Footer = ({ closeMenu }) => {
                         </p>
                     </Grid>
 
-                    <Grid item sm={12} md={3} className="ft2">
+                    <Grid item sm={12} md={6} lg={3} className="ft2">
                         <h2 className="titleSlider">Nous suivre:</h2>
 
                         <SocialMedia />
@@ -63,7 +63,7 @@ export const Footer = ({ closeMenu }) => {
                             certificat de déductibilité fiscale.
                         </p>
                     </Grid>
-                    <Grid item sm={12} md={3} className="ft3">
+                    <Grid item sm={12} md={6} lg={3} className="ft3">
                         <div className="footerMenu">
                             <Link to="/">Accueil</Link>
 
@@ -74,24 +74,22 @@ export const Footer = ({ closeMenu }) => {
                             <Link to="/contact">Contact</Link>
                         </div>
                     </Grid>
-                    <Grid item sm={12} md={3} className="ft4">
+                    <Grid item sm={12} md={6} lg={3} className="ft4">
                         <h2 className="titleSlider">
                             S'abonner à la Newsletter
                         </h2>
 
                         <form>
-                            <div>
-                                <input
-                                    type="email"
-                                    id="input-email"
-                                    placeholder="*Email address"
-                                />
-                            </div>
+                            <input
+                                type="email"
+                                id="input-email"
+                                placeholder="*Email address"
+                            />
 
                             <input
                                 className="button formButton"
                                 type="submit"
-                                value="Submit"
+                                value="Envoyer"
                                 id="input-submit"
                             />
                         </form>

@@ -14,7 +14,7 @@
     .a {
         padding: 0 2rem;
         text-transform: uppercase;
-        text-shadow: 1px 1px 1px black;
+        font-weight: 600;
     }
 
     .isActiveButton {
@@ -32,28 +32,23 @@
     a:hover {
         color: var(--colYellow);
     }
-} //responsive
+    li:hover .subMenu {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+//responsive
 .navBtn {
     display: none;
 }
 
-@media (max-width: 899px) {
-    .logo-balzac {
-        scale: 0.5;
-        margin-top: -20px;
-        text-align: center;
-    }
-    .btn2 {
-        margin-top: -20px;
-    }
+@media (max-width: 999px) {
     .main_h {
         position: fixed;
         height: 50px;
     }
 
-    nav .menuLi {
-        margin: 0px 10px 0px;
-    }
     .navBtn {
         border: none;
         background-color: transparent;
@@ -70,15 +65,20 @@
         height: fit-content;
         flex-direction: column;
         position: absolute;
-        top: 15px;
-        right: 0;
+        top: 24px;
+        left: 0px;
         width: 100%;
         background-color: transparent;
         padding: 20px 0;
         perspective: 400px;
+        li:hover .subMenu {
+            display: flex;
+            flex-direction: row;
+        }
     }
 
     .navLinks .menuLi {
+        margin: 0px;
         background: var(--colBlue);
         height: 4rem;
         width: 100%;
@@ -142,8 +142,4 @@
             scale: none;
         }
     }
-}
-.navLinks li:hover .subMenu {
-    display: flex;
-    flex-direction: column;
 }

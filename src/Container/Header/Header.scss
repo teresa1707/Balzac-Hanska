@@ -65,26 +65,3 @@ Easing
 //     font-family: 'Oswald', sans-serif;
 //     font-size: 0.9rem;
 // }
-@media (max-width: 899px) {
-    .main_h {
-        z-index: 999999;
-        width: 100%;
-        box-shadow: 1px 1px 1px black;
-        .slidingButton {
-            position: absolute;
-            right: 20%;
-        }
-        .btn2 a {
-            font-size: 10px;
-        }
-        .logo {
-            position: absolute;
-            left: -80px;
-        }
-    }
-    .sticky {
-        .logo {
-            margin-top: 0px;
-        }
-    }
-}

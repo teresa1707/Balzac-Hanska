@@ -97,7 +97,9 @@ export const App = () => {
                 y: 0,
                 delay: delay || 0.6,
                 duration: duration || 0.6,
-
+                stagger: {
+                    each: 0.2,
+                },
                 scrollTrigger: {
                     trigger: elem,
                     // start: 'top center',
