@@ -16,8 +16,10 @@ import { ProjectItem } from 'Components/ProjectsSlider/ProjectItem/ProjectItem'
 import { NotFound } from 'Container/pages/NotFound/NotFound'
 import { NewsItem } from 'Components/Slider/NewsItem'
 import { BalzacItem } from 'Components/BalzacList/BalzacItem/BalzacItem'
+import { useState } from 'react'
 
 export const App = () => {
+    //animation
     const onLoad = () => {
         gsap.timeline()
             .fromTo(
@@ -152,6 +154,77 @@ export const App = () => {
             }
         )
     }
+    //contactForm and newsletter
+    const [sent, setSent] = useState(false)
+    const [newForm, setNewForm] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    })
+
+    const changeHandler = (e) => {
+        setNewForm({ ...newForm, [e.target.name]: e.target.value })
+    }
+
+    const resetForm = () => {
+        setNewForm({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+        })
+        setTimeout(() => {
+            setSent({ sent: false })
+        }, 2000)
+    }
+
+    const sendMessage = (e) => {
+        e.preventDefault()
+
+        if (window.Email) {
+            if (newForm.name === '') {
+                alert('Mettez votre nom')
+                return false
+            }
+            if (
+                newForm.email === '' &&
+                newForm.email.indexOf('@', 0) < 0 &&
+                newForm.email.indexOf('.', 0) < 0
+            ) {
+                alert('Mettez une adresse email valide')
+                return false
+            }
+
+            if (newForm.message === '') {
+                alert('Merci de saisir votre message')
+                return false
+            } else {
+                window.Email.send({
+                    SecureToken: 'b2225f60-8235-4d95-8b93-170c0a69dca1',
+                    To: 'contact@associationbalzachanska.com',
+                    From: 'contact@associationbalzachanska.com',
+                    Subject: `contact de ${newForm.email}`,
+                    Body: `<p><b>nom: </b> ${newForm.name}</p>
+                    <p><b>email: </b> ${newForm.email}</p>
+                    <p><b>subject: </b>${newForm.subject}</p>
+                    <p><b>message: </b>${newForm.message}</p>
+                   
+                   
+                   
+            `,
+                })
+                    .then((message) => {
+                        console.log(message)
+                        setSent({ sent: true, type: 'success' })
+                    })
+                    .catch((error) => {
+                        setSent({ sent: false, type: 'error', error })
+                    })
+            }
+            resetForm()
+        }
+    }
 
     return (
         <>
@@ -192,7 +265,13 @@ export const App = () => {
                     path="/contact"
                     element={
                         <>
-                            <ContactForm />
+                            <ContactForm
+                                sent={sent}
+                                newForm={newForm}
+                                changeHandler={changeHandler}
+                                resetForm={resetForm}
+                                sendMessage={sendMessage}
+                            />
                         </>
                     }
                 />
@@ -238,7 +317,13 @@ export const App = () => {
                     }
                 />
             </Routes>
-            <Footer />
+            <Footer
+                sent={sent}
+                newForm={newForm}
+                changeHandler={changeHandler}
+                resetForm={resetForm}
+                sendMessage={sendMessage}
+            />
             <ScrollUp height={400} />
         </>
     )

@@ -47,7 +47,11 @@ export const Menu = () => {
                         </NavLink>
                         <ul className="subMenu">
                             <li className="menuLi">
-                                <HashLink smooth to="/culture#RouteBalzac">
+                                <HashLink
+                                    smooth
+                                    to="/culture#RouteBalzac"
+                                    onClick={() => closeMenu()}
+                                >
                                     la route de balzac
                                 </HashLink>
                             </li>
@@ -55,13 +59,19 @@ export const Menu = () => {
                                 <HashLink
                                     smooth
                                     to="/culture#patrimoineUkrainien"
+                                    onClick={() => closeMenu()}
                                 >
                                     patrimoine ukrainien
                                 </HashLink>
                             </li>
                             <li className="menuLi">
                                 {' '}
-                                <HashLink smooth to="/culture#BalzacFest">
+                                <HashLink
+                                    smooth
+                                    to="/culture#BalzacFest"
+                                    onClick={() => closeMenu()}
+                                >
+                                    {' '}
                                     balzac fest
                                 </HashLink>
                             </li>
@@ -79,23 +89,39 @@ export const Menu = () => {
                         </NavLink>{' '}
                         <ul className="subMenu">
                             <li className="menuLi">
-                                <HashLink smooth to="/humanitarian#donner">
+                                <HashLink
+                                    smooth
+                                    to="/humanitarian#donner"
+                                    onClick={() => closeMenu()}
+                                >
                                     faire un don
                                 </HashLink>
                             </li>
                             <li className="menuLi">
-                                <HashLink smooth to="/humanitarian#actualites">
+                                <HashLink
+                                    smooth
+                                    to="/humanitarian#actualites"
+                                    onClick={() => closeMenu()}
+                                >
                                     actualités
                                 </HashLink>
                             </li>{' '}
                             <li className="menuLi">
                                 {' '}
-                                <HashLink smooth to="/humanitarian#projets">
+                                <HashLink
+                                    smooth
+                                    to="/humanitarian#projets"
+                                    onClick={() => closeMenu()}
+                                >
                                     nos projets
                                 </HashLink>
                             </li>
                             <li className="menuLi">
-                                <HashLink smooth to="/humanitarian#presse">
+                                <HashLink
+                                    smooth
+                                    to="/humanitarian#presse"
+                                    onClick={() => closeMenu()}
+                                >
                                     presse
                                 </HashLink>
                             </li>

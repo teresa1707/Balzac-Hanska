@@ -3,8 +3,50 @@ import { Grid } from '@mui/material'
 import 'Container/Footer/Footer.scss'
 import { SocialMedia } from 'Components/SocialMedia/SocialMedia'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
-export const Footer = ({ closeMenu }) => {
+export const Footer = () => {
+    const [nlForm, setNlForm] = useState({ email: '' })
+    const changeHandler = (e) => {
+        setNlForm({ ...nlForm, [e.target.name]: e.target.value })
+    }
+    const resetForm = () => {
+        setNlForm({
+            email: '',
+        })
+    }
+    const sendMessage = (e) => {
+        e.preventDefault()
+
+        if (window.Email) {
+            if (
+                nlForm.email === '' &&
+                nlForm.email.indexOf('@', 0) < 0 &&
+                nlForm.email.indexOf('.', 0) < 0
+            ) {
+                alert('Mettez une adresse email valide')
+                return false
+            } else {
+                window.Email.send({
+                    SecureToken: 'b2225f60-8235-4d95-8b93-170c0a69dca1',
+                    To: 'contact@associationbalzachanska.com',
+                    From: 'contact@associationbalzachanska.com',
+                    Subject: `souscrire la newsLetter de ${nlForm.email}`,
+                    Body: `
+                    <p><b>email: </b> ${nlForm.email}</p>    
+            `,
+                })
+                    .then((message) => {
+                        console.log(message)
+                    })
+                    .catch((error) => {
+                        console.log(error)
+                    })
+            }
+            resetForm()
+        }
+    }
+
     return (
         <>
             <div className="footerCard">
@@ -79,11 +121,14 @@ export const Footer = ({ closeMenu }) => {
                             S'abonner à la Newsletter
                         </h2>
 
-                        <form>
+                        <form method="POST" onSubmit={sendMessage}>
                             <input
+                                name="email"
                                 type="email"
                                 id="input-email"
+                                value={nlForm.email}
                                 placeholder="*Email address"
+                                onChange={changeHandler}
                             />
 
                             <input
@@ -93,6 +138,7 @@ export const Footer = ({ closeMenu }) => {
                                 id="input-submit"
                             />
                         </form>
+                        {console.log(nlForm)}
                     </Grid>
                 </Grid>
             </div>
