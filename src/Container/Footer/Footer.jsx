@@ -61,7 +61,7 @@ export const Footer = () => {
                             <br />
                             mail:associationbalzachanska@gmail.com
                             <br />
-                            tel: +33(0)123456789
+                            tel: +33(0)143911313
                         </p>
                         <p className="pDarkTheme small">
                             Ukraine, 13301, Berdychiv,
