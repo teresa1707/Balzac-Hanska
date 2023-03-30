@@ -4,17 +4,11 @@
     width: 80%;
     margin: 0 auto;
     padding: 10% 2% 5%;
-    border-top: 1px ridge var(--colBeige);
 }
 
 form {
     font-family: 'Kelly Slab', sans-serif;
-}
-
-form {
-    max-width: 800px;
     text-align: center;
-    margin: 50px auto;
 
     input,
     textarea {
@@ -22,7 +16,6 @@ form {
         outline: 0;
         padding: 1em;
         border-radius: 3px;
-        display: flex;
         width: 100%;
         margin-top: 1em;
 
@@ -55,5 +48,18 @@ form {
     }
     .hide {
         display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .contactForm {
+        margin: 20px auto 0;
+    }
+}
+@media screen and (max-width: 299px) {
+    .contactForm form input,
+    textarea {
+        width: 100%;
+        margin: 0;
     }
 }

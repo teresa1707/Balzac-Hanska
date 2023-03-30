@@ -40,7 +40,7 @@ a {
     color: var(--colOrange);
 }
 .footer-end {
-    padding: 20px 5% 0;
+    padding: 20px 5%;
     color: var(--colGreen);
     font-size: 0.6rem;
 }
@@ -49,11 +49,29 @@ a {
 .ft3 {
     padding: 0px 25px;
 }
-@media screen and (max-width: 250px) {
+.ft4 form input {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+@media screen and (max-width: 699) {
+}
+
+@media screen and (max-width: 450px) {
     .footer {
-        padding: 20px 30px 0;
+        padding: 0px 30px 10px;
         .pDarkTheme {
-            font-size: 5px;
+            font-size: 50%;
+        }
+        .titleSlider {
+            font-size: 0.8rem;
+        }
+    }
+}
+@media screen and (max-width: 299px) {
+    .footer {
+        input {
+            transform: scale(0.6);
         }
     }
 }

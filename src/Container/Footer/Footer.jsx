@@ -54,7 +54,7 @@ export const Footer = () => {
                     <Grid item sm={12} md={6} lg={3} className="ft1">
                         <h2 className="titleSlider">Nos coordonnées:</h2>
 
-                        <p className="pDarkTheme">
+                        <p className="pDarkTheme small">
                             79, avenue la Bruyere
                             <br />
                             94400 Vitry-Sur-Seine, FRANCE
@@ -63,7 +63,7 @@ export const Footer = () => {
                             <br />
                             tel: +33(0)123456789
                         </p>
-                        <p className="pDarkTheme">
+                        <p className="pDarkTheme small">
                             Ukraine, 13301, Berdychiv,
                             <br />
                             RUE EUROPEYSKA, bâtiment 26, bureau 422
@@ -138,25 +138,13 @@ export const Footer = () => {
                                 id="input-submit"
                             />
                         </form>
-                        {console.log(nlForm)}
                     </Grid>
                 </Grid>
             </div>
 
-            <Grid item xs={12} sm={10}>
-                <div className="pDarkTheme footer-end">
-                    ©2022-23 TeriV | tvlviv@yahoo.com
-                </div>
-            </Grid>
-            <Grid item xs={12} sm={2}>
-                <a href="#Top_bar">
-                    <img
-                        className="footer-img"
-                        src="./assets/arrow-up-20.png"
-                        alt=""
-                    />
-                </a>
-            </Grid>
+            <div className="pDarkTheme footer-end">
+                ©2022-23 TeriV | tvlviv@yahoo.com
+            </div>
         </>
     )
 }

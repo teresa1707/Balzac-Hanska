@@ -72,11 +72,9 @@ body,
     font-weight: 300;
 }
 .titleSlider {
+    color: var(--colBeige);
     text-shadow: 1px 1px 1px black;
-    text-decoration: underline;
     font-size: 1.2rem;
-    padding: 3% 1% 6%;
-    color: var(--colGray);
 }
 
 h1 {
@@ -214,18 +212,11 @@ h1 {
         padding: 0;
     }
 
-    //footer
-    #input-submit {
-        margin: 20px 0;
-        width: 100%;
+    .titleSlider {
+        font-size: 1.1rem;
+        padding: 2% 0%;
+        text-align: center;
     }
-
-    // li {
-    //     color: #bebebe;
-    //     font-size: 10px;
-    //     font-weight: 600;
-    //     list-style: none;
-    // }
 }
 @media screen and (max-width: 599px) {
     //header responsive
@@ -245,14 +236,16 @@ h1 {
         font-size: 0.6rem;
         width: max-content;
     }
-    .logo-balzac {
-        transform: scale(0.7);
-        position: absolute;
-        top: 55px;
-        left: -90px;
+
+    .titleSlider {
+        padding: 2% 0%;
+        text-align: left;
     }
 }
 @media screen and (max-width: 450px) {
+    .contactForm {
+        width: 90%;
+    }
     .navBtn {
         transform: scale(0.6);
     }

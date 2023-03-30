@@ -5,35 +5,38 @@ import { Grid } from '@mui/material'
 export const ContactForm = ({ sent, newForm, changeHandler, sendMessage }) => {
     return (
         <>
-            <Grid className="contactForm">
+            <div className="contactForm">
                 <h1>Nous contacter</h1>
-                <form method="post" onSubmit={sendMessage}>
-                    <div>
-                        <input
-                            name="name"
-                            type="text"
-                            id="input-name"
-                            placeholder="*Name"
-                            value={newForm.name}
-                            onChange={changeHandler}
-                        />
-                        <input
-                            name="email"
-                            type="email"
-                            id="input-email"
-                            placeholder="*Email address"
-                            value={newForm.email}
-                            onChange={changeHandler}
-                        />
-                        <input
-                            name="subject"
-                            type="text"
-                            id="input-subject"
-                            placeholder="Subject"
-                            value={newForm.subject}
-                            onChange={changeHandler}
-                        />
-                    </div>
+                <form
+                    method="post"
+                    onSubmit={sendMessage}
+                    className="contactForm"
+                >
+                    <input
+                        name="name"
+                        type="text"
+                        id="input-name"
+                        placeholder="*Name"
+                        value={newForm.name}
+                        onChange={changeHandler}
+                    />
+                    <input
+                        name="email"
+                        type="email"
+                        id="input-email"
+                        placeholder="*Email address"
+                        value={newForm.email}
+                        onChange={changeHandler}
+                    />
+                    <input
+                        name="subject"
+                        type="text"
+                        id="input-subject"
+                        placeholder="Subject"
+                        value={newForm.subject}
+                        onChange={changeHandler}
+                    />
+
                     <div>
                         <textarea
                             name="message"
@@ -62,7 +65,7 @@ export const ContactForm = ({ sent, newForm, changeHandler, sendMessage }) => {
                         id="submit"
                     />
                 </form>
-            </Grid>
+            </div>
         </>
     )
 }
