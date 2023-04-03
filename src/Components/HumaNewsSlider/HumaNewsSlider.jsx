@@ -21,8 +21,20 @@ export function HumaNewsSlider({ array = humaNews }) {
                     disableOnInteraction: false,
                 }}
                 keyboard={true}
-                slidesPerView={4}
-                spaceBetween={30}
+                breakpoints={{
+                    599: {
+                        slidesPerView: 2,
+                        spaceBetween: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                }}
                 pagination={{
                     clickable: true,
                 }}
@@ -31,7 +43,7 @@ export function HumaNewsSlider({ array = humaNews }) {
                 className="mySwiper"
             >
                 {array.map((news) => (
-                    <SwiperSlide key={news.id}>
+                    <SwiperSlide key={news.id} className="slider">
                         <div className="record_wrap">
                             <section className="record">
                                 <div

@@ -17,8 +17,6 @@ export const OurPartners = () => {
                     delay: 2500,
                     disableOnInteraction: false,
                 }}
-                slidesPerView={6}
-                spaceBetween={30}
                 pagination={{
                     clickable: true,
                 }}
@@ -28,12 +26,26 @@ export const OurPartners = () => {
                     paddingTop: 50,
                     paddingBottom: 20,
                 }}
+                breakpoints={{
+                    599: {
+                        slidesPerView: 2,
+                        spaceBetween: 2,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 30,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 50,
+                    },
+                }}
             >
                 {ourPartners.map((logo, index) => (
                     <SwiperSlide key={index}>
                         <div
                             className="sliderContent"
-                            style={{ width: '500px' }}
+                            style={{ width: '500px', textAlign: 'center' }}
                         >
                             <img src={logo} alt="partners logo" />
                         </div>

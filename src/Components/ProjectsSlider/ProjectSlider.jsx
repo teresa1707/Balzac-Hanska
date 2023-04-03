@@ -6,6 +6,7 @@ import { projects } from 'utils/projects'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ButtonYellow } from 'Components/MyButton/ButtonYellow'
+import DOMPurify from 'dompurify'
 
 export const ProjectSlider = () => {
     const [itemOffset, setItemOffset] = useState(0)
@@ -26,21 +27,7 @@ export const ProjectSlider = () => {
                     <Grid item sm={12} md={6} key={project.id}>
                         <Link to={`/humanitaire/projets/${project.id}`}>
                             <div className="right">
-                                <div className="left">
-                                    <div>
-                                        <div className="text1">
-                                            {project.title}
-                                        </div>
-                                        <p className="text2 projectSpan">
-                                            - {project.budget}
-                                        </p>
-                                        <p className="text2 projectSpan">
-                                            - {project.date}
-                                        </p>
-                                        <ButtonYellow text="Lire plus" />
-                                    </div>
-                                </div>
-
+                                {' '}
                                 <div className="textRight">
                                     <div className="projectImg">
                                         {' '}
@@ -49,8 +36,27 @@ export const ProjectSlider = () => {
                                             src={project.imageTitle}
                                         />
                                     </div>
-
+                                </div>{' '}
+                                <div className="text">
                                     <p>{project.shortText1}</p>
+                                </div>
+                            </div>
+                            <div className="left">
+                                <div className="text1">{project.title}</div>
+                                <p
+                                    className="text2 projectSpan"
+                                    dangerouslySetInnerHTML={{
+                                        __html: DOMPurify.sanitize(
+                                            project.budget
+                                        ),
+                                    }}
+                                />
+
+                                <p className="text2 projectSpan">
+                                    {project.date}
+                                </p>
+                                <div className="cardBtn">
+                                    <ButtonYellow text="Lire plus" />
                                 </div>
                             </div>
                         </Link>
