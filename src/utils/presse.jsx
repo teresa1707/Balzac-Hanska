@@ -16,21 +16,21 @@ export const presse = [
     {
         id: 1,
         title: 'Notre association sur <br/><a href="https://www.jeveuxaider.gouv.fr" target="_blank"/>JE VEUX AIDER</a>',
-        image: '/Images/9camion/20230130_124309.jpg',
+        image: '/Images/camion9/20230130_124309.jpg',
         shortText: "Découvrez l'association Association Balzac-Hanska",
         link: 'https://www.jeveuxaider.gouv.fr/organisations/11512-association-balzac-hanska',
     },
     {
         id: 3,
         title: 'Ukraine: Jusqu’où ira l’aide française ?',
-        image: '/Images/9camion/20230123_165728.jpg',
+        image: '/Images/camion9/20230123_165728.jpg',
         shortText: "LE PELERIN - l'actu à visage humain",
         link: 'https://www.lepelerin.com/dans-l-hebdo/enquete/ukraine-jusquou-ira-laide-francaise-7128',
     },
     {
         id: 2,
         title: 'Reportage TF1',
-        image: '/Images/9camion/IMG-20230206-WA0000.jpg',
+        image: '/Images/camion9/IMG-20230206-WA0000.jpg',
         shortText:
             "Visite de l'équipe TF1 dans nos locaux à Berdytchiv après le tournage dans le Donbass ",
         link: '',
