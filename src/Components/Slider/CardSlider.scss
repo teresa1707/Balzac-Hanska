@@ -1,5 +1,7 @@
 .mySwiper {
-    margin: 40px;
+    .slider {
+        padding: 0% 10px;
+    }
     .card {
         margin: 40px;
         border: none;
@@ -8,8 +10,8 @@
         border-radius: 3px;
         background: #fff;
         position: relative;
-        max-height: 400px;
-        max-width: 95%;
+        height: 400px;
+
         overflow: hidden;
         display: flex;
         flex-direction: column;

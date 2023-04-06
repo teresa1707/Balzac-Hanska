@@ -26,13 +26,17 @@ export function HumaNewsSlider({ array = humaNews }) {
                         slidesPerView: 2,
                         spaceBetween: 2,
                     },
-                    768: {
-                        slidesPerView: 3,
-                        spaceBetween: 30,
+                    899: {
+                        slidesPerView: 2,
+                        spaceBetween: 5,
                     },
                     1024: {
-                        slidesPerView: 4,
-                        spaceBetween: 50,
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    1220: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
                     },
                 }}
                 pagination={{
@@ -40,11 +44,11 @@ export function HumaNewsSlider({ array = humaNews }) {
                 }}
                 navigation={true}
                 modules={[Pagination, Virtual, Navigation, Keyboard, Autoplay]}
-                className="mySwiper"
+                className="mySwiper container"
             >
                 {array.map((news) => (
                     <SwiperSlide key={news.id} className="slider">
-                        <div className="record_wrap">
+                        <div className="record_wrap ">
                             <section className="record">
                                 <div
                                     id="record1"
@@ -53,18 +57,20 @@ export function HumaNewsSlider({ array = humaNews }) {
                                         backgroundImage: `url(${news.image})`,
                                     }}
                                 >
-                                    <Link
-                                        to="/humanitarian" //to={`/humanitaire/news/${news.id}`}
-                                        className="btn_position"
-                                    >
-                                        <ButtonYellow text="lire plus" />
-                                        <div>{news.date}</div>
-                                    </Link>
+                                    <div className="date">{news.date}</div>
                                 </div>
                                 <div className="record-desc">
                                     <h1>{news.title}</h1>
-                                    <p>{news.shortText}</p>{' '}
+                                    <p className="shortText">
+                                        {news.shortText}
+                                    </p>{' '}
                                 </div>
+                                <Link
+                                    to={`/humanitaire/news/${news.id}`}
+                                    className="btn_position"
+                                >
+                                    <ButtonYellow text="lire plus" />
+                                </Link>
                             </section>
                         </div>
                     </SwiperSlide>

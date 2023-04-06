@@ -20,8 +20,24 @@ export function CardSlider({ array = presse }) {
                     disableOnInteraction: false,
                 }}
                 keyboard={true}
-                slidesPerView={4}
-                spaceBetween={30}
+                breakpoints={{
+                    599: {
+                        slidesPerView: 2,
+                        spaceBetween: 20,
+                    },
+                    899: {
+                        slidesPerView: 2,
+                        spaceBetween: 35,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    1220: {
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                }}
                 pagination={{
                     clickable: true,
                 }}
@@ -30,7 +46,7 @@ export function CardSlider({ array = presse }) {
                 className="mySwiper"
             >
                 {array.map((news) => (
-                    <SwiperSlide key={news.id}>
+                    <SwiperSlide key={news.id} className="Slider">
                         <div className="card">
                             <div className="card__top">
                                 <img src={news.image} alt="news_image" />

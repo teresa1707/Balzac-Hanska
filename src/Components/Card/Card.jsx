@@ -1,10 +1,10 @@
 import React from 'react'
-import './TitleBlock.scss'
+import './Card.scss'
 import DOMPurify from 'dompurify'
 
-export const TitleBlock = ({ title }) => {
+export const Card = ({ title }) => {
     return (
-        <div className="titleBlock center-text titleHover">
+        <div className="cardBlock center-text cardTitleHover">
             <h1
                 dangerouslySetInnerHTML={{
                     __html: DOMPurify.sanitize(title),

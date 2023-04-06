@@ -8,6 +8,7 @@ import { PresentationCard } from 'Components/PresentationCard/PresentationCard'
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 import PdfReader from 'Components/PdfReader/PdfReader'
 import { CultureSlider } from 'Components/CultureSlider/CultureSlider'
+import { Text } from 'Components/TitleBlock/Text'
 
 export const CulturePage = ({ slideUp, slideToUp, slideToLeft }) => {
     useEffect(() => {
@@ -60,8 +61,8 @@ export const CulturePage = ({ slideUp, slideToUp, slideToLeft }) => {
                 </div>
             </div>
             <section id="RouteBalzac" className="paddingTopHash box1">
-                <TitleBlock
-                    title="LES VOYAGES D'HONORE DE BALZAC"
+                <TitleBlock title="LES VOYAGES D'HONORE DE BALZAC" />
+                <Text
                     text="
                 <span class='first-character b'>S</span>ans être un
                     grand voyageur dans l’âme, Balzac n’en a pas moins sillonné
@@ -78,6 +79,7 @@ export const CulturePage = ({ slideUp, slideToUp, slideToLeft }) => {
                     siècle.
                 "
                 />
+
                 <div className="box1">
                     <BalzacList />
                 </div>

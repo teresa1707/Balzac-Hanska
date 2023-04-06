@@ -1,1 +1,23 @@
-
+#actualites,
+#projets,
+#presse {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 100px;
+}
+.col-4 {
+    width: 33.3333%;
+}
+.col-8 {
+    width: 66.6667%;
+}
+@media screen and (max-width: 900px) {
+    #actualites,
+    #projets,
+    #presse {
+        flex-wrap: wrap;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}

@@ -14,7 +14,11 @@ export const Main = ({ slideFade, slideUp }) => {
     return (
         <>
             <MainPresentation slideFade={slideFade} slideUp={slideUp} />
-            <TitleBlock title="Nos partenaires" />
+            <div className="center">
+                {' '}
+                <TitleBlock title="Nos partenaires" />
+            </div>
+
             <div className="center" id="collectif">
                 <img
                     src="../Images/logos/Visuel_logos_collectif_Ukraine.png"

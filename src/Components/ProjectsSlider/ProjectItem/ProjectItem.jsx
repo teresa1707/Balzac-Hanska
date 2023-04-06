@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import { getObject, projects } from 'utils/projects'
 import './ProjectItem.scss'
 import { Button } from 'Components/MyButton/Button'
+import { CommentAider } from 'Components/CommentAider/CommentAider'
 
 export const ProjectItem = ({
     projectObject = getObject(projects),
@@ -144,28 +145,7 @@ export const ProjectItem = ({
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <Card className="art-category">
-                            Comment aider ?
-                            <div className="art-text">
-                                <p>
-                                    Il vous suffit de cliquer sur{' '}
-                                    <a
-                                        href="https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska/formulaires/1."
-                                        target="_blank"
-                                        title="HELLOASSO"
-                                        rel="noreferrer"
-                                    >
-                                        le lien{' '}
-                                    </a>
-                                    et de vous laisser guider.L’Association
-                                    Franco Ukrainienne BALZAC HANSKA est une
-                                    Association loi de 1901 N° W941007660 –{' '}
-                                    <span>
-                                        ouvrant droit à une réduction d’impôt et
-                                        délivrance d’un certificat de
-                                        déductibilité fiscale.
-                                    </span>
-                                </p>
-                            </div>
+                            <CommentAider />
                             <figure>
                                 <img
                                     src={projectObject[id].image[3]}

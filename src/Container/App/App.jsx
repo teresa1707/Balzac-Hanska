@@ -14,9 +14,10 @@ import { BalzacList } from 'Components/BalzacList/BalzacList'
 import { Footer } from 'Container/Footer/Footer'
 import { ProjectItem } from 'Components/ProjectsSlider/ProjectItem/ProjectItem'
 import { NotFound } from 'Container/pages/NotFound/NotFound'
-import { NewsItem } from 'Components/Slider/NewsItem'
+
 import { BalzacItem } from 'Components/BalzacList/BalzacItem/BalzacItem'
 import { useState } from 'react'
+import { NewsItem } from 'Components/HumaNewsSlider/HumaNewsItem/NewsItem'
 
 export const App = () => {
     //animation

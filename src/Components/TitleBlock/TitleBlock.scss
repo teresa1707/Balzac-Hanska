@@ -1,14 +1,15 @@
 .titleBlock {
-    font-size: 16px;
     color: var(--colBlue);
-    letter-spacing: 1px;
-    width: 100%;
-    margin: 5% auto;
-    text-align: justify;
-    padding: var(--paddingTitle);
 
-    .titleH2 {
-        font-size: 18px;
-        text-align: left;
+    text-align: justify;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    p {
+        margin: 0 40px;
+        text-align: justify;
+        padding: 20px 40px;
     }
 }

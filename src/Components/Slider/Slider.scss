@@ -99,11 +99,12 @@
     }
 
     .slider-content .inner p {
+        background-color: var(--colBlue);
         color: var(--colWhite);
         font-size: 14px;
         line-height: 1.5;
-        margin: 20px auto 30px;
-        max-width: 640px;
+        position: absolute;
+        top: 100px;
         text-shadow: 2px 2px 2px black;
     }
 

@@ -24,7 +24,7 @@
     --colBeige1: #c48660;
 
     --colGray2: #333;
-    --colYellow1: #daf7a6;
+    --colGray3: #ebeef4;
 
     --paddingTitle: 0px 10%;
     --borderGray: 5px ridge var(--colGray1);
@@ -38,18 +38,29 @@ body,
 .item {
     font-family: 'Tilt Neon', cursive;
     margin: 0;
-    background-image: url(../../Assets/stacked-peaks-haikei.svg);
+    background-image: url(../../Assets/stacked-peaks-haikei2.svg);
+}
+
+.contactForm,
+#actualites {
+    background-image: url(../../Assets/layered-peaks-haikei.svg);
 }
 .background-white {
     background: #fff;
 }
 .container {
     max-width: 1400px;
-    margin-inline: auto;
+    margin: 0 auto;
+}
+.center {
+    display: flex;
+    justify-content: center;
+
+    margin: 20px 0;
 }
 .humaPadding {
     padding-top: 60px;
-    background-color: var(--colBlue);
+    background-color: var(--colWhite);
 }
 
 .paddingTopHash {
@@ -61,9 +72,8 @@ body,
 .item {
     margin: 30px 0;
     border-radius: 5px;
-    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
-    padding: 5rem 10%;
-    border: 5px ridge #bebebe;
+    padding: 1%;
+    border: 1px ridge #bebebe;
 }
 
 .pDarkTheme {
@@ -115,7 +125,7 @@ h1 {
         color: #bebebe;
         font-weight: 600;
         list-style: none;
-        margin: 10px;
+        margin: 0 10px;
         text-decoration: none;
     }
     li:hover,

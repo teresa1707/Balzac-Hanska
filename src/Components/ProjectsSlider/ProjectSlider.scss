@@ -1,165 +1,23 @@
 /*********************************************************************************/
 
-.right {
-    position: relative;
-    margin: 10px;
-    max-width: 400px;
-    height: 400px;
-    background-color: var(--colBlue1);
-    box-shadow: 2px 3px 10px var(--colBlue), 2px 3px 15px var(--colBlue);
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    .text {
-        position: absolute;
-        text-align: justify;
-        top: 270px;
-        right: -30px;
-        width: 90%;
-        height: 140px;
-        margin: 20px 0;
-        padding: 0px 30px 20px;
-        background-color: var(--colBlue);
-        box-shadow: 2px 3px 10px var(--colBlue), 2px 3px 15px var(--colBlue);
-        border-radius: 5px;
-        p {
-            overflow: hidden;
-            max-height: 100px;
-        }
-    }
-    .textRight {
-        color: var(--colWhite);
-        font-size: 14px;
-        text-align: justify;
-        width: 60%;
-        padding: 20px;
-        .projectImg {
-            margin: 10px auto;
-            overflow: hidden;
-            height: 200px;
-            border-radius: 3px;
-            border: 1px ridge var(--colYellow);
-            box-shadow: 2px 3px 10px var(--colBlue), 2px 3px 15px var(--colBlue);
-        }
-        .projectImg img {
-            height: 100%;
-            width: 100%;
-        }
-
-        &:hover .projectImg img {
-            transform: scale(1.1);
-            transition: all 0.6s ease-in-out;
-        }
-    }
-}
 .left {
-    max-width: 200px;
-    max-height: 300px;
-    position: relative;
-    top: -450px;
-    left: 240px;
-    padding: 3%;
+    margin: 0 auto;
+    max-width: 300px;
+    height: 390px;
+    padding: 30px 50px;
     background: var(--colBlue);
-    box-shadow: 2px 3px 10px var(--colBlue), 2px 3px 15px var(--colBlue);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5),
+        0px 10px 20px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     .text1 {
         color: #cce5ed;
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
     .projectSpan {
         text-transform: capitalize;
         margin: 10% 0;
         color: #6690ba;
-        font-size: 13px;
-    }
-}
-/*****************************************************************************/
-
-@media screen and (max-width: 1076px) {
-    .right {
-        display: flex;
-        flex-direction: row;
-        .projectImg {
-            transform: scale(0.8);
-            margin-left: 20px;
-            margin: 0;
-            overflow: hidden;
-            width: fit-content;
-            height: 50%;
-            border-radius: 3px;
-            border: 1px ridge var(--colYellow);
-            box-shadow: 2px 3px 10px var(--colBlue), 2px 3px 15px var(--colBlue);
-        }
-        .textRight {
-            width: 70%;
-
-            &:hover .projectImg img {
-                transform: scale(1.1);
-                transition: all 0.6s ease-in-out;
-            }
-        }
-    }
-    .left {
-        position: relative;
-
-        background: var(--colBlue);
-        box-shadow: 2px 3px 10px gray, 2px 3px 15px gray;
-        border-radius: 5px;
-        padding: 10px 30px;
-        .text1 {
-            color: #cce5ed;
-            font-size: 1.3rem;
-        }
-
-        .projectSpan {
-            text-transform: capitalize;
-            margin: 0;
-            color: #6690ba;
-            font-size: 13px;
-        }
-    }
-}
-
-@media screen and (max-width: 699px) {
-    // .card {
-    //     margin-left: 70px !important;
-    // }
-
-    .right {
-        max-width: 50% !important;
-        height: 470px !important;
-        margin: 10px;
-    }
-
-    .textRight {
-        margin-right: 10px !important;
-    }
-    .left {
-        top: 180px !important;
-        right: 20px;
-        width: 100%;
-        z-index: 999999999999999999;
-    }
-
-    .textRight1 {
-        font-size: 20px !important;
-    }
-
-    input {
-        width: 200px !important;
-    }
-
-    textarea {
-        width: 200px !important;
-    }
-
-    .text1 {
-        font-size: 20px !important;
-        margin-left: 13px !important;
-    }
-
-    span {
-        font-size: 10px !important;
+        font-size: 16px;
     }
 }

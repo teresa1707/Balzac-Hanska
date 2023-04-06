@@ -42,9 +42,13 @@
 
 //button retour-avant
 .btnProject {
+    width: fit-content;
+    height: fit-content;
     color: var(--colBeige);
-    background: #cdd6bd;
-    border: 1px ridge #cdd6bd;
+    font-weight: 600;
+    background: var(--colGray3);
+    border: 1px ridge #bebebe;
+    border-radius: 5px;
     font-size: 14px;
     padding: 10px;
     &:hover {
@@ -55,15 +59,16 @@
 //yellow button
 
 .button {
+    width: max-content;
     margin: 0 auto;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     transition: all 1s ease-in-out;
-    border: 1px ridge var(--colGray);
+    border: 1px ridge var(--colBeige);
     background: var(--colBlue);
     text-transform: uppercase;
-    padding: 15px 30px;
+    padding: 10px 30px;
     font-weight: 900;
-    font-size: 13px;
+    font-size: 12px;
     color: var(--colYellow);
     cursor: cursor;
     &:hover {
@@ -81,5 +86,10 @@
 
     &:hover {
         box-shadow: 0 1px 1px 1px rgba(#aaa, 0.6);
+    }
+}
+@media screen and (max-width: 899) {
+    .button {
+        font-size: 10px;
     }
 }

@@ -18,7 +18,7 @@
     box-shadow: 2px 2px 2px 2px var(--colYellow);
     .h1 {
         width: 300px;
-        margin: 0 auto -2px;
+        margin: 0 auto;
         border-top: 3px solid var(--colYellow);
         text-transform: uppercase;
         letter-spacing: 5px;
@@ -60,14 +60,13 @@
 }
 
 .logo-balzac:hover {
-    box-shadow: 0 1px 1px 1px var(--colOrange);
+    box-shadow: 2px 2px 2px 2px var(--colGray);
     .line {
         background-color: var(--colOrange);
     }
     .h1 {
-        width: 200px;
         margin: 0px auto;
-        border-top: 3px solid var(--colOrange);
+        border-top: 3px solid var(--colGray);
     }
 }
 @media screen and (max-width: 599px) {

@@ -1,29 +1,28 @@
 import React from 'react'
-import { humaNews } from 'utils/humaNews'
+
 import 'react-animated-slider/build/horizontal.css'
 import './Slider.scss'
 import Slider from 'react-animated-slider'
-import { Link } from 'react-router-dom'
 
-export const NewsSlider = () => {
+export const NewsSlider = ({ items }) => {
     return (
         <>
             <Slider autoplay={3000} className="slider-wrapper">
-                {humaNews.map((news) => (
+                {items.map((item) => (
                     <div
-                        key={news.id}
+                        key={item.id}
                         className="slider-content"
                         style={{
-                            background: `url('${news.image}') no-repeat center center`,
+                            background: `url('${item.image}') no-repeat center center`,
                         }}
                     >
                         <div className="inner">
-                            <h1>{news.title}</h1>
-                            <p>{news.shortText}</p>
+                            {/* <h1>{item.title}</h1> */}
+                            <p>{item.description}</p>
 
-                            <Link to={`/humanitaire/news/${news.id}`}>
+                            {/* <Link to={`/humanitaire/news/${item.id}`}>
                                 <button className="button">Lire plus</button>
-                            </Link>
+                            </Link> */}
                         </div>
                     </div>
                 ))}
