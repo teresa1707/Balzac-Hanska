@@ -15,6 +15,9 @@ import { HumaNewsSlider } from 'Components/HumaNewsSlider/HumaNewsSlider'
 import { Text } from 'Components/TitleBlock/Text'
 import { Card } from 'Components/Card/Card'
 import { CardText } from 'Components/Card/CardText'
+import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
+import { OurPartners } from 'Components/OurPartners/OurPartners'
+import { Collectif } from 'Components/Collectif/Collectif'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -122,7 +125,16 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                 <div className="col-9 col-12">
                     <CardSlider />
                 </div>
-            </section>{' '}
+            </section>
+            <section id="partenaires">
+                <div>
+                    <Collectif />
+                    <div className="center">
+                        <TitleBlock title="Nos partenaires" />
+                    </div>
+                    <OurPartners delay="1000" />
+                </div>
+            </section>
         </>
     )
 }
