@@ -19,7 +19,7 @@ export const OurPartners = ({ delay }) => {
                     delay: delay,
                     disableOnInteraction: false,
                 }}
-                // loop={true}
+                loop={true}
                 navigation={true}
                 pagination={{
                     type: 'progressbar',
