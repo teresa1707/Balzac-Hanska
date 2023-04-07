@@ -12,7 +12,7 @@ import { Grid } from '@mui/material'
 import { CardSlider } from 'Components/Slider/CardSlider'
 import { MainCard } from 'Components/MainCard/MainCard'
 import { HumaNewsSlider } from 'Components/HumaNewsSlider/HumaNewsSlider'
-import { Text } from 'Components/TitleBlock/Text'
+
 import { Card } from 'Components/Card/Card'
 import { CardText } from 'Components/Card/CardText'
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
@@ -28,7 +28,7 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
     }, [])
 
     useEffect(() => {
-        slideToLeft('.footerCard', '0', '2')
+        slideToUp('.footerCard', '0', '2')
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
@@ -84,15 +84,15 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                 </Grid>
             </section>
             <section id="actualites" className="paddingTopHash">
-                <div className="col-3 col-12">
+                <div className="col-12 col-3 ">
                     <Card title="Nos actions humanitaires" />
                 </div>
-                <div className="col-9 col-12">
+                <div className="col-12 col-9 ">
                     <HumaNewsSlider />
                 </div>
             </section>
             <section id="projets" className="paddingTopHash">
-                <div className="col-4 col-12">
+                <div className="col-12 col-4 ">
                     <Card title="L’Ukraine a besoin de nous, aidons-la et soyons engagés !!" />
                     <CardText
                         text="<p class='pDarkTheme'>
@@ -114,15 +114,15 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
             </p>"
                     />
                 </div>
-                <div className="col-8 col-12">
+                <div className="col-12 col-8 ">
                     <ProjectSlider />
                 </div>
             </section>
             <section id="presse" className="paddingTopHash">
-                <div className="col-3 col-12">
+                <div className="col-12 col-3 ">
                     <Card title="On parle de nous" />
                 </div>
-                <div className="col-9 col-12">
+                <div className="col-12 col-9 ">
                     <CardSlider />
                 </div>
             </section>
@@ -132,7 +132,7 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                     <div className="center">
                         <TitleBlock title="Nos partenaires" />
                     </div>
-                    <OurPartners delay="1000" />
+                    <OurPartners delay="2000" rows="1" />
                 </div>
             </section>
         </>

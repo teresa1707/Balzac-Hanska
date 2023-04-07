@@ -2,7 +2,7 @@
     max-width: 400px;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    padding: 20px 40px;
+    padding: 20px;
     opacity: 1;
     margin: 20px;
 
@@ -20,7 +20,7 @@
     &:hover {
         transition: all 300ms ease-in;
 
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(1px);
         box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
     }
 }
@@ -30,5 +30,22 @@
         width: 100%;
         margin: 0 auto;
         padding: 20px 40px;
+    }
+}
+@media screen and (max-width: 699px) {
+    .cardBlock {
+        padding: 20px 10px;
+        h1 {
+            text-align: start;
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 499px) {
+    .cardBlock {
+        padding: 20px 10px;
+        h1 {
+            font-size: 10px;
+        }
     }
 }

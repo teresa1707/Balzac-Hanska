@@ -11,7 +11,7 @@ import { Virtual } from 'swiper'
 import { Pagination, Autoplay } from 'swiper'
 import { ourPartners } from 'utils/ourPartners'
 
-export const OurPartners = ({ delay }) => {
+export const OurPartners = ({ delay, rows }) => {
     return (
         <>
             <Swiper
@@ -24,9 +24,9 @@ export const OurPartners = ({ delay }) => {
                 pagination={{
                     type: 'progressbar',
                 }}
-                // grid={{
-                //     rows: 2,
-                // }}
+                grid={{
+                    rows: rows,
+                }}
                 modules={[Pagination, Virtual, Autoplay]}
                 style={{
                     backgroundColor: 'white',
@@ -35,13 +35,13 @@ export const OurPartners = ({ delay }) => {
                 }}
                 centeredSlides={true}
                 breakpoints={{
-                    599: {
+                    390: {
                         slidesPerView: 2,
                         spaceBetween: 2,
                     },
                     768: {
-                        slidesPerView: 3,
-                        spaceBetween: 50,
+                        slidesPerView: 4,
+                        spaceBetween: 5,
                     },
                     1024: {
                         slidesPerView: 8,

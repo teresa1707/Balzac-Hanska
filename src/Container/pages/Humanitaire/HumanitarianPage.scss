@@ -1,23 +1,42 @@
 #actualites,
 #projets,
 #presse {
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: 50px 0 100px;
+    .col-3 {
+        width: 25%;
+        flex: 0 0 25%;
+    }
+    .col-9 {
+        width: 75%;
+        flex: 0 0 75%;
+    }
+    .col-4 {
+        width: 33.3333%;
+        flex: 0 0 33.3333%;
+    }
+    .col-8 {
+        width: 66.6667%;
+        flex: 0 0 66.6667%;
+    }
 }
+
 #donner {
     margin: 50px auto;
 }
 .humaContent {
     margin: 50px auto;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
     #actualites,
     #projets,
     #presse {
-        flex-wrap: wrap;
-    }
-    .col-12 {
-        width: 100%;
+        flex-direction: column;
+        .col-12 {
+            width: 100%;
+            flex: 0 0 100%;
+        }
     }
 }

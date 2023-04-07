@@ -22,7 +22,7 @@ export const ProjectSlider = () => {
 
     return (
         <div className="container">
-            <Grid container justifyContent="center">
+            <Grid container spacing={2} justifyContent="center">
                 {currentItems.map((project) => (
                     <Grid item sm={12} md={6} key={project.id}>
                         <Link to={`/humanitaire/projets/${project.id}`}>

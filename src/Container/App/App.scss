@@ -40,19 +40,25 @@ body,
     margin: 0;
     background-image: url(../../Assets/stacked-peaks-haikei2.svg);
 }
+// .col-3 {
+//     width: 25%;
+//     flex: 0 0 25%;
+// }
+// .col-4 {
+//     width: 33.3333%;
+// }
+// .col-8 {
+//     width: 66.6667%;
+// }
+// .col-9 {
+//     width: 75%;
+//     flex: 0 0 75%;
+// }
+// .col-12 {
+//     width: 100%;
+//     flex: 0 0 100%;
+// }
 
-.col-3 {
-    width: 25%;
-}
-.col-4 {
-    width: 33.3333%;
-}
-.col-8 {
-    width: 66.6667%;
-}
-.col-9 {
-    width: 75%;
-}
 .contactForm,
 #actualites,
 #presse {

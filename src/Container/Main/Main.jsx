@@ -16,7 +16,8 @@ export const Main = ({ slideFade, slideUp }) => {
         <>
             <MainPresentation slideFade={slideFade} slideUp={slideUp} />
             <Collectif />
-            <OurPartners delay={1000} />
+            <TitleBlock title="Nos partenaires" />
+            <OurPartners delay={1000} rows="1" />
         </>
     )
 }
