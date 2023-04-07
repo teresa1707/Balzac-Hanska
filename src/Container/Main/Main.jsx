@@ -16,7 +16,7 @@ export const Main = ({ slideFade, slideUp }) => {
             <MainPresentation slideFade={slideFade} slideUp={slideUp} />
             <div className="center">
                 {' '}
-                <TitleBlock title="Nos partenaires" />
+                <TitleBlock title="Notre collectif" />
             </div>
 
             <div className="center" id="collectif">
@@ -25,8 +25,11 @@ export const Main = ({ slideFade, slideUp }) => {
                     alt="logo collectif Ensemble avec l'Ukraine"
                 />
             </div>
-            <div id="partners">
+            <div className="center">
                 {' '}
+                <TitleBlock title="Nos partenaires" />
+            </div>
+            <div id="partners">
                 <OurPartners />
             </div>
         </>

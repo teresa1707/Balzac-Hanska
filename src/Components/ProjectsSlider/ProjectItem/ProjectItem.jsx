@@ -6,6 +6,7 @@ import { getObject, projects } from 'utils/projects'
 import './ProjectItem.scss'
 import { Button } from 'Components/MyButton/Button'
 import { CommentAider } from 'Components/CommentAider/CommentAider'
+import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 
 export const ProjectItem = ({
     projectObject = getObject(projects),
@@ -17,8 +18,8 @@ export const ProjectItem = ({
         <>
             <div className="humaPadding"></div>
             <Container>
-                <h1>{projectObject[id].title}</h1>
-                <Button BtnText="Retour" goBack={goBack} />
+                <TitleBlock title={projectObject[id].title} />
+                <Button BtnText="<< Tous les projets" goBack={goBack} />
                 <Grid container className="articleItem">
                     <Grid item sm={12} md={6}>
                         <figure>
@@ -144,27 +145,25 @@ export const ProjectItem = ({
                         <hr></hr>
                     </Grid>
                     <Grid item xs={12} sm={6}>
-                        <Card className="art-category">
-                            <CommentAider />
-                            <figure>
-                                <img
-                                    src={projectObject[id].image[3]}
-                                    alt={projectObject[id].infoPlus[3]}
-                                />
-                                <figcaption>
-                                    {projectObject[id].infoPlus[3]}
-                                </figcaption>
-                            </figure>
-                            <figure>
-                                <img
-                                    src={projectObject[id].image[4]}
-                                    alt={projectObject[id].infoPlus[4]}
-                                />
-                                <figcaption>
-                                    {projectObject[id].infoPlus[4]}
-                                </figcaption>
-                            </figure>
-                        </Card>
+                        <CommentAider />
+                        <figure>
+                            <img
+                                src={projectObject[id].image[3]}
+                                alt={projectObject[id].infoPlus[3]}
+                            />
+                            <figcaption>
+                                {projectObject[id].infoPlus[3]}
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img
+                                src={projectObject[id].image[4]}
+                                alt={projectObject[id].infoPlus[4]}
+                            />
+                            <figcaption>
+                                {projectObject[id].infoPlus[4]}
+                            </figcaption>
+                        </figure>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <div
@@ -188,9 +187,14 @@ export const ProjectItem = ({
                                 ),
                             }}
                         ></p>
-                        <div className="pDarkTheme itemDiv">
-                            {projectObject[id].budget}
-                        </div>
+                        <div
+                            className="pDarkTheme itemDiv"
+                            dangerouslySetInnerHTML={{
+                                __html: DOMPurify.sanitize(
+                                    projectObject[id].budget
+                                ),
+                            }}
+                        ></div>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <figure>
@@ -222,11 +226,9 @@ export const ProjectItem = ({
                                     projectObject[id].shortText8
                                 ),
                             }}
-                        ></p>{' '}
+                        ></p>
                     </Grid>{' '}
-                    <Grid item xs={12}>
-                        <Button BtnText="Retour" goBack={goBack} />
-                    </Grid>
+                    <Button BtnText="Retour aux projets" goBack={goBack} />
                 </Grid>
             </Container>
         </>

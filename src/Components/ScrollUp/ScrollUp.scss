@@ -2,17 +2,18 @@
     bottom: 5%;
     border: 0px;
     border-radius: 50%;
-    background-color: #c48660;
+    background-color: var(--colBlue);
     cursor: pointer;
     display: block;
     padding: 0px;
     position: fixed;
-
+    z-index: 99999999;
     right: 5%;
     width: 40px;
     height: 40px;
     &:hover {
         transform: scale(1.1);
+        background-color: var(--colYellow);
     }
 }
 

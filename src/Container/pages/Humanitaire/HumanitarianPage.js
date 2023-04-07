@@ -40,32 +40,32 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                     span3="Une"
                     text=""
                 />
-            </div>{' '}
-            <Grid container className="container paddingTopHash" id="donner">
-                <Grid item sm={12} md={4}>
-                    <MainCard
-                        text=' <div class="title2">Actions humanitaires</div>
+            </div>
+            <section id="donner" className="paddingTopHash">
+                <Grid container className="container ">
+                    <Grid item sm={12} md={4} className="humaContent">
+                        <MainCard
+                            text=' <div class="title2">Actions humanitaires</div>
                       <p class="pDarkTheme">Nos projets à caractère Humanitaires sont portés par
                         notre Association Franco Ukrainienne BALZAC HANSKA
                         qui possède une structure en France et en Ukraine,
                         depuis plus de 10 ans - un lien de solidarité et d’Amour de la France à l’Ukraine au travers de notre association « Franco-Ukrainienne Balzac et Hanska »</p>'
-                    />
-                </Grid>
-                <Grid item sm={12} md={4}>
-                    <MainCard
-                        className="humaContent"
-                        text=' <div class="title2">Devenir benevole</div>
+                        />
+                    </Grid>
+                    <Grid item sm={12} md={4} className="humaContent">
+                        <MainCard
+                            text=' <div class="title2">Devenir benevole</div>
                         <p class="pDarkTheme">
                             Si vous avez des idées ou des projets à partager et
                             à developper avec nous,<span class="boldWhite">
                                 contactez nous via le formulaire ou le mail.</span>
                         </p><p class="italic pDarkTheme">Vous pouvez nous rejoindre dans cette belle aventure humaine et nous aider dans nos différentes actions à venir et/ou par vos contributions financière sur le compte de notre association 
     <span class="boldWhite">- IBAN FR76 3007 6020 8918 4734 0020 022.</span></p>'
-                    />
-                </Grid>
-                <Grid item sm={12} md={4}>
-                    <MainCard
-                        text='<div class="title2">Ou...</div><p class="pDarkTheme">
+                        />
+                    </Grid>
+                    <Grid item sm={12} md={4} className="humaContent">
+                        <MainCard
+                            text='<div class="title2">Ou...</div><p class="pDarkTheme">
                                 Il vous suffit de cliquer sur<a
                                     href="https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska/formulaires/1."
                                     target="_blank"
@@ -76,14 +76,15 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                                 Ukrainienne BALZAC HANSKA est une Association loi de
                                 1901 N° W941007660 –
                                 <span class="boldWhite">ouvrant droit à une réduction d’impôt et délivrance d’un certificat de déductibilité fiscale.</span></p>'
-                    />
+                        />
+                    </Grid>
                 </Grid>
-            </Grid>
+            </section>
             <section id="actualites" className="paddingTopHash">
-                <div className="col-4 col-12">
+                <div className="col-3 col-12">
                     <Card title="Nos actions humanitaires" />
                 </div>
-                <div className="col-8 col-12">
+                <div className="col-9 col-12">
                     <HumaNewsSlider />
                 </div>
             </section>
@@ -115,10 +116,10 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                 </div>
             </section>
             <section id="presse" className="paddingTopHash">
-                <div className="col-4 col-12">
+                <div className="col-3 col-12">
                     <Card title="On parle de nous" />
                 </div>
-                <div className="col-8 col-12">
+                <div className="col-9 col-12">
                     <CardSlider />
                 </div>
             </section>{' '}

@@ -13,9 +13,6 @@ export const projects = [
             'L’hôpital d’une superficie de 1800m².',
             'deplaces',
             'hopital',
-            '',
-            '',
-            '',
         ],
         shortText1:
             'Il s’agit de mettre en place une nouvelle chaudière avant les mois d’hiver afin de permettre à tous les déplacés (actuels et futurs) d’être accueillis dans ces locaux et d’avoir accès à un chauffage et eau chaude.Le chauffage bois permettra à la communauté de réaliser des économies, le bois étant disponible sur place ...',

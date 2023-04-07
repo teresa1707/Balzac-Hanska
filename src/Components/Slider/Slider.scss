@@ -1,10 +1,12 @@
 .slider-wrapper {
     padding: 0 10px;
     position: relative;
-    height: 60.5vh;
-
+    height: 70vh;
+    overflow: hidden;
     border-top: 1px ridge var(--colBeige);
     border-bottom: 1px ridge var(--colBeige);
+    max-width: 800px;
+    margin: auto;
 
     button {
         margin: 0 auto;
@@ -40,11 +42,6 @@
 
     .wrapper a:first-child {
         margin-left: 0;
-    }
-    .slide {
-        margin: 0 auto;
-        height: 100%;
-        background-size: cover !important;
     }
 
     .previousButton,
@@ -88,7 +85,17 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
+    .slider-content .inner img {
+        height: 70vh;
+        width: auto;
+        padding: 0 70px;
 
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     .slider-content .inner h1 {
         font-weight: 900;
         margin: 0 auto;
@@ -233,4 +240,3 @@
         transition-delay: 0s;
     }
 }
-//SWIPER
