@@ -19,6 +19,8 @@ import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
 import { OurPartners } from 'Components/OurPartners/OurPartners'
 import { Collectif } from 'Components/Collectif/Collectif'
 
+import { Link } from 'react-router-dom'
+
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
@@ -38,10 +40,13 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
             <div id="box1" className="box box1">
                 <PresentationCard
                     bgImage={bgIm}
-                    span1="A"
-                    span2="la"
-                    span3="Une"
-                    text=""
+                    span1="L’origine"
+                    span2="de notre"
+                    span3="initiative"
+                    text="L’Association franco-ukrainienne Balzac et Hanska mene ses actions en etroite collaboration avec sa « soeur » - ONG ukrainienne « Memoire de la vie de Balzac et Hanska », basée en Ukraine, à Berdytchiv, 200 km à l’ouest de Kyiv. <br/>Au moment de l’invasion de l’Ukraine la plupart de nos collabolateurs ont choisi de rester en Ukraine aux côtés de leurs familles. <br/>Le Président Jean Roche, a pris l’initiative de mettre en place, coté Ukraine, un circuit d’aide directe aux populations ukrainiennes.<br/>
+                    Nos collaborateurs et volontaires suivent la distribution et la répartition de l’aide sur place, directement aux plus démunis, et en s’appuyant sur la structure caritative déjà existante en Ukraine, que nous avons fondées il y a plus de 10 ans
+                    "
+                    element={<Link to="/culture">Culture </Link>}
                 />
             </div>
             <section id="donner" className="paddingTopHash">
@@ -70,7 +75,7 @@ export const HumanitarianPage = ({ slideToLeft, slideToUp }) => {
                         <MainCard
                             text='<div class="title2">Ou...</div><p class="pDarkTheme">
                                 Il vous suffit de cliquer sur<a
-                                    href="https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska/formulaires/1."
+                                    href="https://www.helloasso.com/associations/association-franco-ukrainienne-balzac-et-hanska"
                                     target="_blank"
                                     title="HELLOASSO"
                                     rel="noreferrer"

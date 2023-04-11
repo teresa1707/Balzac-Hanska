@@ -9,6 +9,7 @@ export const PresentationCard = ({
     span3,
     photo1,
     photo2,
+    element,
 }) => {
     return (
         <div className="card">
@@ -33,6 +34,7 @@ export const PresentationCard = ({
                     }}
                 ></p>
             </div>
+            {element}
         </div>
     )
 }

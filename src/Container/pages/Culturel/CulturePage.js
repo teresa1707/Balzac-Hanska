@@ -37,13 +37,12 @@ export const CulturePage = ({ slideUp, slideToUp, slideToLeft }) => {
                         span1="Balzac"
                         span2="et"
                         span3="Hanska"
-                        text="<p>Notre association a été créée dans le
+                        text="<p>L'Association franco-ukrainienne Balzac et Hanska a été créée dans le
                             but de perpétuer, célébrer et rendre hommage à la
                             mémoire des amours d'Honoré de Balzac et de la Comtesse Ewelyna Hanska.<br/><br/>Nous voulons faire connaitre le lien de Balzac avec l’Ukraine au travers de cette belle histoire.<br/><br/>Sur ce site, vous pourrez trouver
                             l’histoire des voyages de Balzac pour rejoindre son
-                            aimée &nbsp;, &nbsp;si notre cause vous intéresse
-                            vous pourrez également faire une
-                            &nbsp;.&nbsp;N’hésitez pas à nous contacter, nous
+                            aimée, si notre cause vous intéresse
+                            vous pourrez également faire une. N’hésitez pas à nous contacter, nous
                             sommes à votre disposition. </p>"
                     />
                 </div>
