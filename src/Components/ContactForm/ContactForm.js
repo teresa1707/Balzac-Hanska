@@ -1,6 +1,7 @@
 import React from 'react'
 import 'Components/ContactForm/ContactForm.scss'
-import { Grid } from '@mui/material'
+
+import { CardText } from 'Components/Card/CardText'
 
 export const ContactForm = ({ sent, newForm, changeHandler, sendMessage }) => {
     return (
@@ -36,7 +37,6 @@ export const ContactForm = ({ sent, newForm, changeHandler, sendMessage }) => {
                         value={newForm.subject}
                         onChange={changeHandler}
                     />
-
                     <div>
                         <textarea
                             name="message"
@@ -47,7 +47,6 @@ export const ContactForm = ({ sent, newForm, changeHandler, sendMessage }) => {
                             onChange={changeHandler}
                         ></textarea>
                     </div>
-
                     <div>
                         {sent?.type === 'success' && (
                             <p className="messageSent">
@@ -63,8 +62,14 @@ export const ContactForm = ({ sent, newForm, changeHandler, sendMessage }) => {
                         type="submit"
                         value="Envoyer"
                         id="submit"
-                    />
-                </form>
+                    />{' '}
+                    <div className="toContact">
+                        <CardText
+                            text='<a href="mailto:contact@associationbalzachanska.com" >ou nous ecrire directement <i class="far fa-envelope-open" style="font-size:24px"></i></a>
+'
+                        />
+                    </div>
+                </form>{' '}
             </div>
         </>
     )

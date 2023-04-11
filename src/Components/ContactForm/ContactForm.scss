@@ -2,52 +2,59 @@
 
 .contactForm {
     width: 80%;
-    margin: 0 auto;
-    padding: 10% 2% 5%;
-}
+    margin: 2rem auto 0;
+    padding: 5% 2% 5%;
 
-form {
-    font-family: 'Kelly Slab', sans-serif;
-    text-align: center;
+    form {
+        padding-top: 0;
+        margin-top: 0%;
+        font-family: 'Kelly Slab', sans-serif;
+        text-align: center;
+        .button,
+        input,
+        textarea {
+            border: 0;
+            outline: 0;
+            padding: 1em;
+            border-radius: 3px;
+            width: 100%;
+            margin-top: 1em;
+            box-shadow: 0 1px 1px 1px var(--colBeige);
 
-    input,
-    textarea {
-        border: 0;
-        outline: 0;
-        padding: 1em;
-        border-radius: 3px;
-        width: 100%;
-        margin-top: 1em;
+            &:focus {
+                box-shadow: 0 0px 2px var(--colOrange1) !important;
+            }
+        }
 
-        box-shadow: 0 1px 1px 1px var(--colBeige);
-        resize: none;
-
-        &:focus {
-            box-shadow: 0 0px 2px var(--colBlue) !important;
+        textarea {
+            height: 126px;
+        }
+        .messageSent {
+            margin: 15px auto;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+            border: 1px ridge var(--colGray);
+            border-radius: 3px;
+            background: var(--colBeige);
+            text-transform: uppercase;
+            padding: 15px 30px;
+            font-weight: bold;
+            font-size: 13px;
+            letter-spacing: 0.4rem;
+            color: var(--colBlue);
+        }
+        .show {
+            display: block;
+        }
+        .hide {
+            display: none;
         }
     }
-
-    textarea {
-        height: 126px;
-    }
-    .messageSent {
-        margin: 15px auto;
-        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-        border: 1px ridge var(--colGray);
-        border-radius: 3px;
-        background: var(--colBeige);
-        text-transform: uppercase;
-        padding: 15px 30px;
-        font-weight: bold;
-        font-size: 13px;
-        letter-spacing: 0.4rem;
-        color: var(--colBlue);
-    }
-    .show {
-        display: block;
-    }
-    .hide {
-        display: none;
+    .toContact {
+        font-family: 'Courier New', Courier, monospace;
+        padding: 0;
+        margin: 0 auto;
+        text-align: center;
+        width: max-content;
     }
 }
 

@@ -166,7 +166,7 @@ export const humaNews = [
             "Le camion a quitté nos locaux à Vitry - sur - Seine le 01 avril après avoir chargé la literie COFEL à l'usine en Normandie. Il est arrivé à Berdytchiv le 05 avril, en passant par Lviv.",
             'Grace à nos chers amis et partenaires du "Collectif Unis Pour L\'Ukraine", nous avons encore une fois envoyé beaucoup de choses utiles et precieuses. Voici quelques exemples:',
             '-135 pièces de literie COFEL <br/>-20 m3 de vetementes chauds<br/>-14 groupes electrogenes grande puissance<br/>-Produits paramedicaux etc. ',
-            'Merci à tous ceux qui nous ont aidé et soutenu pour cette action. Merci à nos généreux donateurs pour vos contributions en nature et/ou financières. Milles Mercis à l\'association "Partagence" de Claude Fregeac, la Mairie de Chennevieres, BIP Humanitaire, ASSOCIATIONN DES FEMMES UKRAINIENNE EN FRANCE , Lions Club Kiev Ecology, PSF 94, IDFU, Xavier Hervieux, Patrick Angelvi, Philippe Godillot, Kateryna Besnier. Et merci à tous nos bénévoles qui sont toujurs presents pour nous aider au chargement et dechargement!',
+            'Merci à tous ceux qui nous ont aidé et soutenu pour cette action. Merci à nos généreux donateurs pour vos contributions en nature et/ou financières. Milles Mercis à l\'association "Partagence" de Claude Fregeac, la Mairie de Chennevieres, BIP Humanitaire, ASSOCIATION DES FEMMES UKRAINIENNE EN FRANCE , Lions Club Kiev Ecology, PSF 94, IDFU, Xavier Hervieux, Patrick Angelvi, Philippe Godillot, Kateryna Besnier,Groupe COFEL. Et merci à tous nos bénévoles qui sont toujours presents pour nous aider au chargement et dechargement!',
         ],
     },
     {
