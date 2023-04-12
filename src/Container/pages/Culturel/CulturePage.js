@@ -6,9 +6,10 @@ import hanska from '../../../Assets/hanskaFrameWhite.jpg'
 import bgIm from 'Assets/maison.jpg'
 import { PresentationCard } from 'Components/PresentationCard/PresentationCard'
 import { TitleBlock } from 'Components/TitleBlock/TitleBlock'
-import PdfReader from 'Components/PdfReader/PdfReader'
+
 import { CultureSlider } from 'Components/CultureSlider/CultureSlider'
 import { Text } from 'Components/TitleBlock/Text'
+import { PdfReader } from 'Components/PdfReader/PdfReader'
 
 export const CulturePage = ({ slideUp, slideToUp, slideToLeft }) => {
     useEffect(() => {

@@ -1,5 +1,6 @@
 import './PresentationCard.scss'
 import DOMPurify from 'dompurify'
+import { Link } from 'react-router-dom'
 
 export const PresentationCard = ({
     bgImage,
@@ -32,9 +33,11 @@ export const PresentationCard = ({
                     dangerouslySetInnerHTML={{
                         __html: DOMPurify.sanitize(text),
                     }}
-                ></p>
+                ></p>{' '}
+                <div className="button">
+                    <Link to={element}>LIRE PLUS</Link>
+                </div>
             </div>
-            {element}
         </div>
     )
 }

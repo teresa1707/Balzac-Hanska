@@ -1,11 +1,22 @@
-import React from 'react'
-import { Document, Page } from 'react-pdf'
-import filePdf from '../../Assets/pdf/BalzacFestFR.pdf'
+import React, { useState } from 'react'
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 
-export default function PdfReader() {
+import { useParams } from 'react-router-dom'
+
+export const PdfReader = ({ pdf }) => {
+    let { id } = useParams()
+
+    const [numPages, setNumPages] = useState(null)
+
+    function onDocumentLoadSuccess({ numPages }) {
+        setNumPages(numPages)
+    }
+
     return (
-        <Document file={filePdf}>
-            <Page pageNumber={1} />
+        <Document file={pdf} onLoadSuccess={onDocumentLoadSuccess}>
+            {Array.from(new Array(numPages), (el, index) => (
+                <Page key={`page_${index + 1}`} pageNumber={index + 1} />
+            ))}
         </Document>
     )
 }

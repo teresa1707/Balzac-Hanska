@@ -18,6 +18,8 @@ import { NotFound } from 'Container/pages/NotFound/NotFound'
 import { BalzacItem } from 'Components/BalzacList/BalzacItem/BalzacItem'
 import { useState } from 'react'
 import { NewsItem } from 'Components/HumaNewsSlider/HumaNewsItem/NewsItem'
+import { PdfReader } from 'Components/PdfReader/PdfReader'
+import { HumaPresentation } from 'Components/HumaPresentation/HumaPresentation'
 
 export const App = () => {
     //animation
@@ -251,6 +253,10 @@ export const App = () => {
                     }
                 />
                 <Route
+                    path="/humanitarian/aboutUs"
+                    element={<HumaPresentation />}
+                />
+                <Route
                     path="/culture"
                     element={
                         <>
@@ -306,6 +312,14 @@ export const App = () => {
                     element={
                         <>
                             <NewsItem />
+                        </>
+                    }
+                />
+                <Route
+                    path="/pdf/:id"
+                    element={
+                        <>
+                            <PdfReader />
                         </>
                     }
                 />

@@ -5,8 +5,8 @@ import ReactPaginate from 'react-paginate'
 import { projects } from 'utils/projects'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { ButtonYellow } from 'Components/MyButton/ButtonYellow'
-import DOMPurify from 'dompurify'
+
+import { CardSlider } from 'Components/Items/CardSlider'
 
 export const ProjectSlider = () => {
     const [itemOffset, setItemOffset] = useState(0)
@@ -26,24 +26,12 @@ export const ProjectSlider = () => {
                 {currentItems.map((project) => (
                     <Grid item sm={12} md={6} key={project.id}>
                         <Link to={`/humanitaire/projets/${project.id}`}>
-                            <div className="left">
-                                <div className="text1">{project.title}</div>
-                                <p
-                                    className="text2 projectSpan"
-                                    dangerouslySetInnerHTML={{
-                                        __html: DOMPurify.sanitize(
-                                            project.budget
-                                        ),
-                                    }}
-                                />
-
-                                <p className="text2 projectSpan">
-                                    {project.date}
-                                </p>
-                                <div className="cardBtn">
-                                    <ButtonYellow text="Lire plus" />
-                                </div>
-                            </div>
+                            <CardSlider
+                                title={project.title}
+                                text1={project.budget}
+                                text2={project.date}
+                                buttonText="Lire plus"
+                            />
                         </Link>
                     </Grid>
                 ))}
